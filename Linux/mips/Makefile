@@ -33,7 +33,7 @@ all: $(TARGETS)
 .PHONY: downloads_clean repository_clean
 
 $(git_repo):
-	@echo "\n======= Clone $(repo_name).git repository ======="
+	@echo -e "\n======= Clone $(repo_name).git repository ======="
 	@rm -rf $(repo_name)
 	@if [ "$(url)" = 'git://radix.pro' ]; then \
 	   git clone $(url)/$(repo_name).git $(repo_name) ; \
@@ -46,7 +46,7 @@ $(tarballs): $(git_repo)
 	@for tag in $(TAGS) ; do \
 	  version=`echo $$tag | sed 's/\(^[a-zA-Z-]*\)\([0-9][.0-9]*[.0-9]*\)\(.*\)/\2/'` ; \
 	  if [ ! -f linux-$$version.tar.bz2 ]; then \
-	    echo "\n======= Creating 'linux-$$version.tar.bz2' snapshot =======" ; \
+	    echo -e "\n======= Creating 'linux-$$version.tar.bz2' snapshot =======" ; \
 	    ( cd $(repo_name) && \
 	      git archive --format=tar --prefix=linux-$$version/ $$tag | \
 	      bzip2 >../linux-$$version.tar.bz2 ) ; \
@@ -56,7 +56,7 @@ $(tarballs): $(git_repo)
 $(defconfigs): %.defconfig: %.tar.bz2
 	@for arch in $< ; do \
 	  version=`echo $$arch | sed 's/\(^[a-zA-Z-]*\)\([0-9][.0-9]*[.0-9]*\)\([\.].*\)/\2/'` ; \
-	  echo "\n======= Extracting default '.config' from '$$arch' tarball =======" ; \
+	  echo -e "\n======= Extracting default '.config' from '$$arch' tarball =======" ; \
 	  ( tar -xjf $$arch \
 	            linux-$$version/arch/mips/configs/$(_defconfig) && \
 	   cp linux-$$version/arch/mips/configs/$(_defconfig) linux-$$version.defconfig && \
@@ -64,7 +64,7 @@ $(defconfigs): %.defconfig: %.tar.bz2
 	done
 
 repository_clean: $(defconfigs)
-	@echo "\n======= Remove cloned $(repo_name).git repository ======="
+	@echo -e "\n======= Remove cloned $(repo_name).git repository ======="
 	@rm -rf $(git_repo) $(repo_name)
 
 downloads_clean:

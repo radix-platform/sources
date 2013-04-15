@@ -25,7 +25,7 @@ all: $(TARGETS)
 .PHONY: downloads_clean
 
 $(git_repo):
-	@echo "\n======= Clone $(repo_name).git repository ======="
+	@echo -e "\n======= Clone $(repo_name).git repository ======="
 	@rm -rf $(repo_name)
 	@git clone $(url)/$(repo_name).git $(repo_name)
 	@touch $@
@@ -34,7 +34,7 @@ $(tarballs): $(git_repo)
 	@for tag in $(TAGS) ; do \
 	  version=$$tag ; \
 	  if [ ! -f $(repo_name)-$$version.tar.bz2 ]; then \
-	    echo "\n======= Creating '$(repo_name)-$$version.tar.bz2' snapshot =======" ; \
+	    echo -e "\n======= Creating '$(repo_name)-$$version.tar.bz2' snapshot =======" ; \
 	    ( cd $(repo_name) && \
 	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$version | \
 	      bzip2 >../$(repo_name)-$$version.tar.bz2 ) ; \
@@ -42,7 +42,7 @@ $(tarballs): $(git_repo)
 	done
 
 repository_clean: $(tarballs)
-	@echo "\n======= Remove $(repo_name).git repository ======="
+	@echo -e "\n======= Remove $(repo_name).git repository ======="
 	@rm -rf $(git_repo) $(repo_name)
 
 downloads_clean:

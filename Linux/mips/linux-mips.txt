@@ -1,0 +1,32 @@
+
+MIPS Linux Kernel:
+=================
+   http://www.linux-mips.org/wiki/Main_Page
+   http://www.linux-mips.org/wiki/Getting_the_kernel
+   http://www.linux-mips.org/wiki/Git
+
+Clone:
+=====
+$ git clone git://git.linux-mips.org/pub/scm/ralf/linux.git linux-mips
+
+Radix Mirror (create):
+=====================
+$ git clone --mirror git://git.linux-mips.org/pub/scm/ralf/linux.git linux-mips.git
+
+Radix Mirror (clone):
+=====================
+$ git clone git://radix.pro/linux-mips.git linux-mips
+
+
+Tags with names like linux-2.6.36 - are targ with MIPS code from linux-mips.org.
+
+
+Create snapshot:
+===============
+cd linux-mips && git archive --format=tar --prefix=linux-2.6.31/ linux-2.6.31 | bzip2 > ../linux-2.6.31.tar.bz2
+
+
+Config (arch/mips/configs):
+=========================
+bcm63xx_defconfig
+

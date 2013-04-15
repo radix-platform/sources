@@ -1,0 +1,33 @@
+
+Kevin Hilman: http://processors.wiki.ti.com/index.php/DaVinci_GIT_Linux_Kernel
+
+GIT - git://gitorious.org/linux-davinci/linux-davinci.git 
+Web - http://gitorious.org/linux-davinci
+
+Clone:
+=====
+$ git clone git://gitorious.org/linux-davinci/linux-davinci.git linux-davinci
+
+Radix Mirror (create):
+=====================
+$ git clone --mirror git://gitorious.org/linux-davinci/linux-davinci.git
+
+Radix Mirror (clone):
+=====================
+$ git clone git://radix.pro/linux-davinci.git linux-davinci
+
+
+Tags with names like v2.6.35, v2.6.35-rc* - is the same as we have in common Linux Kernel repository.
+Tags with names like v2.6.35-davinci1     - is tags with DM644X code from Kevin Hilman.
+
+
+Create snapshot:
+===============
+cd linux-davinci; git archive --format=tar --prefix=linux-2.6.36/ v2.6.36-davinci1 | bzip2 >../linux-2.6.36.tar.bz2
+cd linux-davinci; git archive --format=tar --prefix=linux-3.8/ v3.8-davinci2 | bzip2 >../linux-3.8.tar.bz2
+
+
+Config (arch/arm/configs):
+=========================
+davinci_all_defconfig
+

@@ -1,0 +1,16 @@
+
+*.defconfig
+*.tar.bz2
+*.tar.gz
+*.sign
+*.sig
+.*
+!.gitignore
+
+Linux/dm644x/linux-davinci/
+Linux/mips/linux-mips/
+Linux/omap/linux-omap/
+dm644x/flash-tools/IRAM-flasher/IRAM-flasher/
+dm644x/flash-tools/IRAM-loader/IRAM-loader/
+dm644x/flash-tools/NOR-flasher/NOR-flasher/
+dm644x/modSign/modSign/

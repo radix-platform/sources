@@ -1,0 +1,40 @@
+
+Tony Lindgren, Kevin Hilman: http://processors.wiki.ti.com/index.php/OMAP3_GIT_Linux_Kernel (deprecated)
+
+cGit:
+====
+http://git.kernel.org/cgit/linux/kernel/git/tmlind/linux-omap.git
+
+Clone:
+=====
+$ git clone git://git.kernel.org/pub/scm/linux/kernel/git/tmlind/linux-omap.git linux-omap
+
+Radix Mirror (create):
+=====================
+$ git clone --mirror git://git.kernel.org/pub/scm/linux/kernel/git/tmlind/linux-omap.git
+
+Radix Mirror (clone):
+=====================
+$ git clone git://radix.pro/linux-omap.git linux-omap
+
+
+linux-2.6.32: tagget as v2.6.32-omap1 tag
+linux-2.6.36: is a master branch after a83d12a47c9a8c78a184910150797045d69a1570 (22 of October, 2010).
+
+Tags with names like v2.6.36, v2.6.36-rc* - is the same as we have in common Linux Kernel repository.
+Tags with names like v2.6.32-omap1        - is tags with OMAP3 code from Tony Lindgren and Kevin Hilman.
+
+Create snapshot:
+===============
+cd linux-omap; git archive --format=tar --prefix=linux-2.6.36/ a83d12a47c9a8c78a184910150797045d69a1570 | bzip2 >../linux-2.6.36.tar.bz2
+
+
+Config (arch/arm/configs):
+=========================
+omap2plus_defconfig
+
+
+Additional info:
+===============
+http://www.omappedia.com/wiki/Source_Trees
+http://dev.omapzoom.org/

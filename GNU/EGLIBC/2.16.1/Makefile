@@ -20,6 +20,7 @@ all: $(tarballs)
 
 $(tarballs):
 	@echo -e "\n======= Export EGLIBC SVN branch ======="
+	@rm -rf eglibc-$(VERSION)-r$(REVISION)
 	@svn export -r $(REVISION) $(url)/svn/branches/$(BRANCH) eglibc-$(VERSION)-r$(REVISION)
 	@echo -e "\n======= Create EGLIBC tarballs ======="
 	@( if [ -d eglibc-$(VERSION)-r$(REVISION) ]; then \
@@ -36,3 +37,4 @@ $(tarballs):
 
 downloads_clean:
 	@rm -rf $(tarballs)
+	@rm -rf eglibc-$(VERSION)-r$(REVISION)

@@ -47,3 +47,4 @@ repository_clean: $(tarballs)
 
 downloads_clean:
 	@rm -rf $(tarballs)
+	@rm -rf $(git_repo) $(repo_name)

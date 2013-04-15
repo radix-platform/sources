@@ -69,3 +69,4 @@ repository_clean: $(defconfigs)
 
 downloads_clean:
 	@rm -rf $(tarballs) $(defconfigs)
+	@rm -rf $(git_repo) $(repo_name)

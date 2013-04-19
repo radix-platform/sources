@@ -19,14 +19,14 @@ versions   = $(TAGS)
 tarballs   = $(addsuffix .tar.bz2, $(addprefix $(repo_name)-,$(versions)))
 sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
-TARGETS = repository_clean $(sha1s)
+TARGETS = repository_clean
 
 all: $(TARGETS)
 
 .PHONY: downloads_clean
 
 $(git_repo):
-	@echo -e "\n======= Clone $(repo_name).git repository ======="
+	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
 	@rm -rf $(repo_name)
 	@git clone $(url)/$(repo_name).git $(repo_name)
 	@touch $@
@@ -42,15 +42,15 @@ $(tarballs): $(git_repo)
 	  fi ; \
 	done
 
-repository_clean: $(tarballs)
-	@echo -e "\n======= Remove $(repo_name).git repository ======="
-	@rm -rf $(git_repo) $(repo_name)
-
 $(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculate '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculate '$$tarball' sha1sum =======" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
+
+repository_clean: $(tarballs) $(sha1s)
+	@echo -e "\n======= Remove $(repo_name).git repository =======\n"
+	@rm -rf $(git_repo) $(repo_name)
 
 downloads_clean:
 	@rm -rf $(tarballs) $(sha1s)

@@ -20,9 +20,10 @@ TAGS      += v3.8-davinci2
 _defconfig = davinci_all_defconfig
 
 git_repo   = .git_clone
-versions   = $(foreach tag,$(TAGS),$(shell echo $(tag) | sed 's/\(^[a-zA-Z]*\)\([0-9][.0-9]*[.0-9]*\)\(.*\)/\2/'))
-tarballs   = $(addsuffix .tar.bz2,$(addprefix linux-,$(versions)))
-defconfigs = $(addsuffix .defconfig,$(addprefix linux-,$(versions)))
+versions   = $(foreach tag, $(TAGS), $(shell echo $(tag) | sed 's/\(^[a-zA-Z]*\)\([0-9][.0-9]*[.0-9]*\)\(.*\)/\2/'))
+tarballs   = $(addsuffix .tar.bz2, $(addprefix linux-, $(versions)))
+defconfigs = $(addsuffix .defconfig, $(addprefix linux-, $(versions)))
+sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
 TARGETS = repository_clean
 
@@ -31,7 +32,7 @@ all: $(TARGETS)
 .PHONY: downloads_clean repository_clean
 
 $(git_repo):
-	@echo -e "\n======= Clone Kevin Hilman $(repo_name).git repository ======="
+	@echo -e "\n======= Clone Kevin Hilman $(repo_name).git repository =======\n"
 	@rm -rf $(repo_name)
 	@git clone $(url)/$(repo_name).git $(repo_name)
 	@touch $@
@@ -57,10 +58,16 @@ $(defconfigs): %.defconfig: %.tar.bz2
 	   rm -rf linux-$$version ) ; \
 	done
 
-repository_clean: $(defconfigs)
-	@echo -e "\n======= Remove cloned $(repo_name).git repository ======="
+$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+	@for tarball in $< ; do \
+	  echo -e "\n======= Calculate '$$tarball' sha1sum =======" ; \
+	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
+	done
+
+repository_clean: $(defconfigs) $(sha1s)
+	@echo -e "\n======= Remove cloned $(repo_name).git repository =======\n"
 	@rm -rf $(git_repo) $(repo_name)
 
 downloads_clean:
-	@rm -rf $(tarballs) $(defconfigs)
+	@rm -rf $(tarballs) $(defconfigs) $(sha1s)
 	@rm -rf $(git_repo) $(repo_name)

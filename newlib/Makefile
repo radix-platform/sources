@@ -22,7 +22,7 @@ all: $(tarballs) $(sha1s)
 .PHONY: downloads_clean
 
 $(tarballs):
-	@echo -e "\n======= Downloading source tarballs ======="
+	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
 	  wget -N $(url)/$$tarball ; \
 	done

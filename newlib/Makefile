@@ -15,7 +15,9 @@ tarballs    = newlib-1.14.0.tar.gz
 tarballs   += newlib-1.18.0.tar.gz
 tarballs   += newlib-1.20.0.tar.gz
 
-all: $(tarballs)
+sha1s       = $(addsuffix .sha1sum, $(tarballs))
+
+all: $(tarballs) $(sha1s)
 
 .PHONY: downloads_clean
 
@@ -25,5 +27,11 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
+$(sha1s): %.tar.gz.sha1sum : %.tar.gz
+	@for tarball in $< ; do \
+	  echo -e "\n======= Calculate '$$tarball' sha1sum =======\n" ; \
+	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
+	done
+
 downloads_clean:
-	@rm -rf $(tarballs)
+	@rm -rf $(tarballs) $(sha1s)

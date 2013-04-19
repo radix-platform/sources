@@ -16,9 +16,10 @@ git_repo   = .git_clone
 # here version is equal to tag, but version variable is defined for case
 # when tag name contains version as subctring [see /Lunux/dm644x/Makefile]
 versions   = $(TAGS)
-tarballs   = $(addsuffix .tar.bz2,$(addprefix $(repo_name)-,$(versions)))
+tarballs   = $(addsuffix .tar.bz2, $(addprefix $(repo_name)-,$(versions)))
+sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
-TARGETS = repository_clean
+TARGETS = repository_clean $(sha1s)
 
 all: $(TARGETS)
 
@@ -45,6 +46,12 @@ repository_clean: $(tarballs)
 	@echo -e "\n======= Remove $(repo_name).git repository ======="
 	@rm -rf $(git_repo) $(repo_name)
 
+$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+	@for tarball in $< ; do \
+	  echo -e "\n======= Calculate '$$tarball' sha1sum =======\n" ; \
+	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
+	done
+
 downloads_clean:
-	@rm -rf $(tarballs)
+	@rm -rf $(tarballs) $(sha1s)
 	@rm -rf $(git_repo) $(repo_name)

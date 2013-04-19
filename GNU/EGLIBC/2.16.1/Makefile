@@ -44,5 +44,5 @@ $(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
 	done
 
 downloads_clean:
-	@rm -rf $(tarballs)
+	@rm -rf $(tarballs) $(sha1s)
 	@rm -rf eglibc-$(VERSION)-r$(REVISION)

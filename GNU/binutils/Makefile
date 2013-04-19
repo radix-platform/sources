@@ -9,44 +9,44 @@
 
 url         = http://ftpmirror.gnu.org/binutils
 
-# 2.23:
-tarballs    = binutils-2.23.tar.gz
-signatures  = binutils-2.23.tar.gz.sig
+keyring     = ../gnu-keyring.gpg
 
-# 2.22:
-tarballs   += binutils-2.22.tar.bz2
-signatures += binutils-2.22.tar.bz2.sig
+versions    = 2.16.1a 2.20.1a 2.21.1a 2.22 2.23.2
 
-# 2.21.1:
-tarballs   += binutils-2.21.1.tar.bz2
-tarballs   += binutils-2.21.1a.tar.bz2
-signatures += binutils-2.21.1a.tar.bz2.sig
+tarballs    = $(addsuffix .tar.bz2, $(addprefix binutils-, $(versions)))
+signatures  = $(addsuffix .sig, $(tarballs))
+sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
-# 2.20.1:
-tarballs   += binutils-2.20.1.tar.bz2
-tarballs   += binutils-2.20.1a.tar.bz2
-signatures += binutils-2.20.1a.tar.bz2.sig
-
-# 2.16.1:
-tarballs   += binutils-2.16.1.tar.bz2
-tarballs   += binutils-2.16.1a.tar.bz2
-signatures += binutils-2.16.1a.tar.bz2.sig
-
-all: $(tarballs) $(signatures)
+all: $(keyring) $(signatures) $(sha1s)
 
 .PHONY: downloads_clean
 
+$(keyring):
+	@cd .. ; $(MAKE) all
+
 $(tarballs):
-	@echo -e "\n======= Downloading source tarballs ======="
+	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(signatures):
-	@echo -e "\n======= Downloading tarball signatures ======="
-	@for signature in $(signatures) ; do \
+$(signatures): %.tar.bz2.sig : %.tar.bz2
+	@for signature in $@ ; do \
+	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
 	  wget -N $(url)/$$signature ; \
+	  touch $$signature ; \
+	  gpg --verify --keyring $(keyring) $$signature ; ret="$$?" ; \
+	  if [ "$$ret" == "1" ]; then \
+	    echo -e "\n======= ERROR: Bad '$$signature' Signature =======\n" ; \
+	    exit 1 ; \
+	  fi ; \
+	done
+
+$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+	@for tarball in $< ; do \
+	  echo -e "\n======= Calculate '$$tarball' sha1sum =======\n" ; \
+	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
 downloads_clean:
-	@rm -rf $(tarballs) $(signatures)
+	@rm -rf $(tarballs) $(signatures) $(sha1s)

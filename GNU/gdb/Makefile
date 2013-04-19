@@ -35,7 +35,7 @@ $(signatures): %.tar.bz2.sig : %.tar.bz2
 	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
 	  wget -N $(url)/$$signature ; \
 	  touch $$signature ; \
-	  gpg --verify --keyring ../gnu-keyring.gpg $$signature ; ret="$$?" ; \
+	  gpg --verify --keyring $(keyring) $$signature ; ret="$$?" ; \
 	  if [ "$$ret" == "1" ]; then \
 	    echo -e "\n======= ERROR: Bad '$$signature' Signature =======\n" ; \
 	    exit 1 ; \

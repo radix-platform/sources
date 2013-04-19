@@ -14,7 +14,9 @@ tarballs  = eglibc-$(VERSION).tar.bz2
 tarballs += eglibc-localedef-$(VERSION).tar.bz2
 tarballs += eglibc-ports-$(VERSION).tar.bz2
 
-all: $(tarballs)
+sha1s     = $(addsuffix .sha1sum, $(tarballs))
+
+all: $(tarballs) $(sha1s)
 
 .PHONY: downloads_clean
 
@@ -34,6 +36,12 @@ $(tarballs):
 	     cd .. ; \
 	     rm -rf eglibc-$(VERSION)-r$(REVISION) ; \
 	   fi )
+
+$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+	@for tarball in $< ; do \
+	  echo -e "\n======= Calculate '$$tarball' sha1sum =======\n" ; \
+	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
+	done
 
 downloads_clean:
 	@rm -rf $(tarballs)

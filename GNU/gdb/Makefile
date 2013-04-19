@@ -9,33 +9,44 @@
 
 url         = http://ftpmirror.gnu.org/gdb
 
-tarballs    = gdb-6.4a.tar.bz2
-tarballs   += gdb-6.5a.tar.bz2
-tarballs   += gdb-7.0a.tar.bz2
-tarballs   += gdb-7.2a.tar.bz2
-tarballs   += gdb-7.5.tar.bz2
+keyring     = ../gnu-keyring.gpg
 
-signatures  = gdb-6.4a.tar.bz2.sig
-signatures += gdb-6.5a.tar.bz2.sig
-signatures += gdb-7.0a.tar.bz2.sig
-signatures += gdb-7.2a.tar.bz2.sig
-signatures += gdb-7.5.tar.bz2.sig
+versions    = 6.4a 6.5a 7.0a 7.2a 7.5
 
-all: $(tarballs) $(signatures)
+tarballs    = $(addsuffix .tar.bz2, $(addprefix gdb-, $(versions)))
+signatures  = $(addsuffix .sig, $(tarballs))
+sha1s       = $(addsuffix .sha1sum, $(tarballs))
+
+all: $(keyring) $(signatures) $(sha1s)
 
 .PHONY: downloads_clean
 
+$(keyring):
+	@cd .. ; $(MAKE) all
+
 $(tarballs):
-	@echo -e "\n======= Downloading source tarballs ======="
+	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(signatures):
-	@echo -e "\n======= Downloading tarball signatures ======="
-	@for signature in $(signatures) ; do \
+$(signatures): %.tar.bz2.sig : %.tar.bz2
+	@for signature in $@ ; do \
+	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
 	  wget -N $(url)/$$signature ; \
+	  touch $$signature ; \
+	  gpg --verify --keyring ../gnu-keyring.gpg $$signature ; ret="$$?" ; \
+	  if [ "$$ret" == "1" ]; then \
+	    echo -e "\n======= ERROR: Bad '$$signature' Signature =======\n" ; \
+	    exit 1 ; \
+	  fi ; \
+	done
+
+$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+	@for tarball in $< ; do \
+	  echo -e "\n======= Calculate '$$tarball' sha1sum =======\n" ; \
+	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
 downloads_clean:
-	@rm -rf $(tarballs) $(signatures)
+	@rm -rf $(tarballs) $(signatures) $(sha1s)

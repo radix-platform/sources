@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := GNU/EGLIBC/2.12.1 \
+SUBDIRS := GNU               \
+           GNU/EGLIBC/2.12.1 \
            GNU/EGLIBC/2.16.1 \
            GNU/binutils      \
            GNU/gcc           \

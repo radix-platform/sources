@@ -44,7 +44,7 @@ $(signatures): %.tar.bz2.sig : %.tar.bz2
 
 $(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculate '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 

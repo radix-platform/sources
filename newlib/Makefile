@@ -29,7 +29,7 @@ $(tarballs):
 
 $(sha1s): %.tar.gz.sha1sum : %.tar.gz
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculate '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 

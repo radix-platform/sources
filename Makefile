@@ -14,6 +14,8 @@ SUBDIRS := GNU               \
            Linux/dm644x      \
            Linux/mips        \
            Linux/omap        \
+           Linux/v2.6        \
+           Linux/v3.x        \
            newlib            \
            dm644x/flash-tools/IRAM-flasher \
            dm644x/flash-tools/IRAM-loader  \

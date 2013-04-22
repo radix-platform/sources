@@ -1,20 +1,19 @@
 #
-# Download: http://www.gnu.org/prep/ftp.html
+# url = http://www.kernel.org/pub/linux/kernel/v[2.6|3.x]
 #
-# You can use the generic url http://ftpmirror.gnu.org 
-# to automatically choose a nearby and up-to-date mirror.
+# mirrors:
 #
-# original url: http://ftp.gnu.org/gnu/gdb
+# url = http://www.se.kernel.org/pub/linux/kernel/v[2.6|3.x]
 #
 
-url         = http://ftpmirror.gnu.org/gdb
+url         = http://www.kernel.org/pub/linux/kernel/v3.x
 
-keyring     = ../gnu-keyring.gpg
+keyring     = ../keyring-6092693E.gpg
 
-versions    = 6.4a 6.5a 7.0a 7.2a 7.5
+versions    = 3.5.4 3.8.5
 
-tarballs    = $(addsuffix .tar.bz2, $(addprefix gdb-, $(versions)))
-signatures  = $(addsuffix .sig, $(tarballs))
+tarballs    = $(addsuffix .tar.bz2, $(addprefix linux-, $(versions)))
+signatures  = $(addsuffix .sign, $(subst .bz2,, $(tarballs)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 all: $(keyring) $(signatures) $(sha1s)
@@ -30,16 +29,20 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(signatures): %.tar.bz2.sig : %.tar.bz2
+$(signatures): %.tar.sign : %.tar.bz2
 	@for signature in $@ ; do \
 	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
 	  wget -N $(url)/$$signature ; \
 	  touch $$signature ; \
+	  echo -e "======= Unpacking '$(subst .bz2,,$<)' for verification =======\n" ; \
+	  bunzip2 --force --keep $< ; \
+	  echo -e "======= Verification of '$(subst .bz2,,$<)' signature =======\n" ; \
 	  gpg --verify --keyring $(keyring) $$signature ; ret="$$?" ; \
 	  if [ "$$ret" == "1" ]; then \
 	    echo -e "\n======= ERROR: Bad '$$signature' Signature =======\n" ; \
 	    exit 1 ; \
 	  fi ; \
+	  rm -f $(subst .bz2,,$<) ; \
 	done
 
 $(sha1s): %.tar.bz2.sha1sum : %.tar.bz2

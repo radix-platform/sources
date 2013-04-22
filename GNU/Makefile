@@ -1,6 +1,6 @@
 #
-#In a directory with the keyring file, the source file to verify and the
-#signature file, the command to use is:
+# In a directory with the keyring file, the source file to verify and the
+# signature file, the command to use is:
 #
 #  $ gpg --verify --keyring ./gnu-keyring.gpg foo.tar.xz.sig 
 #

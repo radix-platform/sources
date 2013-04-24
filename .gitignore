@@ -2,8 +2,12 @@
 *.defconfig
 *.tar.bz2
 *.tar.gz
+*.tar
+*.asc
 *.sign
 *.sig
+*.sha1sum
+*.gpg
 .*
 !.gitignore
 

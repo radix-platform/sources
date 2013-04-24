@@ -4,19 +4,23 @@
 # $ tree -fid .
 #
 
-SUBDIRS := GNU               \
-           GNU/EGLIBC/2.12.1 \
-           GNU/EGLIBC/2.16.1 \
-           GNU/binutils      \
-           GNU/gcc           \
-           GNU/gdb           \
-           Linux             \
-           Linux/dm644x      \
-           Linux/mips        \
-           Linux/omap        \
-           Linux/v2.6        \
-           Linux/v3.x        \
-           newlib            \
+SUBDIRS := GNU                 \
+           GNU/EGLIBC/2.12.1   \
+           GNU/EGLIBC/2.16.1   \
+           GNU/binutils        \
+           GNU/gcc             \
+           GNU/gmp             \
+           GNU/mpc             \
+           GNU/multiprecision  \
+           GNU/mpfr            \
+           GNU/gdb             \
+           Linux               \
+           Linux/dm644x        \
+           Linux/mips          \
+           Linux/omap          \
+           Linux/v2.6          \
+           Linux/v3.x          \
+           newlib              \
            dm644x/flash-tools/IRAM-flasher \
            dm644x/flash-tools/IRAM-loader  \
            dm644x/flash-tools/NOR-flasher  \

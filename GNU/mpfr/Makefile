@@ -4,16 +4,16 @@
 # You can use the generic url http://ftpmirror.gnu.org 
 # to automatically choose a nearby and up-to-date mirror.
 #
-# original url: http://ftp.gnu.org/gnu/gcc/gcc-$(version)
+# original url: http://ftp.gnu.org/gnu/mpfr/mpfr-$(version)
 #
 
-url         = http://ftpmirror.gnu.org/gcc
+url         = http://ftpmirror.gnu.org/mpfr
 
-keyring     = ../gnu-keyring.gpg
+keyring     = ../keyring-98C3739D.gpg
 
-versions    = 4.5.1 4.7.2
+versions    = 2.4.2 3.1.1
 
-tarballs    = $(addsuffix .tar.bz2, $(addprefix gcc-, $(versions)))
+tarballs    = $(addsuffix .tar.bz2, $(addprefix mpfr-, $(versions)))
 signatures  = $(addsuffix .sig, $(tarballs))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
@@ -26,23 +26,16 @@ $(keyring):
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for version in $(versions) ; do \
-	  wget -N $(url)/gcc-$$version/gcc-$$version.tar.bz2 ; \
+	@for tarball in $(tarballs) ; do \
+	  wget -N $(url)/$$tarball ; \
 	done
 
 $(signatures): %.tar.bz2.sig : %.tar.bz2
 	@for signature in $@ ; do \
-	  version=`echo $$signature | sed 's/\(^[a-zA-Z-]*\)\([0-9][.0-9]*[.0-9]*\)\([\.].*\)/\2/'` ; \
-	  if [ "$$version" \> "4.5.1" ]; then \
-	    key=../keyring-C3C45C06.gpg ; \
-	  else \
-	    key=$(keyring) ; \
-	  fi ; \
 	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
-	  wget -N $(url)/gcc-$$version/$$signature ; \
+	  wget -N $(url)/$$signature ; \
 	  touch $$signature ; \
-	  echo -e "======= Verification of '$$signature' signature =======\n" ; \
-	  gpg --verify --keyring $$key $$signature ; ret="$$?" ; \
+	  gpg --verify --keyring $(keyring) $$signature ; ret="$$?" ; \
 	  if [ "$$ret" == "1" ]; then \
 	    echo -e "\n======= ERROR: Bad '$$signature' Signature =======\n" ; \
 	    exit 1 ; \

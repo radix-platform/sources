@@ -9,15 +9,26 @@
 
 url         = ftp://ftp.gnu.org/gnu
 
-keyring     = gnu-keyring.gpg
+gnu_keyring = gnu-keyring.gpg
+IDs         = 765C61E3 98C3739D C3C45C06
 
-all: $(keyring)
+keyrings = $(addsuffix .gpg, $(addprefix keyring-, $(IDs)))
+
+all: $(gnu_keyring) $(keyrings)
 
 .PHONY: downloads_clean
 
-$(keyring):
-	@echo -e "\n======= Downloading $(keyring) file =======\n"
-	@wget $(url)/$(keyring)
+$(gnu_keyring):
+	@echo -e "\n======= Downloading $(gnu_keyring) file =======\n"
+	@wget $(url)/$(gnu_keyring)
+
+$(keyrings):
+	@echo -e "\n======= Downloading keyring files =======\n"
+	@for ID in $(IDs) ; do \
+	  gpg --recv-key $$ID ; \
+	  gpg --export $$ID > keyring-$$ID.gpg ; \
+	  gpg --batch --yes --delete-key $$ID ; \
+	done
 
 downloads_clean:
-	@rm -rf $(keyring)
+	@rm -f $(gnu_keyring) $(keyrings)

@@ -4,16 +4,16 @@
 # You can use the generic url http://ftpmirror.gnu.org 
 # to automatically choose a nearby and up-to-date mirror.
 #
-# original url: http://ftp.gnu.org/gnu/gcc/gcc-$(version)
+# original url: http://ftp.gnu.org/gnu/mpc/mpc-$(version)
 #
 
-url         = http://ftpmirror.gnu.org/gcc
+url         = http://ftpmirror.gnu.org/mpc
 
-keyring     = ../gnu-keyring.gpg
+keyring     = ../keyring-765C61E3.gpg
 
-versions    = 4.5.1 4.7.2
+versions    = 1.0.1
 
-tarballs    = $(addsuffix .tar.bz2, $(addprefix gcc-, $(versions)))
+tarballs    = $(addsuffix .tar.gz, $(addprefix mpc-, $(versions)))
 signatures  = $(addsuffix .sig, $(tarballs))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
@@ -26,30 +26,23 @@ $(keyring):
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for version in $(versions) ; do \
-	  wget -N $(url)/gcc-$$version/gcc-$$version.tar.bz2 ; \
+	@for tarball in $(tarballs) ; do \
+	  wget -N $(url)/$$tarball ; \
 	done
 
-$(signatures): %.tar.bz2.sig : %.tar.bz2
+$(signatures): %.tar.gz.sig : %.tar.gz
 	@for signature in $@ ; do \
-	  version=`echo $$signature | sed 's/\(^[a-zA-Z-]*\)\([0-9][.0-9]*[.0-9]*\)\([\.].*\)/\2/'` ; \
-	  if [ "$$version" \> "4.5.1" ]; then \
-	    key=../keyring-C3C45C06.gpg ; \
-	  else \
-	    key=$(keyring) ; \
-	  fi ; \
 	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
-	  wget -N $(url)/gcc-$$version/$$signature ; \
+	  wget -N $(url)/$$signature ; \
 	  touch $$signature ; \
-	  echo -e "======= Verification of '$$signature' signature =======\n" ; \
-	  gpg --verify --keyring $$key $$signature ; ret="$$?" ; \
+	  gpg --verify --keyring $(keyring) $$signature ; ret="$$?" ; \
 	  if [ "$$ret" == "1" ]; then \
 	    echo -e "\n======= ERROR: Bad '$$signature' Signature =======\n" ; \
 	    exit 1 ; \
 	  fi ; \
 	done
 
-$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+$(sha1s): %.tar.gz.sha1sum : %.tar.gz
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \

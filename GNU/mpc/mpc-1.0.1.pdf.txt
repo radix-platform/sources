@@ -1,0 +1,4 @@
+
+source: http://www.multiprecision.org/mpc/download/mpc-1.0.1.pdf
+
+Requirements: gmp-4.3.2, mpfr-2.4.2

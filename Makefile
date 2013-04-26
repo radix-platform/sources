@@ -9,6 +9,8 @@ SUBDIRS := GNU                 \
            GNU/EGLIBC/2.16.1   \
            GNU/binutils        \
            GNU/gcc             \
+           GNU/gcc-4.5.1       \
+           GNU/gcc-4.7.2       \
            GNU/gmp             \
            GNU/mpc             \
            GNU/multiprecision  \

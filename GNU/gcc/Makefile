@@ -9,15 +9,12 @@
 
 url         = http://ftpmirror.gnu.org/gcc
 
-keyring     = ../gnu-keyring.gpg
+versions    = 2.95.3
 
-versions    = 4.5.1 4.7.2
-
-tarballs    = $(addsuffix .tar.bz2, $(addprefix gcc-, $(versions)))
-signatures  = $(addsuffix .sig, $(tarballs))
+tarballs    = $(addsuffix .tar.gz, $(addprefix gcc-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
-all: $(keyring) $(signatures) $(sha1s)
+all: $(keyring) $(sha1s)
 
 .PHONY: downloads_clean
 
@@ -27,33 +24,14 @@ $(keyring):
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for version in $(versions) ; do \
-	  wget -N $(url)/gcc-$$version/gcc-$$version.tar.bz2 ; \
+	  wget -N $(url)/gcc-$$version.tar.gz ; \
 	done
 
-$(signatures): %.tar.bz2.sig : %.tar.bz2
-	@for signature in $@ ; do \
-	  version=`echo $$signature | sed 's/\(^[a-zA-Z-]*\)\([0-9][.0-9]*[.0-9]*\)\([\.].*\)/\2/'` ; \
-	  if [ "$$version" \> "4.5.1" ]; then \
-	    key=../keyring-C3C45C06.gpg ; \
-	  else \
-	    key=$(keyring) ; \
-	  fi ; \
-	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
-	  wget -N $(url)/gcc-$$version/$$signature ; \
-	  touch $$signature ; \
-	  echo -e "======= Verification of '$$signature' signature =======\n" ; \
-	  gpg --verify --keyring $$key $$signature ; ret="$$?" ; \
-	  if [ "$$ret" == "1" ]; then \
-	    echo -e "\n======= ERROR: Bad '$$signature' Signature =======\n" ; \
-	    exit 1 ; \
-	  fi ; \
-	done
-
-$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+$(sha1s): %.tar.gz.sha1sum : %.tar.gz
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
 downloads_clean:
-	@rm -rf $(tarballs) $(signatures) $(sha1s)
+	@rm -rf $(tarballs) $(sha1s)

@@ -55,7 +55,7 @@ $(tarballs): $(git_repo)
 
 $(defconfigs): %.defconfig: %.tar.bz2
 	@for arch in $< ; do \
-	  version=`echo $$arch | sed 's/\(^[a-zA-Z-]*\)\([0-9][.0-9]*[.0-9]*\)\([\.].*\)/\2/'` ; \
+	  version=`echo $$arch | sed 's/\(^[a-zA-Z-]*\)\([0-9][.0-9]*[.0-9]*-r[.0-9]\)\([\.].*\)/\2/'` ; \
 	  echo -e "\n======= Extracting default '.config' from '$$arch' tarball =======" ; \
 	  ( tar -xjf $$arch \
 	            linux-$$version/arch/arm/configs/$(_defconfig) && \

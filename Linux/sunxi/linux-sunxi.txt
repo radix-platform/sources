@@ -1,0 +1,11 @@
+
+Linux source for Allwinner/Boxchip F20 (sun3i), A10 (sun4i) and A12/A13 (sun5i) SoCs:
+====================================================================================
+
+     main page: http://linux-sunxi.org/Linux
+Git repository: https://github.com/linux-sunxi/linux-sunxi
+
+Clone:
+=====
+
+   $ git clone https://github.com/linux-sunxi/linux-sunxi.git linux-sunxi

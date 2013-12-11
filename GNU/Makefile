@@ -4,7 +4,7 @@
 #
 #  $ gpg --verify --keyring ./gnu-keyring.gpg foo.tar.xz.sig 
 #
-# original url: ftp:://ftp.gnu.org/gnu/gnu-keyring.gpg
+# original url: ftp://ftp.gnu.org/gnu/gnu-keyring.gpg
 #
 
 url         = ftp://ftp.gnu.org/gnu

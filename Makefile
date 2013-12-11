@@ -25,6 +25,7 @@ SUBDIRS := GNU                 \
            Linux/v3.x          \
            newlib              \
            uClinux/elf2flt     \
+           uClinux/uClibc      \
            dm644x/flash-tools/IRAM-flasher \
            dm644x/flash-tools/IRAM-loader  \
            dm644x/flash-tools/NOR-flasher  \

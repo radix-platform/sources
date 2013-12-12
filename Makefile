@@ -21,8 +21,10 @@ SUBDIRS := GNU                 \
            Linux/dm644x        \
            Linux/mips          \
            Linux/omap          \
+           Linux/sunxi         \
            Linux/v2.6          \
            Linux/v3.x          \
+           U-Boot/sunxi        \
            newlib              \
            uClinux/elf2flt     \
            uClinux/uClibc      \

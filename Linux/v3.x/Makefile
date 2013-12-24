@@ -10,7 +10,7 @@ url         = http://www.kernel.org/pub/linux/kernel/v3.x
 
 keyring     = ../keyring-6092693E.gpg
 
-versions    = 3.5.4 3.8.5
+versions    = 3.5.4 3.8.5 3.10.17
 
 tarballs    = $(addsuffix .tar.bz2, $(addprefix linux-, $(versions)))
 signatures  = $(addsuffix .sign, $(subst .bz2,, $(tarballs)))

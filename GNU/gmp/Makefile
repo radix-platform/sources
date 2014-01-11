@@ -11,7 +11,7 @@ url         = http://ftpmirror.gnu.org/gmp
 
 keyring     = ../keyring-765C61E3.gpg
 
-versions    = 4.3.1 5.0.5
+versions    = 4.3.1 5.0.5 5.1.3
 
 tarballs    = $(addsuffix .tar.bz2, $(addprefix gmp-, $(versions)))
 signatures  = $(addsuffix .sig, $(tarballs))

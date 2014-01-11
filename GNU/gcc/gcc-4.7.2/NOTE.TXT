@@ -1,0 +1,27 @@
+
+Do not use 4.8.0 host compiler to build gcc-4.7.2 because of build error
+========================================================================
+
+[see: http://gcc.gnu.org/@/bugzilla/show_bug.cgi?id=56927]
+
+Bug 56927 - 4.7.2 build ICEs when built with 4.8.0 and --disable-bootstrap
+--------------------------------------------------------------------------
+
+Segher Boessenkool 2013-04-11 19:17:26 UTC
+
+  When using a 4.8.0 host compiler and configuring with --disable-bootstrap,
+  a build of 4.7.2 fails with
+
+  /home/segher/src/gcc-4.7.2/libgcc/libgcc2.c: In function '__absvdi2':
+  /home/segher/src/gcc-4.7.2/libgcc/libgcc2.c:273:1: internal compiler error: Segmentation fault
+
+  There is no such error if the host compiler is 4.4 or 4.7, or without
+  --disable-bootstrap; it does have the error if doing a cross to i386-elf.
+  I haven't tested with tip-of-tree of either 4.7 or 4.8 or on different
+  architectures.
+
+Segher Boessenkool 2013-04-12 00:15:26 UTC
+
+  Hey, 4.7.3 didn't exist yet :-)
+
+  Confirmed fixed.

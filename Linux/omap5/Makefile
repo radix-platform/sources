@@ -57,18 +57,15 @@ $(tarballs): $(git_repo)
 
 $(defconfigs): %.defconfig: %.tar.bz2
 	@for arch in $< ; do \
-	  version=`echo $$arch | sed 's/\(^[a-zA-z]*\)\(-\)\([0-9].[0-9]-[0-9][A-Z]*.[0-9]*.[0-9]*.*\)/\3/'` ; \
-	  if [ "$$version" \> "2.6.36" ]; then \
-	    defcfg="omap2plus_defconfig" ; \
-	  else \
-	    defcfg=$(_defconfig) ; \
-	  fi ; \
+	  version=`echo $$arch | sed 's/\(^[a-zA-z]*\)\(-\)\([0-9].[0-9]-[0-9][A-Z]*.[0-9]*.[0-9]*.*\)\(.tar.bz2\)/\3/'` ; \
+	  defcfg=$(_defconfig) ; \
 	  echo -e "\n======= Extracting default '.config' from '$$arch' tarball =======" ; \
 	  ( tar -xjf $$arch \
 	            linux-$$version/arch/arm/configs/$$defcfg && \
 	   cp linux-$$version/arch/arm/configs/$$defcfg linux-$$version.defconfig && \
 	   rm -rf linux-$$version ) ; \
 	done
+	@chmod a-x *.defconfig
 
 $(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
 	@for tarball in $< ; do \

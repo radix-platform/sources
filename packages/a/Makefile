@@ -4,7 +4,9 @@
 # $ tree -fid .
 #
 
-SUBDIRS := dialog
+SUBDIRS := dialog      \
+           fakeroot-ng
+
 
 all-recursive downloads_clean-recursive:
 	@set fnord $(MAKEFLAGS); amf=$$2; \

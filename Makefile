@@ -32,7 +32,8 @@ SUBDIRS := GNU                 \
            dm644x/flash-tools/IRAM-flasher \
            dm644x/flash-tools/IRAM-loader  \
            dm644x/flash-tools/NOR-flasher  \
-           dm644x/modSign
+           dm644x/modSign      \
+           packages
 
 all-recursive downloads_clean-recursive:
 	@set fnord $(MAKEFLAGS); amf=$$2; \

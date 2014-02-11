@@ -8,6 +8,7 @@ SUBDIRS := GNU                 \
            GNU/EGLIBC/2.12.1   \
            GNU/EGLIBC/2.16.1   \
            GNU/EGLIBC/2.17.1   \
+           GNU/EGLIBC/2.18.1   \
            GNU/binutils        \
            GNU/gcc             \
            GNU/gcc/gcc-4.5.1   \

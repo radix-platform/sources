@@ -4,9 +4,9 @@
 #
 
 #url        = git://git.omapzoom.org/kernel
-url        = git://radix.pro
+url        = git://radix.pro/TI/omap5
 
-repo_name  = omap
+repo_name  = linux-omap
 
 #
 # List of tags to be extracted:
@@ -22,7 +22,7 @@ TAGS      += android-3.8-6AJ.1.2-RC3
 #
 # Default Linux config file name:
 #
-_defconfig = android_omap_defconfig
+_defconfig = omap2plus_defconfig
 
 git_repo   = .git_clone
 versions   = $(foreach tag, $(TAGS), $(shell echo $(tag) | sed 's/\(^[a-zA-z]*\)\(-\)\([0-9].[0-9]-[0-9][A-Z]*.[0-9]*.[0-9]*.*\)/\3/'))

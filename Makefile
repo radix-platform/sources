@@ -27,6 +27,7 @@ SUBDIRS := GNU                 \
            Linux/v2.6          \
            Linux/v3.x          \
            U-Boot/denx         \
+           U-Boot/omap5        \
            U-Boot/sunxi        \
            newlib              \
            uClinux/elf2flt     \

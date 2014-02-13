@@ -1,0 +1,7 @@
+
+Omap 3/4 development platfrom u-boot:
+====================================
+
+Clone:
+=====
+   $ git clone git://git.omapzoom.org/repo/u-boot.git

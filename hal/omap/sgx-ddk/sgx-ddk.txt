@@ -1,0 +1,31 @@
+
+ SGX Embedded Systems DDK for Linux kernel.
+ Copyright (C) Imagination Technologies Ltd. All rights reserved.
+ ===============================================================
+
+ About
+ -----
+
+ This is the Imagination Technologies SGX DDK for the Linux
+ kernel for Linux OMAP/Jacinto6 platforms.
+
+ This is version 1.9.11 of the TI DDK. It is based on IMG's
+ 1.9 DDK post-beta engineering drop (ED2253347) delivery to TI.
+
+
+ License
+ -------
+
+ You may use, distribute and copy this software under the terms
+ of the MIT license. Details of this license can be found in the
+ file "MIT-COPYING".
+
+ Alternatively, you may use, distribute and copy this software
+ under the terms of the GNU General Public License version 2.
+ The full GNU General Public License version 2 can be found in
+ the file "GPL-COPYING".
+
+
+ Clone:
+ =====
+    $ git clone git://git.ti.com/graphics/omap5-sgx-ddk-linux

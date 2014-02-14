@@ -29,6 +29,7 @@ SUBDIRS := GNU                 \
            U-Boot/denx         \
            U-Boot/omap5        \
            U-Boot/sunxi        \
+           hal/omap/sgx-ddk    \
            newlib              \
            uClinux/elf2flt     \
            uClinux/uClibc      \

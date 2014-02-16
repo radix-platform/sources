@@ -30,6 +30,7 @@ SUBDIRS := GNU                 \
            U-Boot/omap5        \
            U-Boot/sunxi        \
            hal/omap/sgx-ddk    \
+           hal/omap/wl18xx     \
            newlib              \
            uClinux/elf2flt     \
            uClinux/uClibc      \

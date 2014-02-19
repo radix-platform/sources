@@ -31,6 +31,7 @@ SUBDIRS := GNU                 \
            U-Boot/sunxi        \
            hal/omap/sgx-ddk    \
            hal/omap/wl18xx     \
+           hal/omap/wl18xx_fw  \
            newlib              \
            uClinux/elf2flt     \
            uClinux/uClibc      \

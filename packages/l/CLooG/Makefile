@@ -1,18 +1,18 @@
 #
 # Project Home:
 # ============
-# http://hightek.org/dialog/
+# http://bugseng.com/products/ppl/
 #
 # Downloads:
 # =========
-# ftp://ftp.us.debian.org/debian/pool/main/d/dialog/
+# ftp://ftp.cs.unipr.it/pub/ppl/releases/
 #
 
-url         = ftp://ftp.us.debian.org/debian/pool/main/d/dialog
+url         = http://www.bastoul.net/cloog/pages/download/
 
-versions    = 1.1-20120215 1.2-20140112
+versions    = 0.18.1 0.18.2
 
-tarballs    = $(addsuffix .orig.tar.gz, $(addprefix dialog_, $(versions)))
+tarballs    = $(addsuffix .tar.gz, $(addprefix cloog-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 

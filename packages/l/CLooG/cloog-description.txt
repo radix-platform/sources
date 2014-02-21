@@ -1,0 +1,71 @@
+
+http://www.bastoul.net/cloog/index.php
+======================================
+
+CLooG is a free software and library to generate code for scanning Z-polyhedra.
+That is, it finds a code (e.g. in C, FORTRAN...) that reaches each integral point
+of one or more parameterized polyhedra. CLooG has been originally written to solve
+the code generation problem for optimizing compilers based on the polytope model.
+Nevertheless it is used now in various area e.g. to build control automata for
+high-level synthesis or to find the best polynomial approximation of a function.
+CLooG may help in any situation where scanning polyhedra matters. While the user
+has full control on generated code quality, CLooG is designed to avoid control
+overhead and to produce a very effective code.
+
+
+http://www.cloog.org/
+====================
+
+CLooG 0.18.1: official and recommended isl-based version (updated: October 11th, 2013).
+
+CLooG comes with an embedded version of isl so you should not need to install any polyhedral
+library if you don't have one. In any other case please check the documentation page
+[http://www.bastoul.net/cloog/documentation.php].
+
+The current version is a major step since 0.14.x, including a much better API. The "old way"
+to interface with CLooG should still work, however we plan to remove it for the next major
+version, so please update... The new version is still under evaluation, and there is no
+guarantee that the upward compatibility will be respected. A lot of reports are needed to
+freeze the library API and the input file shape. So you are very welcome and encouraged to
+send reports on bugs, wishes, critics, comments, suggestions or successful experiences to
+the according mailing list, see the documentation page.
+
+Requirement
+===========
+
+    GMP 5.0.2 (or any later version).
+
+  The embedded version of isl used by CLooG needs the GNU Multiple Precision Arithmetic Library.
+  It should be installed in your system before trying to install CLooG. At the moment, isl offers
+  only multiple precision (no 32 bits nor 64 bits: if you need such a version you should consider
+  either CLooG-polylib or CLooG-parma, please check the documentation for those versions).
+  Once GMP is downloaded and unpacked (e.g., using the "tar -jxvf gmp-4.3.2.tar.bz2" command),
+  you can compile it by typing the following commands on GMP's root directory:
+
+    ./configure --prefix=/usr
+    make
+    And as root: make install
+
+  If you install GMP this way, it should be OK. If you are doing another way and you are experiencing
+  problems, please have a look at the documentation on installation. If nothing works for you, ask us
+  using the according mailing list (see documentation page).
+
+Development Version
+===================
+
+    http://repo.or.cz/w/cloog.git (Official repository of CLooG). 
+
+  To benefit from the latest improvements and bug fixes you can try the development version of
+  CLooG: A major improvement is the support of multiple backends, not only PolyLib.
+  CLooG is now supporting PPL and the isl (Integer Set Library) is the default backend.
+  Because isl does not rely on rationals, CLooG is able to generate significantly better codes,
+  with low control overhead. To compile the development version of CLooG with the isl backend:
+
+    git clone git://repo.or.cz/cloog.git
+    cd cloog
+    ./get_submodules.sh
+    ./autogen.sh
+    ./configure --with-gmp-prefix=/path/to/gmp/installation
+    make
+    And as root: make install
+

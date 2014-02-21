@@ -4,8 +4,9 @@
 # $ tree -fid .
 #
 
-SUBDIRS := a \
-           l
+SUBDIRS := ppl      \
+           CLooG    \
+           isl
 
 
 all-recursive downloads_clean-recursive:

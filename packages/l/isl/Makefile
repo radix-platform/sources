@@ -1,18 +1,19 @@
 #
 # Project Home:
 # ============
-# http://hightek.org/dialog/
+# http://freecode.com/projects/isl
+# http://isl.gforge.inria.fr/
 #
 # Downloads:
 # =========
-# ftp://ftp.us.debian.org/debian/pool/main/d/dialog/
+# http://isl.gforge.inria.fr/
 #
 
-url         = ftp://ftp.us.debian.org/debian/pool/main/d/dialog
+url         = http://isl.gforge.inria.fr
 
-versions    = 1.1-20120215 1.2-20140112
+versions    = 0.12.1 0.12.2
 
-tarballs    = $(addsuffix .orig.tar.gz, $(addprefix dialog_, $(versions)))
+tarballs    = $(addsuffix .tar.bz2, $(addprefix isl-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 
@@ -26,7 +27,7 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(sha1s): %.tar.gz.sha1sum : %.tar.gz
+$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \

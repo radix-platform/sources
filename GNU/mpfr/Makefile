@@ -7,7 +7,8 @@
 # original url: http://ftp.gnu.org/gnu/mpfr/mpfr-$(version)
 #
 
-url         = http://ftpmirror.gnu.org/mpfr
+#url         = http://ftpmirror.gnu.org/mpfr
+url         = http://ftp.gnu.org/gnu/mpfr
 
 keyring     = ../keyring-98C3739D.gpg
 

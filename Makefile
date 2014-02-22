@@ -13,6 +13,8 @@ SUBDIRS := GNU                 \
            GNU/gcc             \
            GNU/gcc/gcc-4.5.1   \
            GNU/gcc/gcc-4.7.2   \
+           GNU/gcc/gcc-4.7.3   \
+           GNU/gcc/gcc-4.8.2   \
            GNU/gmp             \
            GNU/mpc             \
            GNU/multiprecision  \

@@ -7,7 +7,8 @@
 # original url: http://ftp.gnu.org/gnu/gdb
 #
 
-url         = http://ftpmirror.gnu.org/gdb
+#url         = http://ftpmirror.gnu.org/gdb
+url         = http://ftp.gnu.org/gnu/gdb
 
 keyring     = ../gnu-keyring.gpg
 

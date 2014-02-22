@@ -7,7 +7,8 @@
 # original url: http://ftp.gnu.org/gnu/gmp/gmp-$(version)
 #
 
-url         = http://ftpmirror.gnu.org/gmp
+#url         = http://ftpmirror.gnu.org/gmp
+url         = http://ftp.gnu.org/gnu/gmp
 
 keyring     = ../keyring-765C61E3.gpg
 

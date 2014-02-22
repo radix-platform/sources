@@ -7,7 +7,8 @@
 # original url: http://ftp.gnu.org/gnu/gcc/gcc-$(version)
 #
 
-url         = http://ftpmirror.gnu.org/gcc
+#url         = http://ftpmirror.gnu.org/gcc
+url         = http://ftp.gnu.org/gnu/gcc
 
 versions    = 2.95.3
 

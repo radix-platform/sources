@@ -3,21 +3,25 @@
 # OMAP (Android) Linux Kernel: http://git.omapzoom.org/kernel/omap.git
 #
 
-#url        = git://git.omapzoom.org/kernel
 url        = git://radix.pro/TI/omap5
 
 repo_name  = linux-omap
 
 #
 # List of tags to be extracted:
+# ============================
 #
-TAGS       = android-3.4-5AJ.1.2
-TAGS      += android-3.4-5AJ.1.3
-TAGS      += android-3.4-5AJ.1.4
-TAGS      += android-3.8-6AJ.1.0
-TAGS      += android-3.8-6AJ.1.1
-TAGS      += android-3.8-6AJ.1.1-RC0
-TAGS      += android-3.8-6AJ.1.2-RC3
+# Revisions from p-ti-glsdk-3.8.y branch used for OMAP5 GLSDK
+#
+# revision '89927f5573872cada07d07c714e24a71ed6c29c3' used by GLSDK 6_03_00_01
+#
+# other revisions are taken when the remote-tracking branch
+#   'origin/p-ti-linux-3.8.y' is merged into p-ti-glsdk-3.8.y
+#
+#                                               hash | date
+#            ----------------------------------------+--------
+revisions  = 89927f5573872cada07d07c714e24a71ed6c29c3-20131223
+revisions += 23cdd7ea36f5acf2b57032421586e8e8e76a490c-20140222
 
 #
 # Default Linux config file name:
@@ -25,7 +29,8 @@ TAGS      += android-3.8-6AJ.1.2-RC3
 _defconfig = omap2plus_defconfig
 
 git_repo   = .git_clone
-versions   = $(foreach tag, $(TAGS), $(shell echo $(tag) | sed 's/\(^[a-zA-z]*\)\(-\)\([0-9].[0-9]-[0-9][A-Z]*.[0-9]*.[0-9]*.*\)/\3/'))
+
+versions   = $(foreach tag, $(revisions), $(addprefix glsdk-3.8.y-, $(shell echo $(tag) | cut -f 2 -d '-')))
 
 tarballs   = $(addsuffix .tar.bz2, $(addprefix linux-, $(versions)))
 defconfigs = $(addsuffix .defconfig, $(addprefix linux-, $(versions)))
@@ -44,19 +49,20 @@ $(git_repo):
 	@touch $@
 
 $(tarballs): $(git_repo)
-	@for tag in $(TAGS) ; do \
-	  version=`echo $$tag | sed 's/\(^[a-zA-z]*\)\(-\)\([0-9].[0-9]-[0-9][A-Z]*.[0-9]*.[0-9]*.*\)/\3/'` ; \
-	  if [ ! -f linux-$$version.tar.bz2 ]; then \
-	    echo -e "\n======= Creating 'linux-$$version.tar.bz2' snapshot =======" ; \
+	@for revision in $(revisions) ; do \
+	  hash=`echo $$revision | cut -f 1 -d '-'` ; \
+	  date=`echo $$revision | cut -f 2 -d '-'` ; \
+	  if [ ! -f linux-glsdk-3.8.y-$$date.tar.bz2 ]; then \
+	    echo -e "\n======= Creating 'linux-glsdk-3.8.y-$$date.tar.bz2' snapshot =======" ; \
 	    ( cd $(repo_name) && \
-	      git archive --format=tar --prefix=linux-$$version/ $$tag | \
-	      bzip2 >../linux-$$version.tar.bz2 ) ; \
+	      git archive --format=tar --prefix=linux-glsdk-3.8.y-$$date/ $$hash | \
+	      bzip2 >../linux-glsdk-3.8.y-$$date.tar.bz2 ) ; \
 	  fi ; \
 	done
 
 $(defconfigs): %.defconfig: %.tar.bz2
 	@for arch in $< ; do \
-	  version=`echo $$arch | sed 's/\(^[a-zA-z]*\)\(-\)\([0-9].[0-9]-[0-9][A-Z]*.[0-9]*.[0-9]*.*\)\(.tar.bz2\)/\3/'` ; \
+	  version=`echo $$arch | sed 's/\(^[a-zA-z]*\)\(-\)\([a-zA-z]*-[0-9].[0-9].[a-z]-[0-9]*\)\(.tar.bz2\)/\3/'` ; \
 	  defcfg=$(_defconfig) ; \
 	  echo -e "\n======= Extracting default '.config' from '$$arch' tarball =======" ; \
 	  ( tar -xjf $$arch \

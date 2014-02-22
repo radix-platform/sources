@@ -1,0 +1,38 @@
+
+URL: http://git.omapzoom.org/kernel/omap.git
+
+cGit:
+====
+http://git.kernel.org/cgit/linux/kernel/git/tmlind/linux-omap.git
+
+Clone:
+=====
+$ git clone git://git.omapzoom.org/kernel/omap.git omap
+
+Radix Mirror (create):
+=====================
+$ git clone --mirror git://git.omapzoom.org/kernel/omap.git omap.git
+
+TSC Mirror (clone):
+=====================
+$ git clone git://spbtsc.luxoft.com/omap.git omap
+
+
+branch for TI OMAP5 & DRA7xx GLSDK: 'p-ti-glsdk-3.8.y':
+======================================================
+snapshots:
+  '89927f5573872cada07d07c714e24a71ed6c29c3' used by GLSDK 6_03_00_01
+  '23cdd7ea36f5acf2b57032421586e8e8e76a490c' latest at 22th February 2014
+
+[see: http://processors.wiki.ti.com/index.php/Category:GLSDK]
+
+
+Config (arch/arm/configs):
+=========================
+omap2plus_defconfig
+
+
+Additional info:
+===============
+http://www.omappedia.com/wiki/Source_Trees
+http://dev.omapzoom.org/

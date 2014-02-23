@@ -24,12 +24,12 @@ SUBDIRS := GNU                 \
            Linux/dm644x        \
            Linux/mips          \
            Linux/omap          \
-           Linux/omap5         \
+           Linux/omap5-glsdk   \
            Linux/sunxi         \
            Linux/v2.6          \
            Linux/v3.x          \
            U-Boot/denx         \
-           U-Boot/omap5        \
+           U-Boot/omap5-glsdk  \
            U-Boot/sunxi        \
            hal/omap/sgx-ddk    \
            hal/omap/wl18xx     \

@@ -8,8 +8,8 @@
 #
 # tz_url = ftp://ftp.iana.org/tz/releases/ (latest is tz*2013i.tar.gz 12/19/2013)
 #
-# tzcode2010n.tar.gz
-# tzdata2010o.tar.gz
+# tzcode2013i.tar.gz
+# tzdata2013i.tar.gz
 #
 
 

@@ -1,18 +1,18 @@
 #
 # Project Home:
 # ============
-# http://tukaani.org/xz/
+# http://www.gnu.org/software/gettext/
 #
 # Downloads:
 # =========
-# http://tukaani.org/xz/xz-5.0.5.tar.gz
+# ftp://ftp.gnu.org/pub/gnu/gettext/
 #
 
-url         = http://tukaani.org/xz
+url         = ftp://ftp.gnu.org/pub/gnu/gettext
 
-versions    = 5.0.5
-pkgname     = xz
-suffix      = tar.bz2
+versions    = 0.18.3.1 0.18.3.2
+pkgname     = gettext
+suffix      = tar.gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

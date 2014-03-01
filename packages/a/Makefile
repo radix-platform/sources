@@ -5,7 +5,9 @@
 #
 
 SUBDIRS := dialog      \
-           fakeroot-ng
+           fakeroot-ng \
+           kmod        \
+           xz
 
 
 all-recursive downloads_clean-recursive:

@@ -4,14 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := CLooG          \
-           isl            \
-           libelf         \
-           libffi         \
-           pcre           \
-           ppl            \
-           termcap-compat \
-           zlib
+SUBDIRS := core
 
 
 all-recursive downloads_clean-recursive:

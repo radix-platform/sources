@@ -6,6 +6,7 @@
 
 SUBDIRS := dialog      \
            fakeroot-ng \
+           gpm         \
            kmod        \
            xz
 

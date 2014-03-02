@@ -11,12 +11,14 @@
 url         = http://zlib.net
 
 versions    = 1.2.8
+pkgname     = zlib
+suffix      = tar.gz
 
-tarballs    = $(addsuffix .tar.gz, $(addprefix zlib-, $(versions)))
+tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 
-all: $(tarballs) $(signatures) $(sha1s)
+all: $(tarballs) $(sha1s)
 
 .PHONY: downloads_clean
 
@@ -27,7 +29,7 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(sha1s): %.tar.gz.sha1sum : %.tar.gz
+$(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \

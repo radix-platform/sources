@@ -4,10 +4,11 @@
 # $ tree -fid .
 #
 
-SUBDIRS := CLooG  \
-           isl    \
-           pcre   \
-           ppl    \
+SUBDIRS := CLooG          \
+           isl            \
+           pcre           \
+           ppl            \
+           termcap-compat \
            zlib
 
 

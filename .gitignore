@@ -9,6 +9,7 @@
 *.sig
 *.sha1sum
 *.gpg
+*.dsc
 .*
 !.gitignore
 

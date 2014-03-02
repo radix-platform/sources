@@ -26,6 +26,12 @@ $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
 	  wget -N $(url)/$$tarball ; \
+	  version=`echo $$tarball | sed 's/\(^[a-zA-Z-]*\)\([0-9][.0-9]*[.0-9]*\)\(\..*\)/\2/'` ; \
+	  pkg=`echo $$tarball | sed 's/\(^[a-zA-Z]*\)\([-]\)\([0-9][.0-9]*[.0-9]*\)\(.*\)/\1/'` ; \
+	  tar xjf $$tarball ; \
+	  ( cd $$pkg-$$version ; ./autogen.sh ; rm -rf autom4te.cache ) ; \
+	  tar cjf $$pkg-$$version.$(suffix) $$pkg-$$version ; \
+	  rm -rf $$pkg-$$version ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := dialog      \
+SUBDIRS := bzip2       \
+           dialog      \
            fakeroot-ng \
            gpm         \
            kmod        \

@@ -5,20 +5,24 @@
 #
 # Downloads:
 # =========
+# ftp://invisible-island.net/ncurses/
 # ftp://ftp.gnu.org/pub/gnu/ncurses/
 #
 
-url         = ftp://ftp.gnu.org/pub/gnu/ncurses
+url         = ftp://invisible-island.net/ncurses
 
-versions    = 5.8 5.9
+version     = 5.9
 pkgname     = ncurses
 suffix      = tar.gz
 
-tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
+tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(version)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
+dates       = 20130504
+patches     = $(addsuffix .sh.gz, $(addprefix patch-$(version)-, $(dates)))
 
-all: $(tarballs) $(sha1s)
+
+all: $(tarballs) $(sha1s) $(patches)
 
 .PHONY: downloads_clean
 
@@ -34,5 +38,11 @@ $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
+$(patches):
+	@echo -e "\n======= Downloading patches for $(pkgname)-$(version) =======\n"
+	@for patch in $(patches) ; do \
+	  wget -N $(url)/$(version)/$$patch ; \
+	done
+
 downloads_clean:
-	@rm -rf $(tarballs) $(sha1s)
+	@rm -rf $(tarballs) $(sha1s) $(patches)

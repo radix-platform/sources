@@ -23,7 +23,7 @@ SUBDIRS := GNOME               \
            GNU/mpc             \
            GNU/multiprecision  \
            GNU/mpfr            \
-           GNU/ncurses         \
+           GNU/ncurses/5.9     \
            GNU/termcap         \
            GNU/termutils       \
            Linux               \

@@ -16,11 +16,16 @@ SUBDIRS := GNOME               \
            GNU/gcc/gcc-4.7.2   \
            GNU/gcc/gcc-4.7.3   \
            GNU/gcc/gcc-4.8.2   \
+           GNU/gdb             \
+           GNU/gettext         \
            GNU/gmp             \
+           GNU/gzip            \
            GNU/mpc             \
            GNU/multiprecision  \
            GNU/mpfr            \
-           GNU/gdb             \
+           GNU/ncurses         \
+           GNU/termcap         \
+           GNU/termutils       \
            Linux               \
            Linux/dm644x        \
            Linux/mips          \

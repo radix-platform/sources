@@ -4,8 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := CLooG          \
-           isl            \
+SUBDIRS := isl            \
            libelf         \
            libffi         \
            pcre           \

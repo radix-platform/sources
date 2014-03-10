@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := bzip2        \
+SUBDIRS := CLooG        \
+           bzip2        \
            dialog       \
            fakeroot-ng  \
            gpm          \

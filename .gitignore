@@ -4,12 +4,17 @@
 *.tar.gz
 *.tar
 *.tgz
+*.txz
+*.xz
 *.asc
 *.sign
 *.sig
 *.sha1sum
+*.sha256sum
 *.gpg
 *.dsc
+*.changes
+*.news
 .*
 !.gitignore
 

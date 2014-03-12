@@ -9,6 +9,7 @@ SUBDIRS := isl            \
            libffi         \
            pcre           \
            ppl            \
+           readline       \
            termcap-compat \
            zlib
 

@@ -5,12 +5,14 @@
 #
 
 SUBDIRS := CLooG        \
+           bash         \
            bzip2        \
            dialog       \
            fakeroot-ng  \
            gpm          \
            kmod         \
            linuxconsole \
+           sash         \
            xz
 
 

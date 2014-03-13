@@ -10,7 +10,11 @@ SUBDIRS := GNOME               \
            GNU/EGLIBC/2.16.1   \
            GNU/EGLIBC/2.17.1   \
            GNU/EGLIBC/2.18.1   \
+           GNU/bash            \
            GNU/binutils        \
+           GNU/coreutils       \
+           GNU/diffutils       \
+           GNU/findutils       \
            GNU/gcc             \
            GNU/gcc/gcc-4.5.1   \
            GNU/gcc/gcc-4.7.2   \
@@ -19,11 +23,14 @@ SUBDIRS := GNOME               \
            GNU/gdb             \
            GNU/gettext         \
            GNU/gmp             \
+           GNU/grep            \
            GNU/gzip            \
            GNU/mpc             \
            GNU/multiprecision  \
            GNU/mpfr            \
            GNU/ncurses/5.9     \
+           GNU/readline        \
+           GNU/sed             \
            GNU/termcap         \
            GNU/termutils       \
            Linux               \

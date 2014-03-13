@@ -5,7 +5,6 @@
 #
 
 SUBDIRS := CLooG        \
-           bash         \
            bzip2        \
            dialog       \
            fakeroot-ng  \

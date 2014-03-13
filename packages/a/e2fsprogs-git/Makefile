@@ -11,10 +11,10 @@
 #
 # Clone:
 # =====
-#   git clone http://git.kernel.org/cgit/fs/ext2/e2fsprogs.git
+#   git clone git://git.kernel.org/pub/scm/fs/ext2/e2fsprogs.git
 #
 
-url        = http://git.kernel.org/cgit/fs/ext2/e2fsprogs.git
+url        = git://git.kernel.org/pub/scm/fs/ext2/e2fsprogs.git
 
 repo_name  = e2fsprogs
 

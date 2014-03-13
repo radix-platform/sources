@@ -8,6 +8,7 @@ SUBDIRS := CLooG        \
            bzip2        \
            dialog       \
            fakeroot-ng  \
+           flex         \
            gpm          \
            kmod         \
            linuxconsole \

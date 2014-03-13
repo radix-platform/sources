@@ -7,6 +7,7 @@
 SUBDIRS := CLooG         \
            acl           \
            adjtimex      \
+           bsdstrings    \
            bzip2         \
            dialog        \
            e2fsprogs     \

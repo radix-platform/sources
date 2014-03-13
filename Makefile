@@ -25,6 +25,9 @@ SUBDIRS := GNOME               \
            GNU/gmp             \
            GNU/grep            \
            GNU/gzip            \
+           GNU/libiconv        \
+           GNU/libidn          \
+           GNU/libunistring    \
            GNU/mpc             \
            GNU/multiprecision  \
            GNU/mpfr            \

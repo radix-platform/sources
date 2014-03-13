@@ -4,9 +4,16 @@
 # $ tree -fid .
 #
 
-SUBDIRS := isl            \
+SUBDIRS := expat          \
+           freetype       \
+           isl            \
            libelf         \
            libffi         \
+           libjpeg        \
+           libpng         \
+           libtiff        \
+           libxml2        \
+           libxslt        \
            pcre           \
            ppl            \
            termcap-compat \

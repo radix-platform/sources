@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := glib
+SUBDIRS := glib     \
+           libcroco
 
 
 all-recursive downloads_clean-recursive:

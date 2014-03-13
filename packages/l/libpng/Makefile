@@ -4,11 +4,10 @@
 # $ tree -fid .
 #
 
-SUBDIRS := inetd     \
-           net-tools \
-           ntp       \
-           openssh   \
-           openssl
+SUBDIRS := libpng12       \
+           libpng14       \
+           libpng15       \
+           libpng16
 
 
 all-recursive downloads_clean-recursive:

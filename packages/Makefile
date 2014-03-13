@@ -5,7 +5,8 @@
 #
 
 SUBDIRS := a \
-           l
+           l \
+           n
 
 
 all-recursive downloads_clean-recursive:

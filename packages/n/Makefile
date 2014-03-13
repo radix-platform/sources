@@ -4,21 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := CLooG        \
-           adjtimex     \
-           bzip2        \
-           dialog       \
-           fakeroot-ng  \
-           flex         \
-           gpm          \
-           kmod         \
-           linuxconsole \
-           sash         \
-           setserial    \
-           sysvinit     \
-           util-linux   \
-           xz           \
-           ziptool
+SUBDIRS := net-tools
 
 
 all-recursive downloads_clean-recursive:

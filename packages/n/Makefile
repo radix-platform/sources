@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := net-tools
+SUBDIRS := inetd     \
+           net-tools
 
 
 all-recursive downloads_clean-recursive:

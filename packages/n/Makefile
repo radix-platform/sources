@@ -5,7 +5,9 @@
 #
 
 SUBDIRS := inetd     \
-           net-tools
+           net-tools \
+           openssh   \
+           openssl
 
 
 all-recursive downloads_clean-recursive:

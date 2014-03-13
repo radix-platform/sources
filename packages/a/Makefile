@@ -4,20 +4,30 @@
 # $ tree -fid .
 #
 
-SUBDIRS := CLooG        \
-           adjtimex     \
-           bzip2        \
-           dialog       \
-           fakeroot-ng  \
-           flex         \
-           gpm          \
-           kmod         \
-           linuxconsole \
-           sash         \
-           setserial    \
-           sysvinit     \
-           util-linux   \
-           xz           \
+SUBDIRS := CLooG         \
+           acl           \
+           adjtimex      \
+           bzip2         \
+           dialog        \
+           e2fsprogs     \
+           e2fsprogs-git \
+           fakeroot-ng   \
+           flex          \
+           gpm           \
+           kmod          \
+           linuxconsole  \
+           procinfo      \
+           procps        \
+           psmisc        \
+           reiserfsprogs \
+           sash          \
+           setserial     \
+           shadow        \
+           sysklogd      \
+           sysvinit      \
+           updated       \
+           util-linux    \
+           xz            \
            ziptool
 
 

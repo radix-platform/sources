@@ -22,7 +22,7 @@ repo_name  = u-boot-omap
 #                                               hash | date
 #            ----------------------------------------+--------
 revisions  = 7628b83cf69a24b0f454bf0a3d6ee076438eb169-20140216
-
+revisions += 35e3fea5d315c91448d10554b69acc8364ca65c1-20140307
 
 git_repo   = .git_clone
 

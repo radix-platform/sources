@@ -7,9 +7,12 @@
 SUBDIRS := expat          \
            freetype       \
            isl            \
+           liba52         \
+           libav          \
            libelf         \
            libffi         \
            libjpeg        \
+           libmad         \
            libpng         \
            libtiff        \
            libxml2        \

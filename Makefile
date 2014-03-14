@@ -25,6 +25,7 @@ SUBDIRS := GNOME               \
            GNU/gmp             \
            GNU/grep            \
            GNU/gzip            \
+           GNU/inetutils       \
            GNU/libiconv        \
            GNU/libidn          \
            GNU/libunistring    \
@@ -32,6 +33,7 @@ SUBDIRS := GNOME               \
            GNU/multiprecision  \
            GNU/mpfr            \
            GNU/ncurses/5.9     \
+           GNU/pth             \
            GNU/readline        \
            GNU/sed             \
            GNU/termcap         \

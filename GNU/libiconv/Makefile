@@ -10,8 +10,6 @@
 
 url         = ftp://ftp.gnu.org/gnu/libiconv
 
-lib_name    = libiconv
-
 versions    = 1.13 1.14
 pkgname     = libiconv
 suffix      = tar.gz

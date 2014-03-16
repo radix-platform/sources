@@ -5,11 +5,11 @@
 
 url      = http://www.eglibc.org
 
-BRANCH   = eglibc-2_16
-REVISION = 25240
-VERSION  = 2.16.1
+BRANCH   = eglibc-2_19
+REVISION = 25243
+VERSION  = 2.19.1
 
-# 2.12.1:
+# 2.19.1:
 tarballs  = eglibc-$(VERSION).tar.bz2
 tarballs += eglibc-localedef-$(VERSION).tar.bz2
 tarballs += eglibc-ports-$(VERSION).tar.bz2

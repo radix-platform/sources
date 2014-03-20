@@ -17,6 +17,7 @@ SUBDIRS := CLooG         \
            gpm           \
            kmod          \
            linuxconsole  \
+           ncompress     \
            procinfo      \
            procps        \
            psmisc        \

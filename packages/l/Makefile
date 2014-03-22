@@ -18,6 +18,7 @@ SUBDIRS := expat          \
            libxml2        \
            libxslt        \
            pcre           \
+           popt           \
            ppl            \
            termcap-compat \
            zlib

@@ -15,6 +15,7 @@ SUBDIRS := CLooG         \
            fakeroot-ng   \
            flex          \
            gpm           \
+           initscripts   \
            kmod          \
            linuxconsole  \
            ncompress     \

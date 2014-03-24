@@ -7,6 +7,7 @@
 SUBDIRS := CLooG         \
            acl           \
            adjtimex      \
+           attr          \
            bsdstrings    \
            bzip2         \
            dialog        \
@@ -30,6 +31,7 @@ SUBDIRS := CLooG         \
            sysvinit      \
            updated       \
            util-linux    \
+           xfs           \
            xz            \
            ziptool
 

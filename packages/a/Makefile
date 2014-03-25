@@ -11,12 +11,14 @@ SUBDIRS := CLooG         \
            bsdstrings    \
            bzip2         \
            dialog        \
+           dosfstools    \
            e2fsprogs     \
            e2fsprogs-git \
            fakeroot-ng   \
            flex          \
            gpm           \
            initscripts   \
+           jfsutils      \
            kmod          \
            linuxconsole  \
            ncompress     \
@@ -27,6 +29,7 @@ SUBDIRS := CLooG         \
            sash          \
            setserial     \
            shadow        \
+           sysfsutils    \
            sysklogd      \
            sysvinit      \
            updated       \

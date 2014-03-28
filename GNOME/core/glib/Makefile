@@ -6,6 +6,10 @@
 #
 # Repository browse: https://git.gnome.org/browse/glib
 #
+# API changes/compatibility report for the glib library:
+# -----------------------------------------------------
+# http://upstream-tracker.org/versions/glib.html
+#
 # Downloads:
 # =========
 # ftp://ftp.gnome.org/pub/GNOME/sources
@@ -14,7 +18,7 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 2.39.3 2.39.4
+versions  = 2.39.3 2.39.4 2.40.0
 pkg_name  = glib
 arch_type = tar.xz
 suffixes  = $(arch_type) sha256sum changes news

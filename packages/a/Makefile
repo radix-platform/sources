@@ -32,6 +32,8 @@ SUBDIRS := CLooG         \
            sysfsutils    \
            sysklogd      \
            sysvinit      \
+           udev          \
+           udev-git      \
            updated       \
            util-linux    \
            xfs           \

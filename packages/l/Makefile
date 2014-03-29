@@ -6,6 +6,7 @@
 
 SUBDIRS := expat          \
            freetype       \
+           gamin          \
            isl            \
            liba52         \
            libav          \

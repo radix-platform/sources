@@ -4,10 +4,10 @@
 # $ tree -fid .
 #
 
-SUBDIRS := a \
-           d \
-           l \
-           n
+SUBDIRS := python2       \
+           python2-doc   \
+           python3       \
+           python3-doc
 
 
 all-recursive downloads_clean-recursive:

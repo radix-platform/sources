@@ -10,6 +10,11 @@ SUBDIRS := biff+comsat            \
            ca-certificates        \
            conntrack-tools        \
            ethtool                \
+           gnupg                  \
+           gnupg2                 \
+           gnutls                 \
+           gpa                    \
+           gpgme                  \
            icmpinfo               \
            inetd                  \
            iproute2               \

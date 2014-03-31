@@ -39,6 +39,7 @@ SUBDIRS := GNOME               \
            GNU/sed             \
            GNU/termcap         \
            GNU/termutils       \
+           GNU/wget            \
            Linux               \
            Linux/dm644x        \
            Linux/mips          \

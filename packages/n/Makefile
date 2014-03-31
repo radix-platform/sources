@@ -4,11 +4,60 @@
 # $ tree -fid .
 #
 
-SUBDIRS := inetd     \
-           net-tools \
-           ntp       \
-           openssh   \
-           openssl
+SUBDIRS := biff+comsat            \
+           bridge-utils           \
+           bsd-finger             \
+           ca-certificates        \
+           conntrack-tools        \
+           ethtool                \
+           icmpinfo               \
+           inetd                  \
+           iproute2               \
+           ipset                  \
+           iptables               \
+           iptraf-ng              \
+           iputils                \
+           iputils-git            \
+           lftp                   \
+           libassuan              \
+           libgcrypt              \
+           libgpg-error           \
+           libksba                \
+           libmbim                \
+           libmnl                 \
+           libnetfilter_acct      \
+           libnetfilter_conntrack \
+           libnetfilter_cthelper  \
+           libnetfilter_cttimeout \
+           libnetfilter_log       \
+           libnetfilter_queue     \
+           libnfnetlink           \
+           libqmi                 \
+           net-snmp               \
+           net-tools              \
+           netdate                \
+           netkit-base            \
+           netkit-bootparamd      \
+           netkit-combo           \
+           netkit-ftp             \
+           netkit-ntalk           \
+           netkit-routed          \
+           netkit-rpc             \
+           netkit-rsh             \
+           netkit-rusers          \
+           netkit-rwall           \
+           netkit-rwho            \
+           netkit-telnet          \
+           netkit-tftp            \
+           netkit-timed           \
+           netwrite               \
+           nfacct                 \
+           ntp                    \
+           openssh                \
+           openssl                \
+           tcp_wrappers           \
+           tftp-hpa               \
+           ulogd
 
 
 all-recursive downloads_clean-recursive:

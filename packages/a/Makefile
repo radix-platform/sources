@@ -22,6 +22,8 @@ SUBDIRS := CLooG         \
            kmod          \
            linuxconsole  \
            ncompress     \
+           pciutils      \
+           pcmciautils   \
            procinfo      \
            procps        \
            psmisc        \
@@ -35,6 +37,7 @@ SUBDIRS := CLooG         \
            udev          \
            udev-git      \
            updated       \
+           usbutils      \
            util-linux    \
            xfs           \
            xz            \

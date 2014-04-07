@@ -16,6 +16,7 @@ SUBDIRS := expat          \
            libmad         \
            libpng         \
            libtiff        \
+           libusb         \
            libxml2        \
            libxslt        \
            pcre           \

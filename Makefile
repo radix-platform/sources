@@ -24,6 +24,7 @@ SUBDIRS := GNOME               \
            GNU/gdb             \
            GNU/gettext         \
            GNU/gmp             \
+           GNU/gperf           \
            GNU/grep            \
            GNU/gzip            \
            GNU/inetutils       \
@@ -34,6 +35,7 @@ SUBDIRS := GNOME               \
            GNU/multiprecision  \
            GNU/mpfr            \
            GNU/ncurses/5.9     \
+           GNU/patch           \
            GNU/pth             \
            GNU/readline        \
            GNU/sed             \

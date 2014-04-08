@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := glib     \
+SUBDIRS := glib                  \
+           gobject-introspection \
            libcroco
 
 

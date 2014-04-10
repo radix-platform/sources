@@ -15,6 +15,7 @@ SUBDIRS := CLooG         \
            e2fsprogs     \
            e2fsprogs-git \
            fakeroot-ng   \
+           file          \
            flex          \
            gpm           \
            initscripts   \

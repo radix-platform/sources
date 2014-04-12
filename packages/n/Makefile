@@ -9,6 +9,8 @@ SUBDIRS := biff+comsat            \
            bsd-finger             \
            ca-certificates        \
            conntrack-tools        \
+           curl                   \
+           cyrus-sasl             \
            ethtool                \
            gnupg                  \
            gnupg2                 \

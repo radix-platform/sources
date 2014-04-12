@@ -60,6 +60,7 @@ SUBDIRS := biff+comsat            \
            netwrite               \
            nfacct                 \
            ntp                    \
+           openldap               \
            openssh                \
            openssl                \
            tcp_wrappers           \

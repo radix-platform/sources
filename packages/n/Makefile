@@ -64,6 +64,7 @@ SUBDIRS := biff+comsat            \
            openssh                \
            openssl                \
            tcp_wrappers           \
+           telnet-OpenBSD         \
            tftp-hpa               \
            ulogd
 

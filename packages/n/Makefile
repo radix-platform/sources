@@ -57,6 +57,7 @@ SUBDIRS := biff+comsat            \
            netkit-telnet          \
            netkit-tftp            \
            netkit-timed           \
+           nettle                 \
            netwrite               \
            nfacct                 \
            ntp                    \

@@ -63,6 +63,7 @@ SUBDIRS := biff+comsat            \
            openldap               \
            openssh                \
            openssl                \
+           p11-kit                \
            tcp_wrappers           \
            telnet-OpenBSD         \
            tftp-hpa               \

@@ -30,6 +30,7 @@ SUBDIRS := GNOME               \
            GNU/inetutils       \
            GNU/libiconv        \
            GNU/libidn          \
+           GNU/libtasn1        \
            GNU/libunistring    \
            GNU/mpc             \
            GNU/multiprecision  \

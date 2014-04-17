@@ -26,6 +26,7 @@ SUBDIRS := GNOME               \
            GNU/gmp             \
            GNU/gperf           \
            GNU/grep            \
+           GNU/guile           \
            GNU/gzip            \
            GNU/inetutils       \
            GNU/libiconv        \

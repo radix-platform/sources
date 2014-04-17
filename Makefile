@@ -32,6 +32,7 @@ SUBDIRS := GNOME               \
            GNU/libiconv        \
            GNU/libidn          \
            GNU/libtasn1        \
+           GNU/libtool         \
            GNU/libunistring    \
            GNU/mpc             \
            GNU/multiprecision  \

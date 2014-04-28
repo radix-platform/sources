@@ -42,6 +42,7 @@ SUBDIRS := GNOME               \
            GNU/pth             \
            GNU/readline        \
            GNU/sed             \
+           GNU/shtool          \
            GNU/termcap         \
            GNU/termutils       \
            GNU/wget            \

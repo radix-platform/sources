@@ -7,6 +7,7 @@
 SUBDIRS := GNOME               \
            GNU                 \
            GNU/EGLIBC/2.12.1   \
+           GNU/EGLIBC/2.15.1   \
            GNU/EGLIBC/2.16.1   \
            GNU/EGLIBC/2.17.1   \
            GNU/EGLIBC/2.18.1   \

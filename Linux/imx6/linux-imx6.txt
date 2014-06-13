@@ -1,0 +1,38 @@
+
+URL: http://boundarydevices.com/i-mx6-frequently-asked-questions-and-answers/#latest-kernel
+
+cGit:
+====
+http://git.freescale.com/git/cgit.cgi/imx/linux-2.6-imx.git
+
+Clone:
+=====
+$ git clone git://git.freescale.com/imx/linux-2.6-imx.git
+
+Radix Mirror (create):
+=====================
+$ git clone --mirror git://git.freescale.com/imx/linux-2.6-imx.git linux-2.6-imx.git
+
+
+branch for non-Android: 'imx_3.0.35_4.1.0':
+==========================================
+snapshots:
+  '8d2b169fd78ab7d7903d5686021596d8adb9e930'
+
+Config (arch/arm/configs):
+=========================
+imx6_defconfig
+
+
+branches for Android:
+====================
+
+jb4.3_1.1.0-ga:
+--------------
+snapshots:
+  '8e02e5dabf55df2163014ece8e1cbf960df84226'
+
+jb4.3_1.0.0-ga:
+--------------
+snapshots:
+  'e1c08484abcf7ab12e986a11c01e193e70a9f95f'

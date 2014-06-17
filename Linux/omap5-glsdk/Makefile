@@ -22,6 +22,7 @@ repo_name  = linux-omap
 #            ----------------------------------------+--------
 revisions  = 89927f5573872cada07d07c714e24a71ed6c29c3-20131223
 revisions += 23cdd7ea36f5acf2b57032421586e8e8e76a490c-20140222
+revisions += 71a6fd5e2225306708ee3a7b941455d1315d1b9f-20140522
 
 #
 # Default Linux config file name:

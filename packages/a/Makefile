@@ -35,6 +35,7 @@ SUBDIRS := CLooG         \
            psmisc        \
            reiserfsprogs \
            sash          \
+           sdparm        \
            setserial     \
            shadow        \
            sysfsutils    \

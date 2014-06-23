@@ -15,8 +15,11 @@ SUBDIRS := GNOME               \
            GNU/bash            \
            GNU/binutils        \
            GNU/coreutils       \
+           GNU/cpio            \
            GNU/diffutils       \
+           GNU/ed              \
            GNU/findutils       \
+           GNU/gawk            \
            GNU/gcc             \
            GNU/gcc/gcc-4.5.1   \
            GNU/gcc/gcc-4.7.2   \
@@ -30,6 +33,7 @@ SUBDIRS := GNOME               \
            GNU/guile           \
            GNU/gzip            \
            GNU/inetutils       \
+           GNU/less            \
            GNU/libiconv        \
            GNU/libidn          \
            GNU/libtasn1        \

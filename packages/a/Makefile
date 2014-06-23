@@ -17,11 +17,16 @@ SUBDIRS := CLooG         \
            fakeroot-ng   \
            file          \
            flex          \
+           getty-ps      \
            gpm           \
+           hdparm        \
            initscripts   \
            jfsutils      \
            kmod          \
+           lha           \
+           libcgroup     \
            linuxconsole  \
+           logrotate     \
            ncompress     \
            pciutils      \
            pcmciautils   \

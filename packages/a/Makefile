@@ -24,6 +24,7 @@ SUBDIRS := CLooG         \
            jfsutils      \
            kmod          \
            lha           \
+           lha-debian    \
            libcgroup     \
            linuxconsole  \
            logrotate     \

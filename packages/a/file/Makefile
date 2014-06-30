@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.astron.com/pub/file
 
-versions    = 5.14 5.15 5.18
+versions    = 5.14 5.15 5.18 5.19
 pkg_name    = file
 suffix      = tar.gz
 

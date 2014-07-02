@@ -5,6 +5,7 @@
 #
 
 SUBDIRS := cracklib       \
+           cracklib-words \
            expat          \
            freetype       \
            gamin          \

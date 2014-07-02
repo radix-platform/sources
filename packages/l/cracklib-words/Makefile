@@ -5,14 +5,14 @@
 #
 # Downloads:
 # =========
-# http://sourceforge.net/projects/cracklib/files/cracklib
+# http://sourceforge.net/projects/cracklib/files/cracklib-words
 #
 
-url         = http://sourceforge.net/projects/cracklib/files/cracklib
+url         = http://sourceforge.net/projects/cracklib/files/cracklib-words
 
-versions    = 2.8.22 2.9.0 2.9.1
-pkgname     = cracklib
-suffix      = tar.gz
+versions    = 20080507
+pkgname     = cracklib-words
+suffix      = gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
@@ -25,8 +25,11 @@ all: $(tarballs) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
-	  version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9][.0-9][.0-9]*\)\([\.].*\)/\2/'` ; \
-	  wget -N $(url)/$$version/$$tarball ; \
+	  directory=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9]*\)\([\.].*\)/\2/'` ; \
+	  year=`echo $$directory | cut -c1-4`  ; \
+	  month=`echo $$directory | cut -c5-6` ; \
+	  day=`echo $$directory | cut -c7-8`   ; \
+	  wget -N $(url)/$$year-$$month-$$day/$$tarball ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

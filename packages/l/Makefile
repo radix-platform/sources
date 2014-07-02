@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := expat          \
+SUBDIRS := cracklib       \
+           expat          \
            freetype       \
            gamin          \
            gc             \

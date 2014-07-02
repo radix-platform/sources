@@ -28,6 +28,7 @@ SUBDIRS := CLooG         \
            libcgroup     \
            linuxconsole  \
            logrotate     \
+           lua           \
            ncompress     \
            pciutils      \
            pcmciautils   \

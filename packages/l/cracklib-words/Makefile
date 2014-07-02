@@ -7,6 +7,12 @@
 # =========
 # http://sourceforge.net/projects/cracklib/files/cracklib-words
 #
+# NOTE:
+# ====
+#   There are additional word lists available for download, e.g.,
+#   from http://www.cotse.com/tools/wordlists.htm. CrackLib can
+#   utilize as many, or as few word lists you choose to install.
+#
 
 url         = http://sourceforge.net/projects/cracklib/files/cracklib-words
 

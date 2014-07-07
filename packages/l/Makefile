@@ -25,6 +25,7 @@ SUBDIRS := cracklib       \
            pcre           \
            popt           \
            ppl            \
+           sg3_utils      \
            termcap-compat \
            zlib
 

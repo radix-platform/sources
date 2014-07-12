@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := scowl        \
+SUBDIRS := scowl         \
+           aspell/ca     \
            aspell/de     \
            aspell/de-alt \
            aspell/es     \

@@ -15,11 +15,10 @@ pkgname     = cyrus-sasl
 suffix      = tar.gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-signatures  = $(addsuffix .sig, $(tarballs))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 
-all: $(tarballs) $(signatures) $(sha1s)
+all: $(tarballs) $(sha1s)
 
 .PHONY: downloads_clean
 
@@ -29,13 +28,6 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(signatures): %.$(suffix).sig : %.$(suffix)
-	@for signature in $@ ; do \
-	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
-	  wget -N $(url)/$$signature ; \
-	  touch $$signature ; \
-	done
-
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
@@ -43,4 +35,4 @@ $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	done
 
 downloads_clean:
-	@rm -rf $(tarballs) $(signatures) $(sha1s)
+	@rm -rf $(tarballs) $(sha1s)

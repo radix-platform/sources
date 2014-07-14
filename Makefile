@@ -14,6 +14,7 @@ SUBDIRS := GNOME               \
            GNU/EGLIBC/2.19.1   \
            GNU/bash            \
            GNU/binutils        \
+           GNU/bison           \
            GNU/coreutils       \
            GNU/cpio            \
            GNU/diffutils       \

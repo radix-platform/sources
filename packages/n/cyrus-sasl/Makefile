@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# http://asg.web.cmu.edu/sasl
+# http://cyrusimap.web.cmu.edu
 #
 # Downloads:
 # =========
-# ftp://ftp.andrew.cmu.edu/pub/cyrus-mail
+# ftp://ftp.cyrusimap.org/cyrus-sasl
 #
 
-url         = ftp://ftp.andrew.cmu.edu/pub/cyrus-mail
+url         = ftp://ftp.cyrusimap.org/cyrus-sasl
 
-versions    = 2.1.23 2.1.25
+versions    = 2.1.23 2.1.25 2.1.26
 pkgname     = cyrus-sasl
 suffix      = tar.gz
 

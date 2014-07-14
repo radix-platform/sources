@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := python2       \
+SUBDIRS := flex          \
+           python2       \
            python2-doc   \
            python3       \
            python3-doc

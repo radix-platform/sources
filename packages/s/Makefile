@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Linux-PAM
+SUBDIRS := Linux-PAM \
+           pam_unix2
 
 
 all-recursive downloads_clean-recursive:

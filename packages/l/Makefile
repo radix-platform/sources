@@ -11,6 +11,7 @@ SUBDIRS := cracklib       \
            gamin          \
            gc             \
            isl            \
+           keyutils       \
            liba52         \
            libav          \
            libelf         \

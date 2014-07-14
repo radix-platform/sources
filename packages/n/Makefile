@@ -25,6 +25,7 @@ SUBDIRS := biff+comsat            \
            iptraf-ng              \
            iputils                \
            iputils-git            \
+           kerberos               \
            lftp                   \
            libassuan              \
            libgcrypt              \
@@ -40,6 +41,7 @@ SUBDIRS := biff+comsat            \
            libnetfilter_queue     \
            libnfnetlink           \
            libqmi                 \
+           libtirpc               \
            net-snmp               \
            net-tools              \
            netdate                \
@@ -65,6 +67,7 @@ SUBDIRS := biff+comsat            \
            openssh                \
            openssl                \
            p11-kit                \
+           rpcbind                \
            tcp_wrappers           \
            telnet-OpenBSD         \
            tftp-hpa               \

@@ -4,11 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := a \
-           d \
-           l \
-           n \
-           s
+SUBDIRS := Linux-PAM
 
 
 all-recursive downloads_clean-recursive:

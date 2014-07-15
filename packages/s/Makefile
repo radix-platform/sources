@@ -5,7 +5,8 @@
 #
 
 SUBDIRS := Linux-PAM \
-           pam_unix2
+           pam_unix2 \
+           shadow
 
 
 all-recursive downloads_clean-recursive:

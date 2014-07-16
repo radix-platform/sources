@@ -5,6 +5,7 @@
 #
 
 SUBDIRS := flex          \
+           perl          \
            python2       \
            python2-doc   \
            python3       \

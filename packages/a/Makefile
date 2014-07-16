@@ -10,6 +10,7 @@ SUBDIRS := CLooG         \
            attr          \
            bsdstrings    \
            bzip2         \
+           db            \
            dcron         \
            dialog        \
            dosfstools    \

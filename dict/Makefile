@@ -8,6 +8,7 @@ SUBDIRS := scowl         \
            aspell/ca     \
            aspell/de     \
            aspell/de-alt \
+           aspell/en     \
            aspell/es     \
            aspell/fi     \
            aspell/fr     \

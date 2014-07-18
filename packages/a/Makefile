@@ -10,6 +10,7 @@ SUBDIRS := CLooG         \
            attr          \
            bsdstrings    \
            bzip2         \
+           ctags         \
            db            \
            dcron         \
            dialog        \
@@ -50,6 +51,7 @@ SUBDIRS := CLooG         \
            updated       \
            usbutils      \
            util-linux    \
+           vim           \
            xfs           \
            xz            \
            ziptool

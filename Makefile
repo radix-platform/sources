@@ -12,6 +12,7 @@ SUBDIRS := GNOME               \
            GNU/EGLIBC/2.17.1   \
            GNU/EGLIBC/2.18.1   \
            GNU/EGLIBC/2.19.1   \
+           GNU/aspell          \
            GNU/bash            \
            GNU/binutils        \
            GNU/bison           \

@@ -6,7 +6,8 @@
 
 SUBDIRS := glib                  \
            gobject-introspection \
-           libcroco
+           libcroco              \
+           pango
 
 
 all-recursive downloads_clean-recursive:

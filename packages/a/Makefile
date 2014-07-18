@@ -25,6 +25,7 @@ SUBDIRS := CLooG         \
            hdparm        \
            initscripts   \
            jfsutils      \
+           kbd           \
            kmod          \
            lha           \
            lha-debian    \

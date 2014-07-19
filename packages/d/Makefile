@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := flex          \
+SUBDIRS := check         \
+           flex          \
            perl          \
            perl-cross    \
            python2       \

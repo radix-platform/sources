@@ -53,6 +53,7 @@ SUBDIRS := CLooG         \
            usbutils      \
            util-linux    \
            vim           \
+           vim-hg        \
            xfs           \
            xz            \
            ziptool

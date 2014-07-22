@@ -33,6 +33,7 @@ SUBDIRS := CLooG         \
            linuxconsole  \
            logrotate     \
            lua           \
+           mc            \
            ncompress     \
            pciutils      \
            pcmciautils   \

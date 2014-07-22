@@ -27,6 +27,7 @@ SUBDIRS := cracklib       \
            popt           \
            ppl            \
            sg3_utils      \
+           slang          \
            termcap-compat \
            zlib
 

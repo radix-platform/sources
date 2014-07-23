@@ -17,6 +17,7 @@ SUBDIRS := CLooG         \
            dosfstools    \
            e2fsprogs     \
            e2fsprogs-git \
+           eudev         \
            fakeroot-ng   \
            file          \
            flex          \

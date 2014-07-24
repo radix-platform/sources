@@ -1,0 +1,16 @@
+
+u-boot for Allwinner A10, A13, A10s and A20:
+===========================================
+
+Clone:
+=====
+   git clone https://github.com/linux-sunxi/u-boot-sunxi.git
+
+WiKi:
+====
+   https://github.com/linux-sunxi/u-boot-sunxi/wiki
+
+
+This snapshots are created from upstream branch named 'sunxi'.
+'sunxi' - is a Main branch, tracks upstream u-boot master.
+Supports A10, A13, A10s and A20.

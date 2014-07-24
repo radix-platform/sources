@@ -68,6 +68,7 @@ SUBDIRS := GNOME               \
            U-Boot/omap5        \
            U-Boot/omap5-glsdk  \
            U-Boot/sunxi        \
+           U-Boot/sunxi/sunxi  \
            dict                \
            hal/omap/sgx-ddk    \
            hal/omap/wl18xx     \

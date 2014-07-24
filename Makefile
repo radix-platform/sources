@@ -27,6 +27,7 @@ SUBDIRS := GNOME                 \
            GNU/gcc/gcc-4.7.2     \
            GNU/gcc/gcc-4.7.3     \
            GNU/gcc/gcc-4.8.2     \
+           GNU/gcc/gcc-4.9.1     \
            GNU/gdb               \
            GNU/gdbm              \
            GNU/gettext           \

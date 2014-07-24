@@ -16,6 +16,7 @@ repo_name  = u-boot-sunxi
 # List of tags to be extracted:
 #
 TAGS       = v2013.04-sunxi
+TAGS      += v2013.10-sunxi
 
 
 git_repo   = .git_clone

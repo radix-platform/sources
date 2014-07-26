@@ -76,6 +76,7 @@ SUBDIRS := GNOME                 \
            hal/omap/wl18xx       \
            hal/omap/wl18xx_fw    \
            newlib                \
+           tools                 \
            uClinux/elf2flt       \
            uClinux/uClibc        \
            dm644x/flash-tools/IRAM-flasher \

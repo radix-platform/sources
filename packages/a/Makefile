@@ -53,6 +53,7 @@ SUBDIRS := CLooG         \
            udev-git      \
            updated       \
            usbutils      \
+           utempter      \
            util-linux    \
            vim           \
            vim-hg        \

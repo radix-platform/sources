@@ -50,6 +50,7 @@ SUBDIRS := GNOME                 \
            GNU/patch             \
            GNU/pth               \
            GNU/readline          \
+           GNU/screen            \
            GNU/sed               \
            GNU/tar               \
            GNU/shtool            \

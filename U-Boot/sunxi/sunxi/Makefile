@@ -24,7 +24,7 @@ revisions  = 2e4c69208f08b0203a1d3936376d2b5a8b494ac4-20140713
 
 git_repo   = .git_clone
 
-versions   = $(foreach tag, $(revisions), $(addsuffix -sunxi, $(shell echo $(tag) | cut -f 2 -d '-')))
+versions   = $(foreach tag, $(revisions), $(addprefix sunxi-, $(shell echo $(tag) | cut -f 2 -d '-')))
 
 tarballs   = $(addsuffix .tar.bz2, $(addprefix u-boot-, $(versions)))
 sha1s      = $(addsuffix .sha1sum, $(tarballs))
@@ -46,11 +46,11 @@ $(tarballs): $(git_repo)
 	@for revision in $(revisions) ; do \
 	  hash=`echo $$revision | cut -f 1 -d '-'` ; \
 	  date=`echo $$revision | cut -f 2 -d '-'` ; \
-	  if [ ! -f u-boot-$$date-sunxi.tar.bz2 ]; then \
-	    echo -e "\n======= Creating 'u-boot-$$date-sunxi.tar.bz2' snapshot =======" ; \
+	  if [ ! -f u-boot-sunxi-$$date.tar.bz2 ]; then \
+	    echo -e "\n======= Creating 'u-boot-sunxi-$$date.tar.bz2' snapshot =======" ; \
 	    ( cd $(repo_name) && \
-	      git archive --format=tar --prefix=u-boot-$$date-sunxi/ $$hash | \
-	      bzip2 >../u-boot-$$date-sunxi.tar.bz2 ) ; \
+	      git archive --format=tar --prefix=u-boot-sunxi-$$date/ $$hash | \
+	      bzip2 >../u-boot-sunxi-$$date.tar.bz2 ) ; \
 	  fi ; \
 	done
 

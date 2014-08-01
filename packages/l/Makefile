@@ -15,6 +15,7 @@ SUBDIRS := cracklib       \
            liba52         \
            libav          \
            libelf         \
+           libevent       \
            libffi         \
            libjpeg        \
            libmad         \

@@ -49,6 +49,7 @@ SUBDIRS := CLooG         \
            sysfsutils    \
            sysklogd      \
            sysvinit      \
+           tmux          \
            udev          \
            udev-git      \
            updated       \

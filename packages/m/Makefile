@@ -4,12 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := a \
-           d \
-           l \
-           m \
-           n \
-           s
+SUBDIRS := alsa   \
+           mpg123
 
 
 all-recursive downloads_clean-recursive:

@@ -4,12 +4,12 @@
 # $ tree -fid .
 #
 
-SUBDIRS := a \
-           d \
-           l \
-           m \
-           n \
-           s
+SUBDIRS := firmware \
+           lib      \
+           oss      \
+           plugins  \
+           tools    \
+           utils
 
 
 all-recursive downloads_clean-recursive:

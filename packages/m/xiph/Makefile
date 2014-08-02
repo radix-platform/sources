@@ -4,11 +4,12 @@
 # $ tree -fid .
 #
 
-SUBDIRS := alsa       \
-           mega-nerd  \
-           mpg123     \
-           sox        \
-           xiph
+SUBDIRS := flac         \
+           libao        \
+           libogg       \
+           libtheora    \
+           libvorbis    \
+           vorbis-tools
 
 
 all-recursive downloads_clean-recursive:

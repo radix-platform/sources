@@ -4,11 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := alsa       \
-           mega-nerd  \
-           mpg123     \
-           sox        \
-           xiph
+SUBDIRS := libsamplerate \
+           libsndfile
 
 
 all-recursive downloads_clean-recursive:

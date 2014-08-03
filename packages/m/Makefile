@@ -5,6 +5,7 @@
 #
 
 SUBDIRS := alsa       \
+           audiofile  \
            mega-nerd  \
            mpg123     \
            sox        \

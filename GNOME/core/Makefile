@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := glib                  \
+SUBDIRS := esound                \
+           glib                  \
            gobject-introspection \
            libcroco              \
            pango

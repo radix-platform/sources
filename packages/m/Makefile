@@ -10,6 +10,7 @@ SUBDIRS := alsa       \
            mega-nerd  \
            mpg123     \
            sox        \
+           wavpack    \
            xiph
 
 

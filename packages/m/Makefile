@@ -7,6 +7,7 @@
 SUBDIRS := alsa       \
            amr        \
            audiofile  \
+           gsm        \
            lame       \
            mad        \
            mega-nerd  \

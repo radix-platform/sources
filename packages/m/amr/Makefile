@@ -4,15 +4,10 @@
 # $ tree -fid .
 #
 
-SUBDIRS := alsa       \
-           amr        \
-           audiofile  \
-           mad        \
-           mega-nerd  \
-           mpg123     \
-           sox        \
-           wavpack    \
-           xiph
+SUBDIRS := fdk-aac      \
+           opencore-amr \
+           vo-aacenc    \
+           vo-armwbenc
 
 
 all-recursive downloads_clean-recursive:

@@ -4,13 +4,9 @@
 # $ tree -fid .
 #
 
-SUBDIRS := alsa       \
-           audiofile  \
-           mad        \
-           mega-nerd  \
-           mpg123     \
-           sox        \
-           xiph
+SUBDIRS := libid3tag \
+           libmad    \
+           madplay
 
 
 all-recursive downloads_clean-recursive:

@@ -56,6 +56,7 @@ SUBDIRS := GNOME                 \
            GNU/shtool            \
            GNU/termcap           \
            GNU/termutils         \
+           GNU/texinfo           \
            GNU/wget              \
            Linux                 \
            Linux/dm644x          \

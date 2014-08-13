@@ -4,16 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := alsa       \
-           amr        \
-           audiofile  \
-           lame       \
-           mad        \
-           mega-nerd  \
-           mpg123     \
-           sox        \
-           wavpack    \
-           xiph
+SUBDIRS := lame    \
+           py-lame
 
 
 all-recursive downloads_clean-recursive:

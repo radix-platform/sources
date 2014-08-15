@@ -60,7 +60,8 @@ SUBDIRS := CLooG         \
            vim-hg        \
            xfs           \
            xz            \
-           ziptool
+           ziptool       \
+           zsh
 
 
 all-recursive downloads_clean-recursive:

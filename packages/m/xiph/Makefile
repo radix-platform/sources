@@ -4,11 +4,13 @@
 # $ tree -fid .
 #
 
-SUBDIRS := flac         \
+SUBDIRS := celt         \
+           flac         \
            libao        \
            libogg       \
            libtheora    \
            libvorbis    \
+           opus         \
            vorbis-tools
 
 

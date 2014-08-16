@@ -12,6 +12,7 @@ SUBDIRS := alsa       \
            mad        \
            mega-nerd  \
            mpg123     \
+           portaudio  \
            sox        \
            wavpack    \
            xiph

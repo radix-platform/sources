@@ -6,16 +6,20 @@
 # Downloads:
 # =========
 # http://www.portaudio.com/download.html
-# http://sourceforge.net/projects/setserial/files/setserial/2.17/
+# http://www.portaudio.com/archives
 #
 
 url         = http://www.portaudio.com/archives
 
 versions    = v19_20140130
 pkgname     = pa_stable
+docname     = pa_stable_doxydocs
 suffix      = tgz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)_, $(versions)))
+tarballs   += $(addsuffix .$(suffix), \
+                $(addprefix $(docname)_, \
+                  $(foreach version,$(versions),$(shell echo $(version) | cut -f 2 -d '_'))))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 

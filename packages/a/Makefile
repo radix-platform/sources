@@ -6,6 +6,7 @@
 
 SUBDIRS := CLooG         \
            acl           \
+           acpid         \
            adjtimex      \
            attr          \
            bsdstrings    \

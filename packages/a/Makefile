@@ -8,6 +8,7 @@ SUBDIRS := CLooG         \
            acl           \
            acpid         \
            adjtimex      \
+           apmd          \
            attr          \
            bsdstrings    \
            bzip2         \

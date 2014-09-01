@@ -7,7 +7,7 @@
 SUBDIRS := fdk-aac      \
            opencore-amr \
            vo-aacenc    \
-           vo-armwbenc
+           vo-amrwbenc
 
 
 all-recursive downloads_clean-recursive:

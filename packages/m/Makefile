@@ -9,6 +9,7 @@ SUBDIRS := alsa       \
            audiofile  \
            gsm        \
            lame       \
+           libav      \
            mad        \
            mega-nerd  \
            mpg123     \

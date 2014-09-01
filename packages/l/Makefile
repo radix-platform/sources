@@ -13,7 +13,6 @@ SUBDIRS := cracklib       \
            isl            \
            keyutils       \
            liba52         \
-           libav          \
            libelf         \
            libevent       \
            libffi         \

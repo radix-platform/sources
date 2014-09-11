@@ -63,6 +63,7 @@ SUBDIRS := GNOME                 \
            GNU/termutils         \
            GNU/texinfo           \
            GNU/wget              \
+           GNU/which             \
            Linux                 \
            Linux/dm644x          \
            Linux/mips            \

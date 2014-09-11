@@ -43,6 +43,7 @@ SUBDIRS := GNOME                 \
            GNU/libtasn1          \
            GNU/libtool           \
            GNU/libunistring      \
+           GNU/m4                \
            GNU/make              \
            GNU/mpc               \
            GNU/multiprecision    \

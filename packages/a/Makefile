@@ -11,6 +11,7 @@ SUBDIRS := CLooG         \
            apmd          \
            attr          \
            bsdstrings    \
+           btrfs-progs   \
            bzip2         \
            ctags         \
            db            \

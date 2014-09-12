@@ -23,6 +23,7 @@ SUBDIRS := cracklib       \
            libusb         \
            libxml2        \
            libxslt        \
+           lzo            \
            pcre           \
            popt           \
            ppl            \

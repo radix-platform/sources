@@ -55,6 +55,7 @@ SUBDIRS := CLooG         \
            sysklogd      \
            sysvinit      \
            tmux          \
+           todos         \
            udev          \
            udev-git      \
            updated       \

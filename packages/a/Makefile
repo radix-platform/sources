@@ -10,6 +10,7 @@ SUBDIRS := CLooG         \
            adjtimex      \
            apmd          \
            attr          \
+           banners       \
            bsdstrings    \
            btrfs-progs   \
            bzip2         \

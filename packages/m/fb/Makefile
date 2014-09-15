@@ -4,20 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := alsa       \
-           amr        \
-           audiofile  \
-           fb         \
-           gsm        \
-           lame       \
-           libav      \
-           mad        \
-           mega-nerd  \
-           mpg123     \
-           portaudio  \
-           sox        \
-           wavpack    \
-           xiph
+SUBDIRS := fbset
 
 
 all-recursive downloads_clean-recursive:

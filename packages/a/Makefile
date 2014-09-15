@@ -16,6 +16,7 @@ SUBDIRS := CLooG         \
            ctags         \
            db            \
            dcron         \
+           debianutils   \
            dialog        \
            dosfstools    \
            e2fsprogs     \

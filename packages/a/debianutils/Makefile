@@ -1,20 +1,20 @@
 #
 # Project Home:
 # ============
-# http://hightek.org/dialog/
+# https://packages.qa.debian.org/d/debianutils.html
 #
 # Downloads:
 # =========
-# ftp://ftp.us.debian.org/debian/pool/main/d/dialog/
+# ftp://ftp.de.debian.org/debian/pool/main/d/debianutils
 #
 
-url          = ftp://ftp.de.debian.org/debian/pool/main/d/dialog
+url        = ftp://ftp.de.debian.org/debian/pool/main/d/debianutils
 
-old_versions = 1.2-20140112
-versions     = 1.1-20120215 1.2-20140219
+versions   = 3.4 4.3.2 4.4
 
-tarballs     = $(addsuffix .orig.tar.gz, $(addprefix dialog_, $(versions)))
-sha1s        = $(addsuffix .sha1sum, $(tarballs))
+pkgname    = debianutils
+tarballs   = $(addsuffix .tar.gz, $(addprefix $(pkgname)_, $(versions)))
+sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
 
 all: $(tarballs) $(sha1s)

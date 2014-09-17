@@ -40,6 +40,7 @@ SUBDIRS := CLooG         \
            logrotate     \
            lua           \
            mc            \
+           mktemp        \
            ncompress     \
            pciutils      \
            pcmciautils   \

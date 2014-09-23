@@ -1,45 +1,26 @@
+
 #
-# Project Home:
-# ============
-# https://packages.debian.org/ru/sid/ca-certificates
-#
-# Downloads:
-# =========
-# ftp://ftp.de.debian.org/debian/pool/main/c/ca-certificates
+# Following command helps to cheate SUBDIRS list:
+# $ tree -fid .
 #
 
-url         = ftp://ftp.de.debian.org/debian/pool/main/c/ca-certificates
-
-version     = 20140325
-pkgname     = ca-certificates
-suffix      = tar.xz
-
-tarball     = $(addsuffix .$(suffix), $(addprefix $(pkgname)_, $(version)))
-sha1s       = $(addsuffix .sha1sum, $(tarball))
-description = $(addsuffix .dsc, $(addprefix $(pkgname)_, $(version)))
-
-files       = $(description)
-
-all: $(tarball) $(files) $(sha1s)
-
-.PHONY: downloads_clean
+SUBDIRS := cacert.org   \
+           mozilla      \
+           spi-inc.org
 
 
-$(tarball):
-	@echo -e "\n======= Downloading source tarball =======\n"
-	wget -N $(url)/$(tarball)
+all-recursive downloads_clean-recursive:
+	@set fnord $(MAKEFLAGS); amf=$$2; \
+	target=`echo $@ | sed s/-recursive//`; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	  echo "Making $$target in $$subdir"; \
+	  local_target="$$target"; \
+	  (cd $$subdir && $(MAKE) $$fnord $$local_target) \
+	   || case "$$amf" in *=*) exit 1;; *k*) fail=yes;; *) exit 1;; esac; \
+	done; test -z "$$fail"
 
-$(files): $(tarball)
-	@echo -e "\n======= Downloading patch and description =======\n"
-	@for file in $(files) ; do \
-	  wget -N $(url)/$$file ; \
-	done
+all: all-recursive
 
-$(sha1s): %.$(suffix).sha1sum : %.$(suffix)
-	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
-	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
-	done
+downloads_clean: downloads_clean-recursive
 
-downloads_clean:
-	@rm -rf $(tarball) $(files) $(sha1s)
+.PHONY: all-recursive downloads_clean-recursive all downloads_clean

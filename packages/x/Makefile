@@ -4,13 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := a \
-           d \
-           l \
-           m \
-           n \
-           s \
-           x
+SUBDIRS := mozilla-firefox
 
 
 all-recursive downloads_clean-recursive:

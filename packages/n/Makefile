@@ -8,6 +8,7 @@ SUBDIRS := biff+comsat            \
            bridge-utils           \
            bsd-finger             \
            ca-certificates        \
+           ca-certificates-deb    \
            conntrack-tools        \
            curl                   \
            cyrus-sasl             \

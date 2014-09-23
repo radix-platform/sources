@@ -35,7 +35,7 @@ $(tarballs):
 	     rm -rf security                                   ; \
 	   ) ; \
 	   mv mozilla-release $(pkgname)-$$version ; \
-	   tar czvf $$tarball $(pkgname)-$$version ; \
+	   tar cjvf $$tarball $(pkgname)-$$version ; \
 	   rm -rf $(pkgname)-$$version ; \
 	 done
 

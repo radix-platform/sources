@@ -15,7 +15,7 @@
 url         = http://curl.haxx.se/download
 cacert_url  = http://curl.haxx.se/ca
 
-versions    = 7.31.0 7.36.0
+versions    = 7.31.0 7.36.0 7.38.0
 pkgname     = curl
 suffix      = tar.bz2
 

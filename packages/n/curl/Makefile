@@ -34,7 +34,7 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(signatures): %.$(suffix).sig : %.$(suffix)
+$(signatures): %.$(suffix).asc : %.$(suffix)
 	@for signature in $@ ; do \
 	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
 	  wget -N $(url)/$$signature ; \

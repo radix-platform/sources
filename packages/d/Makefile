@@ -5,6 +5,7 @@
 #
 
 SUBDIRS := check         \
+           cmake         \
            flex          \
            perl          \
            perl-cross    \

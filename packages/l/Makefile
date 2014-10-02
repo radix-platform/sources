@@ -4,33 +4,34 @@
 # $ tree -fid .
 #
 
-SUBDIRS := cracklib       \
-           cracklib-words \
-           expat          \
-           freetype       \
-           gamin          \
-           gc             \
-           isl            \
-           keyutils       \
-           liba52         \
-           libarchive     \
-           libelf         \
-           libevent       \
-           libffi         \
-           libjpeg        \
-           libmad         \
-           libpng         \
-           libtiff        \
-           libusb         \
-           libxml2        \
-           libxslt        \
-           lzo            \
-           pcre           \
-           popt           \
-           ppl            \
-           sg3_utils      \
-           slang          \
-           termcap-compat \
+SUBDIRS := cracklib         \
+           cracklib-words   \
+           expat            \
+           freetype         \
+           gamin            \
+           gc               \
+           isl              \
+           keyutils         \
+           liba52           \
+           libarchive       \
+           libelf           \
+           libevent         \
+           libffi           \
+           libjpeg          \
+           libmad           \
+           libpng           \
+           libtiff          \
+           libusb           \
+           libxml2          \
+           libxslt          \
+           lzo              \
+           pcre             \
+           popt             \
+           ppl              \
+           sg3_utils        \
+           shared-mime-info \
+           slang            \
+           termcap-compat   \
            zlib
 
 

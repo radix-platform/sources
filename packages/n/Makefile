@@ -12,6 +12,7 @@ SUBDIRS := biff+comsat            \
            conntrack-tools        \
            curl                   \
            cyrus-sasl             \
+           dhcp                   \
            dhcpcd                 \
            ethtool                \
            gnupg                  \

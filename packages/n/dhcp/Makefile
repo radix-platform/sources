@@ -1,18 +1,18 @@
 #
 # Project Home:
 # ============
-# http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
+# https://www.isc.org/downloads/dhcp
 #
 # Downloads:
 # =========
-# ftp://ftp.kernel.org/pub/linux/utils/net/iproute2
+# ftp://ftp.isc.org/isc/dhcp/$(VERSION)
 #
 
-url         = ftp://ftp.kernel.org/pub/linux/utils/net/iproute2
+url         = ftp://ftp.isc.org/isc/dhcp
 
-versions    = 3.4.0 3.5.0 3.8.0 3.9.0 3.10.0 3.11.0 3.12.0 3.14.0 3.15.0 3.16.0
-pkgname     = iproute2
-suffix      = tar.xz
+versions    = 4.2.5-P1 4.3.1
+pkgname     = dhcp
+suffix      = tar.gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
@@ -24,8 +24,8 @@ all: $(tarballs) $(sha1s)
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	@for version in $(versions) ; do \
+	  wget -N $(url)/$$version/$(pkgname)-$$version.$(suffix) ;  \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

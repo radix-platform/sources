@@ -43,6 +43,9 @@ SUBDIRS := biff+comsat            \
            libnetfilter_log       \
            libnetfilter_queue     \
            libnfnetlink           \
+           libnl                  \
+           libnl3                 \
+           libpcap                \
            libqmi                 \
            libtirpc               \
            net-snmp               \
@@ -72,6 +75,7 @@ SUBDIRS := biff+comsat            \
            p11-kit                \
            rpcbind                \
            tcp_wrappers           \
+           tcpdump                \
            telnet-OpenBSD         \
            tftp-hpa               \
            ulogd

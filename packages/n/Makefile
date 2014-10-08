@@ -5,6 +5,7 @@
 #
 
 SUBDIRS := biff+comsat            \
+           bind                   \
            bridge-utils           \
            bsd-finger             \
            ca-certificates        \

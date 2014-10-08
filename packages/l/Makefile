@@ -14,6 +14,7 @@ SUBDIRS := cracklib         \
            keyutils         \
            liba52           \
            libarchive       \
+           libcap           \
            libelf           \
            libevent         \
            libffi           \

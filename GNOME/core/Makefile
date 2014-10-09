@@ -7,6 +7,7 @@
 SUBDIRS := esound                \
            glib                  \
            gobject-introspection \
+           json-glib             \
            libcroco              \
            pango
 

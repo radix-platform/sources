@@ -11,6 +11,7 @@ SUBDIRS := cracklib         \
            gamin            \
            gc               \
            isl              \
+           json-c           \
            keyutils         \
            liba52           \
            libarchive       \

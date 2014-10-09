@@ -22,6 +22,7 @@ SUBDIRS := biff+comsat            \
            gpa                    \
            gpgme                  \
            icmpinfo               \
+           idnkit                 \
            inetd                  \
            iproute2               \
            ipset                  \

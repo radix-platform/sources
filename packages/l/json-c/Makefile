@@ -19,7 +19,7 @@ versions    = 0.11-20130402 0.12-20140410
 pkgname     = json-c
 suffix      = tar.gz
 
-tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
+tarballs    = $(foreach v,$(versions),$(addsuffix .$(suffix),$(addprefix $(pkgname)-,$(shell echo $(v) | cut -f 1 -d '-'))))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 
@@ -29,8 +29,14 @@ all: $(tarballs) $(signatures) $(sha1s)
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	@for version in $(versions) ; do \
+	  v=`echo $$version | cut -f 1 -d '-'` ; \
+	  wget -N $(url)/$(pkgname)-$${version}.$(suffix) ; \
+	  tar xzf $(pkgname)-$${version}.$(suffix) ; \
+	  rm -f $(pkgname)-$${version}.$(suffix) ; \
+	  mv $(pkgname)-$(pkgname)-$${version} $(pkgname)-$$v ; \
+	  tar czf $(pkgname)-$$v.$(suffix) $(pkgname)-$$v ; \
+	  rm -rf $(pkgname)-$$v ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

@@ -2,6 +2,7 @@
 # Project Home:
 # ============
 # http://cyrusimap.web.cmu.edu
+# http://www.cyrusimap.org
 #
 # Downloads:
 # =========

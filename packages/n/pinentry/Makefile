@@ -5,13 +5,13 @@
 #
 # Downloads:
 # =========
-# ftp://ftp.gnupg.org/gcrypt/libksba
+# ftp://ftp.gnupg.org/gcrypt/pinentry
 #
 
-url         = ftp://ftp.gnupg.org/gcrypt/libksba
+url         = ftp://ftp.gnupg.org/gcrypt/pinentry
 
-versions    = 1.2.0 1.3.0 1.3.1
-pkgname     = libksba
+versions    = 0.8.3 0.8.4
+pkgname     = pinentry
 suffix      = tar.bz2
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

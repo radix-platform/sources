@@ -5,14 +5,14 @@
 #
 # Downloads:
 # =========
-# ftp://ftp.gnupg.org/gcrypt/libksba
+# ftp://ftp.gnupg.org/gcrypt/egd
 #
 
-url         = ftp://ftp.gnupg.org/gcrypt/libksba
+url         = ftp://ftp.gnupg.org/gcrypt/egd
 
-versions    = 1.2.0 1.3.0 1.3.1
-pkgname     = libksba
-suffix      = tar.bz2
+versions    = 0.8
+pkgname     = egd
+suffix      = tar.gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 signatures  = $(addsuffix .sig, $(tarballs))

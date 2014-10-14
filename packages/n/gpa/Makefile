@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnupg.org/gcrypt/gpa
 
-versions    = 0.9.4
+versions    = 0.9.4 0.9.5
 pkgname     = gpa
 suffix      = tar.bz2
 

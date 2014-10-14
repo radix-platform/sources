@@ -5,13 +5,13 @@
 #
 # Downloads:
 # =========
-# ftp://ftp.gnupg.org/gcrypt/libksba
+# ftp://ftp.gnupg.org/gcrypt/dirmngr
 #
 
-url         = ftp://ftp.gnupg.org/gcrypt/libksba
+url         = ftp://ftp.gnupg.org/gcrypt/dirmngr
 
-versions    = 1.2.0 1.3.0 1.3.1
-pkgname     = libksba
+versions    = 1.1.0 1.1.1
+pkgname     = dirmngr
 suffix      = tar.bz2
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

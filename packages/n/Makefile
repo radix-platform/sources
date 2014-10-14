@@ -15,6 +15,8 @@ SUBDIRS := biff+comsat            \
            cyrus-sasl             \
            dhcp                   \
            dhcpcd                 \
+           dirmngr                \
+           egd                    \
            ethtool                \
            gnupg                  \
            gnupg2                 \
@@ -75,6 +77,7 @@ SUBDIRS := biff+comsat            \
            openssh                \
            openssl                \
            p11-kit                \
+           pinentry               \
            rpcbind                \
            tcp_wrappers           \
            tcpdump                \

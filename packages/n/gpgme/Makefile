@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnupg.org/gcrypt/gpgme
 
-versions    = 1.4.1 1.4.2 1.4.3
+versions    = 1.4.1 1.4.2 1.4.3 1.5.1
 pkgname     = gpgme
 suffix      = tar.bz2
 

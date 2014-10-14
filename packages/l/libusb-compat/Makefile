@@ -6,13 +6,13 @@
 #
 # Downloads:
 # =========
-# http://downloads.sourceforge.net/project/libusb/libusb-1.0
+# http://downloads.sourceforge.net/project/libusb/libusb-compat-0.1
 #
 
-url         = http://downloads.sourceforge.net/project/libusb/libusb-1.0
+url         = http://downloads.sourceforge.net/project/libusb/libusb-compat-0.1
 
-versions    = 1.0.9 1.0.18
-pkgname     = libusb
+versions    = 0.1.4 0.1.5
+pkgname     = libusb-compat
 suffix      = tar.bz2
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

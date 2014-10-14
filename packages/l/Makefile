@@ -24,6 +24,7 @@ SUBDIRS := cracklib         \
            libpng           \
            libtiff          \
            libusb           \
+           libusb-compat    \
            libxml2          \
            libxslt          \
            lzo              \

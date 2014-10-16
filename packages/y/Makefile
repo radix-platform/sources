@@ -4,14 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := a \
-           d \
-           l \
-           m \
-           n \
-           s \
-           x \
-           y
+SUBDIRS := bsd-games
 
 
 all-recursive downloads_clean-recursive:

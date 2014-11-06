@@ -10,7 +10,7 @@
 
 url         = http://freedesktop.org/software/libqmi
 
-versions    = 1.4.0 1.6.0 1.8.0
+versions    = 1.4.0 1.6.0 1.8.0 1.10.0 1.10.2 1.10.4
 pkgname     = libqmi
 suffix      = tar.xz
 

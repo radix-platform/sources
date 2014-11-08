@@ -1,20 +1,21 @@
 #
 # Project Home:
 # ============
+# http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge
 # http://sourceforge.net/projects/bridge
 #
 # Downloads:
 # =========
-# http://downloads.sourceforge.net/linuxconsole/files/
+# http://downloads.sourceforge.net/bridge
 #
 
-url         = http://downloads.sourceforge.net/bridge/files
+url         = http://downloads.sourceforge.net/bridge
 
-versions    = 1.4
-pkg_name    = bridge-utils
+versions    = 1.2 1.4 1.5
+pkgname     = bridge-utils
 suffix      = tar.gz
 
-tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions)))
+tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 

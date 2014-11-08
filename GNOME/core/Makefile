@@ -4,11 +4,12 @@
 # $ tree -fid .
 #
 
-SUBDIRS := esound                \
-           glib                  \
-           gobject-introspection \
-           json-glib             \
-           libcroco              \
+SUBDIRS := esound                         \
+           glib                           \
+           gobject-introspection          \
+           json-glib                      \
+           libcroco                       \
+           mobile-broadband-provider-info \
            pango
 
 

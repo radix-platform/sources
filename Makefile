@@ -62,6 +62,7 @@ SUBDIRS := GNOME                 \
            GNU/termcap           \
            GNU/termutils         \
            GNU/texinfo           \
+           GNU/uucp              \
            GNU/wget              \
            GNU/which             \
            Linux                 \

@@ -1,11 +1,11 @@
 #
 # Project Home:
 # ============
-# http://www.gnu.org/software/wget/
+# http://www.gnu.org/software/wget
 #
 # Downloads:
 # =========
-# http://ftp.gnu.org/gnu/wget/
+# http://ftp.gnu.org/gnu/wget
 #
 
 url         = http://ftp.gnu.org/gnu/wget

@@ -4,27 +4,46 @@
 # $ tree -fid .
 #
 
-SUBDIRS := biff+comsat            \
+SUBDIRS := alpine                 \
+           autofs                 \
+           biff+comsat            \
            bind                   \
+           bluez                  \
+           bluez-firmware         \
+           bluez-hcidump          \
+           bootp                  \
+           bootp-debian           \
            bridge-utils           \
            bsd-finger             \
            ca-certificates        \
            ca-certificates-deb    \
+           cifs-utils             \
            conntrack-tools        \
+           crda                   \
            curl                   \
            cyrus-sasl             \
            dhcp                   \
            dhcpcd                 \
            dirmngr                \
+           dnsmasq                \
+           ebtables               \
            egd                    \
+           elm                    \
+           epic5                  \
            ethtool                \
+           fetchmail              \
+           firmware               \
+           getmail                \
            gnupg                  \
            gnupg2                 \
            gnutls                 \
            gpa                    \
            gpgme                  \
+           htdig                  \
+           httpd                  \
            icmpinfo               \
            idnkit                 \
+           iftop                  \
            inetd                  \
            iproute2               \
            ipset                  \
@@ -32,6 +51,8 @@ SUBDIRS := biff+comsat            \
            iptraf-ng              \
            iputils                \
            iputils-git            \
+           irssi                  \
+           iw                     \
            kerberos               \
            lftp                   \
            libassuan              \
@@ -52,8 +73,18 @@ SUBDIRS := biff+comsat            \
            libpcap                \
            libqmi                 \
            libtirpc               \
+           links                  \
+           lynx                   \
+           mailx                  \
+           mcabber                \
+           metamail               \
+           mtr                    \
+           mutt                   \
+           nc                     \
+           ncftp                  \
            net-snmp               \
            net-tools              \
+           netatalk               \
            netdate                \
            netkit-base            \
            netkit-bootparamd      \
@@ -69,21 +100,63 @@ SUBDIRS := biff+comsat            \
            netkit-telnet          \
            netkit-tftp            \
            netkit-timed           \
+           netpipes               \
            nettle                 \
+           netwatch               \
            netwrite               \
+           newspost               \
            nfacct                 \
+           nfs-utils              \
+           nmap                   \
+           nn                     \
            ntp                    \
+           obex-data-server       \
+           obexfs                 \
+           obexftp                \
            openldap               \
+           openobex               \
            openssh                \
            openssl                \
+           openvpn                \
            p11-kit                \
+           php                    \
+           pidentd                \
            pinentry               \
+           pinepgp                \
+           popa3d                 \
+           portmap                \
+           ppp                    \
+           pppsetup               \
+           procmail               \
+           proftpd                \
+           pssh                   \
+           radius                 \
+           radiusclient           \
+           rdist                  \
+           rfkill                 \
+           rp-pppoe               \
            rpcbind                \
+           rsync                  \
+           samba                  \
+           sendmail               \
+           slrn                   \
+           snownews               \
+           stunnel                \
            tcp_wrappers           \
            tcpdump                \
            telnet-OpenBSD         \
            tftp-hpa               \
-           ulogd
+           tin                    \
+           traceroute             \
+           trn                    \
+           trn4                   \
+           ulogd                  \
+           vlan                   \
+           vsftpd                 \
+           whois                  \
+           wireless-tools         \
+           wpa_supplicant         \
+           yp
 
 
 all-recursive downloads_clean-recursive:

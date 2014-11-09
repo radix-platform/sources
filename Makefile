@@ -37,6 +37,7 @@ SUBDIRS := GNOME                 \
            GNU/gmp               \
            GNU/gperf             \
            GNU/grep              \
+           GNU/grub              \
            GNU/guile             \
            GNU/gzip              \
            GNU/inetutils         \
@@ -51,6 +52,7 @@ SUBDIRS := GNOME                 \
            GNU/mpc               \
            GNU/multiprecision    \
            GNU/mpfr              \
+           GNU/mtools            \
            GNU/ncurses/5.9       \
            GNU/patch             \
            GNU/pth               \

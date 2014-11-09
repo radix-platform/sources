@@ -1,17 +1,18 @@
 #
 # Project Home:
 # ============
-# http://www.gnu.org/software/grep
+# http://www.gnu.org/software/grub
 #
 # Downloads:
 # =========
-# http://ftp.gnu.org/gnu/grep
+# http://www.gnu.org/software/grub/grub-download.html
+# ftp://ftp.gnu.org/gnu/grub
 #
 
-url         = http://ftp.gnu.org/gnu/grep
+url         = http://ftp.gnu.org/gnu/grub
 
-versions    = 2.14 2.17 2.18
-pkgname     = grep
+versions    = 2.00
+pkgname     = grub
 suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

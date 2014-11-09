@@ -1,18 +1,19 @@
 #
 # Project Home:
 # ============
-# http://www.gnu.org/software/grep
+# http://www.gnu.org/software/mtools
 #
 # Downloads:
 # =========
-# http://ftp.gnu.org/gnu/grep
+# http://www.gnu.org/software/mtools/download.html
+# ftp://ftp.gnu.org/gnu/mtools
 #
 
-url         = http://ftp.gnu.org/gnu/grep
+url         = ftp://ftp.gnu.org/gnu/mtools
 
-versions    = 2.14 2.17 2.18
-pkgname     = grep
-suffix      = tar.xz
+versions    = 4.0.18
+pkgname     = mtools
+suffix      = tar.bz2
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

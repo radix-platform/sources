@@ -8,10 +8,10 @@
 # ftp://ftp.epicsol.org/pub/epic/EPIC5-PRODUCTION
 #
 
-url         = ftp://ftp.epicsol.org/pub/epic/EPIC5-PRODUCTION
-help_url    = ftp://ftp.epicsol.org/pub/epic/help
+url         = http://ftp.epicsol.org/pub/epic/EPIC5-PRODUCTION
+help_url    = http://ftp.epicsol.org/pub/epic/help
 
-versions    = 1.1.6 1.1.9
+versions    = 1.1.6 1.1.9 1.1.10
 pkgname     = epic5
 suffix      = tar.bz2
 

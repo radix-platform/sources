@@ -1,17 +1,17 @@
 #
 # Project Home:
 # ============
-# http://www-archive.mozilla.org/projects/firefox/index.html
+# http://www-archive.mozilla.org/projects/thunderbird/index.html
 #
 # Downloads:
 # =========
-# http://download.cdn.mozilla.net/pub/mozilla.org/firefox/releases/$(VERSION)/
+# http://download.cdn.mozilla.net/pub/mozilla.org/thunderbird/releases/$(VERSION)/
 #
 
-url         = http://download.cdn.mozilla.net/pub/mozilla.org/firefox/releases
+url         = http://download.cdn.mozilla.net/pub/mozilla.org/thunderbird/releases
 
-versions    = 32.0 32.0.2 32.0.3 33.0.3
-pkgname     = firefox
+versions    = 31.2.0
+pkgname     = thunderbird
 suffix      = tar.bz2
 
 tarballs    = $(addsuffix .$(suffix), $(addsuffix .source, $(addprefix $(pkgname)-, $(versions))))

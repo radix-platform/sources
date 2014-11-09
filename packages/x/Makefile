@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := mozilla-firefox
+SUBDIRS := mozilla-firefox     \
+           mozilla-thunderbird
 
 
 all-recursive downloads_clean-recursive:

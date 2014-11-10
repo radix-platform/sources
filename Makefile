@@ -59,8 +59,9 @@ SUBDIRS := GNOME                 \
            GNU/readline          \
            GNU/screen            \
            GNU/sed               \
-           GNU/tar               \
+           GNU/sharutils         \
            GNU/shtool            \
+           GNU/tar               \
            GNU/termcap           \
            GNU/termutils         \
            GNU/texinfo           \

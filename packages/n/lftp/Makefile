@@ -7,6 +7,16 @@
 # =========
 # http://lftp.yar.ru/ftp
 #
+# Old versions (4.4.9 4.4.14 4.4.15) Downloads:
+# ============================================
+# ftp://ftp.cs.tu-berlin.de/pub/net/ftp/lftp
+#
+# MIRRORS:
+# ftp://ftp.st.ryukoku.ac.jp/pub/network/ftp/lftp   Japan
+# ftp://ftp.tuwien.ac.at/infosys/browsers/ftp/lftp  Austria
+# ftp://ftp.cs.tu-berlin.de/pub/net/ftp/lftp        Berlin, Germany
+# http://lftp.cybermirror.org                       Karlsruhe, Germany
+#
 
 url         = http://lftp.yar.ru/ftp
 

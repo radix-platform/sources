@@ -83,6 +83,7 @@ SUBDIRS := GNOME                 \
            U-Boot/sunxi          \
            U-Boot/sunxi/sunxi    \
            dict                  \
+           hal/kernel-firmware   \
            hal/omap/sgx-ddk      \
            hal/omap/wl18xx       \
            hal/omap/wl18xx_fw    \

@@ -24,6 +24,7 @@ SUBDIRS := GNOME                 \
            GNU/bison             \
            GNU/coreutils         \
            GNU/cpio              \
+           GNU/ddrescue          \
            GNU/diffutils         \
            GNU/ed                \
            GNU/findutils         \

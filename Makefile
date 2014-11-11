@@ -42,6 +42,7 @@ SUBDIRS := GNOME                 \
            GNU/gmp               \
            GNU/gperf             \
            GNU/grep              \
+           GNU/groff             \
            GNU/grub              \
            GNU/guile             \
            GNU/gzip              \

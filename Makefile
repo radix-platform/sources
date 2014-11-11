@@ -19,6 +19,7 @@ SUBDIRS := GNOME                 \
            GNU/autoconf-archive  \
            GNU/automake          \
            GNU/bash              \
+           GNU/bc                \
            GNU/binutils          \
            GNU/bison             \
            GNU/coreutils         \

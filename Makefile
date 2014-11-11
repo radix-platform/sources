@@ -27,6 +27,7 @@ SUBDIRS := GNOME                 \
            GNU/ddrescue          \
            GNU/diffutils         \
            GNU/ed                \
+           GNU/enscript          \
            GNU/findutils         \
            GNU/gawk              \
            GNU/gcc               \

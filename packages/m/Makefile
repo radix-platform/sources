@@ -5,6 +5,7 @@
 #
 
 SUBDIRS := alsa       \
+           amp        \
            amr        \
            audiofile  \
            fb         \
@@ -13,10 +14,15 @@ SUBDIRS := alsa       \
            libav      \
            mad        \
            mega-nerd  \
+           moc        \
            mpg123     \
+           normalize  \
            portaudio  \
+           record     \
+           soma       \
            sox        \
            wavpack    \
+           workbone   \
            xiph
 
 

@@ -4,15 +4,10 @@
 # $ tree -fid .
 #
 
-SUBDIRS := cdparanoia   \
-           celt         \
-           flac         \
-           libao        \
-           libogg       \
-           libtheora    \
-           libvorbis    \
-           opus         \
-           vorbis-tools
+SUBDIRS := cdrdao       \
+           cdrtools     \
+           dvd+rw-tools \
+           zisofs-tools
 
 
 all-recursive downloads_clean-recursive:

@@ -5,6 +5,7 @@
 #
 
 SUBDIRS := a \
+           b \
            d \
            l \
            m \

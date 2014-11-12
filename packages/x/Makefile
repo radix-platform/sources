@@ -5,7 +5,8 @@
 #
 
 SUBDIRS := mozilla-firefox     \
-           mozilla-thunderbird
+           mozilla-thunderbird \
+           terminus-font
 
 
 all-recursive downloads_clean-recursive:

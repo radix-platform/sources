@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := cracklib         \
+SUBDIRS := aalib            \
+           cracklib         \
            cracklib-words   \
            expat            \
            freetype         \
@@ -19,7 +20,9 @@ SUBDIRS := cracklib         \
            libelf           \
            libevent         \
            libffi           \
+           libgphoto2       \
            libjpeg          \
+           libjpeg-6a       \
            libmad           \
            libpng           \
            libtiff          \

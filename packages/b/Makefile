@@ -4,15 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := cdparanoia   \
-           celt         \
-           flac         \
-           libao        \
-           libogg       \
-           libtheora    \
-           libvorbis    \
-           opus         \
-           vorbis-tools
+SUBDIRS := mariadb \
+           sqlite
 
 
 all-recursive downloads_clean-recursive:

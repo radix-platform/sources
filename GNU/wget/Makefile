@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/wget
 
-versions    = 1.14 1.15
+versions    = 1.14 1.15 1.16
 pkgname     = wget
 suffix      = tar.xz
 

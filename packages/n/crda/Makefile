@@ -6,18 +6,19 @@
 # Downloads:
 # =========
 # http://wireless.kernel.org/download/crda
+# https://www.kernel.org/pub/software/network/crda
 #
 
-url         = http://wireless.kernel.org/download/crda/
+url         = https://www.kernel.org/pub/software/network/crda
 
-versions    = 1.1.1 1.1.3
+versions    = 1.1.1 1.1.3 3.13
 pkgname     = crda
-suffix      = tar.bz2
+suffix      = tar.xz
 
 repo_name   = wireless-regdb
 
 TAGS        = master-2014-10-07
-TAGS       += master-2014-10-06
+TAGS       += master-2014-11-07
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 regdbs     += $(foreach tag, $(TAGS), \

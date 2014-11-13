@@ -48,7 +48,7 @@ $(tarballs):
 	   rm -f $(repo_name)-$$version.$(suffix) ; \
 	   ( cd $(repo_name) ; \
 	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$tag | \
-	      bzip2 >../$(repo_name)-$$version.$(suffix) ) ; \
+	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
 	 done
 	@rm -rf $(repo_name)
 

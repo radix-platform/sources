@@ -16,11 +16,12 @@ repo_name  = linux-sunxi
 #                                               hash | date
 #            ----------------------------------------+--------
 revisions  = e37d760b363888f3a65cd6455c99a75cac70a7b8-20140514
+revisions += 9a1cd034181af628d4145202289e1993c1687db6-20141014
 
 #
 # Default Linux config file name:
 #
-_defconfig = sun4i_defconfig
+_defconfig = sun7i_defconfig
 
 git_repo   = .git_clone
 

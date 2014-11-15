@@ -3,7 +3,7 @@
 # SUNXI Linux Kernel: https://github.com/linux-sunxi/linux-sunxi
 #
 
-url        = git://radix.pro
+url        = git://radix.pro/cubieboard2
 
 repo_name  = linux-sunxi
 
@@ -11,12 +11,11 @@ repo_name  = linux-sunxi
 # List of tags to be extracted:
 # ============================
 #
-# Revisions from 'sunxi-3.4' branch used for A10, A13, A10s and A20.
+# Revisions from 'sunxi-3.4-ct-v101' branch used for A10, A13, A10s and A20.
 #
 #                                               hash | date
 #            ----------------------------------------+--------
-revisions  = e37d760b363888f3a65cd6455c99a75cac70a7b8-20140514
-revisions += 9a1cd034181af628d4145202289e1993c1687db6-20141014
+revisions  = 7f08ba395617d17e7a711507503d89a50406fe7a-20130917
 
 #
 # Default Linux config file name:
@@ -25,7 +24,7 @@ _defconfig = sun7i_defconfig
 
 git_repo   = .git_clone
 
-branch     = sunxi-3.4
+branch     = sunxi-3.4-ct-v101
 versions   = $(foreach tag, $(revisions), $(addprefix $(branch)-, $(shell echo $(tag) | cut -f 2 -d '-')))
 
 tarballs   = $(addsuffix .tar.bz2, $(addprefix linux-, $(versions)))
@@ -58,7 +57,7 @@ $(tarballs): $(git_repo)
 
 $(defconfigs): %.defconfig: %.tar.bz2
 	@for arch in $< ; do \
-	  version=`echo $$arch | sed 's/\(^[a-zA-z]*\)\(-\)\([a-zA-z]*-[0-9].[0-9]-[0-9]*\)\(.tar.bz2\)/\3/'` ; \
+	  version=`echo $$arch | sed 's/\(^[a-zA-z]*\)\(-\)\([a-zA-z]*-[0-9].[0-9]-ct-v101-[0-9]*\)\(.tar.bz2\)/\3/'` ; \
 	  defcfg=$(_defconfig) ; \
 	  echo -e "\n======= Extracting default '.config' from '$$arch' tarball =======" ; \
 	  ( tar -xjf $$arch \

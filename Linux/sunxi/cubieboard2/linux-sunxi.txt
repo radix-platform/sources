@@ -1,0 +1,17 @@
+
+Linux source for Allwinner/Boxchip F20 (sun3i), A10 (sun4i) and A12/A13 (sun5i) SoCs:
+====================================================================================
+
+     main page: http://linux-sunxi.org/Linux
+Git repository: https://github.com/cubieboard2/linux-sunxi
+
+Clone:
+=====
+
+   $ git clone https://github.com/cubieboard2/linux-sunxi.git linux-sunxi
+
+
+Snapshots from sunxi-3.4-ct-v101 stable branch.
+
+Branch Description: sunxi support forward ported from sunxi-3.0 and
+keeping reference-3.4 as it's mainline reference.

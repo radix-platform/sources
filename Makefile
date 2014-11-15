@@ -82,7 +82,6 @@ SUBDIRS := GNOME                   \
            Linux/omap5             \
            Linux/omap5-glsdk       \
            Linux/sunxi             \
-           Linux/sunxi/cubieboard2 \
            Linux/sunxi/sunxi-3.4   \
            Linux/v2.6              \
            Linux/v3.x              \

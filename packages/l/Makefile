@@ -7,6 +7,8 @@
 SUBDIRS := aalib            \
            cracklib         \
            cracklib-words   \
+           dbus-glib        \
+           dbus-python      \
            expat            \
            freetype         \
            gamin            \

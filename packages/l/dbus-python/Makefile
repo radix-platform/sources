@@ -1,18 +1,17 @@
 #
 # Project Home:
 # ============
-# http://www.freedesktop.org/wiki/Software/dbus
+# http://www.freedesktop.org/wiki/Software/DBusBindings
 #
 # Downloads:
 # =========
-# http://www.freedesktop.org/wiki/Software/dbus/#index5h1
-# http://dbus.freedesktop.org/releases/dbus
+# http://dbus.freedesktop.org/releases/dbus-python
 #
 
-url         = http://dbus.freedesktop.org/releases/dbus
+url         = http://dbus.freedesktop.org/releases/dbus-python
 
-versions    = 1.6.12 1.8.8 1.8.10 1.9.0
-pkgname     = dbus
+versions    = 1.2.0
+pkgname     = dbus-python
 suffix      = tar.gz
 sign_suffix = asc
 

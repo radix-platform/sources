@@ -25,7 +25,7 @@ SUBDIRS := aalib            \
            libgphoto2       \
            libjpeg          \
            libjpeg-6a       \
-           libmad           \
+           libpipeline      \
            libpng           \
            libtiff          \
            libusb           \

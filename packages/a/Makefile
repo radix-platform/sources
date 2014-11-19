@@ -62,6 +62,7 @@ SUBDIRS := CLooG                 \
            isapnptools           \
            ispell                \
            itstool               \
+           jbigkit               \
            jed                   \
            jfsutils              \
            joe                   \

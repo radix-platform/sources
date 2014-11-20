@@ -34,6 +34,7 @@ SUBDIRS := aalib            \
            libxml2          \
            libxslt          \
            lzo              \
+           netpbm           \
            pcre             \
            popt             \
            ppl              \

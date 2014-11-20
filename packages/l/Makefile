@@ -4,44 +4,45 @@
 # $ tree -fid .
 #
 
-SUBDIRS := aalib            \
-           cracklib         \
-           cracklib-words   \
-           dbus-glib        \
-           dbus-python      \
-           expat            \
-           freetype         \
-           gamin            \
-           gc               \
-           isl              \
-           json-c           \
-           keyutils         \
-           liba52           \
-           libarchive       \
-           libcap           \
-           libelf           \
-           libevent         \
-           libffi           \
-           libgphoto2       \
-           libjpeg          \
-           libjpeg-6a       \
-           libjpeg-turbo    \
-           libpipeline      \
-           libpng           \
-           libtiff          \
-           libusb           \
-           libusb-compat    \
-           libxml2          \
-           libxslt          \
-           lzo              \
-           netpbm           \
-           pcre             \
-           popt             \
-           ppl              \
-           sg3_utils        \
-           shared-mime-info \
-           slang            \
-           termcap-compat   \
+SUBDIRS := aalib                \
+           cracklib             \
+           cracklib-words       \
+           dbus-glib            \
+           dbus-python          \
+           expat                \
+           freetype             \
+           gamin                \
+           gc                   \
+           isl                  \
+           json-c               \
+           keyutils             \
+           liba52               \
+           libarchive           \
+           libcap               \
+           libelf               \
+           libevent             \
+           libffi               \
+           libgphoto2           \
+           libjpeg              \
+           libjpeg-6a           \
+           libjpeg-turbo        \
+           libpipeline          \
+           libpng               \
+           libtiff              \
+           libusb               \
+           libusb-compat        \
+           libxml2              \
+           libxslt              \
+           lzo                  \
+           netpbm               \
+           netpbm-super-stable  \
+           pcre                 \
+           popt                 \
+           ppl                  \
+           sg3_utils            \
+           shared-mime-info     \
+           slang                \
+           termcap-compat       \
            zlib
 
 

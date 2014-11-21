@@ -14,9 +14,9 @@
 
 url         = http://svn.code.sf.net/p/netpbm/code
 
-pkgname     = netpbm
+pkgname     = netpbm-doc
 
-branch      = advanced
+branch      = userguide
 #
 # List of revisions to be extracted:
 # =================================
@@ -25,8 +25,7 @@ branch      = advanced
 #
 #       revision | version
 #      ----------+---------
-revisions  = 2298-10.68.01
-revisions += 2294-10.68.00
+revisions  = 2313-20141125
 
 
 versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d '-'))

@@ -35,6 +35,7 @@ SUBDIRS := aalib                \
            libxslt              \
            lzo                  \
            netpbm               \
+           netpbm-doc           \
            netpbm-super-stable  \
            pcre                 \
            popt                 \

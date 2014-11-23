@@ -75,6 +75,7 @@ SUBDIRS := CLooG                 \
            libx86                \
            lilo                  \
            linuxconsole          \
+           linuxdoc-tools        \
            lm_sensors            \
            logrotate             \
            lrzip                 \

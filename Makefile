@@ -90,6 +90,7 @@ SUBDIRS := GNOME                   \
            U-Boot/omap5-glsdk      \
            U-Boot/sunxi            \
            U-Boot/sunxi/sunxi      \
+           X.org                   \
            dict                    \
            hal/kernel-firmware     \
            hal/omap/sgx-ddk        \

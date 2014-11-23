@@ -4,7 +4,11 @@
 # $ tree -fid .
 #
 
-SUBDIRS := docbook-xml \
+SUBDIRS := docbook-dsssl     \
+           docbook-dsssl-doc \
+           docbook-xml       \
+           docbook-xsl       \
+           docbook-xsl-doc   \
            xmlto
 
 

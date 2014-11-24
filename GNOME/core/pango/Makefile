@@ -1,7 +1,6 @@
 #
 # Project Home:
 # ============
-# http://www.gtk.org
 # http://www.gnome.org
 #
 # Repository browse: https://git.gnome.org/browse/pango
@@ -14,10 +13,10 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 1.35.3 1.36.1 1.36.4 1.36.5
+versions  = 1.35.3 1.36.1 1.36.4 1.36.5 1.36.8
 pkg_name  = pango
 arch_type = tar.xz
-suffixes  = $(arch_type) sha256sum changes news
+suffixes  = $(arch_type)
 
 files     = $(foreach suffix, $(suffixes), $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions))))
 

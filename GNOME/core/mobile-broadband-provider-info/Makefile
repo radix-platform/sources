@@ -14,7 +14,7 @@ url       = ftp://ftp.gnome.org/pub/GNOME/sources
 versions  = 20120614
 pkg_name  = mobile-broadband-provider-info
 arch_type = tar.xz
-suffixes  = $(arch_type) sha256sum
+suffixes  = $(arch_type)
 
 files     = $(foreach suffix, $(suffixes), $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions))))
 

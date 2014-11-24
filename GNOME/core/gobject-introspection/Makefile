@@ -1,14 +1,9 @@
 #
 # Project Home:
 # ============
-# http://www.gtk.org
 # http://www.gnome.org
 #
-# Repository browse: https://git.gnome.org/browse/glib
-#
-# API changes/compatibility report for the glib library:
-# -----------------------------------------------------
-# http://upstream-tracker.org/versions/glib.html
+# Repository browse: https://git.gnome.org/browse/gobject-introspection
 #
 # Downloads:
 # =========
@@ -18,10 +13,10 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 1.39.3 1.40.0 1.41.3
+versions  = 1.39.3 1.40.0 1.41.3 1.42.0
 pkg_name  = gobject-introspection
 arch_type = tar.xz
-suffixes  = $(arch_type) sha256sum
+suffixes  = $(arch_type)
 
 files     = $(foreach suffix, $(suffixes), $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions))))
 

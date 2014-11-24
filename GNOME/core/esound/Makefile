@@ -19,7 +19,7 @@ url       = ftp://ftp.gnome.org/pub/GNOME/sources
 versions  = 0.2.41
 pkg_name  = esound
 arch_type = tar.bz2
-suffixes  = $(arch_type) sha256sum changes news
+suffixes  = $(arch_type)
 
 files     = $(foreach suffix, $(suffixes), $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions))))
 

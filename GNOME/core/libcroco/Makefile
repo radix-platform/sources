@@ -1,7 +1,6 @@
 #
 # Project Home:
 # ============
-# http://www.gtk.org
 # http://www.gnome.org
 #
 # Repository browse: https://git.gnome.org/browse/libcroco
@@ -17,7 +16,7 @@ url       = ftp://ftp.gnome.org/pub/GNOME/sources
 versions  = 0.6.7 0.6.8
 pkg_name  = libcroco
 arch_type = tar.xz
-suffixes  = $(arch_type) sha256sum changes news
+suffixes  = $(arch_type)
 
 files     = $(foreach suffix, $(suffixes), $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions))))
 

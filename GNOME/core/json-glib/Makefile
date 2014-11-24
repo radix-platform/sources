@@ -1,8 +1,9 @@
 #
 # Project Home:
 # ============
-# http://www.gtk.org
 # http://www.gnome.org
+#
+# Repository browse: https://git.gnome.org/browse/json-glib
 #
 # Downloads:
 # =========
@@ -12,10 +13,10 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 0.16.2
+versions  = 0.16.2 1.0.2
 pkg_name  = json-glib
 arch_type = tar.xz
-suffixes  = $(arch_type) sha256sum changes news
+suffixes  = $(arch_type)
 
 files     = $(foreach suffix, $(suffixes), $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions))))
 

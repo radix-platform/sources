@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := core
+SUBDIRS := apps \
+           core
 
 
 all-recursive downloads_clean-recursive:

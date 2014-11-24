@@ -4,13 +4,118 @@
 # $ tree -fid .
 #
 
-SUBDIRS := esound                         \
+SUBDIRS := NetworkManager                 \
+           adwaita-icon-theme             \
+           at-spi2-atk                    \
+           at-spi2-core                   \
+           atk                            \
+           atkmm                          \
+           baobab                         \
+           cantarell-fonts                \
+           caribou                        \
+           clutter                        \
+           clutter-gst                    \
+           clutter-gtk                    \
+           cogl                           \
+           dconf                          \
+           empathy                        \
+           eog                            \
+           epiphany                       \
+           esound                         \
+           evince                         \
+           evolution-data-server          \
+           folks                          \
+           gcr                            \
+           gdk-pixbuf                     \
+           gdm                            \
+           geocode-glib                   \
+           gjs                            \
            glib                           \
+           glib-networking                \
+           glibmm                         \
+           gmime                          \
+           gnome-backgrounds              \
+           gnome-bluetooth                \
+           gnome-calculator               \
+           gnome-contacts                 \
+           gnome-control-center           \
+           gnome-desktop                  \
+           gnome-dictionary               \
+           gnome-disk-utility             \
+           gnome-font-viewer              \
+           gnome-keyring                  \
+           gnome-menus                    \
+           gnome-online-accounts          \
+           gnome-online-miners            \
+           gnome-packagekit               \
+           gnome-screenshot               \
+           gnome-session                  \
+           gnome-settings-daemon          \
+           gnome-shell                    \
+           gnome-shell-extensions         \
+           gnome-system-log               \
+           gnome-system-monitor           \
+           gnome-terminal                 \
+           gnome-themes-standard          \
+           gnome-user-docs                \
+           gnome-user-share               \
+           gnome-video-effects            \
            gobject-introspection          \
+           grilo                          \
+           grilo-plugins                  \
+           gsettings-desktop-schemas      \
+           gssdp                          \
+           gtk+                           \
+           gtk-doc                        \
+           gtk-engines                    \
+           gtkmm                          \
+           gtksourceview                  \
+           gucharmap                      \
+           gupnp                          \
+           gupnp-igd                      \
+           gvfs                           \
            json-glib                      \
+           libchamplain                   \
            libcroco                       \
+           libgdata                       \
+           libgee                         \
+           libgnomekbd                    \
+           libgsf                         \
+           libgsystem                     \
+           libgtop                        \
+           libgweather                    \
+           libgxps                        \
+           libmediaart                    \
+           libnotify                      \
+           libpeas                        \
+           librsvg                        \
+           libsecret                      \
+           libsigc++                      \
+           libsoup                        \
+           libwnck                        \
+           libzapojit                     \
+           mm-common                      \
            mobile-broadband-provider-info \
-           pango
+           mousetweaks                    \
+           mutter                         \
+           nautilus                       \
+           network-manager-applet         \
+           pango                          \
+           pangomm                        \
+           pygobject                      \
+           rest                           \
+           seed                           \
+           sushi                          \
+           totem                          \
+           totem-pl-parser                \
+           tracker                        \
+           vala                           \
+           vino                           \
+           vte                            \
+           yelp                           \
+           yelp-tools                     \
+           yelp-xsl                       \
+           zenity
 
 
 all-recursive downloads_clean-recursive:

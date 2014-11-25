@@ -9,6 +9,7 @@ SUBDIRS := docbook-dsssl     \
            docbook-xml       \
            docbook-xsl       \
            docbook-xsl-doc   \
+           sgml-common       \
            xmlto
 
 

@@ -5,11 +5,13 @@
 #
 
 SUBDIRS := aalib                \
+           cairo                \
            cracklib             \
            cracklib-words       \
            dbus-glib            \
            dbus-python          \
            expat                \
+           fontconfig           \
            freetype             \
            gamin                \
            gc                   \

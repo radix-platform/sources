@@ -13,6 +13,8 @@ SUBDIRS := aalib                \
            freetype             \
            gamin                \
            gc                   \
+           harfbuzz             \
+           icu4c                \
            isl                  \
            json-c               \
            keyutils             \

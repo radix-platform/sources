@@ -44,6 +44,7 @@ SUBDIRS := libAppleWM    \
            libfontenc    \
            libpciaccess  \
            libxkbfile    \
+           libxshmfence  \
            pixman        \
            xtrans
 

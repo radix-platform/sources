@@ -4,16 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := LLVM          \
-           check         \
-           cmake         \
-           flex          \
-           perl          \
-           perl-cross    \
-           python2       \
-           python2-doc   \
-           python3       \
-           python3-doc
+SUBDIRS := libomxil-bellagio
 
 
 all-recursive downloads_clean-recursive:

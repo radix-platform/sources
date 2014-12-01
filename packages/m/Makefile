@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := alsa       \
+SUBDIRS := OpenMAX    \
+           alsa       \
            amp        \
            amr        \
            audiofile  \

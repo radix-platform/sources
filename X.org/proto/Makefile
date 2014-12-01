@@ -10,6 +10,7 @@ SUBDIRS := applewmproto     \
            damageproto      \
            dmxproto         \
            dri2proto        \
+           dri3proto        \
            evieext          \
            fixesproto       \
            fontcacheproto   \

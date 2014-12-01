@@ -11,7 +11,6 @@ SUBDIRS := aalib                \
            dbus-glib            \
            dbus-python          \
            expat                \
-           fontconfig           \
            freetype             \
            gamin                \
            gc                   \

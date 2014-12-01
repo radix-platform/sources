@@ -4,7 +4,9 @@
 # $ tree -fid .
 #
 
-SUBDIRS := mozilla-firefox     \
+SUBDIRS := fontconfig          \
+           libdrm              \
+           mozilla-firefox     \
            mozilla-thunderbird \
            terminus-font
 

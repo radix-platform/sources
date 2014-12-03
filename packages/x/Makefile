@@ -6,6 +6,7 @@
 
 SUBDIRS := fontconfig          \
            libdrm              \
+           libtxc_dxtn         \
            mozilla-firefox     \
            mozilla-thunderbird \
            terminus-font

@@ -7,6 +7,8 @@
 SUBDIRS := fontconfig          \
            libdrm              \
            libtxc_dxtn         \
+           mesa                \
+           mesa-demos          \
            mozilla-firefox     \
            mozilla-thunderbird \
            terminus-font

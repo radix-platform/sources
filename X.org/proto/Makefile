@@ -18,6 +18,7 @@ SUBDIRS := applewmproto     \
            glproto          \
            inputproto       \
            kbproto          \
+           presentproto     \
            printproto       \
            randrproto       \
            recordproto      \

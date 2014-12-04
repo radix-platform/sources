@@ -10,6 +10,7 @@ SUBDIRS := aalib                \
            cracklib-words       \
            dbus-glib            \
            dbus-python          \
+           elfutils             \
            expat                \
            freetype             \
            gamin                \

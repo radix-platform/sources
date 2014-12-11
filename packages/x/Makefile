@@ -6,7 +6,9 @@
 
 SUBDIRS := fontconfig          \
            libdrm              \
+           libepoxy            \
            libevdev            \
+           libinput            \
            libtxc_dxtn         \
            mesa                \
            mesa-demos          \

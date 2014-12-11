@@ -6,11 +6,13 @@
 
 SUBDIRS := fontconfig          \
            libdrm              \
+           libevdev            \
            libtxc_dxtn         \
            mesa                \
            mesa-demos          \
            mozilla-firefox     \
            mozilla-thunderbird \
+           mtdev               \
            terminus-font
 
 

@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 2.19.0 2.21.15
+versions    = 2.19.0 2.21.15 2.99.911 2.99.916
 pkgname     = xf86-video-intel
 suffix      = tar.bz2
 

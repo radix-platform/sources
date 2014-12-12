@@ -4,7 +4,9 @@
 # $ tree -fid .
 #
 
-SUBDIRS := fontconfig          \
+SUBDIRS := dejavu-fonts        \
+           dejavu-fonts-ttf    \
+           fontconfig          \
            libdrm              \
            libepoxy            \
            libevdev            \
@@ -15,7 +17,8 @@ SUBDIRS := fontconfig          \
            mozilla-firefox     \
            mozilla-thunderbird \
            mtdev               \
-           terminus-font
+           terminus-font       \
+           xterm
 
 
 all-recursive downloads_clean-recursive:

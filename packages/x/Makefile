@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := dejavu-fonts        \
+SUBDIRS := WindowMaker         \
+           dejavu-fonts        \
            dejavu-fonts-ttf    \
            fontconfig          \
            libdrm              \

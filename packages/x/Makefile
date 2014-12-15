@@ -19,6 +19,7 @@ SUBDIRS := WindowMaker         \
            mozilla-thunderbird \
            mtdev               \
            terminus-font       \
+           thaixfonts          \
            xterm
 
 

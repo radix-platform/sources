@@ -24,6 +24,7 @@ SUBDIRS := aalib                \
            liba52               \
            libarchive           \
            libcap               \
+           libdatrie            \
            libelf               \
            libevent             \
            libffi               \
@@ -33,6 +34,7 @@ SUBDIRS := aalib                \
            libjpeg-turbo        \
            libpipeline          \
            libpng               \
+           libthai              \
            libtiff              \
            libusb               \
            libusb-compat        \

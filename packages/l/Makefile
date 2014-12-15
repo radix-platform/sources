@@ -15,6 +15,7 @@ SUBDIRS := aalib                \
            freetype             \
            gamin                \
            gc                   \
+           giflib               \
            harfbuzz             \
            icu4c                \
            isl                  \

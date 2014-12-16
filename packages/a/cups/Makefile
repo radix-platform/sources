@@ -10,7 +10,7 @@
 
 url         = https://www.cups.org/software
 
-versions    = 1.5.4 2.0.0
+versions    = 1.5.4 2.0.0 2.0.1
 pkgname     = cups
 suffix      = tar.bz2
 sign_suffix = sig

@@ -21,6 +21,7 @@ SUBDIRS := aalib                \
            isl                  \
            json-c               \
            keyutils             \
+           lcms2                \
            liba52               \
            libarchive           \
            libcap               \
@@ -45,6 +46,8 @@ SUBDIRS := aalib                \
            netpbm-doc           \
            netpbm-super-stable  \
            pcre                 \
+           poppler              \
+           poppler-data         \
            popt                 \
            ppl                  \
            sg3_utils            \

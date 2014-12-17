@@ -109,6 +109,7 @@ SUBDIRS := CLooG                 \
            procps                \
            psmisc                \
            psutils               \
+           qpdf                  \
            quota                 \
            radeontool            \
            reiserfsprogs         \

@@ -22,6 +22,7 @@ SUBDIRS := CLooG                 \
            cryptsetup            \
            ctags                 \
            cups                  \
+           cups-filters          \
            cups-xp               \
            db                    \
            dbus                  \

@@ -35,6 +35,7 @@ SUBDIRS := aalib                \
            libjpeg-turbo        \
            libpipeline          \
            libpng               \
+           libspectre           \
            libthai              \
            libtiff              \
            libusb               \

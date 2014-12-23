@@ -34,17 +34,23 @@ $(git_repo):
 	@echo -e "\n======= Clone TI GLSDK $(repo_name).git repository =======\n"
 	@rm -rf $(repo_name)
 	@git clone $(url)/$(repo_name).git $(repo_name)
+	@( cd $(repo_name) ; git submodule update --init --recursive )
 	@touch $@
 
 $(tarballs): $(git_repo)
 	@for tg in $(TAGS) ; do \
 	  tag=`echo $$tg | cut -f 1 -d ':'` ; \
 	  prefix=`echo $$tg | cut -f 2 -d ':'` ; \
+	  mkdir -p $$prefix ; \
 	  if [ ! -f $$tag.$(suffix) ]; then \
 	    echo -e "\n======= Creating '$$prefix.$(suffix)' snapshot =======" ; \
 	    ( cd $(repo_name) && \
 	      git archive --format=tar --prefix=$$prefix/ $$tag | \
-	      xz >../$$prefix.$(suffix) ) ; \
+	      tar -x -C .. ) ; \
+	    ( cd $(repo_name)/common && \
+	      git archive --format=tar HEAD | tar -x -C ../../$$prefix/common ) ; \
+	    tar cJf $$prefix.tar.xz $$prefix ; \
+	    rm -rf $$prefix ; \
 	  fi ; \
 	done
 

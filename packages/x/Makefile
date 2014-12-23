@@ -7,8 +7,10 @@
 SUBDIRS := WindowMaker         \
            dejavu-fonts        \
            dejavu-fonts-ttf    \
+           desktop-file-utils  \
            fontconfig          \
            gstreamer           \
+           hicolor-icon-theme  \
            libdrm              \
            libepoxy            \
            libevdev            \
@@ -21,6 +23,7 @@ SUBDIRS := WindowMaker         \
            mtdev               \
            terminus-font       \
            thaixfonts          \
+           xdg-utils           \
            xterm
 
 

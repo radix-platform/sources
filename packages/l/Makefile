@@ -33,6 +33,7 @@ SUBDIRS := aalib                \
            libjpeg              \
            libjpeg-6a           \
            libjpeg-turbo        \
+           libmng               \
            libpipeline          \
            libpng               \
            libspectre           \

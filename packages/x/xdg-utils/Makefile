@@ -20,13 +20,14 @@ repo_name  = xdg-utils
 #
 # List of tags to be extracted:
 #
-TAGS       = 1.0.2
-TAGS      += 1.1.0-rc2
+TAGS       = 8c65fb00f55ec676b24872885dc2dbf7a4dacf25:1.0.2
+TAGS      += 9595033d358a7d78e2b882c36ac11f29697f064d:1.1.0-rc2
+TAGS      += f0df41402e827051ec16bac212c8eaf08ada75e4:1.1.0
 
 suffix     = tar.xz
 
 git_repo   = .git_clone
-versions   = $(foreach tag, $(TAGS), $(shell echo $(tag)))
+versions   = $(foreach tag, $(TAGS), $(shell echo $(tag) | cut -f 2 -d ':'))
 tarballs   = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
 sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
@@ -49,11 +50,12 @@ $(git_repo):
 
 $(tarballs): $(git_repo)
 	@for tag in $(TAGS) ; do \
-	  version=`echo $$tag` ; \
+	  version=`echo $$tag | cut -f 2 -d ':'` ; \
+	  hash=`echo $$tag | cut -f 1 -d ':'` ; \
 	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
 	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
 	    ( cd $(repo_name) && \
-	      git archive --format=tar --prefix=$(repo_name)-$$version/ v$$tag | \
+	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$hash | \
 	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
 	  fi ; \
 	done

@@ -8,6 +8,7 @@ SUBDIRS := WindowMaker         \
            dejavu-fonts        \
            dejavu-fonts-ttf    \
            fontconfig          \
+           gstreamer           \
            libdrm              \
            libepoxy            \
            libevdev            \

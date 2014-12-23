@@ -4,9 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := drivers         \
-           kernel-firmware \
-           omap543x
+SUBDIRS := glsdk
 
 
 all-recursive downloads_clean-recursive:

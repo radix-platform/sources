@@ -4,9 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := drivers         \
-           kernel-firmware \
-           omap543x
+SUBDIRS := gstreamer0.10
 
 
 all-recursive downloads_clean-recursive:

@@ -41,6 +41,7 @@ SUBDIRS := aalib                \
            libtiff              \
            libusb               \
            libusb-compat        \
+           libvisual            \
            libxml2              \
            libxslt              \
            lzo                  \

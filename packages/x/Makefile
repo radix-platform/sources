@@ -21,6 +21,7 @@ SUBDIRS := WindowMaker         \
            mozilla-firefox     \
            mozilla-thunderbird \
            mtdev               \
+           qt4                 \
            terminus-font       \
            thaixfonts          \
            xdg-utils           \

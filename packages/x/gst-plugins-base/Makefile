@@ -7,13 +7,13 @@
 # Downloads:
 # =========
 # http://gstreamer.freedesktop.org/src
-# http://gstreamer.freedesktop.org/src/gstreamer
+# http://gstreamer.freedesktop.org/src/gst-plugins-base
 #
 
-url         = http://gstreamer.freedesktop.org/src/gstreamer
+url         = http://gstreamer.freedesktop.org/src/gst-plugins-base
 
 versions    = 0.10.36 1.4.5
-pkgname     = gstreamer
+pkgname     = gst-plugins-base
 suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

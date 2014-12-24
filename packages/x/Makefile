@@ -9,6 +9,7 @@ SUBDIRS := WindowMaker         \
            dejavu-fonts-ttf    \
            desktop-file-utils  \
            fontconfig          \
+           gst-plugins-base    \
            gstreamer           \
            hicolor-icon-theme  \
            libdrm              \

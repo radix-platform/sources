@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := gstreamer0.10
+SUBDIRS := gstreamer0.10        \
+           gst-plugins-base0.10
 
 
 all-recursive downloads_clean-recursive:

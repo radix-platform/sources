@@ -15,7 +15,7 @@
 
 url         = https://downloads.mariadb.org/interstitial
 
-versions    = 5.5.40 10.0.14
+versions    = 5.5.41 10.0.15
 pkgname     = mariadb
 suffix      = tar.gz
 sign_suffix = asc

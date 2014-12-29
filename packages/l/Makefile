@@ -19,10 +19,12 @@ SUBDIRS := aalib                \
            harfbuzz             \
            icu4c                \
            isl                  \
+           jemalloc             \
            json-c               \
            keyutils             \
            lcms2                \
            liba52               \
+           libaio               \
            libarchive           \
            libcap               \
            libdatrie            \

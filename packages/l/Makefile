@@ -5,6 +5,7 @@
 #
 
 SUBDIRS := aalib                \
+           boost                \
            cairo                \
            cracklib             \
            cracklib-words       \

@@ -18,6 +18,7 @@ SUBDIRS := aalib                \
            gc                   \
            giflib               \
            harfbuzz             \
+           hwloc                \
            icu4c                \
            isl                  \
            jemalloc             \
@@ -51,6 +52,7 @@ SUBDIRS := aalib                \
            netpbm               \
            netpbm-doc           \
            netpbm-super-stable  \
+           openmpi              \
            pcre                 \
            poppler              \
            poppler-data         \

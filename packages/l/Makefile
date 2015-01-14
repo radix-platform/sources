@@ -34,6 +34,7 @@ SUBDIRS := aalib                \
            libevent             \
            libffi               \
            libgphoto2           \
+           libiodbc             \
            libjpeg              \
            libjpeg-6a           \
            libjpeg-turbo        \

@@ -1,7 +1,7 @@
 
 #
 # Following command helps to cheate SUBDIRS list:
-# $ tree -fid .
+# $ tree -fid  .
 #
 
 SUBDIRS := GNOME                   \

@@ -26,3 +26,29 @@ dm644x/flash-tools/IRAM-flasher/IRAM-flasher/
 dm644x/flash-tools/IRAM-loader/IRAM-loader/
 dm644x/flash-tools/NOR-flasher/NOR-flasher/
 dm644x/modSign/modSign/
+
+#
+# Downloaded 3pp patches:
+# ======================
+#
+GNU/ncurses/5.9/patch-5.9-20130504.sh.gz
+packages/a/adjtimex/adjtimex_1.29-2.2.diff.gz
+packages/a/cups-xp/cups-windows-psprint.patch.gz
+packages/a/cups-xp/cups-windows-psprint.readme
+packages/a/devs-debian/makedev_2.3.1-93.diff.gz
+packages/a/fdutils/fdutils-5.5-20081027.diff.gz
+packages/a/genpower-debian/genpower_1.0.5-2.3.diff.gz
+packages/a/lha-debian/lha_1.14i-10.3.diff.gz
+packages/a/shadow/shadow_4.1.5.1-1.diff.gz
+packages/l/cracklib-words/cracklib-words-20080507.gz
+packages/n/bootp-debian/bootp_2.4.3-18.diff.gz
+packages/n/curl/cacert.pem.bz2
+packages/n/inetd/inetd-OpenBSD-1.79.diff.gz
+packages/n/inetd/inetd.loopingdos.diff.gz
+packages/n/ntp/ntp-4.2.6p5.tar.gz.md5
+packages/n/openldap/openldap-2.4.31.md5
+packages/n/openldap/openldap-2.4.39.md5
+packages/n/telnet-OpenBSD/telnet-OpenBSD-014_telnet.diff.gz
+packages/n/telnet-OpenBSD/telnet-OpenBSD-20020321.diff.gz
+packages/s/pam_unix2/pam_unix2-glibc216.patch.gz
+packages/s/pam_unix2/pam_unix2-selinux.patch.gz

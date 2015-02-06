@@ -15,7 +15,7 @@ url        = git://git.libav.org/libav.git
 
 repo_name  = libav
 
-versions   = 9.10 9.11 9.16 10.3
+versions   = 9.10 9.11 9.16 10.3 11.2
 suffix     = tar.bz2
 #
 # List of tags to be extracted:

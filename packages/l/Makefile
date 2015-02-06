@@ -50,6 +50,8 @@ SUBDIRS := aalib                \
            libxml2              \
            libxslt              \
            lzo                  \
+           mozilla-nspr         \
+           mozilla-nss          \
            netpbm               \
            netpbm-doc           \
            netpbm-super-stable  \

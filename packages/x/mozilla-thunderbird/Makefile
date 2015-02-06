@@ -10,7 +10,7 @@
 
 url         = http://download.cdn.mozilla.net/pub/mozilla.org/thunderbird/releases
 
-versions    = 31.2.0
+versions    = 31.2.0 31.3.0 31.4.0
 pkgname     = thunderbird
 suffix      = tar.bz2
 

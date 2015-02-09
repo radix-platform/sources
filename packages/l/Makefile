@@ -49,6 +49,7 @@ SUBDIRS := aalib                \
            libvisual            \
            libxml2              \
            libxslt              \
+           log4cplus            \
            lzo                  \
            mozilla-nspr         \
            mozilla-nss          \
@@ -65,6 +66,7 @@ SUBDIRS := aalib                \
            shared-mime-info     \
            slang                \
            termcap-compat       \
+           zeromq               \
            zlib
 
 

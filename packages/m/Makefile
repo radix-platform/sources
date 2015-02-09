@@ -22,6 +22,7 @@ SUBDIRS := OpenMAX    \
            record     \
            soma       \
            sox        \
+           taglib     \
            wavpack    \
            workbone   \
            xiph

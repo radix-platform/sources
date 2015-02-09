@@ -4,31 +4,34 @@
 # $ tree -fid .
 #
 
-SUBDIRS := WindowMaker         \
-           dejavu-fonts        \
-           dejavu-fonts-ttf    \
-           desktop-file-utils  \
-           fontconfig          \
-           glew                \
-           glu                 \
-           gst-plugins-base    \
-           gstreamer           \
-           hicolor-icon-theme  \
-           libdrm              \
-           libepoxy            \
-           libevdev            \
-           libinput            \
-           libtxc_dxtn         \
-           mesa                \
-           mesa-demos          \
-           mozilla-firefox     \
-           mozilla-thunderbird \
-           mtdev               \
-           qt4                 \
-           qt5                 \
-           terminus-font       \
-           thaixfonts          \
-           xdg-utils           \
+SUBDIRS := WindowMaker          \
+           dejavu-fonts         \
+           dejavu-fonts-ttf     \
+           desktop-file-utils   \
+           fontconfig           \
+           freeglut             \
+           glew                 \
+           glu                  \
+           gst-plugins-base     \
+           gstreamer            \
+           hicolor-icon-theme   \
+           libdrm               \
+           libepoxy             \
+           libevdev             \
+           libinput             \
+           libtxc_dxtn          \
+           mesa                 \
+           mesa-demos           \
+           mozilla-firefox      \
+           mozilla-thunderbird  \
+           mtdev                \
+           qt4                  \
+           qt5                  \
+           startup-notification \
+           terminus-font        \
+           thaixfonts           \
+           xdg-user-dirs        \
+           xdg-utils            \
            xterm
 
 

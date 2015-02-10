@@ -57,6 +57,7 @@ SUBDIRS := aalib                \
            netpbm-doc           \
            netpbm-super-stable  \
            openmpi              \
+           pciids               \
            pcre                 \
            poppler              \
            poppler-data         \

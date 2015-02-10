@@ -1,17 +1,17 @@
 #
 # Project Home:
 # ============
-# http://www.linux-usb.org
+# https://pci-ids.ucw.cz/v2.2
 #
 # Downloads:
 # =========
-# http://www.linux-usb.org/usb.ids
+# https://pci-ids.ucw.cz/pci.ids
 #
 
-url         = http://www.linux-usb.org
+url         = https://pci-ids.ucw.cz
 
 version     = $(shell echo `date +%Y%m%d`)
-pkgname     = usbids
+pkgname     = pciids
 suffix      = tar.xz
 
 tarball     = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(version)))
@@ -24,9 +24,9 @@ all: $(tarball) $(sha1s)
 
 $(tarball):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@wget -N $(url)/usb.ids
-	@tar cJvf $(tarball) usb.ids
-	@rm -f usb.ids
+	@wget -N $(url)/pci.ids
+	@tar cJvf $(tarball) pci.ids
+	@rm -f pci.ids
 
 $(sha1s): $(tarball)
 	@echo -e "\n======= Calculation the '$(tarball)' sha1sum =======\n"

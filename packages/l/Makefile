@@ -66,6 +66,7 @@ SUBDIRS := aalib                \
            shared-mime-info     \
            slang                \
            termcap-compat       \
+           usbids               \
            zeromq               \
            zlib
 

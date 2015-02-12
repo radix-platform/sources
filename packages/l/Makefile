@@ -41,6 +41,7 @@ SUBDIRS := aalib                \
            libmng               \
            libpipeline          \
            libpng               \
+           libsodium            \
            libspectre           \
            libthai              \
            libtiff              \

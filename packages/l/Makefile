@@ -20,6 +20,7 @@ SUBDIRS := aalib                \
            harfbuzz             \
            hwloc                \
            icu4c                \
+           ieee1394             \
            isl                  \
            jemalloc             \
            json-c               \

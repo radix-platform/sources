@@ -13,6 +13,7 @@ SUBDIRS := OpenMAX    \
            gsm        \
            lame       \
            libav      \
+           libdv      \
            mad        \
            mega-nerd  \
            moc        \

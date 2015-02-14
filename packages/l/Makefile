@@ -73,6 +73,7 @@ SUBDIRS := aalib                \
            slang                \
            termcap-compat       \
            usbids               \
+           v4l-utils            \
            zeromq               \
            zlib
 

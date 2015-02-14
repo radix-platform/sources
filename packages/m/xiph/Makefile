@@ -7,6 +7,7 @@
 SUBDIRS := cdparanoia   \
            celt         \
            flac         \
+           icecast      \
            libao        \
            libogg       \
            libshout     \

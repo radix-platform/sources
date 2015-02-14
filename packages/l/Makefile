@@ -21,6 +21,8 @@ SUBDIRS := aalib                \
            hwloc                \
            icu4c                \
            ieee1394             \
+           imlib                \
+           imlib2               \
            isl                  \
            jemalloc             \
            json-c               \

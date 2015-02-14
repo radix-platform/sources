@@ -71,6 +71,7 @@ SUBDIRS := alpine                 \
            libnl                  \
            libnl3                 \
            libpcap                \
+           libproxy               \
            libqmi                 \
            libtirpc               \
            links                  \

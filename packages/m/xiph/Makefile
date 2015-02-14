@@ -9,6 +9,7 @@ SUBDIRS := cdparanoia   \
            flac         \
            libao        \
            libogg       \
+           libshout     \
            libtheora    \
            libvorbis    \
            opus         \

@@ -31,6 +31,7 @@ SUBDIRS := aalib                \
            liba52               \
            libaio               \
            libarchive           \
+           lincaca              \
            libcap               \
            libdatrie            \
            libelf               \

@@ -13,7 +13,7 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 2.42.0
+versions  = 2.42.0 2.42.1 2.43.1
 pkg_name  = glib-networking
 arch_type = tar.xz
 suffixes  = $(arch_type)

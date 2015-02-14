@@ -13,7 +13,7 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 2.48.0
+versions  = 2.48.0 2.48.1 2.49.1
 pkg_name  = libsoup
 arch_type = tar.xz
 suffixes  = $(arch_type)

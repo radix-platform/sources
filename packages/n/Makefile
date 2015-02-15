@@ -158,7 +158,8 @@ SUBDIRS := ModemManager           \
            whois                  \
            wireless-tools         \
            wpa_supplicant         \
-           yp
+           yp                     \
+           ytalk
 
 
 all-recursive downloads_clean-recursive:

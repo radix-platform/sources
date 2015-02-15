@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := alpine                 \
+SUBDIRS := ModemManager           \
+           alpine                 \
            autofs                 \
            biff+comsat            \
            bind                   \

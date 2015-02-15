@@ -1,7 +1,7 @@
 #
-# Project Home:
+# Project Note:
 # ============
-# https://www.kernel.org/pub/software/network/ethtool
+# http://directory.fsf.org/wiki/Ytalk
 #
 # Downloads:
 # =========

@@ -64,6 +64,7 @@ SUBDIRS := aalib                \
            openmpi              \
            pciids               \
            pcre                 \
+           polkit               \
            poppler              \
            poppler-data         \
            popt                 \

@@ -14,6 +14,7 @@ SUBDIRS := OpenMAX    \
            lame       \
            libav      \
            libdv      \
+           libvpx     \
            mad        \
            mega-nerd  \
            moc        \

@@ -13,9 +13,9 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 1.2.10
+versions  = 3.15.1
 pkg_name  = gtk+
-arch_type = tar.gz
+arch_type = tar.xz
 suffixes  = $(arch_type)
 
 files     = $(foreach suffix, $(suffixes), $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions))))

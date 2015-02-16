@@ -67,6 +67,7 @@ SUBDIRS := NetworkManager                 \
            gssdp                          \
            gtk+                           \
            gtk+2                          \
+           gtk+3                          \
            gtk-doc                        \
            gtk-engines                    \
            gtkmm                          \

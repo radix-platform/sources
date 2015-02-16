@@ -32,6 +32,7 @@ SUBDIRS := NetworkManager                 \
            gjs                            \
            glib                           \
            glib-networking                \
+           glib2                          \
            glibmm                         \
            gmime                          \
            gnome-backgrounds              \

@@ -14,6 +14,8 @@ SUBDIRS := cdparanoia   \
            libtheora    \
            libvorbis    \
            opus         \
+           speex        \
+           speexdsp     \
            vorbis-tools
 
 

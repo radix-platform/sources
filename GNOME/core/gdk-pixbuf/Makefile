@@ -13,7 +13,7 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 2.31.1
+versions  = 2.28.2 2.31.1 2.31.2
 pkg_name  = gdk-pixbuf
 arch_type = tar.xz
 suffixes  = $(arch_type)

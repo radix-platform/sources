@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := omap543x \
+SUBDIRS := dri2     \
+           omap543x \
            ump
 
 

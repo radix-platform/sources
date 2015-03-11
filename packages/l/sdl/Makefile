@@ -4,20 +4,16 @@
 # $ tree -fid .
 #
 
-SUBDIRS := cdparanoia   \
-           celt         \
-           flac         \
-           icecast      \
-           ices         \
-           libao        \
-           libogg       \
-           libshout     \
-           libtheora    \
-           libvorbis    \
-           opus         \
-           speex        \
-           speexdsp     \
-           vorbis-tools
+SUBDIRS := sdl        \
+           sdl-image  \
+           sdl-mixer  \
+           sdl-net    \
+           sdl-ttf    \
+           sdl2       \
+           sdl2-image \
+           sdl2-mixer \
+           sdl2-net   \
+           sdl2-ttf
 
 
 all-recursive downloads_clean-recursive:

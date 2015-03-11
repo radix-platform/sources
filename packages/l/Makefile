@@ -69,6 +69,7 @@ SUBDIRS := aalib                \
            poppler-data         \
            popt                 \
            ppl                  \
+           sdl                  \
            sg3_utils            \
            shared-mime-info     \
            slang                \

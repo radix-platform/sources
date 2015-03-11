@@ -4,8 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := omap543x \
-           ump
+SUBDIRS := r3p0-04rel0
 
 
 all-recursive downloads_clean-recursive:

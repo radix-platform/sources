@@ -4,10 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Mali     \
-           dri2     \
-           omap543x \
-           ump
+SUBDIRS := xf86-video-fbturbo
 
 
 all-recursive downloads_clean-recursive:

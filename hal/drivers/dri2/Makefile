@@ -14,9 +14,6 @@ repo_name  = libdri2
 #
 # List of tags to be extracted:
 # ============================
-#
-# Revisions from 'sunxi-3.4' branch used for A10, A13, A10s and A20.
-#
 #                                               hash | version
 #            ----------------------------------------+---------
 revisions  = 4f1eef3183df2b270c3d5cbef07343ee5127a6a4-1.0.0

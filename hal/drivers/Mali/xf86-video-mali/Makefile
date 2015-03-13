@@ -4,8 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := xf86-video-fbturbo \
-           xf86-video-mali
+SUBDIRS := r3p0-04rel0
 
 
 all-recursive downloads_clean-recursive:

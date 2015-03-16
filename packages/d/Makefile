@@ -10,6 +10,7 @@ SUBDIRS := LLVM          \
            flex          \
            perl          \
            perl-cross    \
+           pkg-config    \
            python2       \
            python2-doc   \
            python3       \

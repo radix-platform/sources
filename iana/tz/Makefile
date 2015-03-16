@@ -15,7 +15,7 @@
 
 url         = ftp://ftp.iana.org/tz/releases
 
-tarballs    = tz*2013[h-i].tar.gz
+tarballs    = tz*2013[h-i].tar.gz tz*2014[i-j].tar.gz tz*2015[a].tar.gz
 
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 

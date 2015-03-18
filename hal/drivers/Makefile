@@ -4,10 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Mali     \
-           dri2     \
-           omap543x \
-           ump
+SUBDIRS := omap543x
 
 
 all-recursive downloads_clean-recursive:

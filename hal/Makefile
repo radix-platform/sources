@@ -4,9 +4,12 @@
 # $ tree -fid .
 #
 
-SUBDIRS := drivers         \
+SUBDIRS := Mali            \
+           dri2            \
+           drivers         \
            kernel-firmware \
-           omap543x
+           omap543x        \
+           ump
 
 
 all-recursive downloads_clean-recursive:

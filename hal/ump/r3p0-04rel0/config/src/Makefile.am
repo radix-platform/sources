@@ -12,6 +12,9 @@ libUMP_la_SOURCES = \
 	ump_uku.c
 
 library_includedir=$(includedir)/ump/
-library_include_HEADERS = $(top_srcdir)/include/ump/ump.h \
+library_include_HEADERS = $(top_srcdir)/include/ump/ump.h          \
+                          $(top_srcdir)/include/ump/ump_debug.h    \
+                          $(top_srcdir)/include/ump/ump_osu.h      \
                           $(top_srcdir)/include/ump/ump_platform.h \
-                          $(top_srcdir)/include/ump/ump_ref_drv.h
+                          $(top_srcdir)/include/ump/ump_ref_drv.h  \
+                          $(top_srcdir)/include/ump/ump_uk_types.h

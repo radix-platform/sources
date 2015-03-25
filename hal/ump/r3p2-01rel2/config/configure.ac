@@ -1,5 +1,5 @@
 AC_PREREQ([2.68])
-AC_INIT([libump], [3.0], [kx@radix.pro])
+AC_INIT([libump], [3.2.1.2], [kx@radix.pro])
 AC_CONFIG_SRCDIR([src/ump_arch.h])
 AC_CONFIG_HEADERS([config.h])
 

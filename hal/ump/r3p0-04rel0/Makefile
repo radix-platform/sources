@@ -14,7 +14,7 @@ src_pkgname = DX910-SW-99006
 src_release = r3p0-04rel0
 src_suffix  = tgz
 
-version     = 3.0
+version     = 3.0.4.0
 pkgname     = libump
 suffix      = tar.gz
 

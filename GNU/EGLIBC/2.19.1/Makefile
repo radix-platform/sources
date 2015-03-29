@@ -6,7 +6,7 @@
 url      = http://www.eglibc.org
 
 BRANCH   = eglibc-2_19
-REVISION = 25243
+REVISION = 25890
 VERSION  = 2.19.1
 
 # 2.19.1:

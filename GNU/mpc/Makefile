@@ -12,7 +12,7 @@ url         = http://ftp.gnu.org/gnu/mpc
 
 keyring     = ../keyring-765C61E3.gpg
 
-versions    = 1.0.1 1.0.2
+versions    = 1.0.1 1.0.2 1.0.3
 
 tarballs    = $(addsuffix .tar.gz, $(addprefix mpc-, $(versions)))
 signatures  = $(addsuffix .sig, $(tarballs))

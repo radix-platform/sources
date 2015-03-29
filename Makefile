@@ -39,6 +39,7 @@ SUBDIRS := GNOME                   \
            GNU/gdb                 \
            GNU/gdbm                \
            GNU/gettext             \
+           GNU/glibc               \
            GNU/gmp                 \
            GNU/gperf               \
            GNU/grep                \

@@ -12,9 +12,9 @@ url         = http://ftp.gnu.org/gnu/gdb
 
 keyring     = ../gnu-keyring.gpg
 
-versions    = 6.4a 6.5a 7.0a 7.2a 7.5
+versions    = 6.4a 6.5a 7.0a 7.2a 7.5 7.9
 
-tarballs    = $(addsuffix .tar.bz2, $(addprefix gdb-, $(versions)))
+tarballs    = $(addsuffix .tar.gz, $(addprefix gdb-, $(versions)))
 signatures  = $(addsuffix .sig, $(tarballs))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
@@ -31,7 +31,7 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(signatures): %.tar.bz2.sig : %.tar.bz2
+$(signatures): %.tar.gz.sig : %.tar.gz
 	@for signature in $@ ; do \
 	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
 	  wget -N $(url)/$$signature ; \
@@ -43,7 +43,7 @@ $(signatures): %.tar.bz2.sig : %.tar.bz2
 	  fi ; \
 	done
 
-$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+$(sha1s): %.tar.gz.sha1sum : %.tar.gz
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \

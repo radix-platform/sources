@@ -17,6 +17,12 @@ repo_name  = linux-sunxi
 #            ----------------------------------------+--------
 revisions  = e37d760b363888f3a65cd6455c99a75cac70a7b8-20140514
 revisions += 9a1cd034181af628d4145202289e1993c1687db6-20141014
+#
+# Revisions from 'stage/sunxi-3.4' branch (DENX U-Boot compatible).
+#
+#                                               hash | date
+#            ----------------------------------------+--------
+revisions += d47d367036be38c5180632ec8a3ad169a4593a88-20150315
 
 #
 # Default Linux config file name:

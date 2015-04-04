@@ -4,7 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := DX
+SUBDIRS := r5p0-01rel0
 
 
 all-recursive downloads_clean-recursive:

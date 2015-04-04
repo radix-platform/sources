@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := sunxi-mali         \
+SUBDIRS := arm-mali           \
+           sunxi-mali         \
            xf86-video-fbturbo \
            xf86-video-mali
 

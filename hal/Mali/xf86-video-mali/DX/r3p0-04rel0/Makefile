@@ -12,9 +12,10 @@ url         = http://malideveloper.arm.com/downloads
 
 src_pkgname = DX910-SW-99003
 src_release = r3p0-04rel0
+src_version = 0.0.1
 src_suffix  = tgz
 
-version     = 0.0.1
+version     = 0.4.2
 pkgname     = xf86-video-mali
 suffix      = tar.gz
 
@@ -31,7 +32,7 @@ $(tarball):
 	@( wget -N $(url)/$(src_pkgname)-$(src_release).$(src_suffix) ; \
 	   mkdir .build $(pkgname)-$(version) ; \
 	   tar xzf $(src_pkgname)-$(src_release).$(src_suffix) -C .build ; \
-	   cp -r .build/$(src_pkgname)-$(src_release)/x11/$(pkgname)-$(version)/* $(pkgname)-$(version) ; \
+	   cp -r .build/$(src_pkgname)-$(src_release)/x11/$(pkgname)-$(src_version)/* $(pkgname)-$(version) ; \
 	   ( cd $(pkgname)-$(version) ; \
 	     autoreconf -i ; \
 	     rm -rf autom4te.cache ; \

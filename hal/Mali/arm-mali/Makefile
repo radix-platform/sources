@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := DX
+SUBDIRS := TX     \
+           utgard
 
 
 all-recursive downloads_clean-recursive:

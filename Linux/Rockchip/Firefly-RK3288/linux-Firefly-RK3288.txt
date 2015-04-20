@@ -1,0 +1,14 @@
+
+Linux source for Firefly board based on Rockchip RK3288 chip:
+============================================================
+
+     main page: http://enwiki.t-firefly.com/index.php/Firefly-RK3288/en
+Git repository: git clone https://bitbucket.org/T-Firefly/firefly-rk3288-kernel.git
+
+Clone:
+=====
+
+   $ git clone https://bitbucket.org/T-Firefly/firefly-rk3288-kernel.git linux-firefly
+
+Branch   : master
+Defconfig: arch/arm/configs/firefly-rk3288-linux_defconfig

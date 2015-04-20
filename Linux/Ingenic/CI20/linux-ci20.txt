@@ -1,0 +1,25 @@
+
+Linux source for MIPS Creator CI20 based on jz4780 Ingenic chip:
+===============================================================
+
+     main page: http://elinux.org/MIPS_Creator_CI20
+Git repository: https://github.com/MIPS/CI20_linux
+
+Clone:
+=====
+
+   $ git clone https://github.com/MIPS/CI20_linux linux-ci20
+
+Defconfig: arch/mips/configs/ci20_defconfig
+
+
+There are presently two versions of the kernel
+
+ - the ci20-v3.0.8 kernel branch as shipped by default
+   in the Debian NAND image derived directly from
+   the Ingenic kernel source code releases.
+ - the latest kernel branch (ci20-v3.18 as of 02-03-2014)
+   tracking mainline which is a nearly complete work in
+   progress of upstreamable quality code to be soon pushed
+   towards kernel.org. See details about this branch here
+   http://elinux.org/CI20_upstream

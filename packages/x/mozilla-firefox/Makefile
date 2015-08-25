@@ -10,7 +10,7 @@
 
 url         = http://download.cdn.mozilla.net/pub/mozilla.org/firefox/releases
 
-versions    = 32.0 32.0.2 32.0.3 33.0.3 34.0.5 35.0.1
+versions    = 32.0 32.0.2 32.0.3 33.0.3 34.0.5 35.0.1 40.0.2
 pkgname     = firefox
 suffix      = tar.bz2
 

@@ -1,0 +1,14 @@
+
+u-boot for MIPS Creator CI20:
+============================
+
+Clone:
+=====
+   git clone https://github.com/MIPS/CI20_u-boot.git
+
+WiKi:
+====
+   http://elinux.org/CI20_Dev_Zone#Building_uboot_from_sources
+
+
+This snapshots are created from ci20-v2013.10 branch.

@@ -91,7 +91,7 @@ SUBDIRS := GNOME                   \
            U-Boot/omap5-glsdk      \
            U-Boot/sunxi            \
            U-Boot/sunxi/sunxi      \
-           U-Boot/Ingenic/ci20     \
+           U-Boot/Ingenic/CI20     \
            Wayland                 \
            X.org                   \
            dict                    \

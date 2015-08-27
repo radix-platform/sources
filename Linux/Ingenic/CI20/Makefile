@@ -16,12 +16,14 @@ repo_name  = CI20_linux
 #                                               hash |  branch | date
 #            ----------------------------------------+---------+--------
 revisions  = 8ef5089c1baf62db99f0855d49bd2fb9b89be685:ci20-3.18:20150313
+revisions += 7732fdf2465ef07a39eacb05829f7fe355f2df62:ci20-3.18:20150820
 #
 # Revisions from 'ci20-v3.0.8' branch used for MIPS Creator CI20 (jz4780 based).
 #
 #                                               hash |   branch | date
 #            ----------------------------------------+----------+--------
 revisions += 2e5af7d6650ce6435f2894bdd7ee7f0333950942:ci20-3.0.8:20150218
+revisions += c52aae2473591e25305239c4d62c176435f21e31:ci20-3.0.8:20150728
 
 #
 # Default Linux config file name:

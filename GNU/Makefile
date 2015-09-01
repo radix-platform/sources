@@ -10,7 +10,7 @@
 url         = ftp://ftp.gnu.org/gnu
 
 gnu_keyring = gnu-keyring.gpg
-IDs         = 765C61E3 98C3739D C3C45C06
+IDs         = 765C61E3 98C3739D C3C45C06 FC26A641
 
 keyrings = $(addsuffix .gpg, $(addprefix keyring-, $(IDs)))
 

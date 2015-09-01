@@ -10,10 +10,10 @@ url         = http://www.kernel.org/pub/linux/kernel/v3.x
 
 keyring     = ../keyring-6092693E.gpg
 
-versions    = 3.5.4 3.8.5 3.10.17
+versions    = 3.10.17 3.18.20
 
-tarballs    = $(addsuffix .tar.bz2, $(addprefix linux-, $(versions)))
-signatures  = $(addsuffix .sign, $(subst .bz2,, $(tarballs)))
+tarballs    = $(addsuffix .tar.xz, $(addprefix linux-, $(versions)))
+signatures  = $(addsuffix .sign, $(subst .xz,, $(tarballs)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 all: $(keyring) $(signatures) $(sha1s)
@@ -29,23 +29,23 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(signatures): %.tar.sign : %.tar.bz2
+$(signatures): %.tar.sign : %.tar.xz
 	@for signature in $@ ; do \
 	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
 	  wget -N $(url)/$$signature ; \
 	  touch $$signature ; \
-	  echo -e "======= Unpacking '$(subst .bz2,,$<)' for verification =======\n" ; \
-	  bunzip2 --force --keep $< ; \
-	  echo -e "======= Verification of '$(subst .bz2,,$<)' signature =======\n" ; \
+	  echo -e "======= Unpacking '$(subst .xz,,$<)' for verification =======\n" ; \
+	  xz --decompress --force --keep $< ; \
+	  echo -e "======= Verification of '$(subst .xz,,$<)' signature =======\n" ; \
 	  gpg --verify --keyring $(keyring) $$signature ; ret="$$?" ; \
 	  if [ "$$ret" == "1" ]; then \
 	    echo -e "\n======= ERROR: Bad '$$signature' Signature =======\n" ; \
 	    exit 1 ; \
 	  fi ; \
-	  rm -f $(subst .bz2,,$<) ; \
+	  rm -f $(subst .xz,,$<) ; \
 	done
 
-$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+$(sha1s): %.tar.xz.sha1sum : %.tar.xz
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \

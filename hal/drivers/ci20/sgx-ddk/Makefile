@@ -4,7 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := sgx-ddk
+SUBDIRS := 3.0.8
 
 
 all-recursive downloads_clean-recursive:

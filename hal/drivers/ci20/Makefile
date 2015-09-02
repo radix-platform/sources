@@ -4,9 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := ci20     \
-           mali     \
-           omap543x
+SUBDIRS := 3.0.8
 
 
 all-recursive downloads_clean-recursive:

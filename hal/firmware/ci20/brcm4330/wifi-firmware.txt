@@ -1,0 +1,25 @@
+
+WiFi firmware
+=============
+
+WiFi on the CI20 is provided by a BRCM4330 chip that requires closed source firmware.
+These files cannot be shipped as part of the kernel repository and are instead loaded
+through user space.
+
+The required files can be found here or copied and renamed from the Debian NAND image,
+as is illustrated below:
+
+  ci20:/lib/firmware/iw8103/fw_bcm4330b2.bin -> /lib/firmware/brcm/brcmfmac4330-sdio.bin
+  ci20:/lib/firmware/iw8103/nv_4330b2.txt    -> /lib/firmware/brcm/brcmfmac4330-sdio.txt
+
+Note: Without these files the wireless driver will fail when loading.
+
+It is a good idea to unload the Broadcom module after copying over the firmware:
+
+  # modprobe -r brcmfmac
+
+Then load the module to enable WiFi:
+
+  # modprobe brcmfmac
+
+[see: http://elinux.org/CI20_upstream#WiFi_firmware].

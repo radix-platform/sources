@@ -4,13 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Mali            \
-           dri2            \
-           drivers         \
-           firmware        \
-           kernel-firmware \
-           omap543x        \
-           ump
+SUBDIRS := brcm4330
 
 
 all-recursive downloads_clean-recursive:

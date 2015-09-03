@@ -35,6 +35,7 @@ $(tarball): $(git_repo)
 	@cp -a $(repo_name)/brcm/brcmfmac4330-sdio.bin \
 	       $(repo_name)/brcm/brcmfmac4330-sdio.txt \
 	             $(pkgname)-$(version)/lib/firmware/brcm
+	@cp -a wifi-firmware.txt $(pkgname)-$(version)/README
 	@tar -cJf $(tarball) $(pkgname)-$(version)
 	@rm -rf $(pkgname)-$(version)
 	@touch $@

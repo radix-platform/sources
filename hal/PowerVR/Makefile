@@ -4,14 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Mali            \
-           PowerVR         \
-           dri2            \
-           drivers         \
-           firmware        \
-           kernel-firmware \
-           omap543x        \
-           ump
+SUBDIRS := ci20
 
 
 all-recursive downloads_clean-recursive:

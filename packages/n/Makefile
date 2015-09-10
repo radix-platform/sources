@@ -80,6 +80,8 @@ SUBDIRS := ModemManager           \
            mailx                  \
            mcabber                \
            metamail               \
+           mozilla-nspr           \
+           mozilla-nss            \
            mtr                    \
            mutt                   \
            nc                     \

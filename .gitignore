@@ -5,6 +5,7 @@
 *.tar
 *.tgz
 *.txz
+*.zip
 *.xz
 *.asc
 *.lsm

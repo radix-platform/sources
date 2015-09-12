@@ -13,9 +13,9 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 3.18.3 3.19.0
+versions  = 2.12.2
 pkg_name  = glade
-arch_type = tar.xz
+arch_type = tar.bz2
 suffixes  = $(arch_type)
 
 files     = $(foreach suffix, $(suffixes), $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions))))

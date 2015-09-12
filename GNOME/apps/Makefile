@@ -18,6 +18,7 @@ SUBDIRS := accerciser                 \
            gedit                      \
            gitg                       \
            glade                      \
+           glade2                     \
            gnome-boxes                \
            gnome-chess                \
            gnome-clocks               \

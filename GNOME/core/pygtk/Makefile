@@ -13,9 +13,9 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 2.28.6 3.14.0
-pkg_name  = pygobject
-arch_type = tar.xz
+versions  = 2.24.0
+pkg_name  = pygtk
+arch_type = tar.bz2
 suffixes  = $(arch_type)
 
 files     = $(foreach suffix, $(suffixes), $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions))))

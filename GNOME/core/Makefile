@@ -107,6 +107,7 @@ SUBDIRS := NetworkManager                 \
            pango                          \
            pangomm                        \
            pygobject                      \
+           pygtk                          \
            rest                           \
            seed                           \
            sushi                          \

@@ -69,6 +69,7 @@ SUBDIRS := aalib                \
            poppler-data         \
            popt                 \
            ppl                  \
+           pycairo              \
            sdl                  \
            sg3_utils            \
            shared-mime-info     \

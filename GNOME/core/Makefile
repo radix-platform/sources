@@ -82,6 +82,7 @@ SUBDIRS := NetworkManager                 \
            libcroco                       \
            libgdata                       \
            libgee                         \
+           libglade                       \
            libgnomekbd                    \
            libgsf                         \
            libgsystem                     \

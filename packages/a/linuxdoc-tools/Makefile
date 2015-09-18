@@ -10,7 +10,8 @@ SUBDIRS := docbook-dsssl     \
            docbook-xsl       \
            docbook-xsl-doc   \
            sgml-common       \
-           xmlto
+           xmlto             \
+           xmltoman
 
 
 all-recursive downloads_clean-recursive:

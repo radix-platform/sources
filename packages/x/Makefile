@@ -20,6 +20,7 @@ SUBDIRS := WindowMaker          \
            libevdev             \
            libinput             \
            libtxc_dxtn          \
+           lxappearance         \
            mesa                 \
            mesa-demos           \
            mozilla-firefox      \

@@ -45,7 +45,11 @@ SUBDIRS := CLooG                 \
            fakeroot-ng           \
            fdutils               \
            file                  \
+           foomatic-db           \
+           foomatic-db-engine    \
+           foomatic-db-nonfree   \
            foomatic-filters      \
+           foomatic-filters-tarballs \
            genpower-debian       \
            getty-ps              \
            ghostscript           \

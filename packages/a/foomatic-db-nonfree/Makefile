@@ -8,7 +8,7 @@
 #
 # Clone:
 # =====
-#   bzr branch http://bzr.linuxfoundation.org/openprinting/foomatic/foomatic-filrers
+#   bzr branch http://bzr.linuxfoundation.org/openprinting/foomatic/foomatic-db-nonfree
 #
 #   check http://bzr.linuxfoundation.org/loggerhead/openprinting/foomatic/
 #   for latest commits and development, identical to foomatic-4.0 branch
@@ -16,11 +16,11 @@
 
 url        = http://bzr.linuxfoundation.org/openprinting/foomatic
 
-repo_name  = foomatic-filters
+repo_name  = foomatic-db-nonfree
 
 #            revision | date
 #            ---------+---------
-revisions  =       270:20141128
+revisions  =        41:20150605
 
 
 bzr_repo   = .bzr_clone

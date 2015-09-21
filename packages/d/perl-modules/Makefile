@@ -4,18 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := LLVM          \
-           check         \
-           cmake         \
-           flex          \
-           perl          \
-           perl-cross    \
-           perl-modules  \
-           pkg-config    \
-           python2       \
-           python2-doc   \
-           python3       \
-           python3-doc
+SUBDIRS := CPAN
 
 
 all-recursive downloads_clean-recursive:

@@ -4,18 +4,18 @@
 # $ tree -fid .
 #
 
-SUBDIRS := LLVM          \
-           check         \
-           cmake         \
-           flex          \
-           perl          \
-           perl-cross    \
-           perl-modules  \
-           pkg-config    \
-           python2       \
-           python2-doc   \
-           python3       \
-           python3-doc
+SUBDIRS := Clone                 \
+           DBD-mysql             \
+           DBI                   \
+           Locale-gettext        \
+           URI                   \
+           XML-LibXML            \
+           XML-NamespaceSupport  \
+           XML-Parser            \
+           XML-SAX               \
+           XML-SAX-Base          \
+           XML-SAX-Expat         \
+           XML-Simple
 
 
 all-recursive downloads_clean-recursive:

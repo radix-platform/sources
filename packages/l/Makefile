@@ -70,6 +70,9 @@ SUBDIRS := aalib                \
            popt                 \
            ppl                  \
            pycairo              \
+           pycups               \
+           pycurl               \
+           pyrex                \
            sdl                  \
            sg3_utils            \
            shared-mime-info     \

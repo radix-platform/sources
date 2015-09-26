@@ -10,6 +10,7 @@ SUBDIRS := WindowMaker          \
            desktop-file-utils   \
            fontconfig           \
            freeglut             \
+           gimp                 \
            glew                 \
            glu                  \
            gst-plugins-base     \

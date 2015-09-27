@@ -18,7 +18,7 @@ repo_name  = libvpx
 #
 # List of tags to be extracted:
 #
-TAGS       = 1.2.0 1.3.0
+TAGS       = 1.2.0 1.3.0 1.4.0
 
 
 git_repo   = .git_clone

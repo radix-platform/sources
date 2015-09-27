@@ -14,7 +14,10 @@ SUBDIRS := OpenMAX    \
            lame       \
            libav      \
            libdv      \
+           libexif    \
+           libgphoto2 \
            libvpx     \
+           linuxtv    \
            mad        \
            mega-nerd  \
            moc        \
@@ -22,6 +25,7 @@ SUBDIRS := OpenMAX    \
            normalize  \
            portaudio  \
            record     \
+           sane       \
            soma       \
            sox        \
            taglib     \

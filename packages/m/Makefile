@@ -15,6 +15,7 @@ SUBDIRS := OpenMAX    \
            libav      \
            libdv      \
            libexif    \
+           libgd      \
            libgphoto2 \
            libvpx     \
            linuxtv    \

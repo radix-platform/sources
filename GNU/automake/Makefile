@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnu.org/gnu/automake
 
-versions    = 1.11.5 1.14
+versions    = 1.11.5 1.12.6 1.14 1.15
 pkgname     = automake
 suffix      = tar.xz
 

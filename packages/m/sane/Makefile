@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := backends
+SUBDIRS := backends  \
+           frontends
 
 
 all-recursive downloads_clean-recursive:

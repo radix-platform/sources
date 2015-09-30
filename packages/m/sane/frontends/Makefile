@@ -1,32 +1,29 @@
 #
 # Project Home:
 # ============
-# http://www.sane-project.org
+# http://www.sane-project.org/sane-frontends.html
 #
-# Downloads:
-# =========
-# https://alioth.debian.org/frs/?group_id=30186
+# Daily Snapshots:
+# ===============
+# http://www.sane-project.org/snapshots
 #
 # Source tree:
 # ===========
-# https://anonscm.debian.org/git/sane/sane-backends.git
-# ( https://alioth.debian.org/anonscm/git/sane/sane-backends.git )
+# http://anonscm.debian.org/cgit/sane/sane-frontends.git
 #
 # CHECKOUT:
 # ========
-# git clone https://anonscm.debian.org/git/sane/sane-backends.git
-# git clone git://anonscm.debian.org/sane/sane-backends.git
-# git clone ssh://git.debian.org/git/sane/sane-backends.git
-#
-# ( git clone https://alioth.debian.org/anonscm/git/sane/sane-backends.git )
+# git clone https://anonscm.debian.org/git/sane/sane-frontends.git
+# git clone git://anonscm.debian.org/sane/sane-frontends.git
+# git clone ssh://git.debian.org/git/sane/sane-frontends.git
 #
 
 url         = https://anonscm.debian.org/git/sane
 
-repo_name  = sane-backends
+repo_name  = sane-frontends
 
 # List of tags to be extracted:
-TAGS       = RELEASE_1_0_24
+TAGS       = RELEASE_1_0_14
 
 versions   = $(foreach tag, $(TAGS), $(shell echo $(tag) | cut -f 2,3,4 -d '_' | sed 's,_,\.,g'))
 

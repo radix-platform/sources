@@ -73,6 +73,7 @@ SUBDIRS := CLooG                 \
            jfsutils              \
            joe                   \
            jove                  \
+           jsmin                 \
            kbd                   \
            kmod                  \
            lha                   \

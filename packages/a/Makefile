@@ -50,6 +50,7 @@ SUBDIRS := CLooG                 \
            foomatic-db-nonfree   \
            foomatic-filters      \
            foomatic-filters-tarballs \
+           genext2fs             \
            genpower-debian       \
            getty-ps              \
            ghostscript           \
@@ -111,6 +112,7 @@ SUBDIRS := CLooG                 \
            pciutils              \
            pcmciautils           \
            pm-utils              \
+           populatefs            \
            powertop              \
            procinfo              \
            procps                \

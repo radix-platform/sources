@@ -4,7 +4,10 @@
 # $ tree -fid .
 #
 
-SUBDIRS := main     \
+SUBDIRS := Ingenic     \
+           denx        \
+           omap5       \
+           omap5-glsdk \
            sunxi
 
 

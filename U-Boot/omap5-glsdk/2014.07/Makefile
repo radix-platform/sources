@@ -15,14 +15,13 @@ repo_name  = u-boot-omap
 # List of tags to be extracted:
 # ============================
 #
-# Revisions from p-ti-u-boot-2014.07 branch used for OMAP5 & DRA7xx
+# Revisions from p-ti-u-boot-2014.07-glsdk branch used for OMAP5 GLSDK
 #
-#  'a53c7be0d4920d7ac9fb9bc682164b8702458c8e' latest at 15th  October 2015
+#  'b89e568d9c356d756501b16caad5734970ec25d1' latest at 16th February 2015
 #
 #                                               hash | date
 #            ----------------------------------------+--------
-revisions  = 92f924cb8f37cddf12d7d9fde45bde63680dac3d-20151008
-revisions += a53c7be0d4920d7ac9fb9bc682164b8702458c8e-20151015
+revisions  = b89e568d9c356d756501b16caad5734970ec25d1-20150216
 
 git_repo   = .git_clone
 

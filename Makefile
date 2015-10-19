@@ -90,12 +90,7 @@ SUBDIRS := GNOME                   \
            Linux/sunxi/sunxi-3.4   \
            Linux/v2.6              \
            Linux/v3.x              \
-           U-Boot/denx             \
-           U-Boot/omap5            \
-           U-Boot/omap5-glsdk      \
-           U-Boot/sunxi            \
-           U-Boot/sunxi/sunxi      \
-           U-Boot/Ingenic/CI20     \
+           U-Boot                  \
            Wayland                 \
            X.org                   \
            dict                    \

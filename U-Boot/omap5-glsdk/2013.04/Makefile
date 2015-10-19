@@ -15,18 +15,19 @@ repo_name  = u-boot-omap
 # List of tags to be extracted:
 # ============================
 #
-# Revisions from p-ti-u-boot-2014.07 branch used for OMAP5 & DRA7xx
+# Revisions from p-ti-u-boot-2013.04 branch used for OMAP5 GLSDK
 #
-#  'a53c7be0d4920d7ac9fb9bc682164b8702458c8e' latest at 15th  October 2015
+#  '7628b83cf69a24b0f454bf0a3d6ee076438eb169' latest at 16th February 2014
 #
 #                                               hash | date
 #            ----------------------------------------+--------
-revisions  = 92f924cb8f37cddf12d7d9fde45bde63680dac3d-20151008
-revisions += a53c7be0d4920d7ac9fb9bc682164b8702458c8e-20151015
+revisions  = 7628b83cf69a24b0f454bf0a3d6ee076438eb169-20140216
+revisions += 35e3fea5d315c91448d10554b69acc8364ca65c1-20140307
+revisions += 6274e7dc383d18f5a4cb6c901f8406d9728adfd8-20141112
 
 git_repo   = .git_clone
 
-denx       = 2014.07
+denx       = 2013.04
 versions   = $(foreach tag, $(revisions), $(addprefix $(denx)-, $(shell echo $(tag) | cut -f 2 -d '-')))
 
 tarballs   = $(addsuffix .tar.bz2, $(addprefix $(repo_name)-, $(versions)))

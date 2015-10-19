@@ -1,0 +1,15 @@
+
+Omap 3/4/5/DRA7XX development platfrom u-boot:
+=============================================
+
+Clone:
+=====
+   $ git clone git://git.omapzoom.org/repo/u-boot.git
+
+
+branch for TI OMAP5 & DRA7xx GLSDK: 'p-ti-u-boot-2014.07-glsdk':
+===============================================================
+snapshots:
+  'b89e568d9c356d756501b16caad5734970ec25d1' latest at 16th February 2015
+
+[see: http://processors.wiki.ti.com/index.php/Category:GLSDK]

@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.denx.de/pub/u-boot
 
-versions    = 2013.10 2014.01 2014.07 2014.10 2015.01
+versions    = 2013.10 2014.01 2014.07 2014.10 2015.01 2015.04 2015.07
 
 tarballs    = $(addsuffix .tar.bz2, $(addprefix u-boot-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

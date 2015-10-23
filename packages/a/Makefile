@@ -31,6 +31,7 @@ SUBDIRS := CLooG                 \
            dcron                 \
            debianutils           \
            devs-debian           \
+           dialog-debian         \
            dialog                \
            diffstat              \
            dmidecode             \

@@ -1,19 +1,19 @@
 #
 # Project Home:
 # ============
-# http://invisible-island.net/dialog
+# http://hightek.org/dialog/
 #
 # Downloads:
 # =========
-# ftp://invisible-island.net/dialog
+# ftp://ftp.us.debian.org/debian/pool/main/d/dialog/
 #
 
-url          = ftp://invisible-island.net/dialog
+url          = ftp://ftp.de.debian.org/debian/pool/main/d/dialog
 
-versions     = 1.1-20120215 1.1-20120706 1.2-20140112 1.2-20140219
-suffix       = tgz
+old_versions = 1.2-20140112
+versions     = 1.1-20120215 1.2-20140219
 
-tarballs     = $(addsuffix .$(suffix), $(addprefix dialog-, $(versions)))
+tarballs     = $(addsuffix .orig.tar.gz, $(addprefix dialog_, $(versions)))
 sha1s        = $(addsuffix .sha1sum, $(tarballs))
 
 
@@ -27,7 +27,7 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(sha1s): %.$(suffix).sha1sum : %.$(suffix)
+$(sha1s): %.tar.gz.sha1sum : %.tar.gz
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \

@@ -42,6 +42,7 @@ SUBDIRS := CLooG                 \
            elilo                 \
            elvis                 \
            eudev                 \
+           fakeroot              \
            fakeroot-ng           \
            fdutils               \
            file                  \

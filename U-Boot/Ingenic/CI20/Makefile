@@ -21,6 +21,7 @@ repo_name  = CI20_u-boot
 #                                               hash | date
 #            ----------------------------------------+--------
 revisions  = 6cfaf802b580f2f7e92a5dec705ff9c196c637b4-20150826
+revisions += a4f583551d0025eb957ee5c9cb68657a429e4914-20150915
 
 git_repo   = .git_clone
 

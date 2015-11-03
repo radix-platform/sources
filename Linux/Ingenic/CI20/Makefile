@@ -18,6 +18,7 @@ repo_name  = CI20_linux
 revisions  = 8ef5089c1baf62db99f0855d49bd2fb9b89be685:ci20-3.18:20150313
 revisions += 7732fdf2465ef07a39eacb05829f7fe355f2df62:ci20-3.18:20150820
 revisions += 235d926f0e6a07983170e990e9c1bdc5384a1e57:ci20-3.18:20150828
+revisions += a0005ba52d069a5ad328f3d242818478ea85845f:ci20-3.18:20151015
 #
 # Revisions from 'ci20-v3.0.8' branch used for MIPS Creator CI20 (jz4780 based).
 #

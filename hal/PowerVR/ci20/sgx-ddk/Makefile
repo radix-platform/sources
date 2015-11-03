@@ -4,7 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := 3.0.8
+SUBDIRS := 3.0.8 3.18
 
 
 all-recursive downloads_clean-recursive:

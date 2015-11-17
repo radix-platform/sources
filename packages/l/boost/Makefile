@@ -11,7 +11,7 @@
 
 url         = http://downloads.sourceforge.net/project/boost/boost
 
-versions    = 1.57.0
+versions    = 1.57.0 1.58.0 1.59.0
 pkgname     = boost
 suffix      = tar.bz2
 

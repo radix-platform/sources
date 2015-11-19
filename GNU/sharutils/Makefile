@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/sharutils
 
-versions    = 4.14
+versions    = 4.14 4.15.2
 pkgname     = sharutils
 suffix      = tar.xz
 

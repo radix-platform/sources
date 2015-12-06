@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := ci20
+SUBDIRS := ci20       \
+           omap5-uevm
 
 
 all-recursive downloads_clean-recursive:

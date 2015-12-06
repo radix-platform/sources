@@ -7,8 +7,8 @@
 url         = ftp://ftp.radix.pro/3pp/TI/omap5-uevm/firmware
 
 versions    = 6.04.00.02
-pkgname     = firmware
-suffix      = tar.gz
+pkgname     = omap5uevm-fw
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

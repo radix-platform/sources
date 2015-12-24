@@ -8,6 +8,7 @@ SUBDIRS := CLooG                 \
            acl                   \
            acpid                 \
            adjtimex              \
+           adjtimex-debian       \
            apcupsd               \
            apmd                  \
            ash                   \

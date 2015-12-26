@@ -90,6 +90,7 @@ SUBDIRS := GNOME                   \
            Linux/sunxi/sunxi-3.4   \
            Linux/v2.6              \
            Linux/v3.x              \
+           Linux/v4.x              \
            U-Boot                  \
            Wayland                 \
            X.org                   \

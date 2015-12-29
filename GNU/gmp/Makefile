@@ -12,7 +12,7 @@ url         = http://ftp.gnu.org/gnu/gmp
 
 keyring     = ../keyring-765C61E3.gpg
 
-versions    = 4.3.1 5.0.5 5.1.3 6.0.0a
+versions    = 4.3.1 5.0.5 5.1.3 6.0.0a 6.1.0
 
 tarballs    = $(addsuffix .tar.bz2, $(addprefix gmp-, $(versions)))
 signatures  = $(addsuffix .sig, $(tarballs))

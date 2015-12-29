@@ -12,7 +12,7 @@ url         = http://ftp.gnu.org/gnu/mpfr
 
 keyring     = ../keyring-98C3739D.gpg
 
-versions    = 2.4.2 3.1.1 3.1.2
+versions    = 2.4.2 3.1.1 3.1.2 3.1.3
 
 tarballs    = $(addsuffix .tar.bz2, $(addprefix mpfr-, $(versions)))
 signatures  = $(addsuffix .sig, $(tarballs))

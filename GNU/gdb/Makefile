@@ -12,7 +12,7 @@ url         = http://ftp.gnu.org/gnu/gdb
 
 keyring     = ../gnu-keyring.gpg
 
-versions    = 6.4a 6.5a 7.0a 7.2a 7.5 7.9
+versions    = 6.4a 6.5a 7.0a 7.2a 7.5 7.9 7.10.1
 
 tarballs    = $(addsuffix .tar.gz, $(addprefix gdb-, $(versions)))
 signatures  = $(addsuffix .sig, $(tarballs))

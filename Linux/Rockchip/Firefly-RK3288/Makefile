@@ -16,6 +16,7 @@ repo_name  = firefly-rk3288-kernel
 #                                               hash | date
 #            ----------------------------------------+--------
 revisions  = f4d954d67f9e5689f1ddbbbd3050a8041424dd48-20150417
+revisions += b8f71a62dc31c36d0c3563d1bc8537931b69b7aa-20151126
 
 #
 # Default Linux config file name:

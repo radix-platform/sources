@@ -4,16 +4,9 @@
 # $ tree -fid .
 #
 
-SUBDIRS := a \
-           b \
-           d \
-           j \
-           l \
-           m \
-           n \
-           s \
-           x \
-           y
+SUBDIRS := antlr-runtime \
+           ecj           \
+           fastjar
 
 
 all-recursive downloads_clean-recursive:

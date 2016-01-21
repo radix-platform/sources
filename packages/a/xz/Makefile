@@ -10,7 +10,7 @@
 
 url         = http://tukaani.org/xz
 
-versions    = 5.0.5
+versions    = 5.0.5 5.2.2
 pkgname     = xz
 suffix      = tar.bz2
 

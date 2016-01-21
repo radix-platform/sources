@@ -9,11 +9,11 @@
 # ftp://ftp.gnu.org/pub/gnu/ncurses/
 #
 
-url         = ftp://invisible-island.net/ncurses
+url         = ftp://invisible-island.net/ncurses/current
 
-version     = 6.0
+version     = 6.0-20160116
 pkgname     = ncurses
-suffix      = tar.gz
+suffix      = tgz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(version)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

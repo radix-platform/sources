@@ -6,15 +6,11 @@
 # Downloads:
 # =========
 # ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre
-#
-# Downloads:
-# =========
-# http://downloads.sourceforge.net/project/pcre/pcre/${VERSION}
-#
 
-url         = http://downloads.sourceforge.net/project/pcre
 
-versions    = 8.33 8.34 8.38
+url         = ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre
+
+versions    = 8.33 8.34
 pkgname     = pcre
 suffix      = tar.bz2
 
@@ -29,8 +25,7 @@ all: $(tarballs) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
-	  version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\(.*\)\(.tar.*\)/\2/'` ; \
-	  wget -N $(url)/$(pkgname)/$$version/$$tarball ; \
+	  wget -N $(url)/$$tarball ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

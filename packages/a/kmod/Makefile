@@ -10,9 +10,9 @@
 
 url         = ftp://ftp.kernel.org/pub/linux/utils/kernel/kmod
 
-versions    = 15 16
+versions    = 16 22
 pkg_name    = kmod
-suffix      = tar.bz2
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

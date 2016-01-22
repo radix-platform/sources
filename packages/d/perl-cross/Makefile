@@ -15,13 +15,13 @@ url        = git://radix.pro
 
 repo_name  = perl-cross
 
-versions   = 0.8.5
+versions   = 0.8.5 1.0.2
 
 git_repo   = .git_clone
 tarballs   = $(addsuffix .tar.bz2, $(addprefix $(repo_name)-, $(versions)))
 sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
-releases   = 5.18.2 5.20.0
+releases   = 5.18.2 5.20.0 5.22.1
 
 
 TARGETS = repository_clean

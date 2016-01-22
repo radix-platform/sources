@@ -158,6 +158,7 @@ SUBDIRS := ModemManager           \
            vlan                   \
            vsftpd                 \
            whois                  \
+           wireless-regdb         \
            wireless-tools         \
            wpa_supplicant         \
            yp                     \

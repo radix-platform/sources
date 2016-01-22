@@ -10,7 +10,7 @@
 
 url         = http://www.cpan.org/src/5.0
 
-versions    = 5.18.2 5.20.0
+versions    = 5.18.2 5.20.0 5.22.1
 pkgname     = perl
 suffix      = tar.gz
 

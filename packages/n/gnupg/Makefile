@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnupg.org/gcrypt/gnupg
 
-versions    = 1.4.15 1.4.16 1.4.18
+versions    = 1.4.15 1.4.16 1.4.18 1.4.20 2.0.29
 pkgname     = gnupg
 suffix      = tar.bz2
 

@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnupg.org/gcrypt/libksba
 
-versions    = 1.2.0 1.3.0 1.3.1
+versions    = 1.2.0 1.3.0 1.3.1 1.3.3
 pkgname     = libksba
 suffix      = tar.bz2
 

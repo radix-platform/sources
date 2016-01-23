@@ -11,7 +11,7 @@
 
 url         = http://llvm.org/releases
 
-versions    = 3.5.0
+versions    = 3.5.0 3.7.1
 pkgname     = cfe
 suffix      = src.tar.xz
 

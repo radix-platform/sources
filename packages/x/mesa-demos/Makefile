@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.freedesktop.org/pub/mesa/demos
 
-versions    = 8.2.0
+versions    = 8.2.0 8.3.0
 pkgname     = mesa-demos
 suffix      = tar.bz2
 

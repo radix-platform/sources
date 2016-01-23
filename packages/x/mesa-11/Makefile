@@ -10,9 +10,9 @@
 
 url         = ftp://ftp.freedesktop.org/pub/mesa
 
-versions    = 10.3.4
-pkgname     = MesaLib
-suffix      = tar.bz2
+versions    = 11.1.1
+pkgname     = mesa
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
@@ -26,13 +26,7 @@ $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
 	  version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9]*[.][0-9]*[.][0-9]*\)\([\.]tar.*\)/\2/'` ; \
-	  major=`echo $$version |  sed 's/\([a-zA-Z-]*\)\([0-9]*\)\([\.].*\)/\2/'` ; \
-	  if [ "$$major" -lt "11" ] ; then \
-	    subdir="older-versions/$${major}.x/$$version" ; \
-	  else \
-	    subdir="$$version" ; \
-	  fi ; \
-	  wget -N $(url)/$$subdir/$$tarball ; \
+	  wget -N $(url)/$$version/$$tarball ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

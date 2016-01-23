@@ -160,6 +160,7 @@ SUBDIRS := CLooG                 \
            vbetool               \
            vim                   \
            vim-hg                \
+           vim-github            \
            xfs                   \
            xz                    \
            ziptool               \

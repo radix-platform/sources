@@ -14,6 +14,7 @@ repo_name  = vim
 #                                               hash | v | maintenance
 #            ----------------------------------------+----------------
 revisions  = 64922b9014765a41bb09e8612433a2a61918af6e-7.4-1155
+revisions  = 2dedb45260604911035cff2364aca90a69156ed9-7.4-1156
 
 git_repo   = .git_clone
 

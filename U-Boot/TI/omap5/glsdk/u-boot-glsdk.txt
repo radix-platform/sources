@@ -1,8 +1,0 @@
-
-Omap 3/4/5/DRA7XX development platfrom u-boot:
-=============================================
-
-Clone:
-=====
-   $ git clone git://git.omapzoom.org/repo/u-boot.git
-

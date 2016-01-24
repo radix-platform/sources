@@ -23,6 +23,40 @@ repo_name  = u-boot-omap
 #            ----------------------------------------+-------+--------
 revisions  = 32166d3e764799cb27e4cf9c5e75e4019d1062e1:2014.07:20151209
 
+#
+# Legacy 2014.07 - 2013.04 U-Boot:
+# ===============================
+#
+# Revisions from p-ti-u-boot-2014.07-glsdk branch used for OMAP5 GLSDK
+#
+# revision 'b89e568d9c356d756501b16caad5734970ec25d1' 16th February 2015
+#
+#                                               hash |  denx | date
+#            ----------------------------------------+-------+--------
+revisions += b89e568d9c356d756501b16caad5734970ec25d1:2014.07:20150216
+
+#
+# Revisions from p-ti-u-boot-2014.07 branch used for OMAP5 & DRA7xx
+#
+# revision 'a53c7be0d4920d7ac9fb9bc682164b8702458c8e' 15th  October 2015
+#
+#                                               hash |  denx | date
+#            ----------------------------------------+-------+--------
+revisions += 92f924cb8f37cddf12d7d9fde45bde63680dac3d:2014.07:20151008
+revisions += a53c7be0d4920d7ac9fb9bc682164b8702458c8e:2014.07:20151015
+
+#
+# Revisions from p-ti-u-boot-2013.04 branch used for OMAP5 GLSDK
+#
+# revision '7628b83cf69a24b0f454bf0a3d6ee076438eb169' 16th February 2014
+#
+#                                               hash |  denx | date
+#            ----------------------------------------+-------+--------
+revisions += 7628b83cf69a24b0f454bf0a3d6ee076438eb169:2013.04:20140216
+revisions += 35e3fea5d315c91448d10554b69acc8364ca65c1:2013.04:20140307
+revisions += 6274e7dc383d18f5a4cb6c901f8406d9728adfd8:2013.04:20141112
+
+
 git_repo   = .git_clone
 
 versions   = $(foreach tag, $(revisions), \

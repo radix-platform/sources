@@ -4,12 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Ingenic     \
-           TI          \
-           denx        \
-           omap5       \
-           omap5-glsdk \
-           sunxi
+SUBDIRS := glsdk
 
 
 all-recursive downloads_clean-recursive:

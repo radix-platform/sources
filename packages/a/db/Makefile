@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.radix.pro/3pp/Berkeley-DB
 
-versions    = 5.3.28 6.1.19
+versions    = 5.3.28 6.1.19 6.1.26
 pkgname     = db
 suffix      = tar.gz
 

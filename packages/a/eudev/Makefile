@@ -14,7 +14,7 @@
 
 url         = http://dev.gentoo.org/~blueness/eudev
 
-versions    = 1.8 1.9
+versions    = 1.8 1.9 3.1.5
 pkgname     = eudev
 suffix      = tar.gz
 

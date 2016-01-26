@@ -1,18 +1,22 @@
 #
 # Project Home:
 # ============
-#   https://github.com/dosfstools/dosfstools
+# http://www.gentoo.org/proj/en/eudev
 #
-# Clone:
-# =====
-#   git clone https://github.com/dosfstools/dosfstools.git
+# GitHub:
+# ======
+# https://github.com/gentoo/eudev
+#
+# Downloads:
+# =========
+# http://dev.gentoo.org/~blueness/eudev
 #
 
-url        = https://github.com/dosfstools/dosfstools.git
+url        = https://github.com/gentoo/eudev.git
 
-repo_name  = dosfstools
+repo_name  = eudev
 
-versions   = 3.0.25 3.0.26 3.0.28
+versions   = 1.8 1.9 3.1.5
 
 TAGS       = $(addprefix v, $(versions))
 
@@ -41,7 +45,7 @@ $(tarballs): $(git_repo)
 	@for version in $(versions) ; do \
 	  tag=v`echo $$version` ; \
 	  if [ ! -f $(repo_name)-$$version.tar.xz ]; then \
-	    echo -e "\n======= Creating '$(repo_name)-$$version.tar.bz2' snapshot =======" ; \
+	    echo -e "\n======= Creating '$(repo_name)-$$version.tar.xz' snapshot =======" ; \
 	    ( cd $(repo_name) && \
 	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$tag | \
 	      xz >../$(repo_name)-$$version.tar.xz ) ; \

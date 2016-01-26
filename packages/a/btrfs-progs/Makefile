@@ -15,7 +15,7 @@ url        = git://git.kernel.org/pub/scm/linux/kernel/git/mason/btrfs-progs.git
 
 repo_name  = btrfs-progs
 
-versions   = 3.16
+versions   = 3.16 4.4
 
 # List of tags to be extracted:
 TAGS       = $(addprefix v, $(versions))

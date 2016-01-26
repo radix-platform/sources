@@ -15,7 +15,7 @@
 
 url         = http://cdn.debian.net/debian/pool/main/a/at
 
-versions    = 3.1.12 3.1.13 3.1.16
+versions    = 3.1.12 3.1.13 3.1.16 3.1.18
 pkgname     = at
 suffix      = tar.gz
 
@@ -31,7 +31,12 @@ $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for version in $(versions) ; do \
 	  wget -N $(url)/$(pkgname)_$$version.orig.tar.gz ; \
-	  tar xzf $(pkgname)_$$version.orig.tar.gz ; \
+	  if [ "$$version" == "3.1.18" ] ; then \
+	    mkdir $(pkgname)-$$version ; \
+	    tar xzf $(pkgname)_$$version.orig.tar.gz -C $(pkgname)-$$version ; \
+	  else \
+	    tar xzf $(pkgname)_$$version.orig.tar.gz ; \
+	  fi ; \
 	  tar czf $(pkgname)-$$version.$(suffix) $(pkgname)-$$version ; \
 	  rm -rf $(pkgname)-$$version $(pkgname)_$$version.orig.tar.gz ; \
 	done

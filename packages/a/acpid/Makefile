@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/acpid2
 
-versions    = 2.0.21 2.0.22
+versions    = 2.0.21 2.0.22 2.0.26
 pkg_name    = acpid
 suffix      = tar.xz
 

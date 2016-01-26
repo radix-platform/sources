@@ -10,7 +10,7 @@
 
 url          = ftp://invisible-island.net/dialog
 
-versions     = 1.1-20120215 1.1-20120706 1.2-20140112 1.2-20140219
+versions     = 1.1-20120215 1.1-20120706 1.2-20140112 1.2-20140219 1.2-20150920
 suffix       = tgz
 
 tarballs     = $(addsuffix .$(suffix), $(addprefix dialog-, $(versions)))

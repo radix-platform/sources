@@ -43,6 +43,7 @@ SUBDIRS := CLooG                 \
            elilo                 \
            elvis                 \
            eudev                 \
+           eudev-github          \
            fakeroot              \
            fakeroot-ng           \
            fdutils               \

@@ -12,7 +12,7 @@
 
 url         = ftp://invisible-island.net/diffstat
 
-versions    = 1.53 1.59
+versions    = 1.53 1.59 1.61
 pkgname     = diffstat
 suffix      = tar.gz
 

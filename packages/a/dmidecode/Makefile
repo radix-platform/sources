@@ -7,9 +7,10 @@
 # Downloads:
 # =========
 # http://download.savannah.gnu.org/releases/dmidecode
+# http://ftp.igh.cnrs.fr/pub/nongnu/dmidecode
 #
 
-url         = http://download.savannah.gnu.org/releases/dmidecode
+url         = http://ftp.igh.cnrs.fr/pub/nongnu/dmidecode
 
 versions    = 3.0
 pkgname     = dmidecode

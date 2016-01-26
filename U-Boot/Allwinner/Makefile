@@ -4,13 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Allwinner   \
-           Ingenic     \
-           TI          \
-           denx        \
-           omap5       \
-           omap5-glsdk \
-           sunxi
+SUBDIRS := sunxi
 
 
 all-recursive downloads_clean-recursive:

@@ -7,10 +7,7 @@
 SUBDIRS := Allwinner   \
            Ingenic     \
            TI          \
-           denx        \
-           omap5       \
-           omap5-glsdk \
-           sunxi
+           denx
 
 
 all-recursive downloads_clean-recursive:

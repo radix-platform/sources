@@ -4,8 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := main     \
-           sunxi
+SUBDIRS := CI20
 
 
 all-recursive downloads_clean-recursive:

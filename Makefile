@@ -82,13 +82,14 @@ SUBDIRS := GNOME                   \
            GNU/wget                \
            GNU/which               \
            Linux                   \
+           Linux/Allwinner         \
+           Linux/Ingenic           \
+           Linux/Rockchip          \
+           Linux/TI                \
            Linux/dm644x            \
            Linux/mips              \
            Linux/omap              \
-           Linux/omap5             \
-           Linux/omap5-glsdk       \
            Linux/sunxi             \
-           Linux/sunxi/sunxi-3.4   \
            Linux/v2.6              \
            Linux/v3.x              \
            Linux/v4.x              \

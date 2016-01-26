@@ -4,8 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := 2013.04     \
-           2014.07
+SUBDIRS := Firefly-RK3288
 
 
 all-recursive downloads_clean-recursive:

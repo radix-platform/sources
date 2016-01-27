@@ -10,7 +10,7 @@
 
 url         = http://www.bastoul.net/cloog/pages/download/
 
-versions    = 0.18.1 0.18.2
+versions    = 0.18.1 0.18.2 0.18.4
 
 tarballs    = $(addsuffix .tar.gz, $(addprefix cloog-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

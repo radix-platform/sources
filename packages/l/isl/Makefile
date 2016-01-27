@@ -11,9 +11,9 @@
 
 url         = http://isl.gforge.inria.fr
 
-versions    = 0.12.1 0.12.2
+versions    = 0.15 0.16 0.16.1
 
-tarballs    = $(addsuffix .tar.bz2, $(addprefix isl-, $(versions)))
+tarballs    = $(addsuffix .tar.xz, $(addprefix isl-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 
@@ -27,7 +27,7 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+$(sha1s): %.tar.xz.sha1sum : %.tar.xz
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \

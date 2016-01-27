@@ -10,7 +10,7 @@
 
 url         = http://www.hboehm.info/gc/gc_source
 
-versions    = 7.2d
+versions    = 7.2d 7.4.2
 pkgname     = gc
 suffix      = tar.gz
 

@@ -10,7 +10,7 @@
 
 url         = http://windowmaker.org/pub/source/release
 
-versions    = 0.95.6
+versions    = 0.95.6 0.95.7
 pkgname     = WindowMaker
 suffix      = tar.gz
 

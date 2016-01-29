@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 1.4.5 1.4.6 1.4.8 1.5.0
+versions    = 1.4.5 1.4.6 1.4.8 1.5.0 1.5.1
 pkgname     = libXfont
 suffix      = tar.bz2
 

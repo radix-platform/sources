@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 1.1.1
+versions    = 1.1.1 1.1.2
 pkgname     = libXdmcp
 suffix      = tar.bz2
 

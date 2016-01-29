@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 1.0.11 1.0.12
+versions    = 1.0.11 1.0.12 1.0.13
 pkgname     = libXaw
 suffix      = tar.bz2
 

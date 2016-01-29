@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 1.0.4 1.0.6
+versions    = 1.0.4 1.0.6 1.0.7
 pkgname     = libFS
 suffix      = tar.bz2
 

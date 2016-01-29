@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 2.11.13 2.11.16
+versions    = 2.11.13 2.11.16 2.11.17
 pkgname     = xf86-video-geode
 suffix      = tar.bz2
 

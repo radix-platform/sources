@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 1.3.5 1.3.6
+versions    = 1.3.5 1.3.6 1.3.7
 pkgname     = xf86-video-trident
 suffix      = tar.bz2
 

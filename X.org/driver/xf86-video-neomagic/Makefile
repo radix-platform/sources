@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 1.2.6 1.2.8
+versions    = 1.2.6 1.2.8 1.2.9
 pkgname     = xf86-video-neomagic
 suffix      = tar.bz2
 

@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.6.0 1.6.1
+versions    = 1.6.0 1.6.1 1.6.2
 pkgname     = xinput
 suffix      = tar.bz2
 

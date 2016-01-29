@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 1.4.4 1.4.5
+versions    = 1.4.4 1.4.5 1.4.6
 pkgname     = xf86-video-tdfx
 suffix      = tar.bz2
 

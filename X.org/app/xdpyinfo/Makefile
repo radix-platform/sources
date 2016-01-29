@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.3.0 1.3.1
+versions    = 1.3.0 1.3.1 1.3.2
 pkgname     = xdpyinfo
 suffix      = tar.bz2
 

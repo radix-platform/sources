@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 1.1.3 1.1.4
+versions    = 1.1.3 1.1.4 1.1.5
 pkgname     = libXt
 suffix      = tar.bz2
 

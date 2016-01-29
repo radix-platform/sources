@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 12.0.2 13.0.1 13.0.2
+versions    = 12.0.2 13.0.1 13.0.2 13.1.0
 pkgname     = xf86-video-vmware
 suffix      = tar.bz2
 

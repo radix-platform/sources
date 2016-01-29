@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 1.0.8
+versions    = 1.0.8 1.0.9
 pkgname     = libxkbfile
 suffix      = tar.bz2
 

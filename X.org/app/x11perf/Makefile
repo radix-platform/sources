@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.5.4
+versions    = 1.5.4 1.6.0
 pkgname     = x11perf
 suffix      = tar.bz2
 

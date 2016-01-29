@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 0.13.1 0.13.2
+versions    = 0.13.1 0.13.2 0.13.3 0.13.4
 pkgname     = libpciaccess
 suffix      = tar.bz2
 

@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.1.0 1.1.1
+versions    = 1.1.0 1.1.1 1.1.2
 pkgname     = mkfontscale
 suffix      = tar.bz2
 

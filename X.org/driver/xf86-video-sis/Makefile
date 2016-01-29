@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 0.10.4 0.10.7
+versions    = 0.10.4 0.10.7 0.10.8
 pkgname     = xf86-video-sis
 suffix      = tar.bz2
 

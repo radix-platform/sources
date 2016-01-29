@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 0.9.7 0.9.8
+versions    = 0.9.7 0.9.8 0.9.9
 pkgname     = libXrender
 suffix      = tar.bz2
 

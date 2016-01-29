@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 1.7.6 1.7.7
+versions    = 1.7.6 1.7.7 1.7.8
 pkgname     = xf86-video-siliconmotion
 suffix      = tar.bz2
 

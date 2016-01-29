@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.1.1
+versions    = 1.1.1 1.1.2
 pkgname     = xlsatoms
 suffix      = tar.bz2
 

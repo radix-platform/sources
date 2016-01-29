@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 1.3.2 1.4.0 1.4.1 1.4.2
+versions    = 1.3.2 1.4.0 1.4.1 1.4.2 1.5.0
 pkgname     = libXrandr
 suffix      = tar.bz2
 

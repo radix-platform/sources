@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/proto
 
-versions    = 7.0.23 7.0.24 7.0.25 7.0.26
+versions    = 7.0.23 7.0.24 7.0.25 7.0.26 7.0.27 7.0.28
 pkgname     = xproto
 suffix      = tar.bz2
 

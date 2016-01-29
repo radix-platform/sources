@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 6.9.1 6.9.4
+versions    = 6.9.1 6.9.4 6.9.5
 pkgname     = xf86-video-mach64
 suffix      = tar.bz2
 

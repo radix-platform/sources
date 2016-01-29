@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.1.1 1.1.2
+versions    = 1.1.1 1.1.2 1.1.3
 pkgname     = xvinfo
 suffix      = tar.bz2
 

@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 1.5.0 1.6.0 1.6.1 1.6.2
+versions    = 1.5.0 1.6.0 1.6.1 1.6.2 1.6.3
 pkgname     = libX11
 suffix      = tar.bz2
 

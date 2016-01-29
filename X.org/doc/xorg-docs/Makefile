@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/doc
 
-versions    = 1.7
+versions    = 1.7 1.7.1
 pkgname     = xorg-docs
 suffix      = tar.bz2
 

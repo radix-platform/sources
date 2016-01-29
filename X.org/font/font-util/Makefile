@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/font
 
-versions    = 1.3.0
+versions    = 1.3.0 1.3.1
 pkgname     = font-util
 suffix      = tar.bz2
 

@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.2.0 1.2.1
+versions    = 1.2.0 1.2.1 1.2.2
 pkgname     = xev
 suffix      = tar.bz2
 

@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 1.4.0
+versions    = 1.4.0 1.4.1
 pkgname     = xf86-input-void
 suffix      = tar.bz2
 

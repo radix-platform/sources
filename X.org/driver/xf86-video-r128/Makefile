@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 6.8.2 6.9.2
+versions    = 6.8.2 6.9.2 6.10.0 6.10.1
 pkgname     = xf86-video-r128
 suffix      = tar.bz2
 

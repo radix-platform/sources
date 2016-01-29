@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.0.7 1.0.8
+versions    = 1.0.7 1.0.8 1.1.0
 pkgname     = sessreg
 suffix      = tar.bz2
 

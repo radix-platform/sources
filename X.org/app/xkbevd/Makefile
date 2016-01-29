@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.1.3
+versions    = 1.1.3 1.1.4
 pkgname     = xkbevd
 suffix      = tar.bz2
 

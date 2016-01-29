@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 1.1.2 1.1.3
+versions    = 1.1.2 1.1.3 1.1.4
 pkgname     = libXxf86vm
 suffix      = tar.bz2
 

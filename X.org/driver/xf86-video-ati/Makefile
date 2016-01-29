@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 6.14.4 7.2.0 7.5.0
+versions    = 6.14.4 7.2.0 7.5.0 7.6.0 7.6.1
 pkgname     = xf86-video-ati
 suffix      = tar.bz2
 

@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 2.3.1 2.3.3
+versions    = 2.3.1 2.3.3 2.3.4
 pkgname     = xf86-video-vesa
 suffix      = tar.bz2
 

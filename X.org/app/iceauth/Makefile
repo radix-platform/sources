@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.0.5 1.0.6
+versions    = 1.0.5 1.0.6 1.0.7
 pkgname     = iceauth
 suffix      = tar.bz2
 

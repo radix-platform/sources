@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 0.93.10 0.98.0 0.99.9 1.0.1
+versions    = 0.93.10 0.98.0 0.99.9 1.0.1 1.1.5
 pkgname     = xf86-video-ast
 suffix      = tar.bz2
 

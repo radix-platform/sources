@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/data/xkeyboard-config
 
-versions    = 2.6 2.7 2.8 2.9 2.10.1 2.11 2.12 2.13
+versions    = 2.6 2.7 2.8 2.9 2.10.1 2.11 2.12 2.13 2.14 2.15 2.16 2.17
 pkgname     = xkeyboard-config
 suffix      = tar.bz2
 

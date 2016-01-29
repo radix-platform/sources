@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 1.6.1 1.7.1 1.7.2 1.7.3 1.7.4
+versions    = 1.6.1 1.7.1 1.7.2 1.7.3 1.7.4 1.7.5 1.7.6
 pkgname     = libXi
 suffix      = tar.bz2
 

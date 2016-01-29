@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.2.4 1.3.0
+versions    = 1.2.4 1.3.0 1.3.1
 pkgname     = xkbcomp
 suffix      = tar.bz2
 

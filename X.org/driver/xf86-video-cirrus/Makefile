@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 1.4.0 1.5.2
+versions    = 1.4.0 1.5.2 1.5.3
 pkgname     = xf86-video-cirrus
 suffix      = tar.bz2
 

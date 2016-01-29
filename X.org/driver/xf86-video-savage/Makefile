@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 2.3.4 2.3.7
+versions    = 2.3.4 2.3.7 2.3.8
 pkgname     = xf86-video-savage
 suffix      = tar.bz2
 

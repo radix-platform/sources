@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 12.8.0 12.9.0 13.0.0
+versions    = 12.8.0 12.9.0 13.0.0 13.1.0
 pkgname     = xf86-input-vmmouse
 suffix      = tar.bz2
 

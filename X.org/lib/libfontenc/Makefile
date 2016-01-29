@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 1.1.1 1.1.2
+versions    = 1.1.1 1.1.2 1.1.3
 pkgname     = libfontenc
 suffix      = tar.bz2
 

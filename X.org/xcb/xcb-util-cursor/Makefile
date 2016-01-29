@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/xcb
 
-versions    = 0.1.0 0.1.1
+versions    = 0.1.0 0.1.1 0.1.2
 pkgname     = xcb-util-cursor
 suffix      = tar.bz2
 

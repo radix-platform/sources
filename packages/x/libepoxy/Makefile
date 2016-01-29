@@ -15,7 +15,7 @@ url        = https://github.com/anholt/libepoxy.git
 
 repo_name  = libepoxy
 
-versions   = 1.1 1.2
+versions   = 1.1 1.2 1.3 1.3.1
 
 git_repo   = .git_clone
 tarballs   = $(addsuffix .tar.bz2, $(addprefix $(repo_name)-, $(versions)))

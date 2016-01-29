@@ -10,7 +10,7 @@
 
 url         = http://dri.freedesktop.org/libdrm
 
-versions    = 2.4.46 2.4.58 2.4.62 2.4.64
+versions    = 2.4.46 2.4.58 2.4.62 2.4.64 2.4.65 2.4.66
 pkgname     = libdrm
 suffix      = tar.bz2
 

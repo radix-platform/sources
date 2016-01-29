@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.1.6
+versions    = 1.1.6 1.1.7
 pkgname     = xcompmgr
 suffix      = tar.bz2
 

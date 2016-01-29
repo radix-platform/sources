@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 1.2.5
+versions    = 1.2.5 1.2.6
 pkgname     = xf86-video-chips
 suffix      = tar.bz2
 

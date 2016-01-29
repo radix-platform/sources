@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.0.3
+versions    = 1.0.3 1.0.4
 pkgname     = xfindproxy
 suffix      = tar.bz2
 

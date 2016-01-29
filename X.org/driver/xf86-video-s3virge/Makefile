@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 1.10.6
+versions    = 1.10.6 1.10.7
 pkgname     = xf86-video-s3virge
 suffix      = tar.bz2
 

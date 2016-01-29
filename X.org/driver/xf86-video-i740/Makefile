@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 1.3.4
+versions    = 1.3.4 1.3.5
 pkgname     = xf86-video-i740
 suffix      = tar.bz2
 

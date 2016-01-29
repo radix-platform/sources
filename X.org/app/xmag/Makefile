@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.0.4 1.0.5
+versions    = 1.0.4 1.0.5 1.0.6
 pkgname     = xmag
 suffix      = tar.bz2
 

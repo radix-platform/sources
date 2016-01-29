@@ -10,7 +10,7 @@
 
 url         = http://releases.compiz.org
 
-versions    = 0.8.8
+versions    = 0.8.8 0.9.0 0.9.4
 pkgname     = compiz
 suffix      = tar.bz2
 

@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/xcb
 
-versions    = 1.8.1 1.9.1 1.9.2 1.9.3 1.10 1.11
+versions    = 1.8.1 1.9.1 1.9.2 1.9.3 1.10 1.11 1.11.1
 pkgname     = libxcb
 suffix      = tar.bz2
 

@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 0.4.3
+versions    = 0.4.3 0.4.4
 pkgname     = xf86-video-omap
 suffix      = tar.bz2
 

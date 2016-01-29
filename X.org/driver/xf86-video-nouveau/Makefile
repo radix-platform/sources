@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 1.0.9 1.0.10 1.0.11
+versions    = 1.0.9 1.0.10 1.0.11 1.0.12
 pkgname     = xf86-video-nouveau
 suffix      = tar.bz2
 

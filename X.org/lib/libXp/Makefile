@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 1.0.2
+versions    = 1.0.2 1.0.3
 pkgname     = libXp
 suffix      = tar.bz2
 

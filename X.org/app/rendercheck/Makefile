@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.4
+versions    = 1.4 1.5
 pkgname     = rendercheck
 suffix      = tar.bz2
 

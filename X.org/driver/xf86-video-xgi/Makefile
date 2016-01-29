@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 1.6.0
+versions    = 1.6.0 1.6.1
 pkgname     = xf86-video-xgi
 suffix      = tar.bz2
 

@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.0.2
+versions    = 1.0.2 1.0.3
 pkgname     = xmh
 suffix      = tar.bz2
 

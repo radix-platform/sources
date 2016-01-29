@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.0.3 1.0.4
+versions    = 1.0.3 1.0.4 1.0.5
 pkgname     = fslsfonts
 suffix      = tar.bz2
 

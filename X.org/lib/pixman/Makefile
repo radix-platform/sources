@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 0.30.2 0.32.0 0.32.2 0.32.4 0.32.6
+versions    = 0.30.2 0.32.0 0.32.2 0.32.4 0.32.6 0.32.8 0.33.2 0.33.4 0.33.6
 pkgname     = pixman
 suffix      = tar.bz2
 

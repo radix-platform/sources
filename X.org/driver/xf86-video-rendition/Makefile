@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 4.2.5
+versions    = 4.2.5 4.2.6
 pkgname     = xf86-video-rendition
 suffix      = tar.bz2
 

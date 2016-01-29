@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/xserver
 
-versions    = 1.12.2 1.12.4 1.14.2 1.14.7 1.16.2 1.16.4 1.17.2
+versions    = 1.12.2 1.12.4 1.14.2 1.14.7 1.16.2 1.16.4 1.17.2 1.17.4 1.18.0
 pkgname     = xorg-server
 suffix      = tar.bz2
 

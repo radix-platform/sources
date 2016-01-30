@@ -11,7 +11,7 @@
 
 url         = http://rpm.org/releases
 
-versions    = 4.10.0 4.10.3.1 4.11.2
+versions    = 4.10.0 4.10.3.1 4.11.2 4.12.0 4.12.0.1
 pkgname     = rpm
 suffix      = tar.bz2
 

@@ -16,7 +16,7 @@
 
 url       = https://www.kernel.org/pub/linux/docs/man-pages/Archive
 
-versions  = 3.75
+versions  = 3.75 3.83 4.04
 pkg_name  = man-pages
 arch_type = tar.xz
 suffixes  = $(arch_type) tar.sign

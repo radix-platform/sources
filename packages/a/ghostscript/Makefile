@@ -11,7 +11,7 @@
 
 url         = http://downloads.ghostscript.com/public
 
-versions    = 9.07 9.15
+versions    = 9.07 9.15 9.16 9.18
 pkgname     = ghostscript
 suffix      = tar.gz
 

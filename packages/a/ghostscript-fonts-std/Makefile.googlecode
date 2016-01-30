@@ -14,10 +14,8 @@
 # https://code.google.com/p/ghostscript/downloads/list
 # https://ghostscript.googlecode.com/files/ghostscript-fonts-std-8.11.tar.gz
 #
-# http://downloads.sourceforge.net/project/gs-fonts/gs-fonts/"ghostscript-fonts-std-${VERSION} (base 35, GPL)"
-#
 
-url         = http://downloads.sourceforge.net/project/gs-fonts/gs-fonts
+url         = https://ghostscript.googlecode.com/files
 
 versions    = 8.11
 pkgname     = ghostscript-fonts-std
@@ -33,8 +31,8 @@ all: $(tarballs) $(sha1s)
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for version in $(versions) ; do \
-	  wget -N $(url)/"$$version (base 35, GPL)"/$(pkgname)-$$version.$(suffix) ;  \
+	@for tarball in $(tarballs) ; do \
+	  wget -N $(url)/$$tarball ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

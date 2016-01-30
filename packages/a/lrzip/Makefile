@@ -10,7 +10,7 @@
 
 url         = http://ck.kolivas.org/apps/lrzip
 
-versions    = 0.616
+versions    = 0.616 0.621
 pkg_name    = lrzip
 suffix      = tar.bz2
 

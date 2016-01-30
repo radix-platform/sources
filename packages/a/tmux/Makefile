@@ -11,7 +11,7 @@
 
 url         = http://downloads.sourceforge.net/tmux
 
-versions    = 1.8 1.9 1.9a
+versions    = 1.8 1.9 1.9a 2.0
 pkg_name    = tmux
 suffix      = tar.gz
 

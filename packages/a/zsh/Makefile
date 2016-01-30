@@ -10,9 +10,9 @@
 
 url         = http://sourceforge.net/projects/zsh/files/zsh
 
-versions    = 5.0.4 5.0.5
+versions    = 5.1.1 5.2
 pkgname     = zsh
-suffix      = tar.bz2
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

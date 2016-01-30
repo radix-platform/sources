@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/project/docbook/docbook-xsl-doc
 
-versions    = 1.78.0 1.78.1
+versions    = 1.78.0 1.78.1 1.79.0 1.79.1
 pkgname     = docbook-xsl-doc
 suffix      = tar.bz2
 

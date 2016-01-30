@@ -11,7 +11,7 @@
 
 url         = https://fedorahosted.org/releases/x/m/xmlto
 
-versions    = 0.0.25 0.0.26
+versions    = 0.0.25 0.0.26 0.0.27 0.0.28
 pkgname     = xmlto
 suffix      = tar.bz2
 sign_suffix = sig

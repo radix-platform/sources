@@ -10,7 +10,7 @@
 
 url         = http://sourceforge.net/projects/check/files/check
 
-versions    = 0.9.12 0.9.13
+versions    = 0.9.12 0.9.13 0.9.14 0.10.0
 pkgname     = check
 suffix      = tar.gz
 

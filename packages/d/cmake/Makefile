@@ -10,7 +10,7 @@
 
 url         = http://www.cmake.org/files
 
-versions    = 2.8.12.2 3.0.2
+versions    = 2.8.12.2 3.0.2 3.4.3
 pkgname     = cmake
 suffix      = tar.gz
 

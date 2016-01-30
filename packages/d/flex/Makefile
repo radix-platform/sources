@@ -10,7 +10,7 @@
 
 url         = http://sourceforge.net/projects/flex/files
 
-versions    = 2.5.38 2.5.39
+versions    = 2.5.38 2.5.39 2.6.0
 pkgname     = flex
 suffix      = tar.xz
 

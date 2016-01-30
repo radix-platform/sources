@@ -10,7 +10,7 @@
 
 url         = http://pkgconfig.freedesktop.org/releases
 
-versions    = 0.25 0.26 0.27 0.28
+versions    = 0.25 0.26 0.27 0.28 0.29
 pkg_name    = pkg-config
 suffix      = tar.gz
 

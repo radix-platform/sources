@@ -10,7 +10,7 @@
 
 url         = http://www.lasr.cs.ucla.edu/geoff/tars
 
-versions    = 3.2.06 3.3.00 3.3.01 3.3.02
+versions    = 3.2.06 3.3.00 3.3.01 3.3.02 3.4.00
 pkgname     = ispell
 suffix      = tar.gz
 

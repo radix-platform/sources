@@ -10,7 +10,7 @@
 
 url         = http://sg.danny.cz/scsi
 
-versions    = 0.27
+versions    = 0.27 0.28
 pkgname     = lsscsi
 suffix      = tar.gz
 

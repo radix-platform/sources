@@ -22,8 +22,6 @@ repo_name  = populatefs
 # List of tags to be extracted:
 # ============================
 #
-# Revisions from 'sunxi-3.4' branch used for A10, A13, A10s and A20.
-#
 #                                               hash | version
 #            ----------------------------------------+--------
 revisions  = 9cb86b88d29601e73f9d78eeb3430a0a32b33057-0.9

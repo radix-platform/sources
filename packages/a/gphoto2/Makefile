@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/project/gphoto/gphoto
 
-versions    = 2.5.2 2.5.5
+versions    = 2.5.2 2.5.5 2.5.9
 pkgname     = gphoto2
 suffix      = tar.bz2
 sign_suffix = asc

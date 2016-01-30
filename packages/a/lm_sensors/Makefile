@@ -9,10 +9,15 @@
 # http://www.lm-sensors.org/wiki/Download
 # http://dl.lm-sensors.org/lm-sensors/releases
 #
+# Mirror:
+# ======
+# ftp://ftp.netroedge.com/pub/lm-sensors/
+#
 
-url         = http://dl.lm-sensors.org/lm-sensors/releases
+#url         = http://dl.lm-sensors.org/lm-sensors/releases
+url         = ftp://ftp.netroedge.com/pub/lm-sensors
 
-versions    = 3.3.4 3.3.5
+versions    = 3.3.4 3.3.5 3.4.0
 pkgname     = lm_sensors
 suffix      = tar.bz2
 sign_suffix = asc

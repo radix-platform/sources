@@ -52,6 +52,7 @@ SUBDIRS := GNOME                   \
            GNU/grub                \
            GNU/guile               \
            GNU/gzip                \
+           GNU/help2man            \
            GNU/inetutils           \
            GNU/less                \
            GNU/libiconv            \

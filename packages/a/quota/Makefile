@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/project/linuxquota/quota-tools
 
-versions    = 3.17 4.01
+versions    = 3.17 4.01 4.02 4.03
 pkgname     = quota
 suffix      = tar.gz
 

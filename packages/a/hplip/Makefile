@@ -13,7 +13,7 @@
 
 url         = http://downloads.sourceforge.net/project/hplip/hplip
 
-versions    = 3.13.10 3.14.10 3.15.9
+versions    = 3.13.10 3.14.10 3.15.9 3.15.11
 pkgname     = hplip
 suffix      = tar.gz
 sign_suffix = asc

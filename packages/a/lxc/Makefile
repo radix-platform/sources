@@ -11,7 +11,7 @@
 
 url         = https://linuxcontainers.org/downloads
 
-versions    = 1.0.5 1.0.6
+versions    = 1.0.5 1.0.6 1.1.4 1.1.5
 pkgname     = lxc
 suffix      = tar.gz
 sign_suffix = asc

@@ -10,7 +10,7 @@
 
 url         = http://upower.freedesktop.org/releases
 
-versions    = 0.9.17 0.9.23
+versions    = 0.9.17 0.9.23 0.99.3
 pkg_name    = upower
 suffix      = tar.xz
 

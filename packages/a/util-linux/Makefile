@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.kernel.org/pub/linux/utils/util-linux
 
-versions    = 2.21.2 2.23 2.24 2.24.1
+versions    = 2.21.2 2.23 2.24 2.24.1 2.27 2.27.1
 pkgname     = util-linux
 suffix      = tar.gz
 

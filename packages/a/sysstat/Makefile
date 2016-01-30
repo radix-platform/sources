@@ -11,7 +11,7 @@
 
 url         = http://pagesperso-orange.fr/sebastien.godard
 
-versions    = 11.0.2 11.1.2
+versions    = 11.0.2 11.1.2 11.2.0
 pkg_name    = sysstat
 suffix      = tar.xz
 

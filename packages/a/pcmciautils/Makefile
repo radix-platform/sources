@@ -8,9 +8,9 @@
 #   ftp://ftp.kernel.org/pub/linux/utils/kernel/pcmcia
 #
 
-url         = ftp://ftp.kernel.org/pub/linux/utils/kernel/pcmcia/
+url         = ftp://ftp.kernel.org/pub/linux/utils/kernel/pcmcia
 
-versions    = 016 017
+versions    = 016 017 018
 pkgname     = pcmciautils
 suffix      = tar.gz
 

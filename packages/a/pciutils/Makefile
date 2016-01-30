@@ -12,7 +12,7 @@
 
 url         = ftp://ftp.kernel.org/pub/software/utils/pciutils
 
-versions    = 3.2.0 3.2.1
+versions    = 3.2.0 3.2.1 3.3.1 3.4.1
 pkgname     = pciutils
 suffix      = tar.xz
 

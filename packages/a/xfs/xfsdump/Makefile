@@ -11,7 +11,7 @@
 
 url         = ftp://oss.sgi.com/projects/xfs/cmd_tars
 
-versions    = 3.1.2 3.1.3
+versions    = 3.1.2 3.1.3 3.1.6
 pkgname     = xfsdump
 suffix      = tar.gz
 

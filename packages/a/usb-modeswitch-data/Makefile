@@ -11,7 +11,7 @@
 
 url         = http://www.draisberghof.de/usb_modeswitch
 
-versions    = 20140529
+versions    = 20140529 20160112
 pkg_name    = usb-modeswitch-data
 suffix      = tar.bz2
 

@@ -12,7 +12,7 @@
 
 url         = http://tuxera.com/opensource
 
-versions    = 2013.1.13 2014.2.15
+versions    = 2013.1.13 2014.2.15 2015.3.14
 pkg_name    = ntfs-3g_ntfsprogs
 suffix      = tar.xz
 

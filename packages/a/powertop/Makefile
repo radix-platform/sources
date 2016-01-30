@@ -10,7 +10,7 @@
 
 url         = https://01.org/sites/default/files/downloads/powertop
 
-versions    = 2.4 2.6.1
+versions    = 2.4 2.6.1 2.7 2.8
 pkg_name    = powertop
 suffix      = tar.gz
 

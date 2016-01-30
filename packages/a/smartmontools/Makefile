@@ -11,7 +11,7 @@
 
 url         = http://downloads.sourceforge.net/project/smartmontools/smartmontools
 
-versions    = 5.43 6.3
+versions    = 5.43 6.3 6.4
 pkgname     = smartmontools
 suffix      = tar.gz
 sign_suffix = asc

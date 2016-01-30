@@ -11,7 +11,7 @@
 
 url         = http://downloads.sourceforge.net/project/gimp-print
 
-versions    = 5.2.9 5.2.10
+versions    = 5.2.9 5.2.10 5.2.11
 pkgname     = gutenprint
 suffix      = tar.bz2
 

@@ -5,6 +5,7 @@
 #
 # Repositories:
 #   http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/foomatic
+#   http://bzr.linuxfoundation.org/loggerhead/openprinting/foomatic
 #
 # Clone:
 # =====
@@ -21,6 +22,7 @@ repo_name  = foomatic-db
 #            revision | date
 #            ---------+---------
 revisions  =      1284:20150904
+revisions +=      1290:20160105
 
 
 bzr_repo   = .bzr_clone

@@ -17,7 +17,7 @@ url        = git://git.kernel.org/pub/scm/utils/cpu/mce/mcelog.git
 
 repo_name  = mcelog
 
-versions   = 1.0.0 1.0.4
+versions   = 1.0.0 1.0.4 1.2.9
 
 # List of tags to be extracted:
 TAGS       = $(foreach version,$(versions),$(addprefix v,$(shell echo $(version) | sed 's/\.//g')))

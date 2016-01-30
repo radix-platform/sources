@@ -10,7 +10,7 @@
 
 url         = https://fedorahosted.org/releases/l/o/logrotate
 
-versions    = 3.8.6 3.8.7
+versions    = 3.8.6 3.8.7 3.9.0 3.9.1
 pkg_name    = logrotate
 suffix      = tar.gz
 

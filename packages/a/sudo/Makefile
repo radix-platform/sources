@@ -12,7 +12,7 @@
 
 url         = ftp://ftp.sudo.ws/pub/sudo
 
-versions    = 1.8.6p8 1.8.11p2
+versions    = 1.8.6p8 1.8.11p2 1.8.12 1.8.13 1.8.14 1.8.15
 pkgname     = sudo
 suffix      = tar.gz
 sign_suffix = sig

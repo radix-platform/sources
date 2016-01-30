@@ -10,7 +10,7 @@
 
 url         = http://download.savannah.gnu.org/releases/lzip
 
-versions    = 1.15 1.16
+versions    = 1.15 1.16 1.17
 pkgname     = lzip
 suffix      = tar.gz
 sign_suffix = sig

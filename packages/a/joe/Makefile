@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/project/joe-editor/JOE%20sources
 
-versions    = 3.6 3.7
+versions    = 3.6 3.7 4.1
 pkgname     = joe
 suffix      = tar.gz
 

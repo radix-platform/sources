@@ -10,7 +10,7 @@
 
 url         = http://lilo.alioth.debian.org/ftp/sources
 
-versions    = 24.0 24.1
+versions    = 24.0 24.1 24.2
 pkgname     = lilo
 suffix      = tar.gz
 sign_suffix = asc

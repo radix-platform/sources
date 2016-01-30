@@ -10,7 +10,7 @@
 
 url         = http://ftp.de.debian.org/debian/pool/main/o/os-prober
 
-versions    = 1.64 1.70
+versions    = 1.65 1.70
 pkgname     = os-prober
 suffix      = tar.xz
 

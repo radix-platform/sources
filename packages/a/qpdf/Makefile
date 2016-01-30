@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/project/qpdf/qpdf
 
-versions    = 5.1.2
+versions    = 5.1.2 5.1.3 6.0.0
 pkgname     = qpdf
 suffix      = tar.gz
 

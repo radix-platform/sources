@@ -133,6 +133,7 @@ SUBDIRS := CLooG                 \
            seejpeg               \
            setserial             \
            shadow                \
+           shadow-alioth         \
            slocate               \
            smartmontools         \
            splitvt               \

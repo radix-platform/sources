@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.kernel.org/pub/linux/utils/usb/usbutils
 
-versions    = 006 007
+versions    = 006 007 008
 pkgname     = usbutils
 suffix      = tar.xz
 

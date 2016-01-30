@@ -10,7 +10,7 @@
 
 url         = http://udisks.freedesktop.org/releases
 
-versions    = 2.1.0 2.1.3
+versions    = 2.1.0 2.1.3 2.1.4 2.1.5 2.1.6
 pkg_name    = udisks
 suffix      = tar.bz2
 sign_suffix = sign

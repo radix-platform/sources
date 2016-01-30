@@ -14,7 +14,7 @@
 
 url         = ftp://sources.redhat.com/pub/lvm2
 
-versions    = 2.02.100 2.02.111 2.02.132
+versions    = 2.02.100 2.02.111 2.02.132 2.02.133 2.02.141
 pkg_name    = LVM2
 suffix      = tar.xz
 

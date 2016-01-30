@@ -11,7 +11,7 @@
 
 url         = http://www.nano-editor.org/dist
 
-versions    = 2.2.6 2.3.2 2.3.6
+versions    = 2.2.6 2.3.2 2.3.6 2.5.1
 pkgname     = nano
 suffix      = tar.gz
 sign_suffix = asc

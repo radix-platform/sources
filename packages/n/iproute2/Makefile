@@ -11,6 +11,7 @@
 url         = ftp://ftp.kernel.org/pub/linux/utils/net/iproute2
 
 versions    = 3.4.0 3.5.0 3.8.0 3.9.0 3.10.0 3.11.0 3.12.0 3.14.0 3.15.0 3.16.0
+versions   += 4.4.0
 pkgname     = iproute2
 suffix      = tar.xz
 

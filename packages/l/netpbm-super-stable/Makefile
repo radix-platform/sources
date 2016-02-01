@@ -11,7 +11,7 @@
 
 url         = http://downloads.sourceforge.net/project/netpbm/super_stable
 
-versions    = 10.35.93 10.35.94
+versions    = 10.35.93 10.35.94 10.35.98
 pkgname     = netpbm
 suffix      = tar.gz
 

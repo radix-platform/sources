@@ -6,12 +6,11 @@
 # Downloads:
 # =========
 # https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz
-# https://github.com/libevent/libevent/releases/download/release-${VERSION}-stable/libevent-${VERSION}-stable.tar.gz
 #
 
-url         = https://github.com/libevent/libevent/releases/download
+url         = https://github.com/downloads/libevent/libevent
 
-versions    = 2.0.22-stable
+versions    = 2.0.20-stable 2.0.21-stable
 pkgname     = libevent
 suffix      = tar.gz
 
@@ -26,8 +25,7 @@ all: $(tarballs) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
-	  version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9]*[\.][0-9]*[\.][0-9]*[\-][a-z]*\)\([\.].*\)/\2/'` ; \
-	  wget -N $(url)/release-$$version/$$tarball ; \
+	  wget -N $(url)/$$tarball ; \
 	done
 
 $(sha1s): %.tar.gz.sha1sum : %.tar.gz

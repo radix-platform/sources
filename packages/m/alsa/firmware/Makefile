@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.alsa-project.org/pub/firmware
 
-versions    = 1.0.27 1.0.28
+versions    = 1.0.27 1.0.28 1.0.29
 pkgname     = alsa-firmware
 suffix      = tar.bz2
 

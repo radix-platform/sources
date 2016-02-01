@@ -11,7 +11,7 @@
 
 url       = ftp://ftp.kernel.org/pub/linux/bluetooth
 
-versions  = 4.99 5.24
+versions  = 4.99 5.24 5.37
 pkg_name  = bluez
 arch_type = tar.xz
 suffixes  = $(arch_type) tar.sign

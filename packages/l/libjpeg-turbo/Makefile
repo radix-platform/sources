@@ -11,7 +11,7 @@
 
 url         = http://downloads.sourceforge.net/project/libjpeg-turbo
 
-versions    = 1.3.0 1.3.1
+versions    = 1.3.0 1.3.1 1.4.2
 pkgname     = libjpeg-turbo
 suffix      = tar.gz
 

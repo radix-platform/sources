@@ -10,7 +10,7 @@
 
 url         = http://www.ijg.org/files
 
-versions    = v8a v8b v8c v8d v9 v9a
+versions    = v8a v8b v8c v8d v9 v9a v9b
 pkgname     = jpegsrc
 suffix      = tar.gz
 

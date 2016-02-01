@@ -10,9 +10,9 @@
 
 url         = http://cairographics.org/releases
 
-versions    = 1.8.10 1.10.0
+versions    = 1.8.8
 pkgname     = py2cairo
-suffix      = tar.bz2
+suffix      = tar.gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

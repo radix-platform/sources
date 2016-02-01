@@ -11,7 +11,7 @@
 
 url          = http://nmap.org/dist
 
-versions     = 6.40 6.47
+versions     = 6.40 6.47 7.01
 pkgname      = nmap
 suffix       = tar.bz2
 

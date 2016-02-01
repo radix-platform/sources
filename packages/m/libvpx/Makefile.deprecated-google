@@ -2,20 +2,23 @@
 # Project Home:
 # ============
 # http://www.webmproject.org
+# https://code.google.com/p/webm
+#
+# NOTE: for i686, x86_64 only
 #
 # Clone:
 # =====
-# git clone https://github.com/webmproject/libvpx.git
+# git clone http://code.google.com/p/webm.libvpx
 #
 
-url        = https://github.com/webmproject/libvpx.git
+url        = http://code.google.com/p/webm.libvpx
 
 repo_name  = libvpx
 
 #
 # List of tags to be extracted:
 #
-TAGS       = 1.2.0 1.3.0 1.4.0 1.5.0
+TAGS       = 1.2.0 1.3.0 1.4.0
 
 
 git_repo   = .git_clone

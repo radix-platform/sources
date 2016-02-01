@@ -10,7 +10,7 @@
 
 url         = http://freedesktop.org/software/libmbim
 
-versions    = 1.4.0 1.6.0 1.8.0 1.10.0
+versions    = 1.4.0 1.6.0 1.8.0 1.10.0 1.12.2
 pkgname     = libmbim
 suffix      = tar.xz
 

@@ -27,7 +27,8 @@ repo_name  = net-tools
 #
 #                                               hash | date
 #            ----------------------------------------+--------
-revisions += 68a4d784daaf5fb3449808e434e8cbb9625988e6-20140218
+revisions  = 68a4d784daaf5fb3449808e434e8cbb9625988e6-20140218
+revisions += 3f170bff115303e92319791cbd56371e33dcbf6d-20160127
 
 git_repo   = .git_clone
 

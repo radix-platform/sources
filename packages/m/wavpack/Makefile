@@ -10,7 +10,7 @@
 
 url         = http://www.wavpack.com
 
-versions    = 4.60.1 4.70.0
+versions    = 4.60.1 4.70.0 4.75.2
 pkgname     = wavpack
 suffix      = tar.bz2
 

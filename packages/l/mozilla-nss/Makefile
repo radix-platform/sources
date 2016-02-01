@@ -8,9 +8,9 @@
 # ftp://ftp.mozilla.org/pub/security/nss/releases/NSS_${VERSION//./_}_RTM/src/nss-${VERSION}.tar.gz
 #
 
-url         = ftp://ftp.mozilla.org/pub/security/nss/releases
+url         = http://ftp.mozilla.org/pub/security/nss/releases
 
-versions    = 3.17.3 3.17.4
+versions    = 3.17.3 3.17.4 3.19.4 3.20.2 3.21
 pkgname     = nss
 suffix      = tar.gz
 

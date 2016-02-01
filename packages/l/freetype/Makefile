@@ -11,7 +11,7 @@
 
 url         = http://download.savannah.gnu.org/releases/freetype
 
-versions    = 2.5.0.1 2.5.2 2.5.3
+versions    = 2.5.0.1 2.5.2 2.5.3 2.6.2
 pkgname     = freetype
 suffix      = tar.bz2
 

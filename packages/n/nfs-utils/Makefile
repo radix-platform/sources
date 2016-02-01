@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/project/nfs/nfs-utils
 
-versions    = 1.2.8 1.3.1
+versions    = 1.2.8 1.3.1 1.3.3
 pkg_name    = nfs-utils
 arch_type   = tar.bz2
 suffixes    = $(arch_type) tar.sign

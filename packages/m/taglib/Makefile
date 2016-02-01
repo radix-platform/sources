@@ -10,7 +10,7 @@
 
 url         = http://taglib.github.io/releases
 
-versions    = 1.8 1.9 1.9.1
+versions    = 1.8 1.9 1.9.1 1.10
 pkgname     = taglib
 suffix      = tar.gz
 

@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.remotesensing.org/pub/libtiff
 
-versions    = 3.9.7 4.0.0 4.0.1 4.0.2 4.0.3
+versions    = 3.9.7 4.0.0 4.0.1 4.0.2 4.0.3 4.0.4 4.0.5 4.0.6
 pkgname     = tiff
 suffix      = tar.gz
 

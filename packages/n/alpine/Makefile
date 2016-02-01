@@ -10,7 +10,7 @@
 
 url         = http://patches.freeiz.com/alpine/release/src
 
-versions    = 2.11
+versions    = 2.11 2.20
 pkgname     = alpine
 suffix      = tar.xz
 

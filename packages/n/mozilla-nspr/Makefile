@@ -24,6 +24,8 @@ repo_name  = nspr
 #            ----------------------------------------+--------
 revisions  = ad3ebb90bc9968055faadffb37233ad4cb956f85-NSPR_4_10_8_RTM
 revisions += 2c9a94fefea664f8a84442fc959b37db119e2e25-NSPR_4_10_9_RTM
+revisions += 21a7c4a68ca663ae2ba8ff05e12b9379f5108c5d-NSPR_4_10_10_RTM
+revisions += ebae38973a1a7241482448091e96e4e4fe5dbc27-NSPR_4_11_RTM
 
 
 hg_repo    = .hg_clone

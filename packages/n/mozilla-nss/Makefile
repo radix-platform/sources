@@ -24,7 +24,8 @@ repo_name  = nss
 #            ----------------------------------------+--------
 revisions  = 537d7fc8624c289e4f818a4c69847eaedecceccb-NSS_3_19_1_RTM
 revisions += 97d30005dd7bb02b15bd2b8a27e2426c49d06d69-NSS_3_19_2_RTM
-
+revisions += 507694132f6f0706e7b8e33dac63a560a89f67fc-NSS_3_21_RTM
+revisions += ee1254aeba3e9929858d24f071bafcabea32ad4a-NSS_3_22_RTM
 
 hg_repo    = .hg_clone
 

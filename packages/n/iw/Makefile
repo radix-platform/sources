@@ -11,7 +11,7 @@
 
 url         = ftp://ftp.kernel.org/pub/software/network/iw
 
-versions    = 3.5 3.17
+versions    = 3.5 3.17 4.3
 pkgname     = iw
 suffix      = tar.xz
 

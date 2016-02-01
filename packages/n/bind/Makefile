@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.isc.org/isc/bind9
 
-versions    = 9.9.5-P1 9.10.1
+versions    = 9.9.5-P1 9.10.1 9.10.3
 pkgname     = bind
 suffix      = tar.gz
 

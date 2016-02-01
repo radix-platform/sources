@@ -11,18 +11,27 @@
 url         = http://ftp.epicsol.org/pub/epic/EPIC5-PRODUCTION
 help_url    = http://ftp.epicsol.org/pub/epic/help
 
-versions    = 1.1.6 1.1.9 1.1.10
 pkgname     = epic5
-suffix      = tar.bz2
 
-tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-sha1s       = $(addsuffix .sha1sum, $(tarballs))
+old_versions    = 1.1.6 1.1.9 1.1.10
+old_suffix      = tar.bz2
 
-help        = epic-help-current.tar.gz
-help_sha1s += epic-help-current.tar.gz.sha1sum
+old_tarballs    = $(addsuffix .$(old_suffix), $(addprefix $(pkgname)-, $(old_versions)))
+old_sha1s       = $(addsuffix .sha1sum, $(old_tarballs))
+
+new_versions    = 1.4 1.6 1.8
+new_suffix      = tar.xz
+
+new_tarballs    = $(addsuffix .$(new_suffix), $(addprefix $(pkgname)-, $(new_versions)))
+new_sha1s       = $(addsuffix .sha1sum, $(new_tarballs))
+
+help            = epic-help-current.tar.gz
+help_sha1s     += epic-help-current.tar.gz.sha1sum
+
+tarballs        = $(new_tarballs) $(old_tarballs)
 
 
-all: $(tarballs) $(sha1s) $(help) $(help_sha1s)
+all: $(tarballs) $(old_sha1s) $(new_sha1s) $(help) $(help_sha1s)
 
 .PHONY: downloads_clean
 
@@ -32,7 +41,13 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(sha1s): %.$(suffix).sha1sum : %.$(suffix)
+$(old_sha1s): %.$(old_suffix).sha1sum : %.$(old_suffix)
+	@for tarball in $< ; do \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
+	done
+
+$(new_sha1s): %.$(new_suffix).sha1sum : %.$(new_suffix)
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
@@ -50,4 +65,4 @@ $(help_sha1s): $(help)
 
 
 downloads_clean:
-	@rm -rf $(tarballs) $(sha1s) $(help) $(help_sha1s)
+	@rm -rf $(tarballs) $(old_sha1s) $(new_sha1s) $(help) $(help_sha1s)

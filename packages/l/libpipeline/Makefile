@@ -11,7 +11,7 @@
 
 url         = http://download.savannah.gnu.org/releases/libpipeline
 
-versions    = 1.3.1 1.4.0
+versions    = 1.3.1 1.4.0 1.4.1
 pkgname     = libpipeline
 suffix      = tar.gz
 

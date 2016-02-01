@@ -10,7 +10,7 @@
 
 url         = http://www.freedesktop.org/software/polkit/releases
 
-versions    = 0.105 0.112
+versions    = 0.105 0.112 0.113
 pkgname     = polkit
 suffix      = tar.gz
 

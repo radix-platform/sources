@@ -16,7 +16,7 @@ url        = git://git.linux-ipv6.org/gitroot/iputils.git
 
 repo_name  = iputils
 
-versions   = s20121207 s20121221
+versions   = s20121207 s20121221 s20151218
 
 git_repo   = .git_clone
 tarballs   = $(addsuffix .tar.bz2, $(addprefix $(repo_name)-, $(versions)))

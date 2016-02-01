@@ -12,7 +12,7 @@
 
 url         = https://bitbucket.org/mutt/mutt/downloads
 
-versions    = 1.5.22 1.5.23
+versions    = 1.5.22 1.5.23 1.5.24
 pkg_name    = mutt
 suffix      = tar.gz
 

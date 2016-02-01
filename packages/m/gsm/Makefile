@@ -10,7 +10,7 @@
 
 url         = http://www.quut.com/gsm
 
-versions    = 1.0.13
+versions    = 1.0.13 1.0.14
 pkgname     = gsm
 suffix      = tar.gz
 

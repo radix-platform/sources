@@ -15,7 +15,7 @@ repo_name  = libsodium
 #
 # List of tags to be extracted:
 #
-TAGS       = 1.0.1 1.0.2
+TAGS       = 1.0.1 1.0.7 1.0.8
 
 
 git_repo   = .git_clone

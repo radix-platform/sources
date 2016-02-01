@@ -10,7 +10,7 @@
 
 url         = http://sourceforge.net/projects/sox/files/sox
 
-versions    = 14.4.0 14.4.1
+versions    = 14.4.0 14.4.1 14.4.2
 pkgname     = sox
 suffix      = tar.bz2
 

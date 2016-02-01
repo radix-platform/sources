@@ -10,24 +10,22 @@
 
 url         = http://www.dawoodfall.net/files/slackbuilds/noversion/soma
 
-versions    = 2.10.6
+version     = 2.9.1
 pkgname     = soma
 suffix      = tar.gz
 
-tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-sha1s       = $(addsuffix .sha1sum, $(tarballs))
+tarball     = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(version)))
+sha1s       = $(addsuffix .sha1sum, $(tarball))
 
 
-all: $(tarballs) $(sha1s)
+all: $(tarball) $(sha1s)
 
 .PHONY: downloads_clean
 
 
-$(tarballs):
-	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
-	done
+$(tarball):
+	@echo -e "\n======= Downloading source tarball =======\n"
+	wget -N $(url)/$(tarball)
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
@@ -36,4 +34,4 @@ $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	done
 
 downloads_clean:
-	@rm -rf $(tarballs) $(sha1s)
+	@rm -rf $(tarball) $(sha1s)

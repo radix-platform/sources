@@ -20,7 +20,7 @@
 
 url         = http://lftp.yar.ru/ftp
 
-versions    = 4.6.5
+versions    = 4.4.9 4.4.14 4.4.15 4.5.6 4.6.0 4.6.5
 pkgname     = lftp
 suffix      = tar.xz
 
@@ -28,6 +28,7 @@ tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 signatures  = $(addsuffix .asc, $(tarballs))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
+newest      = 4.6.2
 
 all: $(tarballs) $(signatures) $(sha1s)
 
@@ -36,14 +37,25 @@ all: $(tarballs) $(signatures) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	  version=`echo $$tarball | sed 's/\([a-zA-Z0-9-]*\)\([0-9][.0-9]*\)\(\.[a-z]*.*\)/\2/'` ; \
+	  if [ "$(newest)" == "`echo -e "$$version\n$(newest)" | sort -V | head -n1`" ] ; then \
+	    wget -N $(url)/$$tarball ; \
+	  else \
+	    wget -N $(url)/old/$$tarball ; \
+	  fi ; \
 	done
 
-$(signatures): %.$(suffix).sig : %.$(suffix)
+$(signatures): %.$(suffix).asc : %.$(suffix)
 	@for signature in $@ ; do \
 	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
-	  wget -N $(url)/$$signature ; \
-	  touch $$signature ; \
+	  version=`echo $$signature | sed 's/\([a-zA-Z0-9-]*\)\([0-9][.0-9]*\)\(\.[a-z]*.*\)/\2/'` ; \
+	  if [ "$(newest)" == "`echo -e "$$version\n$(newest)" | sort -V | head -n1`" ] ; then \
+	    wget -N $(url)/$$signature ; \
+	    touch $$signature ; \
+	  else \
+	    wget -N $(url)/old/$$signature ; \
+	    touch $$signature ; \
+	  fi ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

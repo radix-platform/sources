@@ -10,7 +10,7 @@
 
 url         = http://cairographics.org/releases
 
-versions    = 1.8.10
+versions    = 1.8.10 1.10.0
 pkgname     = py2cairo
 suffix      = tar.gz
 

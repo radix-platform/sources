@@ -11,7 +11,7 @@
 
 url         = http://downloads.sourceforge.net/project/lcms/lcms
 
-versions    = 2.6
+versions    = 2.6 2.7
 pkgname     = lcms2
 suffix      = tar.gz
 

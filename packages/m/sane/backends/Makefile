@@ -26,7 +26,7 @@ url         = https://anonscm.debian.org/git/sane
 repo_name  = sane-backends
 
 # List of tags to be extracted:
-TAGS       = RELEASE_1_0_24
+TAGS       = RELEASE_1_0_24 RELEASE_1_0_25
 
 versions   = $(foreach tag, $(TAGS), $(shell echo $(tag) | cut -f 2,3,4 -d '_' | sed 's,_,\.,g'))
 

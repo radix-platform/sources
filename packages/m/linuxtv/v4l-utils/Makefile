@@ -10,7 +10,7 @@
 
 url         = http://linuxtv.org/downloads/v4l-utils
 
-versions    = 1.6.3 1.8.0
+versions    = 1.6.3 1.8.0 1.8.1 1.10.0
 pkgname     = v4l-utils
 suffix      = tar.bz2
 sign_suffix = asc

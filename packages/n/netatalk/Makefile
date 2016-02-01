@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/project/netatalk/netatalk
 
-versions    = 2.2.3 3.1.6
+versions    = 2.2.3 3.1.6 3.1.8
 pkg_name    = netatalk
 suffix      = tar.bz2
 

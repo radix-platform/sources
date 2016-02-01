@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/project/log4cplus/log4cplus-stable
 
-versions    = 1.2.0-rc3
+versions    = 1.2.0-rc3 1.2.0
 pkgname     = log4cplus
 suffix      = tar.xz
 
@@ -25,7 +25,7 @@ all: $(tarballs) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
-	  version=`echo $$tarball | sed 's/\([a-zA-Z0-9-]*\)\([0-9][.0-9]*[.0-9]*\)\(\-.*\)/\2/'` ; \
+	  version=`echo $$tarball | sed 's/\([a-zA-Z0-9]*\)\([-]\)\([0-9]*[\.][0-9]*[\.][0-9]*\)\(.*\)/\3/'` ; \
 	  wget -N $(url)/$$version/$$tarball ; \
 	done
 

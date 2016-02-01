@@ -10,7 +10,7 @@
 
 url         = https://fedorahosted.org/releases/e/l/elfutils
 
-versions    = 0.160
+versions    = 0.160 0.165
 pkgname     = elfutils
 suffix      = tar.bz2
 

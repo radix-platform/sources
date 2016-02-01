@@ -6,10 +6,11 @@
 # Downloads:
 # =========
 # ftp://ftp.samba.org/pub/linux-cifs/cifs-utils
+# https://download.samba.org/pub/linux-cifs/cifs-utils
 #
 
 
-url       = ftp://ftp.samba.org/pub/linux-cifs/cifs-utils
+url       = https://download.samba.org/pub/linux-cifs/cifs-utils
 
 versions  = 5.5 6.4
 pkg_name  = cifs-utils

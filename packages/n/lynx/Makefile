@@ -8,11 +8,12 @@
 # =========
 # http://lynx.isc.org
 #  ftp://lynx.isc.org
+# ftp://invisible-island.net/lynx/tarballs
 #
 
-url         = http://lynx.isc.org
+url         = ftp://invisible-island.net/lynx/tarballs
 
-versions    = 2.8.6 2.8.7
+versions    = 2.8.6.5 2.8.7.2 2.8.8.2
 pkgname     = lynx
 suffix      = tar.bz2
 
@@ -27,13 +28,14 @@ all: $(tarballs) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
-	  version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9][.0-9]*[.0-9]*\)\(\..*\)/\2/'` ; \
-	  wget -N $(url)/lynx$$version/lynx$$version.$(suffix) ; \
-	  tar xjf lynx$$version.$(suffix) ; \
+	  version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9]\.[0-9]*\.[0-9]*\)\.\([0-9]*\)\(\..*\)/\2/'` ; \
+	  release=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9]\.[0-9]*\.[0-9]*\)\.\([0-9]*\)\(\..*\)/\3/'` ; \
+	  wget -N $(url)/lynx$${version}rel.$$release.$(suffix) ; \
+	  tar xjf lynx$${version}rel.$$release.$(suffix) ; \
 	  ver=`echo $$version | sed 's/\./\-/g'` ; \
-	  mv lynx$$ver lynx-$$version ; \
-	  tar cjf $$tarball lynx-$$version ; \
-	  rm -rf lynx-$$version lynx$$version.$(suffix) ; \
+	  mv lynx$$ver lynx-$$version.$$release ; \
+	  tar cjf $$tarball lynx-$$version.$$release ; \
+	  rm -rf lynx-$$version.$$release lynx$${version}rel.$$release.$(suffix) ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

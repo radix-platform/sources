@@ -10,7 +10,7 @@
 
 url         = ftp://xmlsoft.org/libxml2
 
-versions    = 2.9.0 2.9.1
+versions    = 2.9.0 2.9.1 2.9.3
 pkgname     = libxml2
 suffix      = tar.gz
 

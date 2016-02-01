@@ -11,7 +11,7 @@
 
 url         = http://download.zeromq.org
 
-versions    = 4.0.5
+versions    = 4.0.5 4.1.4
 pkgname     = zeromq
 suffix      = tar.gz
 

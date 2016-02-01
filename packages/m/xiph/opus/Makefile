@@ -10,7 +10,7 @@
 
 url         = http://downloads.xiph.org/releases/opus
 
-versions    = 1.1
+versions    = 1.1 1.1.2
 pkgname     = opus
 suffix      = tar.gz
 

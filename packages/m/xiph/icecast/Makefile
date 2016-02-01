@@ -10,7 +10,7 @@
 
 url         = http://downloads.xiph.org/releases/icecast
 
-versions    = 2.4.1
+versions    = 2.4.1 2.4.3
 pkgname     = icecast
 suffix      = tar.gz
 

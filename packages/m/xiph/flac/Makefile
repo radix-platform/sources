@@ -11,7 +11,7 @@
 
 url         = http://downloads.xiph.org/releases/flac
 
-versions    = 1.3.0
+versions    = 1.3.0 1.3.1
 pkgname     = flac
 suffix      = tar.xz
 

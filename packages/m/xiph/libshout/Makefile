@@ -10,7 +10,7 @@
 
 url         = http://downloads.xiph.org/releases/libshout
 
-versions    = 2.3.1
+versions    = 2.3.1 2.4.1
 pkgname     = libshout
 suffix      = tar.gz
 

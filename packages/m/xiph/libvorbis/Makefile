@@ -11,7 +11,7 @@
 
 url         = http://downloads.xiph.org/releases/vorbis
 
-versions    = 1.3.4
+versions    = 1.3.4 1.3.5
 pkgname     = libvorbis
 suffix      = tar.xz
 

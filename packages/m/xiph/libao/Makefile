@@ -11,7 +11,7 @@
 
 url         = http://downloads.xiph.org/releases/ao
 
-versions    = 1.1.0
+versions    = 1.1.0 1.2.0
 pkgname     = libao
 suffix      = tar.gz
 

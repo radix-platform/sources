@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/project/cdrtools/alpha
 
-versions    = 3.02a05 3.02a06
+versions    = 3.01a17 3.01a25
 pkgname     = cdrtools
 suffix      = tar.bz2
 
@@ -25,7 +25,8 @@ all: $(tarballs) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	  version=`echo $$tarball | sed 's/\([a-zA-Z]*\)\([-]\)\([0-9]*[\.][0-9]*[a-z]*\)\(.*\)/\3/'` ; \
+	  wget -N $(url)/OLD/$${version}X/$$tarball ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

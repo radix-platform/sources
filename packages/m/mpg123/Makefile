@@ -11,7 +11,7 @@
 
 url         = http://sourceforge.net/projects/mpg123/files/mpg123
 
-versions    = 1.20.0 1.20.1
+versions    = 1.20.0 1.20.1 1.23.0
 pkgname     = mpg123
 suffix      = tar.bz2
 

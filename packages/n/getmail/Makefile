@@ -10,7 +10,7 @@
 
 url         = http://pyropus.ca/software/getmail/old-versions
 
-versions    = 4.30.1 4.46.0
+versions    = 4.30.1 4.46.0 4.49.0
 pkgname     = getmail
 suffix      = tar.gz
 

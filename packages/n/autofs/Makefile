@@ -11,7 +11,7 @@
 
 url       = ftp://ftp.kernel.org/pub/linux/daemons
 
-versions  = 5.0.7 5.1.0
+versions  = 5.0.7 5.1.0 5.1.1
 pkg_name  = autofs
 arch_type = tar.xz
 suffixes  = $(arch_type) tar.sign

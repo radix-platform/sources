@@ -10,7 +10,7 @@
 
 url         = http://sourceforge.net/projects/opencore-amr/files/fdk-aac
 
-versions    = 0.1.3
+versions    = 0.1.3 0.1.4
 pkgname     = fdk-aac
 suffix      = tar.gz
 

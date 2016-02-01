@@ -11,7 +11,7 @@
 
 url         = http://downloads.sourceforge.net/project/iodbc/iodbc
 
-versions    = 3.52.9
+versions    = 3.52.9 3.52.10
 pkgname     = libiodbc
 suffix      = tar.gz
 

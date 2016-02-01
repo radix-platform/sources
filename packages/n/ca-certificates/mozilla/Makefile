@@ -26,7 +26,7 @@ $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
 	   version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9]*[.0-9]*\)\([\.].*\)/\2/'` ; \
-	 #  wget -N $(url)/$$version/source/firefox-$$version.source.$(suffix)  ; \
+	   wget -N $(url)/$$version/source/firefox-$$version.source.$(suffix)  ; \
 	   tar -xJvf firefox-$$version.source.$(suffix) \
 	     firefox-$$version/security/nss/lib/ckfw/builtins/certdata.txt  \
 	     firefox-$$version/security/nss/lib/ckfw/builtins/nssckbi.h   ; \

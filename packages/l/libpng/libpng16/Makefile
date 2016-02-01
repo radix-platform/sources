@@ -10,11 +10,11 @@
 # http://sourceforge.net/projects/libpng/files/libpng16
 #
 
-url         = http://downloads.sourceforge.net/libpng/files
+url         = http://downloads.sourceforge.net/project/libpng
 
-versions    = 1.6.9
+versions    = 1.6.20 1.6.21
 pkgname     = libpng
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
@@ -27,7 +27,9 @@ all: $(tarballs) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	  version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9]*[\.][0-9]*[\.][0-9]*\)\(\..*\)/\2/'` ; \
+	    major=`echo $$version | sed 's/\([0-9]*[\.][0-9]*\)\([\.][0-9]*\)/\1/' | sed 's/\.//g'` ; \
+	  wget -N $(url)/$(pkgname)$$major/$$version/$$tarball ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

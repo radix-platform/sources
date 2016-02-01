@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.isc.org/isc/dhcp
 
-versions    = 4.2.5-P1 4.3.1
+versions    = 4.2.5-P1 4.3.1 4.3.3
 pkgname     = dhcp
 suffix      = tar.gz
 

@@ -10,7 +10,7 @@
 
 url         = http://sourceforge.net/projects/cracklib/files/cracklib
 
-versions    = 2.8.22 2.9.0 2.9.1
+versions    = 2.8.22 2.9.0 2.9.1 2.9.5
 pkgname     = cracklib
 suffix      = tar.gz
 

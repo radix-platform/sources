@@ -10,7 +10,7 @@
 
 url         = http://www.skbuff.net/iputils
 
-versions    = s20121221
+versions    = s20121221 s20151218
 pkgname     = iputils
 suffix      = tar.bz2
 

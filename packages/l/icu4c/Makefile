@@ -16,7 +16,7 @@
 
 url         = http://downloads.sourceforge.net/project/icu/ICU4C
 
-versions    = 54.1
+versions    = 54.1 56.1
 pkgname     = icu4c
 suffix      = tar.bz2
 

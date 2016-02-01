@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.netfilter.org/pub/iptables
 
-versions    = 1.4.20 1.4.21
+versions    = 1.4.20 1.4.21 1.6.0
 pkgname     = iptables
 suffix      = tar.bz2
 

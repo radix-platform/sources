@@ -11,7 +11,7 @@
 
 url         = http://www.mega-nerd.com/libsndfile/files
 
-versions    = 1.0.25
+versions    = 1.0.25 1.0.26
 pkgname     = libsndfile
 suffix      = tar.gz
 

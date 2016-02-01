@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.kernel.org/pub/software/network/ethtool
 
-versions    = 2.6.36 3.0 3.4 3.5 3.8 3.9 3.10 3.11 3.12
+versions    = 2.6.36 3.0 3.4 3.5 3.8 3.9 3.10 3.11 3.12 3.18
 pkgname     = ethtool
 suffix      = tar.xz
 

@@ -11,7 +11,7 @@
 
 url         = http://downloads.sourceforge.net/project/libmng/libmng-devel
 
-versions    = 2.0.2
+versions    = 2.0.2 2.0.3
 pkgname     = libmng
 suffix      = tar.xz
 

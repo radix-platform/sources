@@ -10,7 +10,7 @@
 
 url         = http://pycurl.sourceforge.net/download
 
-versions    = 7.19.5.1
+versions    = 7.19.5.1 7.19.5.3 7.21.5
 pkgname     = pycurl
 suffix      = tar.gz
 

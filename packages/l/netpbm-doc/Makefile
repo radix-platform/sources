@@ -26,6 +26,7 @@ branch      = userguide
 #       revision | version
 #      ----------+---------
 revisions  = 2313-20141125
+revisions += 2678-20160201
 
 
 versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d '-'))

@@ -11,7 +11,7 @@
 
 url         = ftp://ftp.kernel.org/pub/linux/libs/ieee1394
 
-versions    = 2.1.0
+versions    = 2.1.0 2.1.1
 pkgname     = libraw1394
 suffix      = tar.xz
 

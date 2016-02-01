@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.netfilter.org/pub/conntrack-tools
 
-versions    = 1.4.2
+versions    = 1.4.2 1.4.3
 pkgname     = conntrack-tools
 suffix      = tar.bz2
 

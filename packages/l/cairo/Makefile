@@ -10,7 +10,7 @@
 
 url         = http://cairographics.org/releases
 
-versions    = 1.14.0
+versions    = 1.14.0 1.14.6
 pkgname     = cairo
 suffix      = tar.xz
 

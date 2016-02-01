@@ -6,11 +6,12 @@
 # Downloads:
 # =========
 # ftp://linux.thai.net/pub/ThaiLinux/software/libthai
+# http://linux.thai.net/pub/thailinux/software/libthai
 #
 
-url         = ftp://linux.thai.net/pub/ThaiLinux/software/libthai
+url         = http://linux.thai.net/pub/thailinux/software/libthai
 
-versions    = 0.2.8
+versions    = 0.2.8 0.2.10
 pkgname     = libdatrie
 suffix      = tar.xz
 

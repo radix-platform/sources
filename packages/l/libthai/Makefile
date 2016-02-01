@@ -6,11 +6,12 @@
 # Downloads:
 # =========
 # ftp://linux.thai.net/pub/ThaiLinux/software/libthai
+# http://linux.thai.net/pub/thailinux/software/libthai
 #
 
-url         = ftp://linux.thai.net/pub/ThaiLinux/software/libthai
+url         = http://linux.thai.net/pub/thailinux/software/libthai
 
-versions    = 0.1.20
+versions    = 0.1.20 0.1.24
 pkgname     = libthai
 suffix      = tar.xz
 

@@ -8,26 +8,35 @@
 # http://web.mit.edu/kerberos/dist
 #
 
-url         = http://web.mit.edu/kerberos/dist/krb5
+url         = http://web.mit.edu/kerberos/dist
 
-
-versions    = 1.12.5 1.13.3 1.14
+versions    = 1.11.5 1.12.1
 pkgname     = krb5
 suffix      = tar.gz
 
+sign_suffix     = signed.tar
+signed_tarballs = $(addsuffix -$(sign_suffix), $(addprefix $(pkgname)-, $(versions)))
+
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
+signatures  = $(addsuffix .asc, $(tarballs))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 
-all: $(tarballs) $(sha1s)
+all: $(signed_tarballs) $(tarballs) $(sha1s)
 
 .PHONY: downloads_clean
 
-$(tarballs):
+$(signed_tarballs):
+	@echo -e "\n======= Downloading '$(pkgname)' signed sourses =======\n"
+	@for version in $(versions) ; do \
+	  major_minor=`echo $$version | sed 's/\([0-9][.0-9][0-9]*\)\([\.].*\)/\1/'` ; \
+	  wget -N $(url)/$(pkgname)/$$major_minor/$(pkgname)-$$version-$(sign_suffix) ;  \
+	done
+
+$(tarballs): %.$(suffix) : %-$(sign_suffix)
 	@echo -e "\n======= Getting '$(pkgname)' sourses =======\n"
-	@for tarball in $(tarballs) ; do \
-	  major_minor=`echo $$tarball | sed 's/\([a-zA-Z0-9-]*\)\([0-9]\.[0-9]*\)\(\..*\)/\2/'` ; \
-	  wget -N $(url)/$${major_minor}/$$tarball ; \
+	@for tarball in $< ; do \
+	   tar xvf $$tarball ; \
 	 done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

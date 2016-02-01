@@ -10,7 +10,7 @@
 
 url         = http://www.thekelleys.org.uk/dnsmasq
 
-versions    = 2.57 2.72
+versions    = 2.57 2.72 2.75
 pkgname     = dnsmasq
 suffix      = tar.gz
 

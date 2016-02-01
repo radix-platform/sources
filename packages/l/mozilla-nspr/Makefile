@@ -8,9 +8,9 @@
 # ftp://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v${VERSION}/src/nspr-${VERSION}.tar.gz
 #
 
-url         = ftp://ftp.mozilla.org/pub/mozilla.org/nspr/releases
+url         = http://ftp.mozilla.org/pub/mozilla.org/nspr/releases
 
-versions    = 4.10.7 4.10.8
+versions    = 4.10.7 4.10.8 4.10.9 4.11
 pkgname     = nspr
 suffix      = tar.gz
 

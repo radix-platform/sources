@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/project/freeglut/freeglut
 
-versions    = 2.8.0 2.8.1
+versions    = 2.8.0 2.8.1 3.0.0
 pkgname     = freeglut
 suffix      = tar.gz
 

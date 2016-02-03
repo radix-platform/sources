@@ -10,7 +10,7 @@
 
 url         = http://www.tcpdump.org/release
 
-versions    = 4.4.0 4.5.1 4.6.2
+versions    = 4.4.0 4.5.1 4.6.2 4.7.4
 pkgname     = tcpdump
 suffix      = tar.gz
 

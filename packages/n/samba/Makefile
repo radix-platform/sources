@@ -6,11 +6,12 @@
 # Downloads:
 # =========
 # ftp://ftp.samba.org/pub/samba/stable
+# https://download.samba.org/pub/samba/stable
 #
 
-url         = ftp://ftp.samba.org/pub/samba/stable
+url         = https://download.samba.org/pub/samba/stable
 
-versions    = 4.1.0 4.1.12 4.1.13
+versions    = 4.1.0 4.1.12 4.1.13 4.3.4
 pkg_name    = samba
 arch_type   = tar.gz
 suffixes    = $(arch_type) tar.asc

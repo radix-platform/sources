@@ -7,19 +7,21 @@
 # Downloads:
 # =========
 # ftp://ftp.freeradius.org/pub/freeradius
+# ftp://ftp.ntua.gr/pub/net/radius/freeradius
 #
 
-url         = ftp://ftp.freeradius.org/pub/freeradius
+url         = ftp://ftp.ntua.gr/pub/net/radius/freeradius
 
-versions    = 1.1.6
+versions    = 1.1.6 1.1.7
 pkgname     = freeradius-client
-suffix      = tar.bz2
+suffix      = tar.gz
 sign_suffix = sig
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 signatures  = $(addsuffix .$(sign_suffix), $(tarballs))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
+newest      = 1.1.7
 
 all: $(tarballs) $(signatures) $(sha1s)
 
@@ -28,14 +30,25 @@ all: $(tarballs) $(signatures) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	  version=`echo $$tarball | sed 's/\([a-zA-Z0-9-]*\)\([0-9][.0-9]*\)\(\.[a-z]*.*\)/\2/'` ; \
+	  if [ "$(newest)" == "`echo -e "$$version\n$(newest)" | sort -V | head -n1`" ] ; then \
+	    wget -N $(url)/$$tarball ; \
+	  else \
+	    wget -N $(url)/old/$$tarball ; \
+	  fi ; \
 	done
 
 $(signatures): %.$(suffix).$(sign_suffix) : %.$(suffix)
 	@for signature in $@ ; do \
 	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
-	  wget -N $(url)/$$signature ; \
-	  touch $$signature ; \
+	  version=`echo $$signature | sed 's/\([a-zA-Z0-9-]*\)\([0-9][.0-9]*\)\(\.[a-z]*.*\)/\2/'` ; \
+	  if [ "$(newest)" == "`echo -e "$$version\n$(newest)" | sort -V | head -n1`" ] ; then \
+	    wget -N $(url)/$$signature ; \
+	    touch $$signature ; \
+	  else \
+	    wget -N $(url)/old/$$signature ; \
+	    touch $$signature ; \
+	  fi ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

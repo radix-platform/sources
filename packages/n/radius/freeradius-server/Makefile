@@ -7,13 +7,15 @@
 # Downloads:
 # =========
 # ftp://ftp.freeradius.org/pub/freeradius
+# ftp://ftp.ntua.gr/pub/net/radius/freeradius
 #
 
-url         = ftp://ftp.freeradius.org/pub/freeradius
+url         = ftp://ftp.ntua.gr/pub/net/radius/freeradius
 
-versions    = 2.2.5 3.0.4
+versions    = 2.2.9
+versions   += 3.0.11
 pkgname     = freeradius-server
-suffix      = tar.bz2
+suffix      = tar.gz
 sign_suffix = sig
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

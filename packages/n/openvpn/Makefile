@@ -11,7 +11,7 @@
 
 url          = http://swupdate.openvpn.org/community/releases
 
-versions     = 2.3.5
+versions     = 2.3.5 2.3.9
 pkgname      = openvpn
 suffix       = tar.xz
 

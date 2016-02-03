@@ -10,7 +10,7 @@
 
 url         = http://www.linux-nis.org/download/yp-tools
 
-versions    = 2.14 3.0.1
+versions    = 2.14 3.0.1 3.3
 pkgname     = yp-tools
 suffix      = tar.bz2
 

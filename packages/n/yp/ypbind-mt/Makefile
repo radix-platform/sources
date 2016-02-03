@@ -10,7 +10,7 @@
 
 url         = http://www.linux-nis.org/download/ypbind-mt
 
-versions    = 1.37.1 1.37.2 1.38 2.0
+versions    = 1.37.1 1.37.2 1.38 2.0 2.2
 pkgname     = ypbind-mt
 suffix      = tar.bz2
 

@@ -10,7 +10,7 @@
 
 url         = http://www.linux-nis.org/download/ypserv
 
-versions    = 2.31 2.32 2.32.1 3.0
+versions    = 2.31 2.32 2.32.1 3.0 3.7
 pkgname     = ypserv
 suffix      = tar.bz2
 

@@ -10,7 +10,7 @@
 
 url         = http://www.openssl.org/source
 
-versions    = 0.9.8y 1.0.1e 1.0.1f 1.0.1g 1.0.1p 1.0.2d
+versions    = 0.9.8y 1.0.1e 1.0.1f 1.0.1g 1.0.1p 1.0.2d 1.0.2f
 pkgname     = openssl
 suffix      = tar.gz
 

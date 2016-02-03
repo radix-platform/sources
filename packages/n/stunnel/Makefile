@@ -30,7 +30,7 @@
 
 url         = ftp://ftp.nluug.nl/pub/networking/stunnel/archive
 
-versions    = 4.53 5.07
+versions    = 4.53 5.07 5.30
 pkgname     = stunnel
 suffix      = tar.gz
 sign_suffix = asc

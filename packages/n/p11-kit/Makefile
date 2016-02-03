@@ -10,7 +10,7 @@
 
 url         = http://p11-glue.freedesktop.org/releases
 
-versions    = 0.16.4 0.20.2
+versions    = 0.16.4 0.20.2 0.20.7 0.23.2
 pkgname     = p11-kit
 suffix      = tar.gz
 

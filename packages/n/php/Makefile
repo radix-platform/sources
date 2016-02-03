@@ -12,9 +12,10 @@
 
 url         = http://ru2.php.net/get
 
-versions    = 5.4.34 5.5.18 5.6.2
+versions    = 5.4.34 5.5.18 5.6.2 5.6.17
+versions   += 7.0.2
 pkgname     = php
-suffix      = tar.bz2
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 signatures  = $(addsuffix .asc, $(tarballs))

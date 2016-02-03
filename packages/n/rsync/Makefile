@@ -6,11 +6,12 @@
 # Downloads:
 # =========
 # ftp://ftp.samba.org/pub/rsync
+# https://download.samba.org/pub/rsync
 #
 
-url         = ftp://ftp.samba.org/pub/rsync/src
+url         = https://download.samba.org/pub/rsync
 
-versions    = 3.1.0 3.1.1
+versions    = 3.1.2
 pkgname     = rsync
 suffix      = tar.gz
 sign_suffix = asc

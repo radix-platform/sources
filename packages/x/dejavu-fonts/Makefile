@@ -11,7 +11,7 @@
 
 url         = http://sourceforge.net/projects/dejavu/files/dejavu
 
-versions    = 2.34
+versions    = 2.34 2.35
 pkgname     = dejavu-fonts
 suffix      = tar.bz2
 

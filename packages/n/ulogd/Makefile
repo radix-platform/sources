@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.netfilter.org/pub/ulogd
 
-versions    = 2.0.2 2.0.3
+versions    = 2.0.2 2.0.3 2.0.5
 pkgname     = ulogd
 suffix      = tar.bz2
 

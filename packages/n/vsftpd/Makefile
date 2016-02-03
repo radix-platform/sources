@@ -6,12 +6,12 @@
 #
 # Downloads:
 # =========
-# https://security.appspot.com/downloads/vsftpd-3.0.2.tar.gz
+# https://security.appspot.com/downloads/vsftpd-3.0.3.tar.gz
 #
 
 url         = https://security.appspot.com/downloads
 
-versions    = 3.0.2
+versions    = 3.0.3
 pkgname     = vsftpd
 suffix      = tar.gz
 sign_suffix = asc

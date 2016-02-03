@@ -11,7 +11,7 @@
 
 url         = ftp://ftp.openssh.com/pub/OpenBSD/OpenSSH/portable
 
-versions    = 6.3p1 6.4p1 6.5p1 6.6p1
+versions    = 6.3p1 6.4p1 6.5p1 6.6p1 6.9p1 7.1p2
 pkgname     = openssh
 suffix      = tar.gz
 

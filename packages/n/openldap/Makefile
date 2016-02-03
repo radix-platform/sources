@@ -14,7 +14,7 @@
 
 url         = ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release
 
-versions    = 2.4.31 2.4.39
+versions    = 2.4.31 2.4.39 2.4.43
 pkgname     = openldap
 suffix      = tgz
 

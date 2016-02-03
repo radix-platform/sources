@@ -10,10 +10,10 @@
 
 url         = http://www.roaringpenguin.com/files/download
 
-versions    = 3.10 3.11
+versions    = 3.10 3.11 3.12
 pkgname     = rp-pppoe
 suffix      = tar.gz
-sign_suffix = asc
+sign_suffix = sig
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 signatures  = $(addsuffix .$(sign_suffix), $(tarballs))

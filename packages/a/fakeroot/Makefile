@@ -3,7 +3,8 @@
 # FAKEROOT: http://anonscm.debian.org/cgit/users/clint/fakeroot.git
 #
 
-url        = git://anonscm.debian.org/users/clint
+#url        = git://anonscm.debian.org/users/clint
+url        = git://radix.pro
 
 repo_name  = fakeroot
 

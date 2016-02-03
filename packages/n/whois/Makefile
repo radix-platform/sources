@@ -17,7 +17,7 @@ url          = git://github.com/rfc1036/whois.git
 
 repo_name    = whois
 
-versions     = 5.0.25 5.2.1
+versions     = 5.0.25 5.2.1 5.2.11
 pkgname      = whois
 suffix       = tar.bz2
 

@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/project/traceroute/traceroute
 
-versions    = 2.0.19 2.0.20
+versions    = 2.0.19 2.0.20 2.0.21
 pkg_name    = traceroute
 suffix      = tar.gz
 

@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.tin.org/pub/news/clients/tin
 
-versions    = 2.0.5 2.2.1 2.3.2
+versions    = 2.1.5 2.2.1 2.3.2
 pkgname     = tin
 suffix      = tar.xz
 

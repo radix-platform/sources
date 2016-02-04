@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/project/glew/glew
 
-versions    = 1.11.0 1.12.0
+versions    = 1.11.0 1.12.0 1.13.0
 pkgname     = glew
 suffix      = tgz
 

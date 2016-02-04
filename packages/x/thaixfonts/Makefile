@@ -6,11 +6,12 @@
 # Downloads:
 # =========
 # ftp://linux.thai.net/pub/thailinux/software/thaixfonts
+# http://linux.thai.net/pub/thailinux/software/thaixfonts
 #
 
-url         = ftp://linux.thai.net/pub/thailinux/software/thaixfonts
+url         = http://linux.thai.net/pub/thailinux/software/thaixfonts
 
-versions    = 1.2.6
+versions    = 1.2.6 1.2.7
 pkgname     = thaixfonts
 suffix      = tar.xz
 

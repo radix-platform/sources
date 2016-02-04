@@ -23,6 +23,7 @@ repo_name  = xdg-utils
 TAGS       = 8c65fb00f55ec676b24872885dc2dbf7a4dacf25:1.0.2
 TAGS      += 9595033d358a7d78e2b882c36ac11f29697f064d:1.1.0-rc2
 TAGS      += f0df41402e827051ec16bac212c8eaf08ada75e4:1.1.0
+TAGS      += ef8a58be4049697bb6347c3c5b8fff4d2b2deb86:1.1.1
 
 suffix     = tar.xz
 

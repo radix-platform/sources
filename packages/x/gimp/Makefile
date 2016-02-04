@@ -11,7 +11,7 @@
 
 url       = http://download.gimp.org/pub
 
-versions  = 2.8.6 2.8.14
+versions  = 2.8.6 2.8.14 2.8.16 2.9.2
 pkg_name  = gimp
 arch_type = tar.bz2
 suffixes  = $(arch_type)

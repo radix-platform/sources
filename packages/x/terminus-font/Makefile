@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/project/terminus-font
 
-versions    = 4.38 4.39
+versions    = 4.38 4.39 4.40
 pkgname     = terminus-font
 suffix      = tar.gz
 

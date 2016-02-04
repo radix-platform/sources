@@ -11,7 +11,7 @@
 
 url         = ftp://invisible-island.net/ncurses/current
 
-version     = 6.0-20160116
+version     = 6.0-20160116 6.0-20160130
 pkgname     = ncurses
 suffix      = tgz
 

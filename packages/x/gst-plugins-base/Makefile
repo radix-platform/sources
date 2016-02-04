@@ -12,7 +12,7 @@
 
 url         = http://gstreamer.freedesktop.org/src/gst-plugins-base
 
-versions    = 0.10.36 1.4.5
+versions    = 0.10.36 1.4.5 1.7.1
 pkgname     = gst-plugins-base
 suffix      = tar.xz
 

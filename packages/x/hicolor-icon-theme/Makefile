@@ -22,7 +22,7 @@ prefix     = hicolor-icon-theme
 #
 # List of tags to be extracted:
 #
-TAGS       = 0.12 0.13 0.14
+TAGS       = 0.12 0.13 0.14 0.15
 
 suffix     = tar.xz
 

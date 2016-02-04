@@ -10,7 +10,7 @@
 
 url         = ftp://invisible-island.net/xterm
 
-versions    = 313
+versions    = 313 322
 pkgname     = xterm
 suffix      = tgz
 

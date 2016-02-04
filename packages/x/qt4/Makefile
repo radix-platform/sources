@@ -10,7 +10,7 @@
 
 url         = http://download.qt-project.org/official_releases/qt
 
-versions    = 4.8.6
+versions    = 4.8.6 4.8.7
 pkgname     = qt-everywhere-opensource-src
 suffix      = tar.gz
 

@@ -1,16 +1,20 @@
-
 #
-# PSEUDO: git://git.yoctoproject.org/pseudo
+# Project Home:
+# ============
+# http://www.gentoo.org/proj/en/eudev
 #
-# Cgit:
-# ====
-# http://git.yoctoproject.org/cgit/cgit.cgi/pseudo
+# GitHub:
+# ======
+# https://github.com/gentoo/eudev
+#
+# Downloads:
+# =========
+# http://dev.gentoo.org/~blueness/eudev
 #
 
-#url        = git://git.yoctoproject.org
-url        = git://radix.pro
+url        = git://radix.pro/gentoo
 
-repo_name  = pseudo
+repo_name  = eudev
 
 #
 # List of revisions to be extracted:
@@ -18,7 +22,7 @@ repo_name  = pseudo
 #
 #                                               hash | version
 #            ----------------------------------------+--------
-revisions  = 735ac1b9ff7471b100f6758f9072bfd45e0e3f40-1.7.4
+revisions  = 71ff5b6886946dacca8ae685ac85cdc174cfdece-3.1.5
 
 git_repo   = .git_clone
 
@@ -38,11 +42,7 @@ all: $(TARGETS)
 $(git_repo):
 	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
 	@rm -rf $(repo_name)
-	@if [ "$(url)" = 'git://radix.pro' ]; then \
-	   git clone $(url)/$(repo_name).git $(repo_name) ; \
-	 else \
-	   git clone $(url)/$(repo_name) $(repo_name) ; \
-	 fi
+	@git clone $(url)/$(repo_name).git $(repo_name)
 	@touch $@
 
 $(tarballs): $(git_repo)

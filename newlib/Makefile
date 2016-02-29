@@ -14,6 +14,7 @@ url         = ftp://sources.redhat.com/pub/newlib
 tarballs    = newlib-1.14.0.tar.gz
 tarballs   += newlib-1.18.0.tar.gz
 tarballs   += newlib-1.20.0.tar.gz
+tarballs   += newlib-2.3.0.20160226.tar.gz
 
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 

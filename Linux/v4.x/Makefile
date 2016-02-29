@@ -8,7 +8,8 @@
 
 url         = http://www.kernel.org/pub/linux/kernel/v4.x
 
-versions    = 4.1.15
+versions    = 4.1.15 4.1.18
+versions   += 4.4.3
 
 pkgname     = linux
 suffix      = tar.xz

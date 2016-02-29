@@ -11,7 +11,7 @@ url         = http://ftpmirror.gnu.org/glibc
 
 keyring     = ../gnu-keyring.gpg
 
-versions    = 2.21 2.22
+versions    = 2.21 2.22 2.23
 
 pkgname     = glibc
 suffix      = tar.xz

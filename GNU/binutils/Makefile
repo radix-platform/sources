@@ -11,7 +11,7 @@ url         = http://ftpmirror.gnu.org/binutils
 
 keyring     = ../gnu-keyring.gpg
 
-versions    = 2.16.1a 2.20.1a 2.21.1a 2.22 2.23.2 2.24 2.25 2.25.1
+versions    = 2.16.1a 2.20.1a 2.21.1a 2.22 2.23.2 2.24 2.25 2.25.1 2.26
 
 tarballs    = $(addsuffix .tar.bz2, $(addprefix binutils-, $(versions)))
 signatures  = $(addsuffix .sig, $(tarballs))

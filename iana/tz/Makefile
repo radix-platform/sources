@@ -15,25 +15,28 @@
 
 url         = ftp://ftp.iana.org/tz/releases
 
-tarballs    = tz*2013[h-i].tar.gz tz*2014[i-j].tar.gz tz*2015[a-cg].tar.gz
+patterns    = tz*2013[h-i].tar.gz
+patterns   += tz*2014[i-j].tar.gz
+patterns   += tz*2015[a-cg].tar.gz
+patterns   += tz*2016[a].tar.gz
 
-sha1s       = $(addsuffix .sha1sum, $(tarballs))
+tarballs   := $(wildcard *.tar.gz)
+sha1s      := $(patsubst %.tar.gz,%.tar.gz.sha1sum,$(wildcard *.tar.gz))
 
-all: $(tarballs) $(sha1s)
+all: download
 
-.PHONY: downloads_clean
+.PHONY: download downloads_clean
 
-$(tarballs):
+download:
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
-	done
-
-$(sha1s): %.tar.gz.sha1sum : %.tar.gz
-	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
-	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
-	done
+	@for tarball in $(patterns) ; do \
+	   wget -N $(url)/$$tarball ; \
+	 done
+	@echo -e "\n======= End of downloading =======\n"
+	@for tarball in `ls *.tar.gz` ; do \
+	   echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	   sha1sum --binary $$tarball > $$tarball.sha1sum ; \
+	 done
 
 downloads_clean:
 	@rm -rf $(tarballs) $(sha1s)

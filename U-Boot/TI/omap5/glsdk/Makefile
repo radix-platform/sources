@@ -15,13 +15,15 @@ repo_name  = u-boot-omap
 # List of tags to be extracted:
 # ============================
 #
-# Revisions used for OMAP5 & DRA7xx GLSDK
+# Revisions used for OMAP5 & DRA7xx GLSDK (branch: p-ti-u-boot-2014.07)
 #
 # revision '32166d3e764799cb27e4cf9c5e75e4019d1062e1' used by GLSDK 7_03_00_03
+# revision 'dc9c89cd1e671d0767ba48a5a0e7d696c35c6b57' at 20160225
 #
 #                                               hash |  denx | date
 #            ----------------------------------------+-------+--------
 revisions  = 32166d3e764799cb27e4cf9c5e75e4019d1062e1:2014.07:20151209
+revisions += dc9c89cd1e671d0767ba48a5a0e7d696c35c6b57:2014.07:20160225
 
 #
 # Legacy 2014.07 - 2013.04 U-Boot:

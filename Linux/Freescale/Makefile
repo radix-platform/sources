@@ -4,11 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Allwinner   \
-           Boundary    \
-           Ingenic     \
-           TI          \
-           denx
+SUBDIRS := Nit6Q
 
 
 all-recursive downloads_clean-recursive:

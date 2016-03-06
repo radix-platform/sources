@@ -1,0 +1,18 @@
+
+URL: http://boundarydevices.com/i-mx6-frequently-asked-questions-and-answers/#latest-kernel
+
+GitHub:
+======
+https://github.com/boundarydevices/linux-imx6.git
+
+Clone:
+=====
+$ git clone https://github.com/boundarydevices/linux-imx6.git
+
+
+branch for non-Android: 'boundary-imx_3.14.28_1.0.0_ga':
+=======================================================
+snapshots:
+  'f51af70093e980596fe15107b3848ef245ee4b4e'
+
+Config (arch/arm/configs): nitrogen6x_defconfig

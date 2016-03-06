@@ -1,0 +1,18 @@
+
+URL: http://boundarydevices.com/i-mx6-frequently-asked-questions-and-answers/#latest-kernel
+
+GitHub:
+======
+https://github.com/boundarydevices/u-boot-imx6.git
+
+Clone:
+=====
+$ git clone https://github.com/boundarydevices/u-boot-imx6.git
+
+
+Latest stable branch: 'boundary-v2015.07':
+=========================================
+snapshots:
+  '51716cdbae34c02ec6bedec668e1745463fec2b2'
+
+Config (arch/arm/configs): nitrogen6x_defconfig

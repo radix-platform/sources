@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := sgx-ddk   \
+SUBDIRS := glsdk     \
+           sgx-ddk   \
            wl18xx    \
            wl18xx_fw
 

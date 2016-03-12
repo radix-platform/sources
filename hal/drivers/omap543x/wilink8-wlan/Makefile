@@ -4,9 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := PowerVR      \
-           wilink8-wlan \
-           wireless
+SUBDIRS := wl18xx    \
+           wl18xx_fw
 
 
 all-recursive downloads_clean-recursive:

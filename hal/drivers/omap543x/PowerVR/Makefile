@@ -4,9 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := PowerVR      \
-           wilink8-wlan \
-           wireless
+SUBDIRS := glsdk        \
+           sgx-ddk
 
 
 all-recursive downloads_clean-recursive:

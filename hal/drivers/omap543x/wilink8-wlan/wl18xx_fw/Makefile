@@ -15,13 +15,13 @@ repo_name  = wl18xx_fw
 # List of tags to be extracted:
 # ============================
 #
-# Revisions used for OMAP5 & DRA7xx GLSDK
+# Revisions used for OMAP5 & DRA7xx GLSDK (branch: ap_dfs)
 #
-# revision '02df01f8b9557b2cf920d14bdaaabde2373e3d7e' tag 8.5 used by GLSDK 7_03_00_03
+# revision 'c4c0c7943040473bd9aeba2ab9fa99617fa08a4b' used by GLSDK 7_03_00_03
 #
 #                                               hash |   version | date
 #            ----------------------------------------+-----------+--------
-revisions  = 02df01f8b9557b2cf920d14bdaaabde2373e3d7e:ol_r8.a9.22:20141126
+revisions  = c4c0c7943040473bd9aeba2ab9fa99617fa08a4b:ol_r8.a9.27:20150623
 
 
 git_repo   = .git_clone

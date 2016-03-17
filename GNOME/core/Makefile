@@ -87,6 +87,7 @@ SUBDIRS := NetworkManager                 \
            libgsf                         \
            libgsystem                     \
            libgtop                        \
+           libgudev                       \
            libgweather                    \
            libgxps                        \
            libmediaart                    \

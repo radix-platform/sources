@@ -11,7 +11,7 @@ repo_name  = linux-2.6-imx
 # List of tags to be extracted:
 # ============================
 #
-# Revisions from imx_3.0.35_4.1.0 branch used for iMX.6
+# Revisions from imx_3.0.35_4.1.0 branch used for i.MX6
 #
 #                                               hash |   branch | date
 #            ----------------------------------------+----------+------

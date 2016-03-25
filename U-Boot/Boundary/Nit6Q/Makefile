@@ -1,6 +1,6 @@
 
 #
-# Boundary Devices i.MX6 U-Boot: https://github.com/boundarydevices/linux-imx6.git
+# Boundary Devices i.MX6 U-Boot: https://github.com/boundarydevices/u-boot-imx6.git
 #
 
 url        = git://radix.pro/freescale/boundary
@@ -11,7 +11,7 @@ repo_name  = u-boot-imx6
 # List of tags to be extracted:
 # ============================
 #
-# Revisions from boundary-v2015.07 branch used for iMX.6
+# Revisions from boundary-v2015.07 branch used for i.MX6
 #
 #                                               hash |     branch | date
 #            ----------------------------------------+------------+------

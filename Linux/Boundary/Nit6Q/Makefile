@@ -11,7 +11,7 @@ repo_name  = linux-imx6
 # List of tags to be extracted:
 # ============================
 #
-# Revisions from boundary-imx_3.14.28_1.0.0_ga branch used for iMX.6
+# Revisions from boundary-imx_3.14.28_1.0.0_ga branch used for i.MX6
 #
 #                                               hash |     branch | date
 #            ----------------------------------------+------------+------

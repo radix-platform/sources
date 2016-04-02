@@ -7,8 +7,21 @@
 # =========
 # http://download.oracle.com/berkeley-db
 #
-
-url         = ftp://ftp.radix.pro/3pp/Berkeley-DB
+# Instruction:
+# ===========
+#
+# 1) Check newest releases at
+#      http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/downloads/index.html
+#    page.
+# 2) Download needed archive from
+#      http://download.oracle.com/berkeley-db/
+#    directory.
+#
+# reserved URL:
+# ============
+# url         = ftp://ftp.radix.pro/3pp/Berkeley-DB
+#
+url         = http://download.oracle.com/berkeley-db
 
 versions    = 5.3.28 6.1.19 6.1.26
 pkgname     = db

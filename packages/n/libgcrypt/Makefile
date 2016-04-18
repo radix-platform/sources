@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnupg.org/gcrypt/libgcrypt
 
-versions    = 1.5.3 1.6.1 1.6.2 1.6.4
+versions    = 1.5.3 1.6.1 1.6.2 1.6.4 1.7.0
 pkgname     = libgcrypt
 suffix      = tar.bz2
 

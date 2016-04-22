@@ -11,6 +11,19 @@
 # ==================
 # hg clone https://hg.mozilla.org/projects/nss
 #
+# Get full HASH by short:
+# ======================
+#
+#   $ hg log -rHASH --template 'node: {node}\n'
+#
+# where HASH - is a short revision, for example:
+#
+#   $ hg log -raee88368c8c1 --template 'node: {node}\n'
+#
+# givs:
+#
+# node: aee88368c8c13ac700be24fb54b07e039c9d0796
+#
 
 url        = https://hg.mozilla.org/projects
 
@@ -26,6 +39,8 @@ revisions  = 537d7fc8624c289e4f818a4c69847eaedecceccb-NSS_3_19_1_RTM
 revisions += 97d30005dd7bb02b15bd2b8a27e2426c49d06d69-NSS_3_19_2_RTM
 revisions += 507694132f6f0706e7b8e33dac63a560a89f67fc-NSS_3_21_RTM
 revisions += ee1254aeba3e9929858d24f071bafcabea32ad4a-NSS_3_22_RTM
+revisions += aee88368c8c13ac700be24fb54b07e039c9d0796-NSS_3_23_RTM
+
 
 hg_repo    = .hg_clone
 

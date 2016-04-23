@@ -10,7 +10,7 @@
 
 url         = http://download.cdn.mozilla.net/pub/mozilla.org/firefox/releases
 
-versions    = 44.0
+versions    = 44.0 45.0.1 45.0.2
 pkgname     = mozilla-certs
 suffix      = tar.xz
 

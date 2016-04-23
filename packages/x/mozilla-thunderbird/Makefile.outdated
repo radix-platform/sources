@@ -10,9 +10,9 @@
 
 url         = https://archive.mozilla.org/pub/thunderbird/releases
 
-versions    = 45.0
+versions    = 38.2.0 38.5.1 38.7.0 38.7.2
 pkgname     = thunderbird
-suffix      = tar.xz
+suffix      = tar.bz2
 
 tarballs    = $(addsuffix .$(suffix), $(addsuffix .source, $(addprefix $(pkgname)-, $(versions))))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

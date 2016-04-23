@@ -16,7 +16,7 @@
 
 url         = http://www.sqlite.org/2016
 
-versions    = 3.10.2.0
+versions    = 3.10.2.0 3.12.2.0
 pkgname     = sqlite
 product     = autoconf
 suffix      = tar.gz

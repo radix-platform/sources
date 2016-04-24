@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.alsa-project.org/pub/utils
 
-versions    = 1.0.27.2 1.0.28 1.0.29 1.1.0
+versions    = 1.0.27.2 1.0.28 1.0.29 1.1.0 1.1.1
 pkgname     = alsa-utils
 suffix      = tar.bz2
 

@@ -5,7 +5,8 @@
 #
 
 SUBDIRS := pip        \
-           setuptools
+           setuptools \
+           wheel
 
 
 all-recursive downloads_clean-recursive:

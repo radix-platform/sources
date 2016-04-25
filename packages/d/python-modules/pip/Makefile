@@ -11,7 +11,7 @@
 
 url         = https://pypi.python.org/packages/source/p/pip
 
-versions    = 7.1.2
+versions    = 7.1.2 8.1.1
 pkgname     = pip
 suffix      = tar.gz
 

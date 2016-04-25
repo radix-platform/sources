@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := pip
+SUBDIRS := pip        \
+           setuptools
 
 
 all-recursive downloads_clean-recursive:

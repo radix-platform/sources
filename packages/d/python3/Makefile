@@ -10,7 +10,7 @@
 
 url         = https://www.python.org/ftp/python
 
-versions    = 3.4.0 3.5.1
+versions    = 3.4.4 3.5.1
 pkgname     = Python
 suffix      = tar.xz
 

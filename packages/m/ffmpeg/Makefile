@@ -10,7 +10,7 @@
 
 url         = http://ffmpeg.org/releases
 
-versions    = 3.0
+versions    = 3.0 3.0.2
 pkgname     = ffmpeg
 suffix      = tar.xz
 

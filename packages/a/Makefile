@@ -165,6 +165,7 @@ SUBDIRS := CLooG                 \
            vim-hg                \
            vim-github            \
            xfs                   \
+           xmltoman              \
            xz                    \
            ziptool               \
            zoo                   \

@@ -63,6 +63,7 @@ SUBDIRS := aalib                \
            netpbm               \
            netpbm-doc           \
            netpbm-super-stable  \
+           npth                 \
            openmpi              \
            pciids               \
            pcre                 \

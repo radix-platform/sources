@@ -69,6 +69,7 @@ SUBDIRS := ModemManager           \
            libnetfilter_log       \
            libnetfilter_queue     \
            libnfnetlink           \
+           libnftnl               \
            libnl                  \
            libnl3                 \
            libpcap                \

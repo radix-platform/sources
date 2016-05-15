@@ -9,6 +9,7 @@ SUBDIRS := libpthread-stubs    \
            xcb-proto           \
            xcb-util            \
            xcb-util-cursor     \
+           xcb-util-errors     \
            xcb-util-image      \
            xcb-util-keysyms    \
            xcb-util-renderutil \

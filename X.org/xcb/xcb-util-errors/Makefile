@@ -10,8 +10,8 @@
 
 url         = http://www.x.org/releases/individual/xcb
 
-versions    = 0.1.0 0.1.1 0.1.2 0.1.3
-pkgname     = xcb-util-cursor
+versions    = 1.0
+pkgname     = xcb-util-errors
 suffix      = tar.bz2
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

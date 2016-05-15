@@ -13,7 +13,7 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 0.26.1
+versions  = 0.26.1 0.32.0
 pkg_name  = vala
 arch_type = tar.xz
 suffixes  = $(arch_type)

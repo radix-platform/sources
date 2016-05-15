@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/proto
 
-versions    = 2.2 2.3 2.3.1
+versions    = 2.2 2.3 2.3.1 2.3.2
 pkgname     = inputproto
 suffix      = tar.bz2
 

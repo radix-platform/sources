@@ -8,7 +8,6 @@ SUBDIRS := appres          \
            bdftopcf        \
            beforelight     \
            bitmap          \
-           compiz          \
            constype        \
            editres         \
            fonttosfnt      \

@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/proto
 
-versions    = 2.3.1 2.3.2
+versions    = 2.3.1 2.3.2 2.3.3
 pkgname     = videoproto
 suffix      = tar.bz2
 

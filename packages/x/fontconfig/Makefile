@@ -10,7 +10,7 @@
 
 url         = http://www.freedesktop.org/software/fontconfig/release
 
-versions    = 2.11.1 2.11.94
+versions    = 2.11.1 2.11.94 2.11.95
 pkgname     = fontconfig
 suffix      = tar.bz2
 

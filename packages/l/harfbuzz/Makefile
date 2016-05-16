@@ -10,7 +10,7 @@
 
 url         = http://www.freedesktop.org/software/harfbuzz/release
 
-versions    = 0.9.36 0.9.42 1.1.3
+versions    = 0.9.36 0.9.42 1.1.3 1.2.7
 pkgname     = harfbuzz
 suffix      = tar.bz2
 

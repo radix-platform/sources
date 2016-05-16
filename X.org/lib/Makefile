@@ -23,6 +23,7 @@ SUBDIRS := libAppleWM    \
            libXext       \
            libXfixes     \
            libXfont      \
+           libXfont2     \
            libXfontcache \
            libXft        \
            libXi         \

@@ -10,8 +10,8 @@
 
 url         = http://www.x.org/releases/individual/lib
 
-versions    = 0.30.2 0.32.0 0.32.2 0.32.4 0.32.6 0.32.8 0.33.2 0.33.4 0.33.6 0.34.0
-pkgname     = pixman
+versions    = 2.0.1
+pkgname     = libXfont2
 suffix      = tar.bz2
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

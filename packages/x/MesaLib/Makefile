@@ -4,8 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := 10.x \
-           11.x
+SUBDIRS := 10.x
 
 
 all-recursive downloads_clean-recursive:

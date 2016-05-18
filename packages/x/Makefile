@@ -22,8 +22,8 @@ SUBDIRS := WindowMaker          \
            libinput             \
            libtxc_dxtn          \
            lxappearance         \
+           MesaLib              \
            mesa                 \
-           mesa-11              \
            mesa-demos           \
            mozilla-firefox      \
            mozilla-thunderbird  \

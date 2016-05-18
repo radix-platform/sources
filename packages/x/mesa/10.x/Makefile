@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.freedesktop.org/pub/mesa
 
-versions    = 11.1.1
+versions    = 10.5.0
 pkgname     = mesa
 suffix      = tar.xz
 
@@ -26,7 +26,13 @@ $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
 	  version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9]*[.][0-9]*[.][0-9]*\)\([\.]tar.*\)/\2/'` ; \
-	  wget -N $(url)/$$version/$$tarball ; \
+	  major=`echo $$version |  sed 's/\([a-zA-Z-]*\)\([0-9]*\)\([\.].*\)/\2/'` ; \
+	  if [ "$$major" -lt "11" ] ; then \
+	    subdir="older-versions/$${major}.x/$$version" ; \
+	  else \
+	    subdir="$$version" ; \
+	  fi ; \
+	  wget -N $(url)/$$subdir/$$tarball ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

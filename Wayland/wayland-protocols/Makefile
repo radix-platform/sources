@@ -1,18 +1,18 @@
 #
 # Project Home:
 # ============
-# http://dri.freedesktop.org/wiki
+# http://wayland.freedesktop.org
 #
 # Downloads:
 # =========
-# http://dri.freedesktop.org/libdrm
+# http://wayland.freedesktop.org/releases
 #
 
-url         = http://dri.freedesktop.org/libdrm
+url         = http://wayland.freedesktop.org/releases
 
-versions    = 2.4.46 2.4.58 2.4.62 2.4.64 2.4.65 2.4.66 2.4.67 2.4.68
-pkgname     = libdrm
-suffix      = tar.bz2
+versions    = 1.0 1.1 1.2 1.3
+pkgname     = wayland-protocols
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

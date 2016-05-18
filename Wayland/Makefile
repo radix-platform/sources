@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := wayland          \
+SUBDIRS := wayland           \
+           wayland-protocols \
            weston
 
 

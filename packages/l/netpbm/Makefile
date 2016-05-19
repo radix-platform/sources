@@ -28,6 +28,7 @@ branch      = advanced
 revisions  = 2294-10.68.00
 revisions += 2298-10.68.01
 revisions += 2678-10.73.00
+revisions += 2772-10.74.03
 
 
 versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d '-'))

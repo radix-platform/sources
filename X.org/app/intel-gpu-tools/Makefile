@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.4 1.8 1.9 1.10 1.11 1.12 1.13
+versions    = 1.4 1.8 1.9 1.10 1.11 1.12 1.13 1.14
 pkgname     = intel-gpu-tools
 suffix      = tar.bz2
 

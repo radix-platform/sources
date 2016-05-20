@@ -10,7 +10,7 @@
 
 url         = http://www.freedesktop.org/software/libinput
 
-versions    = 0.6.0 0.7.0 0.21.0 1.1.5
+versions    = 0.6.0 0.7.0 0.21.0 1.1.5 1.3.0
 pkgname     = libinput
 suffix      = tar.xz
 

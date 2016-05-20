@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/app
 
-versions    = 1.3.5 1.4.0 1.4.1 1.4.2 1.4.3
+versions    = 1.3.5 1.4.0 1.4.1 1.4.2 1.4.3 1.5.0
 pkgname     = xrandr
 suffix      = tar.bz2
 

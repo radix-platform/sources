@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 2.8.2 2.9.0 2.9.1 2.9.2 2.10.0 2.10.1
+versions    = 2.8.2 2.9.0 2.9.1 2.9.2 2.10.0 2.10.1 2.10.2
 pkgname     = xf86-input-evdev
 suffix      = tar.bz2
 

@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 0.2.906 0.3.3
+versions    = 0.2.906 0.3.3 0.4.0
 pkgname     = xf86-video-openchrome
 suffix      = tar.bz2
 

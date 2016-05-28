@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 1.6.1 1.7.1 1.8.1 1.8.2 1.8.3
+versions    = 1.6.1 1.7.1 1.8.1 1.8.2 1.8.3 1.8.99.1
 pkgname     = xf86-input-synaptics
 suffix      = tar.bz2
 

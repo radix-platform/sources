@@ -10,7 +10,7 @@
 
 url         = http://www.x.org/releases/individual/driver
 
-versions    = 1.5.0 1.6.2 1.6.3 1.6.4
+versions    = 1.5.0 1.6.2 1.6.3 1.6.4 1.9.100
 pkgname     = xf86-video-mga
 suffix      = tar.bz2
 

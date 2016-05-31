@@ -3,7 +3,7 @@
 # IRAM-flasher
 #
 
-url        = git@radix.pro:/u3/scm/git
+url        = git@radix.pro:/u3/scm/git/dm644x
 
 repo_name  = IRAM-flasher
 

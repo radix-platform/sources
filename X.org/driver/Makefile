@@ -9,6 +9,7 @@ SUBDIRS := xf86-input-acecad        \
            xf86-input-evdev         \
            xf86-input-joystick      \
            xf86-input-keyboard      \
+           xf86-input-libinput      \
            xf86-input-mouse         \
            xf86-input-penmount      \
            xf86-input-synaptics     \

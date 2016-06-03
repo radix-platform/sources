@@ -1,5 +1,14 @@
-
 #
+# Project Home:
+# ============
+# http://www.x.org/wiki
+#
+# Downloads:
+# =========
+# http://www.x.org/releases/individual/driver
+#
+# cGit:
+# ====
 # https://cgit.freedesktop.org/xorg/driver/xf86-video-intel
 #
 

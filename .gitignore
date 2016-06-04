@@ -7,12 +7,15 @@
 *.txz
 *.zip
 *.xz
+*.gz
+*.jar
 *.asc
 *.lsm
 *.sign
 *.sig
 *.sha1sum
 *.sha256sum
+*.md5
 *.gpg
 *.dsc
 *.changes

@@ -12,7 +12,7 @@
 
 url         = http://downloads.sourceforge.net/project/giflib
 
-versions    = 5.1.0 5.1.2
+versions    = 5.1.0 5.1.2 5.1.3
 pkgname     = giflib
 suffix      = tar.bz2
 

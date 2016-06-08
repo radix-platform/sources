@@ -14,7 +14,7 @@ url         = https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/dow
 
 versions    = 9.19
 pkgname     = ghostscript
-suffix      = tar.xz
+suffix      = tar.gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-,$(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
@@ -30,13 +30,13 @@ $(tarballs):
 	@for tarball in $(tarballs) ; do \
 	   version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9][.][0-9]*\)\(\..*\)/\2/'` ; \
 	   short=`echo $$version | sed 's/\.//g'` ; \
-	   wget -N $(url)/gs$$short/$(pkgname)-$$version.tar.gz ; \
-	   tar xzf $(pkgname)-$$version.tar.gz ; \
+	   wget -N $(url)/gs$$short/$$tarball ; \
+	   tar xzf $$tarball ; \
 	   ( cd $(pkgname)-$$version ; \
 	     rm -rf freetype jpeg lcms2 libpng tiff zlib ; \
 	   ) ; \
-	   rm -f $(pkgname)-$$version.tar.gz ; \
-	   tar cJf $$tarball $(pkgname)-$$version ; \
+	   rm -f $$tarball ; \
+	   tar czf $$tarball $(pkgname)-$$version ; \
 	   rm -rf $(pkgname)-$$version ; \
 	 done
 

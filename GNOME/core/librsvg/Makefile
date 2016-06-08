@@ -13,7 +13,7 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 2.40.5
+versions  = 2.40.5 2.40.15
 pkg_name  = librsvg
 arch_type = tar.xz
 suffixes  = $(arch_type)

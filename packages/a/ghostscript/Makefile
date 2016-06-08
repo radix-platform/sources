@@ -2,18 +2,19 @@
 # Project Home:
 # ============
 # http://www.ghostscript.com
+# https://github.com/ArtifexSoftware
 #
 # Downloads:
 # =========
-# http://www.ghostscript.com/download/gsdnld.html
-# http://downloads.ghostscript.com/public
+# https://github.com/ArtifexSoftware/ghostpdl-downloads
+# https://github.com/ArtifexSoftware/ghostpdl-downloads/archive/gs919.tar.gz
 #
 
-url         = http://downloads.ghostscript.com/public
+url         = https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download
 
-versions    = 9.07 9.15 9.16 9.18
+versions    = 9.19
 pkgname     = ghostscript
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-,$(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
@@ -27,7 +28,16 @@ all: $(tarballs) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarball =======\n"
 	@for tarball in $(tarballs) ; do \
-	   wget -N $(url)/$$tarball ; \
+	   version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9][.][0-9]*\)\(\..*\)/\2/'` ; \
+	   short=`echo $$version | sed 's/\.//g'` ; \
+	   wget -N $(url)/gs$$short/$(pkgname)-$$version.tar.gz ; \
+	   tar xzf $(pkgname)-$$version.tar.gz ; \
+	   ( cd $(pkgname)-$$version ; \
+	     rm -rf freetype jpeg lcms2 libpng tiff zlib ; \
+	   ) ; \
+	   rm -f $(pkgname)-$$version.tar.gz ; \
+	   tar cJf $$tarball $(pkgname)-$$version ; \
+	   rm -rf $(pkgname)-$$version ; \
 	 done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

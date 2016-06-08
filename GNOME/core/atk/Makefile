@@ -13,7 +13,7 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 2.15.1
+versions  = 2.15.1 2.20.0
 pkg_name  = atk
 arch_type = tar.xz
 suffixes  = $(arch_type)

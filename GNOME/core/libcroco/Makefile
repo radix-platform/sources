@@ -13,7 +13,7 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 0.6.7 0.6.8
+versions  = 0.6.7 0.6.8 0.6.11
 pkg_name  = libcroco
 arch_type = tar.xz
 suffixes  = $(arch_type)

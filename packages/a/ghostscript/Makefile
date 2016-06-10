@@ -31,13 +31,6 @@ $(tarballs):
 	   version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9][.][0-9]*\)\(\..*\)/\2/'` ; \
 	   short=`echo $$version | sed 's/\.//g'` ; \
 	   wget -N $(url)/gs$$short/$$tarball ; \
-	   tar xzf $$tarball ; \
-	   ( cd $(pkgname)-$$version ; \
-	     rm -rf freetype jpeg lcms2 libpng tiff zlib ; \
-	   ) ; \
-	   rm -f $$tarball ; \
-	   tar czf $$tarball $(pkgname)-$$version ; \
-	   rm -rf $(pkgname)-$$version ; \
 	 done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

@@ -12,7 +12,7 @@
 
 url         = http://gstreamer.freedesktop.org/src/gstreamer
 
-versions    = 0.10.36 1.4.5 1.7.1
+versions    = 0.10.36 1.4.5 1.6.4 1.7.1 1.8.2
 pkgname     = gstreamer
 suffix      = tar.xz
 

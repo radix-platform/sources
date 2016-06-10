@@ -10,7 +10,7 @@
 
 url         = http://www.open-mpi.org/software/hwloc
 
-versions    = 1.10.0 1.11.2
+versions    = 1.10.0 1.11.2 1.11.3
 pkgname     = hwloc
 suffix      = tar.bz2
 

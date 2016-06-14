@@ -10,7 +10,7 @@
 
 url         = http://www.open-mpi.org/software/ompi
 
-versions    = 1.8.4 1.10.2
+versions    = 1.8.4 1.8.8 1.10.2
 pkgname     = openmpi
 suffix      = tar.bz2
 

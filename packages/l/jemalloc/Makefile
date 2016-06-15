@@ -10,7 +10,7 @@
 
 url         = http://www.canonware.com/download/jemalloc
 
-versions    = 3.6.0 4.0.4
+versions    = 3.6.0 4.0.4 4.2.1
 pkgname     = jemalloc
 suffix      = tar.bz2
 

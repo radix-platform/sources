@@ -5,6 +5,8 @@
 #
 
 SUBDIRS := cfe          \
+           compiler-rt  \
+           extra-tools  \
            llvm
 
 

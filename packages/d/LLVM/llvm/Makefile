@@ -11,7 +11,7 @@
 
 url         = http://llvm.org/releases
 
-versions    = 3.5.0 3.7.1
+versions    = 3.5.0 3.7.1 3.8.0
 pkgname     = llvm
 suffix      = src.tar.xz
 

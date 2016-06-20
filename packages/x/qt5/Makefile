@@ -10,8 +10,10 @@
 
 url         = http://download.qt-project.org/official_releases/qt
 
-versions    = 5.4.0 5.6.1 5.7.0
+versions    = 5.4.0 5.4.1 5.4.2
 versions   += 5.5.1
+versions   += 5.6.1
+versions   += 5.7.0
 pkgname     = qt-everywhere-opensource-src
 suffix      = tar.xz
 

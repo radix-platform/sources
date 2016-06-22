@@ -15,7 +15,8 @@ SUBDIRS := LLVM          \
            python2       \
            python2-doc   \
            python3       \
-           python3-doc
+           python3-doc   \
+           re2c
 
 
 all-recursive downloads_clean-recursive:

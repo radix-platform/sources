@@ -19,6 +19,7 @@ SUBDIRS := OpenMAX    \
            libgd      \
            libgphoto2 \
            libvpx     \
+           libwebp    \
            linuxtv    \
            mad        \
            mega-nerd  \

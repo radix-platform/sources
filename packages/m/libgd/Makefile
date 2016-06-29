@@ -20,6 +20,7 @@ repo_name   = libgd
 #
 TAGS       = 9f0a7e7f4f0fb16d1d7936f2837a2559237edde9:2.1.0
 TAGS      += 2912c0a2e0a246318f41bf1997f34ce1dc3e5e42:2.1.1
+TAGS      += ec6b61f591b949a1431280899f21c098ffe8ec14:2.2.2
 
 suffix     = tar.xz
 

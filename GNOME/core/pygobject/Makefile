@@ -13,7 +13,7 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 2.28.6 3.14.0
+versions  = 2.28.6 2.90.4 3.14.0 3.21.0
 pkg_name  = pygobject
 arch_type = tar.xz
 suffixes  = $(arch_type)

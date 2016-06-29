@@ -10,7 +10,7 @@
 
 url         = http://linuxtv.org/downloads/v4l-utils
 
-versions    = 0.9.5 1.6.0 1.6.2 1.8.1 1.10.0
+versions    = 0.9.5 1.6.0 1.6.2 1.8.1 1.10.0 1.10.1
 pkgname     = v4l-utils
 suffix      = tar.bz2
 

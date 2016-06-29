@@ -11,7 +11,7 @@
 
 url         = http://poppler.freedesktop.org
 
-versions    = 0.29.0 0.40.0 0.45.0
+versions    = 0.29.0 0.40.0 0.42.0 0.45.0
 pkgname     = poppler
 suffix      = tar.xz
 

@@ -78,6 +78,7 @@ SUBDIRS := NetworkManager                 \
            gupnp-igd                      \
            gvfs                           \
            json-glib                      \
+           libart_lgpl                    \
            libchamplain                   \
            libcroco                       \
            libgdata                       \

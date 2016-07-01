@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/project/enlightenment/imlib2-src
 
-versions    = 1.4.6 1.4.7
+versions    = 1.4.6 1.4.7 1.4.9
 pkgname     = imlib2
 suffix      = tar.bz2
 

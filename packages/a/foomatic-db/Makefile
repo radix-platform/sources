@@ -23,6 +23,7 @@ repo_name  = foomatic-db
 #            ---------+---------
 revisions  =      1284:20150904
 revisions +=      1290:20160105
+revisions +=      1302:20160612
 
 
 bzr_repo   = .bzr_clone

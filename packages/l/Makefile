@@ -5,6 +5,7 @@
 #
 
 SUBDIRS := aalib                \
+           assimp               \
            boost                \
            cairo                \
            cracklib             \

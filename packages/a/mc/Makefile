@@ -11,7 +11,7 @@
 
 url         = ftp://ftp.midnight-commander.org/pub/midnightcommander
 
-versions    = 4.8.10 4.8.12 4.8.15
+versions    = 4.8.10 4.8.12 4.8.15 4.8.16
 pkg_name    = mc
 suffix      = tar.xz
 

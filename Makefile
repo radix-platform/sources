@@ -84,6 +84,7 @@ SUBDIRS := GNOME                   \
            GNU/which               \
            Linux                   \
            Linux/Allwinner         \
+           Linux/Amlogic           \
            Linux/Boundary          \
            Linux/Freescale         \
            Linux/Ingenic           \

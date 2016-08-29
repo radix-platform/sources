@@ -4,12 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Allwinner   \
-           Amlogic     \
-           Boundary    \
-           Ingenic     \
-           TI          \
-           denx
+SUBDIRS := M201
 
 
 all-recursive downloads_clean-recursive:

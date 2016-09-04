@@ -87,6 +87,7 @@ SUBDIRS := GNOME                   \
            Linux/Amlogic           \
            Linux/Boundary          \
            Linux/Freescale         \
+           Linux/Hardkernel        \
            Linux/Ingenic           \
            Linux/Rockchip          \
            Linux/TI                \

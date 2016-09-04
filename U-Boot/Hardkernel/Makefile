@@ -4,13 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Allwinner   \
-           Amlogic     \
-           Boundary    \
-           Hardkernel  \
-           Ingenic     \
-           TI          \
-           denx
+SUBDIRS := S805
 
 
 all-recursive downloads_clean-recursive:

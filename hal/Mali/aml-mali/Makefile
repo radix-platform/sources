@@ -4,7 +4,7 @@
 
 url         = ftp://ftp.radix.pro/3pp/Amlogic/opengl
 
-versions    = 20150117
+versions    = 20150117 20160818
 
 pkgname     = aml-mali
 suffix      = tar.xz

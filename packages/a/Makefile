@@ -91,6 +91,7 @@ SUBDIRS := CLooG                 \
            lm_sensors            \
            logrotate             \
            lrzip                 \
+           lshw                  \
            lsof                  \
            lsscsi                \
            lua                   \

@@ -55,7 +55,10 @@ $(tarballs): $(git_repo)
 	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
 	  fi ; \
 	  tar xJf $(repo_name)-$$version.$(suffix) ; \
-	  ( cd $(repo_name)-$$version ; ./bootstrap.sh ; rm -rf autom4te.cache common .gitignore ) ; \
+	  ( cd $(repo_name)-$$version ; \
+	    ./bootstrap.sh ; make distclean ; \
+	    rm -rf autom4te.cache common .gitignore ; \
+	  ) ; \
 	  tar cJf $(repo_name)-$$version.$(suffix) $(repo_name)-$$version ; \
 	  rm -rf $(repo_name)-$$version ; \
 	done

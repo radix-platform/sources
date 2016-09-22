@@ -51,6 +51,7 @@ SUBDIRS := aalib                \
            libpng               \
            libsodium            \
            libspectre           \
+           libstrophe           \
            libthai              \
            libtiff              \
            libusb               \

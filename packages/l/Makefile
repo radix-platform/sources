@@ -15,6 +15,7 @@ SUBDIRS := aalib                \
            elfutils             \
            expat                \
            freetype             \
+           fribidi              \
            gamin                \
            gc                   \
            giflib               \

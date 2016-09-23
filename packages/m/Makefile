@@ -5,6 +5,7 @@
 #
 
 SUBDIRS := OpenMAX    \
+           VideoLAN   \
            alsa       \
            amp        \
            amr        \

@@ -14,6 +14,7 @@ SUBDIRS := OpenMAX    \
            ffmpeg     \
            gsm        \
            lame       \
+           libass     \
            libav      \
            libdv      \
            libexif    \

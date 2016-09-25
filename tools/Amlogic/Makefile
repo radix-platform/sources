@@ -4,8 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Amlogic   \
-           allwinner
+SUBDIRS := remotecfg
 
 
 all-recursive downloads_clean-recursive:

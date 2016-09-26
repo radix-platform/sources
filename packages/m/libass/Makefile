@@ -22,6 +22,7 @@ repo_name  = libass
 #                                               hash | tag
 #            ----------------------------------------+-----
 revisions  = 7c30feaa6906c5f392f6a1496462504b09fd8df0:0.13.2
+revisions += 27b0232b0d9259bc009389a019eb6b47103f484a:0.13.3
 
 git_repo   = .git_clone
 

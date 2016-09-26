@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := x264
+SUBDIRS := libbluray \
+           x264
 
 
 all-recursive downloads_clean-recursive:

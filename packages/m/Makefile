@@ -23,6 +23,7 @@ SUBDIRS := OpenMAX    \
            libvdpau   \
            libvpx     \
            libwebp    \
+           linuxaudio \
            linuxtv    \
            mad        \
            mega-nerd  \

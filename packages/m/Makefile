@@ -13,6 +13,7 @@ SUBDIRS := OpenMAX    \
            fb         \
            ffmpeg     \
            gsm        \
+           jackaudio  \
            lame       \
            libass     \
            libav      \

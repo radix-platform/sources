@@ -32,6 +32,8 @@ SUBDIRS := OpenMAX    \
            moc        \
            mpg123     \
            normalize  \
+           openjpeg   \
+           openjpeg2  \
            portaudio  \
            record     \
            sane       \

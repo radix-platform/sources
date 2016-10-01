@@ -22,6 +22,7 @@ SUBDIRS := OpenMAX    \
            libgd      \
            libgphoto2 \
            libmodplug \
+           libsoxr    \
            libvdpau   \
            libvpx     \
            libwebp    \

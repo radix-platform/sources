@@ -46,7 +46,8 @@ SUBDIRS := OpenMAX      \
            vaapi        \
            wavpack      \
            workbone     \
-           xiph
+           xiph         \
+           xvidcore
 
 
 all-recursive downloads_clean-recursive:

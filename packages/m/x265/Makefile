@@ -23,7 +23,7 @@ all: $(tarballs) $(sha1s)
 .PHONY: downloads_clean
 
 $(tarballs):
-	@echo -e "\n======= Downloading source tarballs |$(tarballs)|=======\n"
+	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
 	  version=`echo $$tarball | sed 's/\([a-zA-Z0-9]*\)\([-]\)\([0-9]*[\.][0-9]*\)\([\.].*\)/\3/'` ; \
 	  wget -N $(url)/$(pkgname)_$$version.tar.gz ; \

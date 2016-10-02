@@ -20,6 +20,7 @@ SUBDIRS := aalib                \
            gc                   \
            giflib               \
            harfbuzz             \
+           hdf5                 \
            hwloc                \
            icu4c                \
            ieee1394             \

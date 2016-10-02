@@ -8,7 +8,7 @@
 # http://launchpad.net/$pkgname/trunk/$pkgver/+download/$pkgname-$pkgver.tar.gz
 #
 
-url         = http://launchpad.net/
+url         = http://launchpad.net
 
 versions    = 1.0.11
 pkgname     = schroedinger

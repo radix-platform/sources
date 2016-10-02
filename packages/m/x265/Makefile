@@ -1,17 +1,17 @@
 #
 # Project Home:
 # ============
-# https://github.com/OpenMandrivaAssociation/ladspa
+# https://bitbucket.org/multicoreware/x265/wiki/Home
 #
 # Downloads:
 # =========
-# https://github.com/OpenMandrivaAssociation/ladspa/raw/master/${pkgname}_sdk_${pkgver}.tgz
+# https://bitbucket.org/multicoreware/x265/downloads
 #
 
-url         = https://github.com/OpenMandrivaAssociation/ladspa/raw/master
+url         = https://bitbucket.org/multicoreware/x265/downloads
 
-versions    = 1.13
-pkgname     = ladspa
+versions    = 2.0 2.1
+pkgname     = x265
 suffix      = tar.gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
@@ -23,13 +23,13 @@ all: $(tarballs) $(sha1s)
 .PHONY: downloads_clean
 
 $(tarballs):
-	@echo -e "\n======= Downloading source tarballs =======\n"
+	@echo -e "\n======= Downloading source tarballs |$(tarballs)|=======\n"
 	@for tarball in $(tarballs) ; do \
 	  version=`echo $$tarball | sed 's/\([a-zA-Z0-9]*\)\([-]\)\([0-9]*[\.][0-9]*\)\([\.].*\)/\3/'` ; \
-	  wget -N $(url)/$(pkgname)_sdk_$$version.tgz ; \
-	  tar xzf $(pkgname)_sdk_$$version.tgz ; \
-	  mv $(pkgname)_sdk $(pkgname)-$$version ; \
-	  rm -rf $(pkgname)_sdk $(pkgname)_sdk_$$version.tgz ; \
+	  wget -N $(url)/$(pkgname)_$$version.tar.gz ; \
+	  tar xzf $(pkgname)_$$version.tar.gz ; \
+	  mv $(pkgname)_$$version $(pkgname)-$$version ; \
+	  rm -rf $(pkgname)_$$version $(pkgname)_$$version.tar.gz ; \
 	  tar czf $$tarball $(pkgname)-$$version ; \
 	  rm -rf $(pkgname)-$$version ; \
 	done

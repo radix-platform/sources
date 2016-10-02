@@ -46,6 +46,7 @@ SUBDIRS := OpenMAX      \
            vaapi        \
            wavpack      \
            workbone     \
+           x265         \
            xiph         \
            xvidcore
 

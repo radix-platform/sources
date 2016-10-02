@@ -1,27 +1,27 @@
 #
 # Project Home:
 # ============
-# http://www.openjpeg.org
+# https://cgit.freedesktop.org/gstreamer/orc
 #
-# GitHub:
+# Cgit:
 # ======
-# https://github.com/uclouvain/openjpeg
+# https://cgit.freedesktop.org/gstreamer/orc
 #
 # Clone:
 # =====
-# https://github.com/uclouvain/openjpeg.git
+# https://anongit.freedesktop.org/git/gstreamer/orc.git
 #
 
-url        = https://github.com/uclouvain
+url        = https://anongit.freedesktop.org/git/gstreamer
 
-repo_name  = openjpeg
+repo_name  = orc
 
 #
 # List of tags to be extracted:
 # ============================
 #                                               hash | tag
 #            ----------------------------------------+-----
-revisions  = 9586bc669c4623912ca657328579c878d74164a5:1.5.2
+revisions  = db333e185458b801a40220d1f940c89e4cb3444f:0.4.26.1
 
 git_repo   = .git_clone
 
@@ -55,7 +55,7 @@ $(tarballs): $(git_repo)
 	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
 	  fi ; \
 	  tar xJf $(repo_name)-$$version.$(suffix) ; \
-	  ( cd $(repo_name)-$$version ; ./bootstrap.sh ; rm -rf autom4te.cache thirdparty ) ; \
+	  ( cd $(repo_name)-$$version ; ./autogen.sh ; rm -rf autom4te.cache .gitignore ; make distclean ) ; \
 	  tar cJf $(repo_name)-$$version.$(suffix) $(repo_name)-$$version ; \
 	  rm -rf $(repo_name)-$$version ; \
 	done

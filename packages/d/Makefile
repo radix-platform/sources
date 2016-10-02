@@ -8,6 +8,7 @@ SUBDIRS := LLVM          \
            check         \
            cmake         \
            flex          \
+           orc           \
            perl          \
            perl-cross    \
            perl-modules  \

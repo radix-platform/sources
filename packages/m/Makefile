@@ -44,6 +44,7 @@ SUBDIRS := OpenMAX      \
            sox          \
            taglib       \
            vaapi        \
+           vid-stab     \
            wavpack      \
            workbone     \
            x265         \

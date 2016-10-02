@@ -86,6 +86,7 @@ SUBDIRS := aalib                \
            shared-mime-info     \
            slang                \
            termcap-compat       \
+           unidata              \
            usbids               \
            v4l-utils            \
            zeromq               \

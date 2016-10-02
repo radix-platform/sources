@@ -4,46 +4,47 @@
 # $ tree -fid .
 #
 
-SUBDIRS := OpenMAX    \
-           VideoLAN   \
-           alsa       \
-           amp        \
-           amr        \
-           audiofile  \
-           fb         \
-           ffmpeg     \
-           gsm        \
-           jackaudio  \
-           lame       \
-           libass     \
-           libav      \
-           libdv      \
-           libexif    \
-           libgd      \
-           libgphoto2 \
-           libmodplug \
-           libsoxr    \
-           libvdpau   \
-           libvpx     \
-           libwebp    \
-           linuxaudio \
-           linuxtv    \
-           mad        \
-           mega-nerd  \
-           moc        \
-           mpg123     \
-           normalize  \
-           openjpeg   \
-           openjpeg2  \
-           portaudio  \
-           record     \
-           sane       \
-           soma       \
-           sox        \
-           taglib     \
-           vaapi      \
-           wavpack    \
-           workbone   \
+SUBDIRS := OpenMAX      \
+           VideoLAN     \
+           alsa         \
+           amp          \
+           amr          \
+           audiofile    \
+           fb           \
+           ffmpeg       \
+           gsm          \
+           jackaudio    \
+           lame         \
+           libass       \
+           libav        \
+           libdv        \
+           libexif      \
+           libgd        \
+           libgphoto2   \
+           libmodplug   \
+           libsoxr      \
+           libvdpau     \
+           libvpx       \
+           libwebp      \
+           linuxaudio   \
+           linuxtv      \
+           mad          \
+           mega-nerd    \
+           moc          \
+           mpg123       \
+           normalize    \
+           openjpeg     \
+           openjpeg2    \
+           portaudio    \
+           record       \
+           sane         \
+           schroedinger \
+           soma         \
+           sox          \
+           taglib       \
+           vaapi        \
+           wavpack      \
+           workbone     \
            xiph
 
 

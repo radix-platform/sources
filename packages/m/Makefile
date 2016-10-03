@@ -10,6 +10,7 @@ SUBDIRS := OpenMAX      \
            amp          \
            amr          \
            audiofile    \
+           dcadec       \
            fb           \
            ffmpeg       \
            gsm          \

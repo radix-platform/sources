@@ -39,6 +39,7 @@ SUBDIRS := OpenMAX      \
            openjpeg2    \
            portaudio    \
            record       \
+           rtmpdump     \
            sane         \
            schroedinger \
            soma         \

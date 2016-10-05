@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := mariadb \
+SUBDIRS := mariadb    \
+           postgresql \
            sqlite
 
 

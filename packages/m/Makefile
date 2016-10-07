@@ -38,6 +38,7 @@ SUBDIRS := OpenMAX      \
            openjpeg     \
            openjpeg2    \
            portaudio    \
+           pulseaudio   \
            record       \
            rtmpdump     \
            sane         \

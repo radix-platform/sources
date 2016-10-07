@@ -14,6 +14,7 @@ SUBDIRS := aalib                \
            dbus-python          \
            elfutils             \
            expat                \
+           fftw                 \
            freetype             \
            fribidi              \
            gamin                \

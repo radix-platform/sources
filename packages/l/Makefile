@@ -82,6 +82,7 @@ SUBDIRS := aalib                \
            pycups               \
            pycurl               \
            pyrex                \
+           sbc                  \
            sdl                  \
            sg3_utils            \
            shared-mime-info     \

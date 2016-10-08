@@ -17,6 +17,7 @@ SUBDIRS := LLVM          \
            python2-doc   \
            python3       \
            python3-doc   \
+           qt-creator    \
            re2c
 
 

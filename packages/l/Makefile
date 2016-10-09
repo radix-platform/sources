@@ -7,6 +7,7 @@
 SUBDIRS := aalib                \
            assimp               \
            boost                \
+           botan                \
            cairo                \
            cracklib             \
            cracklib-words       \

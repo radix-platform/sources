@@ -21,7 +21,6 @@ pkgname     = smpeg
 # =================================
 #
 revisions  = release_0_4_5
-revisions += release_2_0_0
 
 
 versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2,3,4 -d '_' | sed 's,_,\.,g'))

@@ -32,6 +32,7 @@ SUBDIRS := OpenMAX      \
            linuxtv      \
            mad          \
            mega-nerd    \
+           mikmod       \
            moc          \
            mpg123       \
            normalize    \

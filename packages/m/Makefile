@@ -44,6 +44,7 @@ SUBDIRS := OpenMAX      \
            rtmpdump     \
            sane         \
            schroedinger \
+           smpeg        \
            soma         \
            sox          \
            taglib       \

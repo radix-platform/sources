@@ -22,6 +22,7 @@ repo_name  = x264
 #                                               hash | rev | date
 #            ----------------------------------------+-----+---------
 revisions  = 72d53ab2ac7af24597a824e868f2ef363a22f5d4:0.148.20160917
+revisions += 86b71982e131eaa70125f8d0e725fcade9c4c677:0.148.20160920
 
 git_repo   = .git_clone
 

@@ -50,6 +50,18 @@ $(tarballs): $(git_repo)
 	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$hash | \
 	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
 	  fi ; \
+	  tar xJf $(repo_name)-$$version.$(suffix) ; \
+	  ( cd $(repo_name)-$$version ; \
+	    echo "------- Checkout latest Mozilla gmp-api -------" ; \
+	    git clone https://github.com/mozilla/gmp-api.git gmp-api ; \
+	    rm -rf gmp-api/.git ; \
+	    echo "------- Save Git revision into .git-revision -------" ; \
+	    echo "#!/bin/sh"        > .git-revision ; \
+	    echo ""                >> .git-revision ; \
+	    echo "REVISION=$$hash" >> .git-revision ; \
+	  ) ; \
+	  tar cJf $(repo_name)-$$version.$(suffix) $(repo_name)-$$version ; \
+	  rm -rf $(repo_name)-$$version ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

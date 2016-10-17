@@ -36,6 +36,7 @@ SUBDIRS := OpenMAX      \
            moc          \
            mpg123       \
            normalize    \
+           openh264     \
            openjpeg     \
            openjpeg2    \
            portaudio    \

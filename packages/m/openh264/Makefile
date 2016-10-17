@@ -50,10 +50,6 @@ $(tarballs): $(git_repo)
 	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$hash | \
 	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
 	  fi ; \
-	  tar xJf $(repo_name)-$$version.$(suffix) ; \
-	  ( cd $(repo_name)-$$version ; rm -f .gitignore ) ; \
-	  tar cJf $(repo_name)-$$version.$(suffix) $(repo_name)-$$version ; \
-	  rm -rf $(repo_name)-$$version ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

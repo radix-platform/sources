@@ -58,6 +58,7 @@ SUBDIRS := aalib                \
            libspectre           \
            libstrophe           \
            libssh               \
+           libssh2              \
            libthai              \
            libtiff              \
            libusb               \

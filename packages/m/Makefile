@@ -9,6 +9,7 @@ SUBDIRS := OpenMAX      \
            alsa         \
            amp          \
            amr          \
+           audiocoding  \
            audiofile    \
            dcadec       \
            fb           \

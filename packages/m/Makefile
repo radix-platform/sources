@@ -50,6 +50,7 @@ SUBDIRS := OpenMAX      \
            soma         \
            sox          \
            taglib       \
+           twolame      \
            vaapi        \
            vid-stab     \
            wavpack      \

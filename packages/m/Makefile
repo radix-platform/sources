@@ -35,6 +35,7 @@ SUBDIRS := OpenMAX      \
            mega-nerd    \
            mikmod       \
            moc          \
+           mp4v2        \
            mpg123       \
            normalize    \
            openh264     \

@@ -58,7 +58,8 @@ SUBDIRS := OpenMAX      \
            workbone     \
            x265         \
            xiph         \
-           xvidcore
+           xvidcore     \
+           zvbi
 
 
 all-recursive downloads_clean-recursive:

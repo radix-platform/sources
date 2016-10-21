@@ -20,6 +20,7 @@ SUBDIRS := OpenMAX      \
            lame         \
            libass       \
            libav        \
+           libdc1394    \
            libdv        \
            libexif      \
            libgd        \

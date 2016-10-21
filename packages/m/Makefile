@@ -38,6 +38,7 @@ SUBDIRS := OpenMAX      \
            mp4v2        \
            mpg123       \
            normalize    \
+           opencv       \
            openh264     \
            openjpeg     \
            openjpeg2    \

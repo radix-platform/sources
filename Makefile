@@ -39,8 +39,11 @@ SUBDIRS := GNOME                   \
            GNU/gcc/gcc-4.9.1       \
            GNU/gcc/gcc-4.9.2       \
            GNU/gcc/gcc-4.9.3       \
+           GNU/gcc/gcc-4.9.4       \
            GNU/gcc/gcc-5.2.0       \
            GNU/gcc/gcc-5.3.0       \
+           GNU/gcc/gcc-5.4.0       \
+           GNU/gcc/gcc-6.2.0       \
            GNU/gdb                 \
            GNU/gdbm                \
            GNU/gettext             \

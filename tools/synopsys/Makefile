@@ -4,9 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Amlogic   \
-           allwinner \
-           synopsys
+SUBDIRS := arc-toolchain
 
 
 all-recursive downloads_clean-recursive:

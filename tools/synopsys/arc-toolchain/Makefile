@@ -4,9 +4,13 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Amlogic   \
-           allwinner \
-           synopsys
+SUBDIRS := binutils-gdb \
+           cgen         \
+           gcc          \
+           linux        \
+           newlib       \
+           toolchain    \
+           uClibc
 
 
 all-recursive downloads_clean-recursive:

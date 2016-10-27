@@ -46,6 +46,7 @@ SUBDIRS := ModemManager           \
            idnkit                 \
            iftop                  \
            inetd                  \
+           iperf3                 \
            iproute2               \
            ipset                  \
            iptables               \

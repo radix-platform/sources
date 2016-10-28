@@ -4,8 +4,9 @@
 
 url         = ftp://ftp.radix.pro/3pp/Amlogic/u-boot
 
-versions    = 2011.03-20150115
-versions   += 2011.03-20150117
+versions    = 2011.03-20150117
+versions   += 2011.03-20160716
+versions   += 2011.03-20161011
 
 pkgname     = u-boot-aml
 suffix      = tar.xz

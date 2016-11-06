@@ -6,6 +6,7 @@ url         = ftp://ftp.radix.pro/3pp/Amlogic/linux
 
 versions    = 3.10.33-20150115
 versions   += 3.10.33-20150117
+versions   += 3.10.33-20160716
 
 pkgname     = linux-aml
 suffix      = tar.xz

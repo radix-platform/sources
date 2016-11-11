@@ -7,6 +7,7 @@
 SUBDIRS := OpenMAX      \
            VideoLAN     \
            alsa         \
+           amlogic      \
            amp          \
            amr          \
            audiocoding  \

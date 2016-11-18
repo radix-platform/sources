@@ -88,6 +88,7 @@ SUBDIRS := GNOME                   \
            Linux                   \
            Linux/Allwinner         \
            Linux/Amlogic           \
+           Linux/Baikal            \
            Linux/Boundary          \
            Linux/Freescale         \
            Linux/Hardkernel        \

@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := M201
+SUBDIRS := M201 \
+           P201
 
 
 all-recursive downloads_clean-recursive:

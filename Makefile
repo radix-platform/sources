@@ -93,6 +93,7 @@ SUBDIRS := GNOME                   \
            Linux/Freescale         \
            Linux/Hardkernel        \
            Linux/Ingenic           \
+           Linux/Khadas            \
            Linux/Rockchip          \
            Linux/TI                \
            Linux/dm644x            \

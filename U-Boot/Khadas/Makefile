@@ -4,15 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Allwinner   \
-           Amlogic     \
-           Baikal      \
-           Boundary    \
-           Hardkernel  \
-           Ingenic     \
-           Khadas      \
-           TI          \
-           denx
+SUBDIRS := S905X
 
 
 all-recursive downloads_clean-recursive:

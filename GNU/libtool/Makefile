@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/libtool
 
-versions    = 2.4.2
+versions    = 2.4.2 2.4.6
 pkgname     = libtool
 suffix      = tar.xz
 

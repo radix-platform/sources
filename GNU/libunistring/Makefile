@@ -10,9 +10,9 @@
 
 url         = ftp://ftp.gnu.org/gnu/libunistring
 
-versions    = 0.9.2 0.9.3
+versions    = 0.9.4 0.9.5 0.9.6
 pkgname     = libunistring
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

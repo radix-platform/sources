@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/findutils
 
-versions    = 4.4.1 4.4.2
+versions    = 4.4.1 4.4.2 4.6.0
 pkgname     = findutils
 suffix      = tar.gz
 

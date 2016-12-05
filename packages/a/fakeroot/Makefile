@@ -15,6 +15,7 @@ repo_name  = fakeroot
 #                                               hash | version
 #            ----------------------------------------+--------
 revisions  = c8d838e30852f651a45e6248df8865e166221b4f-1.20.2
+revisions += 51367e73b631c0b35726de2ba9ef72fe811eb7e7-1.21.0
 
 git_repo   = .git_clone
 

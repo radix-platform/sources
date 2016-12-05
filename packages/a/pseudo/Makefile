@@ -19,6 +19,7 @@ repo_name  = pseudo
 #                                               hash | version
 #            ----------------------------------------+--------
 revisions  = 735ac1b9ff7471b100f6758f9072bfd45e0e3f40-1.7.4
+revisions += eb47d855a831b6dc0ad34890e84b8f6f483693df-1.8.1
 
 git_repo   = .git_clone
 

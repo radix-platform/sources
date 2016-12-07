@@ -12,6 +12,7 @@ SUBDIRS := LLVM          \
            perl          \
            perl-cross    \
            perl-modules  \
+           pike          \
            pkg-config    \
            python2       \
            python2-doc   \

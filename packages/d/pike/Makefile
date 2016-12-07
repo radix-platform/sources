@@ -7,6 +7,10 @@
 # ======
 # http://pike-git.lysator.liu.se/gitweb.cgi?p=pike.git;a=summary
 #
+# GitHub:
+# ======
+# https://github.com/pikelang/Pike
+#
 # Clone:
 # =====
 # git clone git://pike-git.lysator.liu.se/pike.git

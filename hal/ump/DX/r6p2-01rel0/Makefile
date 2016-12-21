@@ -1,7 +1,7 @@
 #
 # Project Home:
 # ============
-# http://malideveloper.arm.com/develop-for-mali/drivers/open-source-mali-gpus-ump-user-space-drivers-source-code-2
+# http://malideveloper.arm.com/resources/drivers/open-source-mali-gpus-ump-user-space-drivers-source-code
 #
 # Downloads:
 # =========

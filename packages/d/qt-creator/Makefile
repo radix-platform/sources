@@ -15,6 +15,7 @@ versions    = 3.4.2
 versions   += 3.5.1
 versions   += 3.6.1
 versions   += 4.1.0
+versions   += 4.2.0
 pkgname     = qt-creator-opensource-src
 suffix      = tar.gz
 

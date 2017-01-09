@@ -16,6 +16,13 @@ repo_name  = u-boot
 #                                               hash |      |  denx | date
 #            ----------------------------------------+------+-------+--------
 revisions  = d69d067db45d3002df0ad92558285e4671adb203:khadas-2015.01:20160919
+revisions += 101afeee2b2229ac9dfac6dc166c452e58c269d9:khadas-2015.01:20161211
+#
+# Revisions from 'ubuntu' branch. Supports Amlogic S905X SoCs.
+#
+#                                               hash |      |  denx | date
+#            ----------------------------------------+------+-------+--------
+revisions += 5832d64c3cc9441ef530003c1785e6ba97f3e0a9:khadas-2015.01:20170107
 
 git_repo   = .git_clone
 

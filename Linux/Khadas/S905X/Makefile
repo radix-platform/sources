@@ -16,6 +16,13 @@ repo_name  = linux
 #                                               hash |     snapshot | date
 #            ----------------------------------------+--------------+--------
 revisions  = 9ff62f1c4e333feb64bc419191215cec2c7c7c73:khadas-3.14.29:20160919
+revisions += 76fd19ac41bb774e396ce8009ff665f29c26c535:khadas-3.14.29:20161211
+#
+# Revisions from 'ubuntu' branch used for Khadas Vim S905X devices.
+#
+#                                               hash |     snapshot | date
+#            ----------------------------------------+--------------+--------
+revisions += fbd6d58b43058868e4dd3795a1e513e1c0c74ffc:khadas-3.14.29:20170107
 
 #
 # Default Linux config file name:

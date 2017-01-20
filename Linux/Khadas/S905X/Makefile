@@ -23,6 +23,7 @@ revisions += 76fd19ac41bb774e396ce8009ff665f29c26c535:khadas-3.14.29:20161211
 #                                               hash |     snapshot | date
 #            ----------------------------------------+--------------+--------
 revisions += fbd6d58b43058868e4dd3795a1e513e1c0c74ffc:khadas-3.14.29:20170107
+revisions += 94602ef5562978a8d8b5c7770c113074a714dbdb:khadas-3.14.29:20170119
 
 #
 # Default Linux config file name:

@@ -5,14 +5,14 @@
 #
 # Downloads:
 # =========
-# http://malideveloper.arm.com/downloads/drivers/TX041
+# http://malideveloper.arm.com/downloads/drivers/TX011
 #
 
-url         = http://malideveloper.arm.com/downloads/drivers/TX041
+url         = http://malideveloper.arm.com/downloads/drivers/TX011
 
-versions    = r5p1-00rel0 r5p1-00rel1
+versions    = r7p0-02rel0
 
-pkgname     = TX041-SW-99002
+pkgname     = TX011-SW-99002
 suffix      = tgz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

@@ -1,7 +1,7 @@
 #
 # Project Home:
 # ============
-# http://malideveloper.arm.com/develop-for-mali/drivers/open-source-mali-gpus-linux-kernel-device-drivers
+# http://malideveloper.arm.com/resources/drivers/open-source-mali-utgard-gpu-linux-kernel-drivers
 #
 # Downloads:
 # =========

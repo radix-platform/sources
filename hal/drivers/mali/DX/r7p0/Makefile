@@ -10,7 +10,7 @@
 
 url         = http://malideveloper.arm.com/downloads/drivers/DX910
 
-versions    = r5p1-01rel0
+versions    = r7p0-00rel0
 
 pkgname     = DX910-SW-99002
 suffix      = tgz

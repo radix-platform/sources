@@ -1,0 +1,48 @@
+
+[http://malideveloper.arm.com/resources/drivers/open-source-mali-utgard-gpu-linux-kernel-drivers]
+
+Open Source Mali Utgard GPU Linux Kernel Drivers:
+================================================
+
+Source code for Mali GPUs Kernel Device Drivers, UMP Device Drivers and DRM Device Drivers under GPLv2 licence
+
+The Linux and Android version of the Mali GPUs DDKs include three components which run within the kernel.
+The most important of these, known as the Device Driver, provides the low-level access to the Mali-400 and
+Mali-450 GPU. An important, secondary component is the Unified Memory Provider (UMP) which can be used
+in a variety of ways to facilitate zero-copy operations within the driver stack. An additional component,
+the Mali Direct Rendering Manager (DRM), is provided to integrate the Mali GPU DDKs into the X11 environment
+and for enabling the Direct Rendering Interface (DRI2).
+
+Some of these components are being made available under the GPLv2 licence. This page provides access
+to the source packages from which loadable kernel modules can be built.
+
+Note that these components are not a complete driver stack. To build a functional OpenGL ES or OpenVG
+driver you need access to the full source code of the Mali GPU DDK, which is provided under the standard
+ARM commercial licence to all Mali GPU customers. For a complete integration of the Mali GPU DDK with
+the X11 environment refer to the Integration Guide supplied with the Mali GPU DDK.
+
+The open source drivers provided on this page are designed to run with a version-compatible release
+of the Mali GPU DDK. In functional and performance terms they are identical to the implementations
+provided under the commercial licence. By also releasing them under the GPLv2 licence we hope to make
+it easier to include Mali GPU drivers in any Linux or Android platform.
+
+Happy Hacking!
+
+FEATURES AND BENEFITS
+
+The Mali GPU kernel device driver handles:
+
+ - Access to the Mali GPU hardware
+ - Interrupt handling
+ - Low level memory management
+
+The UMP kernel device driver handles:
+
+ - Access to allocated UMP memory through a secure ID. This enables memory to be shared across
+   different applications, drivers and hardware components to facilitate zero-copy operations
+ - The physical address information required to set up an MMU or MPU table
+ - A method to map UMP memory into CPU address space, to enable reading and writing
+
+CURRENT RELEASE INFORMATION
+By downloading the packages below you acknowledge that you accept the End User License Agreement
+for the Mali GPUs Kernel Device Drivers Source Code.

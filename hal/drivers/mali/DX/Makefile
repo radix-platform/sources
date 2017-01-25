@@ -8,7 +8,12 @@ SUBDIRS := r3p2 \
            r4p0 \
            r4p1 \
            r5p0 \
-           r5p1
+           r5p1 \
+           r5p2 \
+           r6p0 \
+           r6p1 \
+           r6p2 \
+           r7p0
 
 
 all-recursive downloads_clean-recursive:

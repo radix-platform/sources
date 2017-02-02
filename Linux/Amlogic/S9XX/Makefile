@@ -1,12 +1,12 @@
 #
-# U-Boot for meson-gxbb P201 board:
+# Linux kernel for P201, P212, Q201 board:
 #
 
-url         = ftp://ftp.radix.pro/3pp/Amlogic/u-boot
+url         = ftp://ftp.radix.pro/3pp/Amlogic/linux
 
-versions    = 2015.01-20160818 2015.01-20160930
+versions    = 3.14.29-20170119
 
-pkgname     = u-boot-aml
+pkgname     = linux-aml
 suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

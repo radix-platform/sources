@@ -5,7 +5,8 @@
 #
 
 SUBDIRS := M201 \
-           P201
+           P201 \
+           S9XX
 
 
 all-recursive downloads_clean-recursive:

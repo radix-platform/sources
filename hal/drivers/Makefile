@@ -6,7 +6,8 @@
 
 SUBDIRS := ci20     \
            mali     \
-           omap543x
+           omap543x \
+           wireless
 
 
 all-recursive downloads_clean-recursive:

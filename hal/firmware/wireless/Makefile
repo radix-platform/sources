@@ -4,9 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := ci20       \
-           omap5-uevm \
-           wireless
+SUBDIRS := Amlogic
 
 
 all-recursive downloads_clean-recursive:

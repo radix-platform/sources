@@ -1,32 +1,24 @@
+
 #
-# Mali userspace drivers for Amlogic boards:
+# Following command helps to cheate SUBDIRS list:
+# $ tree -fid .
 #
 
-url         = ftp://ftp.radix.pro/3pp/Amlogic/wireless
+SUBDIRS := brcmap6xxx
 
-versions    = 20160818
 
-pkgname     = brcmap6xxx
-suffix      = tar.xz
+all-recursive downloads_clean-recursive:
+	@set fnord $(MAKEFLAGS); amf=$$2; \
+	target=`echo $@ | sed s/-recursive//`; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	  echo "Making $$target in $$subdir"; \
+	  local_target="$$target"; \
+	  (cd $$subdir && $(MAKE) $$fnord $$local_target) \
+	   || case "$$amf" in *=*) exit 1;; *k*) fail=yes;; *) exit 1;; esac; \
+	done; test -z "$$fail"
 
-tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-sha1s       = $(addsuffix .sha1sum, $(tarballs))
+all: all-recursive
 
-all: $(tarballs) $(sha1s)
+downloads_clean: downloads_clean-recursive
 
-.PHONY: downloads_clean
-
-$(tarballs):
-	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
-	done
-
-$(sha1s): %.$(suffix).sha1sum : %.$(suffix)
-	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
-	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
-	done
-
-downloads_clean:
-	@rm -rf $(tarballs) $(sha1s)
+.PHONY: all-recursive downloads_clean-recursive all downloads_clean

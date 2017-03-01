@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := S805
+SUBDIRS := S805 \
+           S905
 
 
 all-recursive downloads_clean-recursive:

@@ -16,6 +16,7 @@ repo_name  = linux
 #                                               hash |  snapshot | date
 #            ----------------------------------------+-----------+--------
 revisions  = b22dbcc9173919eaa4bbdeb144abc062f2d5e0fd:aml-3.14.79:20170131
+revisions += 66d564944a60b4aa0ec991eb119226c0322ea0c1:aml-3.14.79:20170227
 
 #
 # Default Linux config file name:

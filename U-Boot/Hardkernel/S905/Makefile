@@ -15,7 +15,8 @@ repo_name  = u-boot
 #
 #                                               hash |   |  denx | date
 #            ----------------------------------------+---+-------+--------
-revisions  = 3eb97d48991decdd5dea537c8c2325cbb0611089:aml-2015.01:20170210
+revisions  = bafc655ee322fcaaf96a245a864ff5fef15ea1e8:aml-2015.01:20161011
+revisions += 205c7b3259559283161703a1a200b787c2c445a5:aml-2015.01:20170224
 
 git_repo   = .git_clone
 

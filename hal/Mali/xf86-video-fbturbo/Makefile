@@ -5,7 +5,8 @@
 #
 
 SUBDIRS := r3p0-04rel0 \
-           r3p2-01rel2
+           r3p2-01rel2 \
+           r6p1-01rel0
 
 
 all-recursive downloads_clean-recursive:

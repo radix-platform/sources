@@ -61,6 +61,7 @@ SUBDIRS := aalib                \
            libssh2              \
            libthai              \
            libtiff              \
+           libunwind            \
            libusb               \
            libusb-compat        \
            libvisual            \

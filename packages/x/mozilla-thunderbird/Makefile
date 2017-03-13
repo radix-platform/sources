@@ -5,12 +5,12 @@
 #
 # Downloads:
 # =========
-# https://archive.mozilla.org/pub/thunderbird/releases/${VERSION}
+# http://download.cdn.mozilla.net/pub/thunderbird/releases/${VERSION}
 #
 
-url         = https://archive.mozilla.org/pub/thunderbird/releases
+url         = http://download.cdn.mozilla.net/pub/thunderbird/releases
 
-versions    = 45.0
+versions    = 45.0 45.8.0
 pkgname     = thunderbird
 suffix      = tar.xz
 

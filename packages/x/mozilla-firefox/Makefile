@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# http://www-archive.mozilla.org/projects/firefox/index.html
+# https://www.mozilla.org/en-US/firefox/new
 #
 # Downloads:
 # =========
-# http://download.cdn.mozilla.net/pub/mozilla.org/firefox/releases/$(VERSION)/
+# http://download.cdn.mozilla.net/pub/firefox/releases/$(VERSION)/
 #
 
-url         = http://download.cdn.mozilla.net/pub/mozilla.org/firefox/releases
+url         = http://download.cdn.mozilla.net/pub/firefox/releases
 
-versions    = 44.0 45.0.1 45.0.2
+versions    = 44.0 45.0.1 45.0.2 52.0
 pkgname     = firefox
 suffix      = tar.xz
 

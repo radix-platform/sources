@@ -16,7 +16,7 @@
 url         = https://downloads.mariadb.org/interstitial
 
 versions    = 5.5.47 5.5.49
-versions   += 10.0.25
+versions   += 10.0.25 10.0.30
 versions   += 10.1.11 10.1.14
 pkgname     = mariadb
 suffix      = tar.gz

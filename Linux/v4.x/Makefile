@@ -9,7 +9,9 @@
 url         = http://www.kernel.org/pub/linux/kernel/v4.x
 
 versions    = 4.1.15 4.1.18
-versions   += 4.4.3
+versions   += 4.4.3 4.4.71
+versions   += 4.9.20 4.9.31
+versions   += 4.11.4
 
 pkgname     = linux
 suffix      = tar.xz

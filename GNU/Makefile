@@ -23,12 +23,12 @@ $(gnu_keyring):
 	@wget $(url)/$(gnu_keyring)
 
 $(keyrings):
-	@echo -e "\n======= Downloading keyring files =======\n"
-	@for ID in $(IDs) ; do \
-	  gpg --recv-key $$ID ; \
-	  gpg --export $$ID > keyring-$$ID.gpg ; \
-	  gpg --batch --yes --delete-key $$ID ; \
-	done
+#	@echo -e "\n======= Downloading keyring files =======\n"
+#	@for ID in $(IDs) ; do \
+#	  gpg --recv-key $$ID ; \
+#	  gpg --export $$ID > keyring-$$ID.gpg ; \
+#	  gpg --batch --yes --delete-key $$ID ; \
+#	done
 
 downloads_clean:
 	@rm -f $(gnu_keyring) $(keyrings)

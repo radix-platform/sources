@@ -19,6 +19,7 @@ SUBDIRS := CLooG                 \
            bsdstrings            \
            btrfs-progs           \
            bzip2                 \
+           can-utils             \
            chrpath               \
            cpufreqitils          \
            cryptsetup            \

@@ -55,6 +55,7 @@ SUBDIRS := GNOME                   \
            GNU/grep                \
            GNU/groff               \
            GNU/grub                \
+           GNU/gss                 \
            GNU/guile               \
            GNU/gzip                \
            GNU/help2man            \

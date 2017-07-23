@@ -45,6 +45,7 @@ SUBDIRS := GNOME                   \
            GNU/gcc/gcc-5.4.0       \
            GNU/gcc/gcc-6.2.0       \
            GNU/gcc/gcc-6.3.0       \
+           GNU/gcc/gcc-6.4.0       \
            GNU/gcc/gcc-7.1.0       \
            GNU/gdb                 \
            GNU/gdbm                \

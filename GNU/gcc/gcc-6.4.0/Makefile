@@ -10,6 +10,7 @@
 url         = http://ftpmirror.gnu.org/gcc
 
 versions    = 6.4.0
+
 pkgname     = gcc
 suffix      = tar.xz
 

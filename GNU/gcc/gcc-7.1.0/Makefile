@@ -10,6 +10,7 @@
 url         = http://ftpmirror.gnu.org/gcc
 
 versions    = 7.1.0
+
 pkgname     = gcc
 suffix      = tar.bz2
 

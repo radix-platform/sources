@@ -17,7 +17,7 @@ suffix      = tar.xz
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
-all: $(keyring) $(sha1s)
+all: $(tarballs) $(sha1s)
 
 .PHONY: downloads_clean
 

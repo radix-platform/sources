@@ -10,20 +10,17 @@
 #url         = http://ftpmirror.gnu.org/gdb
 url         = http://ftp.gnu.org/gnu/gdb
 
-keyring     = ../gnu-keyring.gpg
-
 versions    = 6.4a 6.5a 7.0a 7.2a 7.5 7.9 7.10.1 7.11 8.0
 
-tarballs    = $(addsuffix .tar.gz, $(addprefix gdb-, $(versions)))
-signatures  = $(addsuffix .sig, $(tarballs))
+pkgname     = gdb
+suffix      = tar.gz
+
+tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
-all: $(keyring) $(signatures) $(sha1s)
+all: $(tarballs) $(sha1s)
 
 .PHONY: downloads_clean
-
-$(keyring):
-	@cd .. ; $(MAKE) all
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
@@ -31,23 +28,11 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(signatures): %.tar.gz.sig : %.tar.gz
-	@for signature in $@ ; do \
-	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
-	  wget -N $(url)/$$signature ; \
-	  touch $$signature ; \
-	  gpg --verify --keyring $(keyring) $$signature ; ret="$$?" ; \
-	  if [ "$$ret" == "1" ]; then \
-	    echo -e "\n======= ERROR: Bad '$$signature' Signature =======\n" ; \
-	    exit 1 ; \
-	  fi ; \
-	done
-
-$(sha1s): %.tar.gz.sha1sum : %.tar.gz
+$(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
 downloads_clean:
-	@rm -rf $(tarballs) $(signatures) $(sha1s)
+	@rm -rf $(tarballs) $(sha1s)

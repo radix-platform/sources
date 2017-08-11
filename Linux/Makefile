@@ -1,27 +1,39 @@
+
 #
-# In a directory with the keyring file, the source file to verify and the
-# signature file, the command to use is:
-#
-#  $ gpg --verify --keyring ./gnu-keyring.gpg foo.tar.xz.sig 
-#
-# original url: ftp:://ftp.gnu.org/gnu/gnu-keyring.gpg
+# Following command helps to cheate SUBDIRS list:
+# $ tree -fid .
 #
 
-IDs      = 517D0F0E 6092693E
+SUBDIRS := Allwinner         \
+           Amlogic           \
+           Baikal            \
+           Boundary          \
+           Freescale         \
+           Hardkernel        \
+           Ingenic           \
+           Khadas            \
+           Rockchip          \
+           TI                \
+           dm644x            \
+           mips              \
+           omap              \
+           sunxi             \
+           v2.6              \
+           v3.x              \
+           v4.x
 
-keyrings = $(addsuffix .gpg, $(addprefix keyring-, $(IDs)))
+all-recursive downloads_clean-recursive:
+	@set fnord $(MAKEFLAGS); amf=$$2; \
+	target=`echo $@ | sed s/-recursive//`; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	  echo "Making $$target in $$subdir"; \
+	  local_target="$$target"; \
+	  (cd $$subdir && $(MAKE) $$fnord $$local_target) \
+	   || case "$$amf" in *=*) exit 1;; *k*) fail=yes;; *) exit 1;; esac; \
+	done; test -z "$$fail"
 
-all: $(keyrings)
+all: all-recursive
 
-.PHONY: downloads_clean
+downloads_clean: downloads_clean-recursive
 
-$(keyrings):
-	@echo -e "\n======= Downloading keyring files =======\n"
-	@for ID in $(IDs) ; do \
-	  gpg --recv-key $$ID ; \
-	  gpg --export $$ID > keyring-$$ID.gpg ; \
-	  gpg --batch --yes --delete-key $$ID ; \
-	done
-
-downloads_clean:
-	@rm -f $(keyrings)
+.PHONY: all-recursive downloads_clean-recursive all downloads_clean

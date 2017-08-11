@@ -15,12 +15,9 @@ versions    = 2.95.3
 tarballs    = $(addsuffix .tar.gz, $(addprefix gcc-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
-all: $(keyring) $(sha1s)
+all: $(tarballs) $(sha1s)
 
 .PHONY: downloads_clean
-
-$(keyring):
-	@cd .. ; $(MAKE) all
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"

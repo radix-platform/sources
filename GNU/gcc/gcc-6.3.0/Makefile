@@ -24,7 +24,7 @@ all: $(tarballs) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for version in $(versions) ; do \
-	  wget -N $(url)/gcc-$$version/gcc-$$version.tar.bz2 ; \
+	  wget -N $(url)/gcc-$$version/gcc-$$version.$(suffix) ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

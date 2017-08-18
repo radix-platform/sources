@@ -9,10 +9,10 @@
 
 url         = http://ftpmirror.gnu.org/gcc
 
-versions    = 6.2.0
+versions    = 7.2.0
 
 pkgname     = gcc
-suffix      = tar.bz2
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

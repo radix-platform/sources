@@ -26,6 +26,7 @@ repo_name  = populatefs
 #            ----------------------------------------+--------
 revisions  = 9cb86b88d29601e73f9d78eeb3430a0a32b33057-0.9
 revisions += e9f9f623596cbc43495c1f26741805c7a0ca627e-1.0
+revisions += 95cc98bb438b64a1c0256d3735db9a1647f48ef0-1.1
 
 
 git_repo   = .git_clone

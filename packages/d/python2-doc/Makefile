@@ -10,7 +10,7 @@
 
 url         = http://docs.python.org/2/archives
 
-versions    = 2.7.6 2.7.11
+versions    = 2.7.11 2.7.12 2.7.13
 pkgname     = python
 suffix      = tar.bz2
 formats     = text html pdf-a4

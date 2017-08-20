@@ -10,7 +10,7 @@
 
 url         = http://docs.python.org
 
-versions    = 3.4.4 3.5.1
+versions    = 3.5.4 3.6.2
 pkgname     = python
 suffix      = tar.bz2
 formats     = text html pdf-a4
@@ -27,7 +27,7 @@ $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
 	  version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9][.][0-9]*\)\([\.].*\)/\2/'` ; \
-	  wget -N $(url)/$$version/archives/$$tarball ; \
+	  wget -N $(url)/`echo $$version | cut -f1,2 -d'.'`/archives/$$tarball ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

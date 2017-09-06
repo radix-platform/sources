@@ -11,7 +11,7 @@
 
 url         = ftp://oss.sgi.com/projects/xfs/cmd_tars
 
-versions    = 3.1.10 3.1.11 3.2.4 4.2.0 4.3.0
+versions    = 3.1.10 3.1.11 3.2.4 4.2.0 4.3.0 4.7.0
 pkgname     = xfsprogs
 suffix      = tar.gz
 

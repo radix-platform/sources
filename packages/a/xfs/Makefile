@@ -6,6 +6,7 @@
 
 SUBDIRS := dmapi         \
            xfsdump       \
+           xfsdump-dev   \
            xfsprogs
 
 

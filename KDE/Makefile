@@ -5,6 +5,7 @@
 #
 
 SUBDIRS := 4.14.3    \
+           4.14.3/kde-l10n \
            qtwebkit
 
 

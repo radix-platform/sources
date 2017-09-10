@@ -30,7 +30,6 @@ SUBDIRS := WindowMaker          \
            mtdev                \
            qt4                  \
            qt5                  \
-           qtwebkit             \
            startup-notification \
            terminus-font        \
            thaixfonts           \

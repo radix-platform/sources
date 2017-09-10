@@ -6,6 +6,7 @@
 
 SUBDIRS := GNOME                   \
            GNU                     \
+           KDE                     \
            Linux                   \
            U-Boot                  \
            Wayland                 \

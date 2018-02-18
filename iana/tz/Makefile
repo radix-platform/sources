@@ -19,7 +19,8 @@ patterns    = tz*2013[h-i].tar.gz
 patterns   += tz*2014[i-j].tar.gz
 patterns   += tz*2015[a-cg].tar.gz
 patterns   += tz*2016[a-i].tar.gz
-patterns   += tz*2017[a-b].tar.gz
+patterns   += tz*2017[a-c].tar.gz
+patterns   += tz*2018[a-c].tar.gz
 
 tarballs   := $(wildcard *.tar.gz)
 sha1s      := $(patsubst %.tar.gz,%.tar.gz.sha1sum,$(wildcard *.tar.gz))

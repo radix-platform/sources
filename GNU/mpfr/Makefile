@@ -12,7 +12,9 @@ url         = http://ftp.gnu.org/gnu/mpfr
 
 versions    = 2.4.2 3.1.1 3.1.2 3.1.3 3.1.4 3.1.5 4.0.1
 
-tarballs    = $(addsuffix .tar.bz2, $(addprefix mpfr-, $(versions)))
+tarballs    = $(addsuffix .tar.xz, $(addprefix mpfr-, $(versions)))
+tarballs   += $(addsuffix .tar.bz2, $(addprefix mpfr-, $(versions)))
+
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 all: $(tarballs) $(sha1s)
@@ -25,9 +27,15 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+$(filter %.tar.xz.sha1sum,$(sha1s)): %.tar.xz.sha1sum : %.tar.xz
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
+	done
+
+$(filter %.tar.bz2.sha1sum,$(sha1s)): %.tar.bz2.sha1sum : %.tar.bz2
+	@for tarball in $< ; do \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 

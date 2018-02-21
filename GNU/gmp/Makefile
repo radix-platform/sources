@@ -10,9 +10,10 @@
 #url         = http://ftpmirror.gnu.org/gmp
 url         = http://ftp.gnu.org/gnu/gmp
 
-versions    = 4.3.1 5.0.5 5.1.3 6.0.0a 6.1.0 6.1.1 6.1.2
+versions    = 5.0.5 5.1.3 6.0.0a 6.1.0 6.1.1 6.1.2
 
-tarballs    = $(addsuffix .tar.bz2, $(addprefix gmp-, $(versions)))
+tarballs    = $(addsuffix .tar.xz, $(addprefix gmp-, $(versions)))
+tarballs   += $(addsuffix .tar.bz2, $(addprefix gmp-, 4.3.1 $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 all: $(tarballs) $(sha1s)
@@ -25,9 +26,20 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+#$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+#	@for tarball in $< ; do \
+#	  echo -e "\n======= Calculation '$$tarball' sha1sum =======\n" ; \
+#	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
+#	done
+$(filter %.tar.xz.sha1sum,$(sha1s)): %.tar.xz.sha1sum : %.tar.xz
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
+	done
+
+$(filter %.tar.bz2.sha1sum,$(sha1s)): %.tar.bz2.sha1sum : %.tar.bz2
+	@for tarball in $< ; do \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 

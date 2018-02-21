@@ -26,11 +26,6 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-#$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
-#	@for tarball in $< ; do \
-#	  echo -e "\n======= Calculation '$$tarball' sha1sum =======\n" ; \
-#	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
-#	done
 $(filter %.tar.xz.sha1sum,$(sha1s)): %.tar.xz.sha1sum : %.tar.xz
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \

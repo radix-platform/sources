@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.cs.unipr.it/pub/ppl/releases
 
-versions    = 1.0 1.1
+versions    = 1.0 1.1 1.2
 
 tarballs    = $(addsuffix .tar.bz2, $(addprefix ppl-, $(versions)))
 signatures  = $(addsuffix .sign, $(tarballs))

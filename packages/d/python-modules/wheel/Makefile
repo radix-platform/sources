@@ -8,20 +8,23 @@
 # =============
 # hg clone https://bitbucket.org/pypa/wheel
 #
+# GitGub:
+# =========
+# https://github.com/pypa/wheel.git
+#
 
-url        = https://bitbucket.org/pypa
+url         = https://github.com/pypa/wheel.git
 
-repo_name  = wheel
+repo_name   = wheel
 
-versions   = 0.29.0
-pkgname    = wheel
-suffix     = tar.xz
+versions    = 0.29.0 0.30.0
+suffix      = tar.xz
 
-hg_repo    = .hg_clone
+TAGS        = $(versions)
 
-tarballs   = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-sha1s      = $(addsuffix .sha1sum, $(tarballs))
-
+git_repo    = .git_clone
+tarballs    = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
+sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 TARGETS = repository_clean
 
@@ -29,18 +32,24 @@ all: $(TARGETS)
 
 .PHONY: downloads_clean repository_clean
 
-$(hg_repo):
-	@echo -e "\n======= Clone $(repo_name) repository =======\n"
+$(git_repo):
+	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
 	@rm -rf $(repo_name)
-	@hg clone -b default $(url)/$(repo_name) $(repo_name)
+	@if [ "$(url)" = 'git://radix.pro' ]; then \
+	   git clone $(url)/$(repo_name).git $(repo_name) ; \
+	 else \
+	   git clone $(url) $(repo_name) ; \
+	 fi
 	@touch $@
 
-$(tarballs): $(hg_repo)
-	@for version in $(versions) ; do \
+
+$(tarballs): $(git_repo)
+	@for version in $(TAGS) ; do \
+	  tag=`echo $$version`; \
 	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
 	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
 	    ( cd $(repo_name) && \
-	      hg archive --type tar --prefix $(repo_name)-$$version --rev $$version - | \
+	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$tag | \
 	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
 	  fi ; \
 	done
@@ -52,9 +61,9 @@ $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	done
 
 repository_clean: $(sha1s)
-	@echo -e "\n======= Remove cloned $(repo_name) repository =======\n"
-	@rm -rf $(hg_repo) $(repo_name)
+	@echo -e "\n======= Remove cloned $(repo_name).git repository =======\n"
+	@rm -rf $(git_repo) $(repo_name)
 
 downloads_clean:
 	@rm -rf $(tarballs) $(sha1s)
-	@rm -rf $(hg_repo) $(repo_name)
+	@rm -rf $(git_repo) $(repo_name)

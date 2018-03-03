@@ -12,6 +12,7 @@ versions    = 4.1.15 4.1.18
 versions   += 4.4.3 4.4.71
 versions   += 4.9.20 4.9.31 4.9.35
 versions   += 4.11.4 4.11.8
+versions   += 4.14.23
 
 pkgname     = linux
 suffix      = tar.xz

@@ -10,7 +10,7 @@
 
 url         = https://docs.python.org/ftp/python/doc
 
-versions    = 2.7.11 2.7.12 2.7.13 2.7.14
+versions    = 2.7.6 2.7.11 2.7.12 2.7.13 2.7.14
 pkgname     = python
 suffix      = tar.bz2
 formats     = text html pdf-a4

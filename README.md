@@ -8,8 +8,7 @@ of third party sources to speed up downloads using your local FTP instead of
 downloading from remote Internet resources before building your packages.
 
 Also you can create your own mirrors of frequently used 3pp repositories
-to speed up the taking snapshots process
-[in the same way as we do](http://git.radix.pro/).
+to speed up the taking snapshots process [in the same way as we do](http://git.radix.pro/).
 
 
 Creators

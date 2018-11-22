@@ -115,6 +115,7 @@ SUBDIRS := CLooG                 \
            ncompress             \
            ntfs-3g               \
            os-prober             \
+           patchelf              \
            pciutils              \
            pcmciautils           \
            pm-utils              \

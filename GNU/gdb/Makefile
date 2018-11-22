@@ -10,10 +10,10 @@
 #url         = http://ftpmirror.gnu.org/gdb
 url         = http://ftp.gnu.org/gnu/gdb
 
-versions    = 6.4a 6.5a 7.0a 7.2a 7.5 7.9 7.10.1 7.11 8.0
+versions    = 7.9 7.10.1 7.11 8.0 8.1.1 8.2
 
 pkgname     = gdb
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

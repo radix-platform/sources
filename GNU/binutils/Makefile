@@ -9,10 +9,11 @@
 
 url         = http://ftpmirror.gnu.org/binutils
 
-versions    = 2.16.1a 2.20.1a 2.21.1a 2.22 2.23.2 2.24 2.25 2.25.1 2.26 2.26.1 2.27 2.28
+versions    = 2.28 2.28.1 2.29 2.29.1
+versions   += 2.30 2.31 2.31.1
 
 pkgname     = binutils
-suffix      = tar.bz2
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

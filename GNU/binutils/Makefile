@@ -9,7 +9,7 @@
 
 url         = http://ftpmirror.gnu.org/binutils
 
-versions    = 2.28 2.28.1 2.29 2.29.1
+versions    = 2.28.1 2.29 2.29.1
 versions   += 2.30 2.31 2.31.1
 
 pkgname     = binutils

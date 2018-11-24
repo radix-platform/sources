@@ -4,8 +4,7 @@
 # $ tree -fid .
 #
 
-SUBDIRS := sunxi-tools    \
-           sunxi-tools-kx
+SUBDIRS := sunxi-tools
 
 
 all-recursive downloads_clean-recursive:

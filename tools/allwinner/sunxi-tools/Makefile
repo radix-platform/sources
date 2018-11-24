@@ -4,21 +4,22 @@
 # ===========
 #
 # clone:
-#   $ git clone git://github.com/linux-sunxi/sunxi-tools
+#   $ git clone git://github.com/kosteltsev/sunxi-tools
 #
 
-url        = git://radix.pro
+url        = https://gitlab.radix.pro/kx
 
 repo_name  = sunxi-tools
 
 #
 # List of tags to be extracted:
 #
-versions   = 1.2
-
+versions   = 1.3
 
 git_repo   = .git_clone
-tarballs   = $(addsuffix .tar.bz2, $(addprefix $(repo_name)-, $(versions)))
+
+suffix     = tar.xz
+tarballs   = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
 sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
 TARGETS = repository_clean
@@ -36,15 +37,15 @@ $(git_repo):
 $(tarballs): $(git_repo)
 	@for version in $(versions) ; do \
 	  tag=v$$version ; \
-	  if [ ! -f $(repo_name)-$$version.tar.bz2 ]; then \
-	    echo -e "\n======= Creating '$(repo_name)-$$version.tar.bz2' snapshot =======" ; \
+	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
+	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
 	    ( cd $(repo_name) && \
 	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$tag | \
-	      bzip2 >../$(repo_name)-$$version.tar.bz2 ) ; \
+	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
 	  fi ; \
 	done
 
-$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+$(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \

@@ -4,16 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Allwinner   \
-           Amlogic     \
-           Baikal      \
-           Boundary    \
-           FriendlyARM \
-           Hardkernel  \
-           Ingenic     \
-           Khadas      \
-           TI          \
-           denx
+SUBDIRS := H3 \
+           H5
 
 
 all-recursive downloads_clean-recursive:

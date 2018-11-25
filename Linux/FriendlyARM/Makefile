@@ -4,24 +4,9 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Allwinner         \
-           Amlogic           \
-           Baikal            \
-           Boundary          \
-           Freescale         \
-           FriendlyARM       \
-           Hardkernel        \
-           Ingenic           \
-           Khadas            \
-           Rockchip          \
-           TI                \
-           dm644x            \
-           mips              \
-           omap              \
-           sunxi             \
-           v2.6              \
-           v3.x              \
-           v4.x
+SUBDIRS := H3 \
+           H5
+
 
 all-recursive downloads_clean-recursive:
 	@set fnord $(MAKEFLAGS); amf=$$2; \

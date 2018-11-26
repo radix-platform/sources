@@ -22,6 +22,7 @@ repo_name  = gcc
 #                                               hash | tag
 #            ----------------------------------------+-----
 revisions  = 051a4966a7c883a34b8612c0c1c7e2242c495a4e:arc-2016.09.17
+revisions += d470d081a52fc51efc2b0391d44773d31821f674:arc-2018.09.12
 
 git_repo   = .git_clone
 

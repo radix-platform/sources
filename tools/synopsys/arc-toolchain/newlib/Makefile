@@ -22,6 +22,7 @@ repo_name  = newlib
 #                                               hash | tag
 #            ----------------------------------------+-----
 revisions  = ff2d5895c5f910ee9990ddad07ffde4ddd0eb0e0:arc-2016.09.17
+revisions  = 05822dea764518b6c20681aadd44e2b091bc4cd1:arc-2018.09.12
 
 git_repo   = .git_clone
 

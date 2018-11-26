@@ -4,8 +4,8 @@
 
 url         = ftp://ftp.radix.pro/3pp/Baikal/u-boot
 
-versions    = 2014.10-3.00.07.68
-versions   += 2014.10-4.08.84
+versions    = 2014.10-4.08.84
+versions   += 2014.10-4.15.115
 
 pkgname     = u-boot-baikal
 suffix      = tar.xz

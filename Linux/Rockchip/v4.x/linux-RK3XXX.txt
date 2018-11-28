@@ -1,0 +1,15 @@
+
+Linux source for Rockchip RK3036, RK3066, RK312X, RK3188, RK322X,RK3288, RK3328, RK3368, RK3399, PX30:
+=====================================================================================================
+
+     main page: http://opensource.rock-chips.com/wiki_Rockchip_Kernel
+Git repository: https://github.com/rockchip-linux/kernel.git
+
+Clone:
+=====
+
+   $ git clone https://github.com/rockchip-linux/kernel.git
+
+Branch   : release-4.4
+Defconfig: arch/arm/configs/rockchip_linux_defconfig
+           arch/arm64/configs/rockchip_linux_defconfig

@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Firefly-RK3288
+SUBDIRS := Firefly-RK3288 \
+           v4.x
 
 
 all-recursive downloads_clean-recursive:

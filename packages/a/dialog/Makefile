@@ -6,12 +6,13 @@
 # Downloads:
 # =========
 # ftp://invisible-island.net/dialog
+# https://invisible-mirror.net/archives/dialog
 #
 
 url          = ftp://ftp.invisible-island.net/dialog
 
 versions     = 1.1-20120215 1.1-20120706 1.2-20140112 1.2-20140219 1.2-20150920
-versions    += 1.3-20170131 1.3-20170509
+versions    += 1.3-20170131 1.3-20170509 1.3-20181107
 suffix       = tgz
 
 tarballs     = $(addsuffix .$(suffix), $(addprefix dialog-, $(versions)))

@@ -16,6 +16,7 @@ tarballs   += newlib-1.18.0.tar.gz
 tarballs   += newlib-1.20.0.tar.gz
 tarballs   += newlib-2.3.0.20160226.tar.gz
 tarballs   += newlib-2.5.0.20170623.tar.gz
+tarballs   += newlib-3.0.0.20180831.tar.gz
 
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 

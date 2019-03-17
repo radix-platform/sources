@@ -4,7 +4,9 @@
 
 url         = ftp://ftp.radix.pro/3pp/Baikal/linux
 
-versions    = 4.4.24-4.08.84
+versions    = 3.19.12-3.00.07.68
+
+versions   += 4.4.24-4.08.84
 versions   += 4.4.145-4.15.115
 
 pkgname     = linux-baikal

@@ -8,6 +8,7 @@ SUBDIRS := Clone                 \
            DBD-mysql             \
            DBI                   \
            Locale-gettext        \
+           Module-Install        \
            URI                   \
            XML-LibXML            \
            XML-NamespaceSupport  \

@@ -5,6 +5,7 @@
 #
 
 SUBDIRS := Clone                 \
+           DBD-Pg                \
            DBD-mysql             \
            DBI                   \
            Locale-gettext        \

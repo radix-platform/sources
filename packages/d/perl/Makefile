@@ -5,12 +5,13 @@
 #
 # Downloads:
 # =========
+# https://www.cpan.org/src/README.html
 # http://www.cpan.org/src/5.0
 #
 
 url         = http://www.cpan.org/src/5.0
 
-versions    = 5.18.2 5.20.0 5.22.1
+versions    = 5.18.2 5.20.0 5.22.1 5.26.1 5.28.1
 pkgname     = perl
 suffix      = tar.gz
 

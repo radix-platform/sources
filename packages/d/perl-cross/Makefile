@@ -15,13 +15,13 @@ url        = git://radix.pro
 
 repo_name  = perl-cross
 
-versions   = 0.8.5 1.0.2
+versions   = 0.8.5 1.0.2 1.2.2
 
 git_repo   = .git_clone
-tarballs   = $(addsuffix .tar.bz2, $(addprefix $(repo_name)-, $(versions)))
+tarballs   = $(addsuffix .tar.xz, $(addprefix $(repo_name)-, $(versions)))
 sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
-releases   = 5.18.2 5.20.0 5.22.1
+releases   = 5.18.2 5.20.0 5.22.1 5.26.1 5.28.1
 
 
 TARGETS = repository_clean
@@ -44,18 +44,18 @@ $(git_repo):
 $(tarballs): $(git_repo)
 	@for version in $(versions) ; do \
 	  tag=`echo $$version` ; \
-	  if [ ! -f $(repo_name)-$$version.tar.bz2 ]; then \
-	    echo -e "\n======= Creating '$(repo_name)-$$version.tar.bz2' snapshot =======" ; \
+	  if [ ! -f $(repo_name)-$$version.tar.xz ]; then \
+	    echo -e "\n======= Creating '$(repo_name)-$$version.tar.xz' snapshot =======" ; \
 	    ( cd $(repo_name) && \
 	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$tag | \
-	      bzip2 >../$(repo_name)-$$version.tar.bz2 ) ; \
+	      xz >../$(repo_name)-$$version.tar.xz ) ; \
 	  fi ; \
 	  mkdir -p $$version ; \
-	  tar -xjf $(repo_name)-$$version.tar.bz2 ; \
+	  tar -xJf $(repo_name)-$$version.tar.xz ; \
 	  ( cd $(repo_name)-$$version && \
 	    for release in $(releases) ; do \
-	      rel=$(repo_name)-$$release.tar.bz2 ; \
-	      tar -cjf ../$$version/$$rel \
+	      rel=$(repo_name)-$$release.tar.xz ; \
+	      tar -cJf ../$$version/$$rel \
 	      --exclude README.md \
 	      --exclude LICENSE   \
 	      --exclude Artistic  \
@@ -68,7 +68,7 @@ $(tarballs): $(git_repo)
 	  rm -rf $(repo_name)-$$version ; \
 	done
 
-$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+$(sha1s): %.tar.xz.sha1sum : %.tar.xz
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \

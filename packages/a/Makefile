@@ -118,6 +118,7 @@ SUBDIRS := CLooG                 \
            patchelf              \
            pciutils              \
            pcmciautils           \
+           pkgtools              \
            pm-utils              \
            populatefs            \
            powertop              \

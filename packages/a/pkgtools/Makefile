@@ -16,7 +16,7 @@ url        = https://gitlab.radix.pro/radix/pkgtools.git
 
 repo_name  = pkgtools
 
-versions   = 0.0.9 0.1.0 0.1.1
+versions   = 0.0.9 0.1.0 0.1.1 0.1.2
 
 git_repo   = .git_clone
 tarballs   = $(addsuffix .tar.xz, $(addprefix $(repo_name)-, $(versions)))

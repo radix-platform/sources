@@ -11,9 +11,9 @@
 
 url         = http://www.cpan.org/src/5.0
 
-versions    = 5.18.2 5.20.0 5.22.1 5.26.1 5.28.1
+versions    = 5.22.1 5.26.1 5.28.1 5.30.0 5.31.3
 pkgname     = perl
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

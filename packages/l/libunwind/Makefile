@@ -10,7 +10,7 @@
 
 url         = http://download.savannah.nongnu.org/releases/libunwind
 
-versions    = 1.1 1.2 1.2.1
+versions    = 1.1 1.2 1.2.1 1.3.1
 pkgname     = libunwind
 suffix      = tar.gz
 

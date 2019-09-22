@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# ftp://ftp.kernel.org/pub/linux/utils/kernel/kmod/
+# https://www.kernel.org/pub/linux/utils/kernel/kmod/
 #
 # Downloads:
 # =========
-# ftp://ftp.kernel.org/pub/linux/utils/kernel/kmod/
+# https://www.kernel.org/pub/linux/utils/kernel/kmod/
 #
 
-url         = ftp://ftp.kernel.org/pub/linux/utils/kernel/kmod
+url         = https://www.kernel.org/pub/linux/utils/kernel/kmod
 
-versions    = 16 22
+versions    = 16 22 23 24 25 26
 pkg_name    = kmod
 suffix      = tar.xz
 

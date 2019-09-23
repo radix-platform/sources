@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnu.org/pub/gnu/gzip
 
-versions    = 1.5 1.6
+versions    = 1.5 1.6 1.10
 pkgname     = gzip
 suffix      = tar.xz
 

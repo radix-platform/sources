@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnu.org/gnu/bison
 
-versions    = 2.7 3.0.2 3.0.4
+versions    = 2.7 3.0.2 3.0.4 3.4.2
 pkgname     = bison
 suffix      = tar.xz
 

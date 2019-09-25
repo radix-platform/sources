@@ -16,3 +16,6 @@ snapshots:
   'f51af70093e980596fe15107b3848ef245ee4b4e'
 
 Config (arch/arm/configs): nitrogen6x_defconfig
+
+Links:
+  https://boundarydevices.com/imx-linux-kernel-4-9-for-nitrogen-platforms

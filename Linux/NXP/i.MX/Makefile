@@ -1,39 +1,33 @@
 
 #
-# Boundary Devices i.MX6 Linux Tree: https://github.com/boundarydevices/linux-imx6.git
+# NXP Devices i.MX6 Linux Tree: https://source.codeaurora.org/external/imx/linux-imx.git
 #
 
-url        = git://radix.pro/freescale/boundary
+url        = git://radix.pro/NXP
 
-repo_name  = linux-imx6
+repo_name  = linux-imx
 
 #
 # List of tags to be extracted:
 # ============================
 #
-# Revisions from boundary-imx_3.14.28_1.0.0_ga branch used for i.MX6:
+# Revisions from imx_4.1.15_2.0.0_ga branch used for i.MX6:
 #
-#                                               hash |    version | date
-#            ----------------------------------------+------------+------
-revisions  = f51af70093e980596fe15107b3848ef245ee4b4e:imx6-3.14.28:20160304
+#                                               hash |  version | date
+#            ----------------------------------------+----------+------
+revisions += 30278abfe0977b1d2f065271ce1ea23c0e2d1b6e:imx-4.1.15:20170504
 #
-# Revisions from boundary-imx_4.1.15_2.0.0_ga branch used for i.MX6:
+# Revisions from imx_4.9.88_2.0.0_ga branch used for i.MX6:
+#
+#                                               hash |  version | date
+#            ----------------------------------------+----------+------
+revisions += 6507266728a7806d850ce22ec923d90cf4aa4318:imx-4.9.88:20180525
+#
+# Revisions from imx_4.14.98_2.0.0_ga branch used for i.MX6:
 #
 #                                               hash |   version | date
 #            ----------------------------------------+-----------+------
-revisions += 690a19a892f2b3621fedbdffd45c694b478a649e:imx6-4.1.15:20190824
-#
-# Revisions from boundary-imx_4.9.x_1.0.0_ga branch used for i.MX6:
-#
-#                                               hash |   version | date
-#            ----------------------------------------+-----------+------
-revisions += 1ec20712718b788a0c13dfedeabc29fe0002303e:imx6-4.9.88:20190824
-#
-# Revisions from boundary-imx_4.14.x_2.0.0_ga branch used for i.MX6:
-#
-#                                               hash |    version | date
-#            ----------------------------------------+------------+------
-revisions += 0457288099908383fd9d3b37047a6a400a79764a:imx6-4.14.98:20190925
+revisions += 1175b59611537b0b451e0d1071b1666873a8ec32:imx-4.14.98:20190418
 
 
 git_repo   = .git_clone

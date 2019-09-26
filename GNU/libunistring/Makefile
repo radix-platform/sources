@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnu.org/gnu/libunistring
 
-versions    = 0.9.4 0.9.5 0.9.6
+versions    = 0.9.4 0.9.5 0.9.6 0.9.10
 pkgname     = libunistring
 suffix      = tar.xz
 

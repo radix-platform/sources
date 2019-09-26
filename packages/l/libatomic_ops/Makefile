@@ -11,7 +11,7 @@
 
 url         = http://www.ivmaisoft.com/_bin/atomic_ops
 
-versions    = 7.4.2
+versions    = 7.4.2 7.4.14 7.6.10
 pkgname     = libatomic_ops
 suffix      = tar.gz
 

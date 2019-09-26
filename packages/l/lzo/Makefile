@@ -10,7 +10,7 @@
 
 url         = http://www.oberhumer.com/opensource/lzo/download
 
-versions    = 2.03 2.08 2.09
+versions    = 2.03 2.08 2.09 2.10
 pkgname     = lzo
 suffix      = tar.gz
 

@@ -1,18 +1,18 @@
 #
 # Project Home:
 # ============
-# http://kernel.org/pub/linux/utils/util-linux/
+# https://kernel.org/pub/linux/utils/util-linux/
 #
 # Downloads:
 # =========
 # ftp://ftp.kernel.org/pub/linux/utils/util-linux/
 #
 
-url         = ftp://ftp.kernel.org/pub/linux/utils/util-linux
+url         = https://kernel.org/pub/linux/utils/util-linux
 
-versions    = 2.21.2 2.23 2.24 2.24.1 2.27 2.27.1
+versions    = 2.21.2 2.23 2.24 2.24.1 2.27 2.27.1 2.29.2 2.33.2 2.34
 pkgname     = util-linux
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

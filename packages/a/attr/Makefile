@@ -10,9 +10,9 @@
 
 url         = http://download.savannah.gnu.org/releases/attr
 
-versions    = 2.4.46 2.4.47
+versions    = 2.4.48
 pkgname     = attr
-suffix      = src.tar.gz
+suffix      = tar.gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

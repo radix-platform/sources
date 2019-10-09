@@ -10,9 +10,9 @@
 
 url         = http://download.savannah.gnu.org/releases/acl
 
-versions    = 2.2.51 2.2.52
+versions    = 2.2.53
 pkgname     = acl
-suffix      = src.tar.gz
+suffix      = tar.gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

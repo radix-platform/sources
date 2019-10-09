@@ -8,9 +8,11 @@
 # ftp://ftp.cwru.edu/pub/bash/
 #
 
-url         = ftp://ftp.cwru.edu/pub/bash
+url         = https://ftp.gnu.org/gnu/readline
 
-versions    = 6.2 6.3
+cutdirs     = 4
+
+versions    = 6.2 6.3 8.0
 pkgname     = readline
 suffix      = tar.gz
 
@@ -26,10 +28,14 @@ all: $(tarballs) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for version in $(versions) ; do \
+	  v=`echo $$version | sed 's,\.,,g'` ; \
 	  wget -N $(url)/$(pkgname)-$$version.$(suffix) ; \
 	  mkdir $(pkgname)-$$version-patches ; \
+	  wget -nH -r --cut-dirs=$(cutdirs) -P $(pkgname)-$$version-patches \
+	              --accept-regex "$(pkgname)$$v-*"             \
+	              $(url)/$(pkgname)-$$version-patches/ ; \
+	  rm -f $(pkgname)-$$version-patches/index.html ; \
 	  cd $(pkgname)-$$version-patches ; \
-	  wget -rnd -nv $(url)/$(pkgname)-$$version-patches ; \
 	  if [ "" != "`find -iname '$(pkgname)*' -exec echo '{}' \; -quit`" ] ; then \
 	    cd .. ; \
 	    tar czf $(pkgname)-$$version-patches.$(suffix) $(pkgname)-$$version-patches ; \

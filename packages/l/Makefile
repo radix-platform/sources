@@ -40,6 +40,7 @@ SUBDIRS := aalib                \
            libatomic_ops        \
            lincaca              \
            libcap               \
+           libcap-ng            \
            libdatrie            \
            libelf               \
            libevent             \

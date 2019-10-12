@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/coreutils
 
-versions    = 8.21 8.22
+versions    = 8.21 8.22 8.31
 pkgname     = coreutils
 suffix      = tar.xz
 

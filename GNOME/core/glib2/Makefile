@@ -18,7 +18,7 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 2.39.3 2.39.4 2.40.0 2.43.0 2.48.0
+versions  = 2.39.3 2.39.4 2.40.0 2.43.0 2.48.0 2.63.0
 pkg_name  = glib
 arch_type = tar.xz
 suffixes  = $(arch_type)

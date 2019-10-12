@@ -10,7 +10,7 @@
 
 url         = ftp://xmlsoft.org/libxml2
 
-versions    = 1.1.27 1.1.28
+versions    = 1.1.27 1.1.28 1.1.33
 pkgname     = libxslt
 suffix      = tar.gz
 

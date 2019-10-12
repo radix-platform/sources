@@ -1,16 +1,18 @@
 #
 # Project Home:
 # ============
+# https://tiswww.case.edu/php/chet/bash/bashtop.html
 # http://www.gnu.org/software/bash/bash.html
 #
 # Downloads:
 # =========
 # ftp://ftp.cwru.edu/pub/bash/
+# ftp://ftp.gnu.org/pub/gnu/bash/
 #
 
-url         = ftp://ftp.cwru.edu/pub/bash
+url         = ftp://ftp.gnu.org/pub/gnu/bash
 
-versions    = 4.2 4.3
+versions    = 4.2 4.3 4.4 5.0
 pkgname     = bash
 suffix      = tar.gz
 

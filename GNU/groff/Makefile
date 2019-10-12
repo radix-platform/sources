@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/groff
 
-versions    = 1.22.2 1.22.3
+versions    = 1.22.2 1.22.3 1.22.4
 pkgname     = groff
 suffix      = tar.gz
 sign_suffix = sig

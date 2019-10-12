@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/gperf
 
-versions    = 3.0.4
+versions    = 3.0.4 3.1
 pkgname     = gperf
 suffix      = tar.gz
 

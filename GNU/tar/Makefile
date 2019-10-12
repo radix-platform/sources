@@ -10,9 +10,9 @@
 
 url         = http://ftp.gnu.org/gnu/tar
 
-versions    = 1.13 1.26 1.27.1
+versions    = 1.26 1.27.1 1.32
 pkgname     = tar
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

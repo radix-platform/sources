@@ -10,9 +10,9 @@
 
 url         = ftp://ftp.gnu.org/pub/gnu/gettext
 
-versions    = 0.18.3.1 0.18.3.2 0.19.6  0.19.7
+versions    = 0.19.6 0.19.7 0.20.1
 pkgname     = gettext
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

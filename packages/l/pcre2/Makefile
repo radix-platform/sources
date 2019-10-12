@@ -5,13 +5,14 @@
 #
 # Downloads:
 # =========
-# ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre
+# https://ftp.pcre.org/pub/pcre
+# ftp://ftp.pcre.org/pub/pcre
+#
 
+url         = https://ftp.pcre.org/pub/pcre
 
-url         = ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre
-
-versions    = 8.33 8.34
-pkgname     = pcre
+versions    = 10.33
+pkgname     = pcre2
 suffix      = tar.bz2
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

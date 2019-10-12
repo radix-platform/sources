@@ -10,9 +10,9 @@
 
 url         = http://ftp.gnu.org/gnu/findutils
 
-versions    = 4.4.1 4.4.2 4.6.0
+versions    = 4.7.0
 pkgname     = findutils
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

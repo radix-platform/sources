@@ -10,9 +10,9 @@
 
 url         = http://ftp.gnu.org/gnu/sed
 
-versions    = 4.2.1 4.2.2
+versions    = 4.7
 pkgname     = sed
-suffix      = tar.bz2
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

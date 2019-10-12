@@ -10,10 +10,10 @@
 
 url        = ftp://ftp.de.debian.org/debian/pool/main/d/debianutils
 
-versions   = 3.4 4.3.2 4.4
+versions   = 4.9
 
 pkgname    = debianutils
-tarballs   = $(addsuffix .tar.gz, $(addprefix $(pkgname)_, $(versions)))
+tarballs   = $(addsuffix .tar.xz, $(addprefix $(pkgname)_, $(versions)))
 sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
 
@@ -27,7 +27,7 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(sha1s): %.tar.gz.sha1sum : %.tar.gz
+$(sha1s): %.tar.xz.sha1sum : %.tar.xz
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \

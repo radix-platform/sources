@@ -6,11 +6,12 @@
 # Downloads:
 # =========
 # ftp://ftp.gnupg.org/gcrypt/gnutls
+# https://gnupg.org/ftp/gcrypt/gnutls
 #
 
-url         = ftp://ftp.gnupg.org/gcrypt/gnutls
+url         = https://gnupg.org/ftp/gcrypt/gnutls
 
-versions    = 3.1.16 3.1.22 3.4.8
+versions    = 3.1.16 3.1.22 3.4.8 3.6.10
 pkgname     = gnutls
 suffix      = tar.xz
 

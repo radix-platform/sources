@@ -6,11 +6,12 @@
 # Downloads:
 # =========
 # ftp://ftp.gnupg.org/gcrypt/gpa
+# https://gnupg.org/ftp/gcrypt/gpa
 #
 
-url         = ftp://ftp.gnupg.org/gcrypt/gpa
+url         = https://gnupg.org/ftp/gcrypt/gpa
 
-versions    = 0.9.4 0.9.5 0.9.9
+versions    = 0.9.4 0.9.5 0.9.9 0.10.0
 pkgname     = gpa
 suffix      = tar.bz2
 

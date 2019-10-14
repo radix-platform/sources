@@ -6,11 +6,12 @@
 # Downloads:
 # =========
 # ftp://ftp.gnupg.org/gcrypt/libgpg-error
+# https://gnupg.org/ftp/gcrypt/libgpg-error
 #
 
-url         = ftp://ftp.gnupg.org/gcrypt/libgpg-error
+url         = https://gnupg.org/ftp/gcrypt/libgpg-error
 
-versions    = 1.11 1.12 1.16 1.21
+versions    = 1.11 1.12 1.16 1.21 1.36
 pkgname     = libgpg-error
 suffix      = tar.bz2
 

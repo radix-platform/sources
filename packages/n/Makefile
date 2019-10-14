@@ -115,6 +115,8 @@ SUBDIRS := ModemManager           \
            nfs-utils              \
            nmap                   \
            nn                     \
+           npth                   \
+           ntbtls                 \
            ntp                    \
            obex-data-server       \
            obexfs                 \
@@ -144,6 +146,7 @@ SUBDIRS := ModemManager           \
            rpcbind                \
            rsync                  \
            samba                  \
+           scute                  \
            sendmail               \
            slrn                   \
            snownews               \

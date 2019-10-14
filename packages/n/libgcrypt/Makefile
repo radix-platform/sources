@@ -6,11 +6,12 @@
 # Downloads:
 # =========
 # ftp://ftp.gnupg.org/gcrypt/libgcrypt
+# https://gnupg.org/ftp/gcrypt/libgcrypt
 #
 
-url         = ftp://ftp.gnupg.org/gcrypt/libgcrypt
+url         = https://gnupg.org/ftp/gcrypt/libgcrypt
 
-versions    = 1.5.3 1.6.1 1.6.2 1.6.4 1.7.0
+versions    = 1.5.3 1.6.1 1.6.2 1.6.4 1.7.0 1.8.5
 pkgname     = libgcrypt
 suffix      = tar.bz2
 

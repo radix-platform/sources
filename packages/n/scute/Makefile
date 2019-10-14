@@ -5,14 +5,14 @@
 #
 # Downloads:
 # =========
-# ftp://ftp.gnupg.org/gcrypt/libassuan
-# https://gnupg.org/ftp/gcrypt/libassuan
+# ftp://ftp.gnupg.org/gcrypt/scute
+# https://gnupg.org/ftp/gcrypt/scute
 #
 
-url         = https://gnupg.org/ftp/gcrypt/libassuan
+url         = https://gnupg.org/ftp/gcrypt/scute
 
-versions    = 2.1.0 2.1.1 2.1.2 2.4.2 2.5.3
-pkgname     = libassuan
+versions    = 1.6.0
+pkgname     = scute
 suffix      = tar.bz2
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

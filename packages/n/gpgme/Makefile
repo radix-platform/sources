@@ -6,11 +6,12 @@
 # Downloads:
 # =========
 # ftp://ftp.gnupg.org/gcrypt/gpgme
+# https://gnupg.org/ftp/gcrypt/gpgme
 #
 
-url         = ftp://ftp.gnupg.org/gcrypt/gpgme
+url         = https://gnupg.org/ftp/gcrypt/gpgme
 
-versions    = 1.4.1 1.4.2 1.4.3 1.5.1 1.6.0
+versions    = 1.4.1 1.4.2 1.4.3 1.5.1 1.6.0 1.13.1
 pkgname     = gpgme
 suffix      = tar.bz2
 

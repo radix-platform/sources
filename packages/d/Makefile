@@ -8,6 +8,8 @@ SUBDIRS := LLVM          \
            check         \
            cmake         \
            flex          \
+           meson         \
+           ninja         \
            orc           \
            perl          \
            perl-cross    \

@@ -6,9 +6,10 @@
 # Downloads:
 # =========
 # ftp://ftp.gnupg.org/gcrypt/dirmngr
+# https://gnupg.org/ftp/gcrypt/dirmngr
 #
 
-url         = ftp://ftp.gnupg.org/gcrypt/dirmngr
+url         = https://gnupg.org/ftp/gcrypt/dirmngr
 
 versions    = 1.1.0 1.1.1
 pkgname     = dirmngr

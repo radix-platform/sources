@@ -11,7 +11,7 @@
 
 url         = http://downloads.sourceforge.net/project/libusb/libusb-1.0
 
-versions    = 1.0.9 1.0.18 1.0.19 1.0.20
+versions    = 1.0.9 1.0.18 1.0.19 1.0.20 1.0.22
 pkgname     = libusb
 suffix      = tar.bz2
 

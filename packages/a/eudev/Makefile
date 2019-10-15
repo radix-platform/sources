@@ -22,13 +22,14 @@ repo_name  = eudev
 #
 #                                               hash | version
 #            ----------------------------------------+--------
-revisions  = 71ff5b6886946dacca8ae685ac85cdc174cfdece-3.1.5
+revisions  = 71ff5b6886946dacca8ae685ac85cdc174cfdece:3.1.5
+revisions += d69f3f28348123ab7fa0ebac63ec2fd16800c5e0:3.2.8
 
 git_repo   = .git_clone
 
 suffix     = tar.xz
 
-versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d '-'))
+versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d ':'))
 
 tarballs   = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
 sha1s      = $(addsuffix .sha1sum, $(tarballs))
@@ -47,8 +48,8 @@ $(git_repo):
 
 $(tarballs): $(git_repo)
 	@for revision in $(revisions) ; do \
-	  hash=`echo $$revision | cut -f 1 -d '-'` ; \
-	  version=`echo $$revision | cut -f 2 -d '-'` ; \
+	  hash=`echo $$revision | cut -f 1 -d ':'` ; \
+	  version=`echo $$revision | cut -f 2 -d ':'` ; \
 	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
 	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
 	    ( cd $(repo_name) && \

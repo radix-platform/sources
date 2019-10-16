@@ -6,11 +6,12 @@
 # Downloads:
 # =========
 #   ftp://ftp.kernel.org/pub/linux/utils/usb/usbutils
+#   https://www.kernel.org/pub/linux/utils/usb/usbutils
 #
 
-url         = ftp://ftp.kernel.org/pub/linux/utils/usb/usbutils
+url         = https://www.kernel.org/pub/linux/utils/usb/usbutils
 
-versions    = 006 007 008
+versions    = 006 007 008 012
 pkgname     = usbutils
 suffix      = tar.xz
 

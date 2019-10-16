@@ -8,11 +8,12 @@
 #   ftp://metalab.unc.edu/pub/Linux/hardware
 #   ftp://atrey.karlin.mff.cuni.cz/pub/linux/pci
 #   ftp://ftp.kernel.org/pub/software/utils/pciutils
+#   https://www.kernel.org/pub/software/utils/pciutils
 #
 
-url         = ftp://ftp.kernel.org/pub/software/utils/pciutils
+url         = https://www.kernel.org/pub/software/utils/pciutils
 
-versions    = 3.2.0 3.2.1 3.3.1 3.4.1
+versions    = 3.2.0 3.2.1 3.3.1 3.4.1 3.6.2
 pkgname     = pciutils
 suffix      = tar.xz
 

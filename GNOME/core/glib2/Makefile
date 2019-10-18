@@ -42,6 +42,12 @@ $(files):
 	  for suffix in $(suffixes) ; do \
 	    wget -N $(url)/$(pkg_name)/$$major_minor/$(pkg_name)-$$version.$$suffix ;  \
 	  done ; \
+	  if [ "$$version" = "2.59.0" ] ; then \
+	    tar xJf $(pkg_name)-$$version.$$suffix ; \
+	    ( cd $(pkg_name)-$$version ; ./autogen.sh ; make distclean ; rm -rf autom4te.cache ) ; \
+	    tar cJf $(pkg_name)-$$version.$$suffix $(pkg_name)-$$version ; \
+	    rm -rf $(pkg_name)-$$version ; \
+	  fi ; \
 	done
 
 $(sha1s): %.$(arch_type).sha1sum : %.$(arch_type)

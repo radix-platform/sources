@@ -16,17 +16,18 @@
 #
 
 
-url       = ftp://ftp.gnome.org/pub/GNOME/sources
+url        = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 2.39.3 2.39.4 2.40.0 2.43.0 2.48.0 2.63.0
-pkg_name  = glib
-arch_type = tar.xz
-suffixes  = $(arch_type)
+versions   = 2.39.3 2.39.4 2.40.0 2.43.0 2.48.0 2.59.0
+versions  += 2.63.0
+pkg_name   = glib
+arch_type  = tar.xz
+suffixes   = $(arch_type)
 
-files     = $(foreach suffix, $(suffixes), $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions))))
+files      = $(foreach suffix, $(suffixes), $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions))))
 
-tarballs  = $(addsuffix .$(arch_type), $(addprefix $(pkg_name)-, $(versions)))
-sha1s     = $(addsuffix .sha1sum, $(tarballs))
+tarballs   = $(addsuffix .$(arch_type), $(addprefix $(pkg_name)-, $(versions)))
+sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
 
 all: $(files) $(sha1s)

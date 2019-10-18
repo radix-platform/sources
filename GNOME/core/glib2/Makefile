@@ -44,7 +44,11 @@ $(files):
 	  done ; \
 	  if [ "$$version" = "2.59.0" ] ; then \
 	    tar xJf $(pkg_name)-$$version.$$suffix ; \
-	    ( cd $(pkg_name)-$$version ; ./autogen.sh ; make distclean ; rm -rf autom4te.cache ) ; \
+	    ( cd $(pkg_name)-$$version ; \
+	      sed -i 's,gtkdocize |,gtkdocize --copy |,' autogen.sh ; \
+	      ./autogen.sh ; \
+	      make distclean ; \
+	      rm -rf autom4te.cache ) ; \
 	    tar cJf $(pkg_name)-$$version.$$suffix $(pkg_name)-$$version ; \
 	    rm -rf $(pkg_name)-$$version ; \
 	  fi ; \

@@ -11,9 +11,9 @@
 
 url         = http://dbus.freedesktop.org/releases/dbus
 
-versions    = 1.6.12 1.8.8 1.8.10 1.9.0 1.9.18 1.10.6 1.11.0 1.11.2
+versions    = 1.13.12
 pkgname     = dbus
-suffix      = tar.gz
+suffix      = tar.xz
 sign_suffix = asc
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

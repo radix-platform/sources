@@ -9,7 +9,7 @@
 # http://dbus.freedesktop.org/releases/dbus
 #
 
-url         = http://dbus.freedesktop.org/releases/dbus
+url         = https://dbus.freedesktop.org/releases/dbus
 
 versions    = 1.13.12
 pkgname     = dbus

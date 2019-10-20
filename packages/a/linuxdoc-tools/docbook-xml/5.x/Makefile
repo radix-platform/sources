@@ -11,7 +11,7 @@
 
 url         = http://www.docbook.org/xml
 
-versions    = 5.0
+versions    = 5.0 5.1
 pkgname     = docbook
 suffix      = tar.bz2
 

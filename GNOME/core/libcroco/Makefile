@@ -11,9 +11,9 @@
 #
 
 
-url       = ftp://ftp.gnome.org/pub/GNOME/sources
+url       = https://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 0.6.7 0.6.8 0.6.11
+versions  = 0.6.7 0.6.8 0.6.11 0.6.13
 pkg_name  = libcroco
 arch_type = tar.xz
 suffixes  = $(arch_type)

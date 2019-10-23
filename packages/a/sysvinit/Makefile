@@ -31,6 +31,10 @@ repo_name  = sysvinit
 revisions  = 85c2c4064d68006bdb36a29fa457c646acadb4b1-2.88dsf
 revisions += e02e001f7abd1b74c40a9756e6aac30a53b78800-2.89
 revisions += 40f40a416662ea251dd29ad662a246e2a5399892-2.90
+revisions += 5f96543c96b7dba53487e767fb68ddc143ca092f-2.95
+# from branches:
+revisions += 13cb3665b18eaca579dfa295df6e7dc0358db003-2.96
+revisions += ad50c8272e2213150fbe958a8e425473b2cf70c0-2.97
 
 git_repo   = .git_clone
 

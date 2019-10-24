@@ -26,7 +26,7 @@ revisions  = 35f99041bd8b68a89fc314d9dedaf18aa9c5743a:3.15.1
 
 git_repo   = .git_clone
 
-pkgname    = sysvinit
+pkgname    = logrotate
 suffix     = tar.xz
 
 versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d ':'))

@@ -18,7 +18,7 @@ url         = https://github.com/libcheck/check.git
 
 repo_name   = check
 
-versions    = 0.10.0
+versions    = 0.10.0 0.13.0
 suffix      = tar.xz
 
 TAGS        = $(versions)

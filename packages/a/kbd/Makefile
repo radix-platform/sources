@@ -14,9 +14,9 @@
 # ftp://ftp.kernel.org/pub/linux/utils/kbd
 #
 
-url         = ftp://ftp.kernel.org/pub/linux/utils/kbd
+url         = https://www.kernel.org/pub/linux/utils/kbd
 
-versions    = 1.15.3 2.0.2 2.0.3
+versions    = 1.15.3 2.0.2 2.0.3 2.2.0
 pkg_name    = kbd
 suffix      = tar.xz
 

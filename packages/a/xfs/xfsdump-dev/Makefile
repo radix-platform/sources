@@ -8,11 +8,11 @@
 #   git clone git://git.kernel.org/pub/scm/fs/xfs/xfsdump-dev.git
 #
 
-url        = git://git.kernel.org/pub/scm/fs/xfs/xfsdump-dev.git
+url        = https://git.kernel.org/pub/scm/fs/xfs/xfsdump-dev.git
 
 repo_name  = xfsdump
 
-versions   = 3.1.7
+versions   = 3.1.7 3.1.8
 
 # List of tags to be extracted:
 TAGS       = $(addprefix v, $(versions))

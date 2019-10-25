@@ -8,9 +8,11 @@
 #   git clone git://git.kernel.org/pub/scm/fs/xfs/xfsdump-dev.git
 #
 
-url        = https://git.kernel.org/pub/scm/fs/xfs/xfsdump-dev.git
+url        = https://git.kernel.org/pub/scm/fs/xfs
 
-repo_name  = xfsdump
+repo_name  = xfsdump-dev
+pkg_name   = xfsdump
+suffix     = tar.xz
 
 versions   = 3.1.7 3.1.8
 
@@ -18,7 +20,7 @@ versions   = 3.1.7 3.1.8
 TAGS       = $(addprefix v, $(versions))
 
 git_repo   = .git_clone
-tarballs   = $(addsuffix .tar.xz, $(addprefix $(repo_name)-, $(versions)))
+tarballs   = $(addsuffix .tar.xz, $(addprefix $(pkg_name)-, $(versions)))
 sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
 TARGETS = repository_clean
@@ -31,23 +33,22 @@ all: $(TARGETS)
 $(git_repo):
 	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
 	@rm -rf $(repo_name)
-	@git clone $(url) $(repo_name)
+	@git clone $(url)/$(repo_name).git $(repo_name)
 	@touch $@
 
 $(tarballs): $(git_repo)
 	@for version in $(versions) ; do \
 	  tag=v`echo $$version` ; \
-	  if [ ! -f $(repo_name)-$$version.tar.xz ]; then \
-	    echo -e "\n======= Creating '$(repo_name)-$$version.tar.bz2' snapshot =======" ; \
+	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
+	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
 	    ( cd $(repo_name) && \
-	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$tag | \
-	      xz >../$(repo_name)-$$version.tar.xz ) ; \
+	      git archive --format=tar --prefix=$(pkg_name)-$$version/ $$tag | \
+	      xz >../$(pkg_name)-$$version.$(suffix) ) ; \
 	  fi ; \
-	  tar xJf $(repo_name)-$$version.tar.xz ; \
-	  ( cd $(repo_name)-$$version ; touch .gitcensus ; \
-	    ./release.sh ; make distclean; rm -rf autom4te.cache $(repo_name)-$$version.tar.gz .gitignore ) ; \
-	  tar cJf $(repo_name)-$$version.tar.xz $(repo_name)-$$version ; \
-	  rm -rf $(repo_name)-$$version ; \
+	  tar xJf $(pkg_name)-$$version.$(suffix) ; \
+	  ( cd $(pkg_name)-$$version ; make configure ; rm -rf autom4te.cache .gitignore ) ; \
+	  tar cJf $(pkg_name)-$$version.$(suffix) $(pkg_name)-$$version ; \
+	  rm -rf $(pkg_name)-$$version ; \
 	done
 
 $(sha1s): %.tar.xz.sha1sum : %.tar.xz

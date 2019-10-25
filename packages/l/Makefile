@@ -70,6 +70,7 @@ SUBDIRS := aalib                \
            libxml2              \
            libxslt              \
            log4cplus            \
+           lz4                  \
            lzo                  \
            mozilla-nspr         \
            mozilla-nss          \
@@ -99,7 +100,8 @@ SUBDIRS := aalib                \
            usbids               \
            v4l-utils            \
            zeromq               \
-           zlib
+           zlib                 \
+           zstd
 
 
 all-recursive downloads_clean-recursive:

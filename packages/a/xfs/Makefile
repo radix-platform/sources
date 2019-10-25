@@ -7,7 +7,8 @@
 SUBDIRS := dmapi         \
            xfsdump       \
            xfsdump-dev   \
-           xfsprogs
+           xfsprogs      \
+           xfsprogs-dev
 
 
 all-recursive downloads_clean-recursive:

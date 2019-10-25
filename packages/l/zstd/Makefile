@@ -1,28 +1,28 @@
 #
 # Project Home:
 # ============
-#   https://github.com/dosfstools/dosfstools
+# https://github.com/facebook/zstd
 #
-# Clone:
-# =====
-#   git clone https://github.com/dosfstools/dosfstools.git
+# GitHub:
+# ======
+# https://github.com/facebook/zstd
+# https://github.com/facebook/zstd.git
 #
 
-url        = https://github.com/dosfstools/dosfstools.git
+url         = https://github.com/facebook/zstd.git
 
-repo_name  = dosfstools
+repo_name   = zstd
 
-versions   = 4.1
-suffix     = tar.xz
+versions    = 1.4.3
+suffix      = tar.xz
 
-TAGS       = $(addprefix v, $(versions))
+TAGS        = $(versions)
 
-git_repo   = .git_clone
-tarballs   = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
-sha1s      = $(addsuffix .sha1sum, $(tarballs))
+git_repo    = .git_clone
+tarballs    = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
+sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 TARGETS = repository_clean
-
 
 all: $(TARGETS)
 
@@ -38,19 +38,16 @@ $(git_repo):
 	 fi
 	@touch $@
 
+
 $(tarballs): $(git_repo)
-	@for version in $(versions) ; do \
-	  tag=v`echo $$version` ; \
+	@for version in $(TAGS) ; do \
+	  tag=v`echo $$version`; \
 	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
 	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
 	    ( cd $(repo_name) && \
 	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$tag | \
 	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
 	  fi ; \
-	  tar xJf $(repo_name)-$$version.$(suffix) ; \
-	  ( cd $(repo_name)-$$version ; autoreconf -i ; rm -rf autom4te.cache .gitignore .travis.yml ) ; \
-	  tar cJf $(repo_name)-$$version.$(suffix) $(repo_name)-$$version ; \
-	  rm -rf $(repo_name)-$$version ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

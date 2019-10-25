@@ -18,13 +18,15 @@ url        = git://git.kernel.org/pub/scm/fs/ext2/e2fsprogs.git
 
 repo_name  = e2fsprogs
 
-versions   = 1.42.8 1.42.9 1.42.12 1.42.13
+versions   = 1.42.8 1.42.9 1.42.12 1.42.13 1.45.4
+
+suffix     = tar.xz
 
 # List of tags to be extracted:
 TAGS       = $(addprefix v, $(versions))
 
 git_repo   = .git_clone
-tarballs   = $(addsuffix .tar.bz2, $(addprefix $(repo_name)-, $(versions)))
+tarballs   = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
 sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
 TARGETS = repository_clean
@@ -47,19 +49,19 @@ $(git_repo):
 $(tarballs): $(git_repo)
 	@for version in $(versions) ; do \
 	  tag=v`echo $$version` ; \
-	  if [ ! -f $(repo_name)-$$version.tar.bz2 ]; then \
-	    echo -e "\n======= Creating '$(repo_name)-$$version.tar.bz2' snapshot =======" ; \
+	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
+	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
 	    ( cd $(repo_name) && \
 	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$tag | \
-	      bzip2 >../$(repo_name)-$$version.tar.bz2 ) ; \
+	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
 	  fi ; \
-	  tar xjf $(repo_name)-$$version.tar.bz2 ; \
-	  ( cd $(repo_name)-$$version ; autoreconf -i ; rm -rf autom4te.cache ) ; \
-	  tar cjf $(repo_name)-$$version.tar.bz2 $(repo_name)-$$version ; \
+	  tar xJf $(repo_name)-$$version.$(suffix) ; \
+	  ( cd $(repo_name)-$$version ; autoreconf -i ; rm -rf autom4te.cache .gitignore ) ; \
+	  tar cJf $(repo_name)-$$version.$(suffix) $(repo_name)-$$version ; \
 	  rm -rf $(repo_name)-$$version ; \
 	done
 
-$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+$(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \

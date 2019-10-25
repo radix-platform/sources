@@ -5,12 +5,12 @@
 #
 # Downloads:
 # =========
-# https://www.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.42.9/
+# https://www.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.45.4/
 #
 
-url         = ftp://ftp.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs
+url         = https://www.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs
 
-versions    = 1.42.8 1.42.9
+versions    = 1.42.8 1.42.9 1.45.4
 pkgname     = e2fsprogs
 suffix      = tar.xz
 

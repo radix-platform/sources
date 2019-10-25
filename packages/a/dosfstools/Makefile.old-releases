@@ -12,13 +12,12 @@ url        = https://github.com/dosfstools/dosfstools.git
 
 repo_name  = dosfstools
 
-versions   = 4.1
-suffix     = tar.xz
+versions   = 3.0.25 3.0.26 3.0.28
 
 TAGS       = $(addprefix v, $(versions))
 
 git_repo   = .git_clone
-tarballs   = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
+tarballs   = $(addsuffix .tar.xz, $(addprefix $(repo_name)-, $(versions)))
 sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
 TARGETS = repository_clean
@@ -41,19 +40,15 @@ $(git_repo):
 $(tarballs): $(git_repo)
 	@for version in $(versions) ; do \
 	  tag=v`echo $$version` ; \
-	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
-	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
+	  if [ ! -f $(repo_name)-$$version.tar.xz ]; then \
+	    echo -e "\n======= Creating '$(repo_name)-$$version.tar.bz2' snapshot =======" ; \
 	    ( cd $(repo_name) && \
 	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$tag | \
-	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
+	      xz >../$(repo_name)-$$version.tar.xz ) ; \
 	  fi ; \
-	  tar xJf $(repo_name)-$$version.$(suffix) ; \
-	  ( cd $(repo_name)-$$version ; autoreconf -i ; rm -rf autom4te.cache .gitignore .travis.yml ) ; \
-	  tar cJf $(repo_name)-$$version.$(suffix) $(repo_name)-$$version ; \
-	  rm -rf $(repo_name)-$$version ; \
 	done
 
-$(sha1s): %.$(suffix).sha1sum : %.$(suffix)
+$(sha1s): %.tar.xz.sha1sum : %.tar.xz
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \

@@ -8,9 +8,9 @@
 # ftp://ftp.kernel.org/pub/linux/kernel/people/jeffm/reiserfsprogs
 #
 
-url         = ftp://ftp.kernel.org/pub/linux/kernel/people/jeffm/reiserfsprogs
+url         = https://www.kernel.org/pub/linux/kernel/people/jeffm/reiserfsprogs
 
-versions    = 3.6.23 3.6.24
+versions    = 3.6.23 3.6.24 3.6.27
 pkgname     = reiserfsprogs
 suffix      = tar.xz
 

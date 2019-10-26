@@ -1,16 +1,18 @@
 #
 # Project Home:
 # ============
-# 
+# https://www.infodrom.org/projects/sysklogd/
 #
 # Downloads:
 # =========
-# ftp://metalab.unc.edu/pub/Linux/system/daemons/
+# https://www.infodrom.org/projects/sysklogd/download.php
+#
+# NOTE: there is continuation on GitHub: https://github.com/troglobit/sysklogd
 #
 
-url         = ftp://metalab.unc.edu/pub/Linux/system/daemons
+url         = https://www.infodrom.org/projects/sysklogd/download
 
-versions    = 1.5
+versions    = 1.5 1.5.1
 pkgname     = sysklogd
 suffix      = tar.gz
 

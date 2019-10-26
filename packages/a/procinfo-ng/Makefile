@@ -1,19 +1,18 @@
 #
 # Project Home:
 # ============
-# http://psmisc.sourceforge.net/
-# http://sourceforge.net/projects/psmisc/files/psmisc/
+# https://sourceforge.net/p/procinfo-ng/wiki/Home
 #
 # Downloads:
 # =========
-# http://downloads.sourceforge.net/psmisc/files
+# https://sourceforge.net/projects/procinfo-ng/files/procinfo-ng
 #
 
-url         = http://downloads.sourceforge.net/psmisc/files
+url         = https://sourceforge.net/projects/procinfo-ng/files/procinfo-ng
 
-versions    = 23.2
-pkgname     = psmisc
-suffix      = tar.xz
+versions    = 2.0.304
+pkgname     = procinfo-ng
+suffix      = tar.bz2
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
@@ -26,7 +25,8 @@ all: $(tarballs) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	  version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9][.0-9][.0-9]*\)\([\.].*\)/\2/'` ; \
+	  wget -N $(url)/$$version/$$tarball ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

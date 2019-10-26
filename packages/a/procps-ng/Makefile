@@ -1,18 +1,18 @@
 #
 # Project Home:
 # ============
-# http://psmisc.sourceforge.net/
-# http://sourceforge.net/projects/psmisc/files/psmisc/
+# https://sourceforge.net/projects/procps-ng
 #
 # Downloads:
 # =========
-# http://downloads.sourceforge.net/psmisc/files
+# https://sourceforge.net/projects/procps-ng/files/Production
+# https://gitlab.com/procps-ng/procps
 #
 
-url         = http://downloads.sourceforge.net/psmisc/files
+url         = https://sourceforge.net/projects/procps-ng/files/Production
 
-versions    = 23.2
-pkgname     = psmisc
+versions    = 3.3.15
+pkgname     = procps-ng
 suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

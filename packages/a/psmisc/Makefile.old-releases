@@ -11,9 +11,9 @@
 
 url         = http://downloads.sourceforge.net/psmisc/files
 
-versions    = 23.2
+versions    = 22.20 22.21
 pkgname     = psmisc
-suffix      = tar.xz
+suffix      = tar.gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

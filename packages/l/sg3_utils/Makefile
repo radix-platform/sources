@@ -10,7 +10,7 @@
 
 url         = http://sg.danny.cz/sg/p
 
-versions    = 1.36 1.39 1.41
+versions    = 1.36 1.39 1.41 1.44
 pkg_name    = sg3_utils
 suffix      = tar.xz
 

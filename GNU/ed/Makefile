@@ -10,9 +10,9 @@
 
 url         = http://ftp.gnu.org/gnu/ed
 
-versions    = 1.9
+versions    = 1.15
 pkgname     = ed
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
@@ -23,8 +23,11 @@ all: $(tarballs) $(sha1s)
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	@for version in $(versions) ; do \
+	  wget -N $(url)/$(pkgname)-$$version.tar.lz ; \
+	  lzip -d $(pkgname)-$$version.tar.lz ; \
+	  xz $(pkgname)-$$version.tar ; \
+	  rm -f $(pkgname)-$$version.tar.lz ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

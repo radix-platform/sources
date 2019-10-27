@@ -10,7 +10,7 @@
 
 url         = http://sg.danny.cz/sg/p
 
-versions    = 1.08 1.09
+versions    = 1.08 1.09 1.10
 pkg_name    = sdparm
 suffix      = tar.xz
 

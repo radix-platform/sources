@@ -22,6 +22,7 @@ repo_name  = libstrophe
 #                                               hash | tag
 #            ----------------------------------------+-----
 revisions  = 9931ad4fa2aa7f204c608010eb2ebf84bcf7d542:0.9.1
+revisions += 4f915d75152003e5439e48dbc7e370bbad869a6d:0.9.3
 
 git_repo   = .git_clone
 

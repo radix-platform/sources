@@ -8,11 +8,11 @@
 # ftp://ftp.gnu.org/gnu/libidn
 #
 
-url         = ftp://ftp.gnu.org/gnu/libidn
+url         = https://ftp.gnu.org/gnu/libidn
 
 lib_name    = libidn
 
-versions    = 1.25 1.27 1.28
+versions    = 1.25 1.27 1.28 1.35
 pkgname     = libidn
 suffix      = tar.gz
 

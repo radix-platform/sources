@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/wget
 
-versions    = 1.14 1.15 1.16
+versions    = 1.20.3
 pkgname     = wget
 suffix      = tar.xz
 
@@ -23,8 +23,11 @@ all: $(tarballs) $(sha1s)
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	@for version in $(versions) ; do \
+	  wget -N $(url)/$(pkgname)-$$version.tar.lz ; \
+	  lzip -d $(pkgname)-$$version.tar.lz ; \
+	  xz $(pkgname)-$$version.tar ; \
+	  rm -f $(pkgname)-$$version.tar.lz ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

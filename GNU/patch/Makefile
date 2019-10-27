@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/patch
 
-versions    = 2.7
+versions    = 2.7 2.7.6
 pkgname     = patch
 suffix      = tar.xz
 

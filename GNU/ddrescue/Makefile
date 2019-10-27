@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/ddrescue
 
-versions    = 1.17 1.18.1 1.19
+versions    = 1.17 1.18.1 1.19 1.24
 pkgname     = ddrescue
 suffix      = tar.gz
 

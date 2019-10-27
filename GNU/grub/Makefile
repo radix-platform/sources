@@ -11,7 +11,7 @@
 
 url         = http://ftp.gnu.org/gnu/grub
 
-versions    = 2.00
+versions    = 2.00 2.04
 pkgname     = grub
 suffix      = tar.xz
 

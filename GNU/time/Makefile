@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/time
 
-versions    = 1.7
+versions    = 1.7 1.9
 pkgname     = time
 suffix      = tar.gz
 

@@ -8,11 +8,11 @@
 # http://alpha.gnu.org/gnu/bc
 #
 
-url         = http://alpha.gnu.org/gnu/bc
+url         = https://ftp.gnu.org/gnu/bc
 
-versions    = 1.06.94 1.06.95
+versions    = 1.07 1.07.1
 pkgname     = bc
-suffix      = tar.bz2
+suffix      = tar.gz
 sign_suffix = sig
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

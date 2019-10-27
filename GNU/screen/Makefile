@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnu.org/gnu/screen
 
-versions    = 4.0.3 4.2.1
+versions    = 4.7.0
 pkgname     = screen
 suffix      = tar.gz
 
@@ -25,36 +25,15 @@ all: $(tarballs) $(sha1s)
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for version in $(versions) ; do \
-	  wget -N $(url)/$(pkgname)-$$version.$(suffix) ; \
-	  mkdir $(pkgname)-$$version-patches ; \
-	  cd $(pkgname)-$$version-patches ; \
-	  wget -rnd -nv $(url)/$(pkgname)-$$version-patches ; \
-	  if [ "" != "`find -iname '$(pkgname)*' -exec echo '{}' \; -quit`" ] ; then \
-	    cd .. ; \
-	    tar czf $(pkgname)-$$version-patches.$(suffix) $(pkgname)-$$version-patches ; \
-	    mv $(pkgname)-$$version-patches $(pkgname)-$$version-patched ; \
-	    tar xzf $(pkgname)-$$version.$(suffix) ; \
-	    ( cd $(pkgname)-$$version ; \
-	      for file in ../$(pkgname)-$$version-patched/$(pkgname)??-??? ; do patch -p0 --batch < $$file ; done \
-	    ) ; \
-	    mv $(pkgname)-$$version-patched $(pkgname)-$$version-patches ; \
-	    tar czf $(pkgname)-$$version.$(suffix) $(pkgname)-$$version ; \
-	    rm -rf $(pkgname)-$$version ; \
-	  else \
-	    cd .. ; \
-	  fi ; \
-	  rm -rf $(pkgname)-$$version-patches ; \
+	@for tarball in $(tarballs) ; do \
+	  wget -N $(url)/$$tarball ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
-	@for version in $(versions) ; do \
-	  echo -e "\n======= Calculation the '$(pkgname)-$$version.$(suffix)' sha1sum =======\n" ; \
-	  sha1sum --binary $(pkgname)-$$version.$(suffix) > $(pkgname)-$$version.$(suffix).sha1sum ; \
-	  if [ -f $(pkgname)-$$version-patches.$(suffix) ] ; then \
-	    sha1sum --binary $(pkgname)-$$version-patches.$(suffix) > $(pkgname)-$$version-patches.$(suffix).sha1sum ; \
-	  fi ; \
+	@for tarball in $< ; do \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
 downloads_clean:
-	@rm -rf *.$(suffix) *.sha1sum
+	@rm -rf $(tarballs) $(sha1s)

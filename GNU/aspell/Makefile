@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnu.org/gnu/aspell
 
-versions    = 0.60.6 0.60.6.1
+versions    = 0.60.6 0.60.6.1 0.60.8
 pkgname     = aspell
 suffix      = tar.gz
 

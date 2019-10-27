@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/which
 
-versions    = 2.20
+versions    = 2.20 2.21
 pkgname     = which
 suffix      = tar.gz
 

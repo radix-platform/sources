@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnu.org/gnu/acct
 
-versions    = 6.5.4 6.5.5 6.6.1 6.6.2
+versions    = 6.5.4 6.5.5 6.6.1 6.6.2 6.6.4
 pkgname     = acct
 suffix      = tar.gz
 

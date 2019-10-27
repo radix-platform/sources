@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/hdparm/files
 
-versions    = 9.42 9.43 9.47 9.48
+versions    = 9.42 9.43 9.47 9.48 9.58
 pkg_name    = hdparm
 suffix      = tar.gz
 

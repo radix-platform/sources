@@ -8,7 +8,7 @@
 # ftp://ftp.gnu.org/gnu/aspell/dict/ru
 #
 
-url         = ftp://ftp.gnu.org/gnu/aspell/dict/ru
+url         = https://ftp.gnu.org/gnu/aspell/dict/ru
 
 versions    = 6-ru-0.99f7-1
 pkgname     = aspell

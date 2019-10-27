@@ -8,7 +8,7 @@
 # ftp://ftp.gnu.org/gnu/aspell/dict/de-alt
 #
 
-url         = ftp://ftp.gnu.org/gnu/aspell/dict/de-alt
+url         = https://ftp.gnu.org/gnu/aspell/dict/de-alt
 
 versions    = 6-de-alt-2.1-1
 pkgname     = aspell

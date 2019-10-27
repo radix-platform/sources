@@ -8,9 +8,9 @@
 # ftp://ftp.gnu.org/gnu/aspell/dict/de
 #
 
-url         = ftp://ftp.gnu.org/gnu/aspell/dict/de
+url         = https://ftp.gnu.org/gnu/aspell/dict/de
 
-versions    = -de-0.50-2 6-de-20030222-1
+versions    = -de-0.50-2 6-de-20030222-1 6-de-20161207-7-0
 pkgname     = aspell
 suffix      = tar.bz2
 

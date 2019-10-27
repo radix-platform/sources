@@ -8,7 +8,7 @@
 # ftp://ftp.gnu.org/gnu/aspell/dict/ca
 #
 
-url         = ftp://ftp.gnu.org/gnu/aspell/dict/ca
+url         = https://ftp.gnu.org/gnu/aspell/dict/ca
 
 versions    = 6-ca-2.1.5-1
 pkgname     = aspell

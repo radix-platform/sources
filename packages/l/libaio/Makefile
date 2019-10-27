@@ -1,65 +1,43 @@
 #
 # Project Home:
 # ============
-#   http://lse.sourceforge.net/io/aio.html
+#   https://pagure.io/libaio
 #
 # Clone:
 # =====
-#   git clone https://git.fedorahosted.org/git/libaio.git
+#   git clone https://pagure.io/libaio.git
+#
+# Releases:
+# ========
+#   https://releases.pagure.org/libaio
 #
 
-url        = https://git.fedorahosted.org/git/libaio.git
-
-repo_name  = libaio
-
-#
-# List of tags to be extracted:
-#
-TAGS       = libaio-0.3.109 libaio-0.3.110-1
+url         = https://releases.pagure.org/libaio
 
 
-git_repo   = .git_clone
-versions   = $(foreach tag, $(TAGS), $(shell echo $(tag) | sed 's/libaio-//g' | sed 's/-1//g'))
-tarballs   = $(addsuffix .tar.bz2, $(addprefix $(repo_name)-, $(versions)))
-sha1s      = $(addsuffix .sha1sum, $(tarballs))
+versions    = 0.3.110 0.3.111 0.3.112
+pkgname     = libaio
+suffix      = tar.gz
 
-TARGETS = repository_clean
+tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
+sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
-all: $(TARGETS)
 
-.PHONY: downloads_clean repository_clean
+all: $(tarballs) $(sha1s)
 
-$(git_repo):
-	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
-	@rm -rf $(repo_name)
-	@if [ "$(url)" = 'git://radix.pro/fedora/libaio' ]; then \
-	   git clone $(url)/$(repo_name).git $(repo_name) ; \
-	 else \
-	   git clone $(url) $(repo_name) ; \
-	 fi
-	@touch $@
+.PHONY: downloads_clean
 
-$(tarballs): $(git_repo)
-	@for tag in $(TAGS) ; do \
-	  version=`echo $$tag | sed 's/libaio-//g' | sed 's/-1//g'` ; \
-	  if [ ! -f $(repo_name)-$$version.tar.bz2 ]; then \
-	    echo -e "\n======= Creating '$(repo_name)-$$version.tar.bz2' snapshot =======" ; \
-	    ( cd $(repo_name) && \
-	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$tag | \
-	      bzip2 >../$(repo_name)-$$version.tar.bz2 ) ; \
-	  fi ; \
+$(tarballs):
+	@echo -e "\n======= Downloading source tarballs =======\n"
+	@for tarball in $(tarballs) ; do \
+	  wget -N $(url)/$$tarball ; \
 	done
 
-$(sha1s): %.tar.bz2.sha1sum : %.tar.bz2
+$(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======" ; \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
-repository_clean: $(sha1s)
-	@echo -e "\n======= Remove cloned $(repo_name).git repository =======\n"
-	@rm -rf $(git_repo) $(repo_name)
-
 downloads_clean:
 	@rm -rf $(tarballs) $(sha1s)
-	@rm -rf $(git_repo) $(repo_name)

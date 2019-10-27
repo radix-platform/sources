@@ -12,9 +12,9 @@
 # https://sourceware.org/mirrors.html
 #
 
-url         = ftp://sources.redhat.com/pub/lvm2
+url         = http://ftp.gwdg.de/pub/linux/sources.redhat.com/lvm2
 
-versions    = 2.02.100 2.02.111 2.02.132 2.02.133 2.02.141
+versions    = 2.02.186 2.03.06
 pkg_name    = LVM2
 suffix      = tar.xz
 

@@ -1,39 +1,32 @@
 #
 # Project Home:
 # ============
-# http://p11-glue.freedesktop.org/p11-kit.html
+# https://p11-glue.github.io/p11-glue/p11-kit.html
 #
 # Downloads:
 # =========
-# http://p11-glue.freedesktop.org/releases
+# https://github.com/p11-glue/p11-kit/releases
 #
 
-url         = http://p11-glue.freedesktop.org/releases
+url         = https://github.com/p11-glue/p11-kit/releases/download
 
-versions    = 0.16.4 0.20.2 0.20.7 0.23.2
+versions    = 0.23.18 0.23.18.1
 pkgname     = p11-kit
 suffix      = tar.gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-signatures  = $(addsuffix .sig, $(tarballs))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 
-all: $(tarballs) $(signatures) $(sha1s)
+all: $(tarballs) $(sha1s)
 
 .PHONY: downloads_clean
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
-	done
-
-$(signatures): %.$(suffix).sig : %.$(suffix)
-	@for signature in $@ ; do \
-	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
-	  wget -N $(url)/$$signature ; \
-	  touch $$signature ; \
+	  version=`echo $$tarball | sed 's/\($(pkgname)-\)\(.*\)\(.$(suffix)\)/\2/'` ; \
+	  wget -N $(url)/$$version/$$tarball ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
@@ -43,4 +36,4 @@ $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	done
 
 downloads_clean:
-	@rm -rf $(tarballs) $(signatures) $(sha1s)
+	@rm -rf $(tarballs) $(sha1s)

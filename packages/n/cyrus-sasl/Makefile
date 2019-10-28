@@ -1,17 +1,16 @@
 #
 # Project Home:
 # ============
-# http://cyrusimap.web.cmu.edu
-# http://www.cyrusimap.org
+# https://www.cyrusimap.org
 #
 # Downloads:
 # =========
-# ftp://ftp.cyrusimap.org/cyrus-sasl
+# https://www.cyrusimap.org/releases
 #
 
-url         = ftp://ftp.cyrusimap.org/cyrus-sasl
+url         = https://www.cyrusimap.org/releases
 
-versions    = 2.1.23 2.1.25 2.1.26
+versions    = 2.1.26 2.1.27
 pkgname     = cyrus-sasl
 suffix      = tar.gz
 

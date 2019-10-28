@@ -15,9 +15,9 @@
 url         = http://curl.haxx.se/download
 cacert_url  = http://curl.haxx.se/ca
 
-versions    = 7.31.0 7.36.0 7.38.0 7.47.0
+versions    = 7.66.0
 pkgname     = curl
-suffix      = tar.bz2
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 signatures  = $(addsuffix .asc, $(tarballs))
@@ -49,7 +49,7 @@ $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 
 $(cacert):
 	@echo -e "\n======= Downloading $(cacert) tarball =======\n"
-	@wget -N $(cacert_url)/cacert.pem ; bzip2 -9 cacert.pem ; rm -f cacert.pem
+	@wget -N $(cacert_url)/cacert.pem ; xz -9 cacert.pem ; rm -f cacert.pem
 
 downloads_clean:
 	@rm -rf $(tarballs) $(signatures) $(sha1s) $(cacert)

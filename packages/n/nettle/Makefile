@@ -10,7 +10,7 @@
 
 url         = http://www.lysator.liu.se/~nisse/archive
 
-versions    = 2.7.1 3.1.1 3.2
+versions    = 2.7.1 3.1.1 3.2 3.5.1
 pkgname     = nettle
 suffix      = tar.gz
 

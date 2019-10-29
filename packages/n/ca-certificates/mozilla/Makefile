@@ -5,12 +5,12 @@
 #
 # Downloads:
 # =========
-# http://download.cdn.mozilla.net/pub/firefox/releases/$(VERSION)/
+# https://ftp.mozilla.org/pub/firefox/releases/$(VERSION)/
 #
 
-url         = http://download.cdn.mozilla.net/pub/firefox/releases
+url         = https://ftp.mozilla.org/pub/firefox/releases
 
-versions    = 44.0 45.0.1 45.0.2 52.0
+versions    = 44.0 45.0.1 45.0.2 52.0 70.0
 pkgname     = mozilla-certs
 suffix      = tar.xz
 

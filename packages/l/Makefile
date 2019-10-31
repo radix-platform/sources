@@ -43,6 +43,7 @@ SUBDIRS := aalib                \
            libcap               \
            libcap-ng            \
            libdatrie            \
+           libedit              \
            libelf               \
            libevent             \
            libffi               \

@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# https://packages.debian.org/ru/sid/ca-certificates
+# https://packages.debian.org/sid/ca-certificates
 #
 # Downloads:
 # =========
-# ftp://ftp.de.debian.org/debian/pool/main/c/ca-certificates
+# http://deb.debian.org/debian/pool/main/c/ca-certificates
 #
 
-url         = ftp://ftp.de.debian.org/debian/pool/main/c/ca-certificates
+url         = http://deb.debian.org/debian/pool/main/c/ca-certificates
 
-version     = 20140325
+version     = 20190110
 pkgname     = ca-certificates
 suffix      = tar.xz
 

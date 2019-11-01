@@ -1,51 +1,39 @@
 #
 # Project Home:
 # ============
-# https://www.mozilla.org/en-US/firefox/new
+# Repo: https://hg.mozilla.org/mozilla-central/file
+# Path: https://hg.mozilla.org/mozilla-central/file/tip/security/nss/lib/ckfw/builtins
 #
 # Downloads:
 # =========
-# https://ftp.mozilla.org/pub/firefox/releases/$(VERSION)/
+# https://hg.mozilla.org/mozilla-central/raw-file/tip/security/nss/lib/ckfw/builtins/certdata.txt
+# https://hg.mozilla.org/mozilla-central/raw-file/tip/security/nss/lib/ckfw/builtins/nssckbi.h
 #
 
-url         = https://ftp.mozilla.org/pub/firefox/releases
+url         = https://hg.mozilla.org/mozilla-central/raw-file/tip/security/nss/lib/ckfw/builtins
 
-versions    = 44.0 45.0.1 45.0.2 52.0 70.0
+version     = $(shell echo `date +%Y%m%d`)
 pkgname     = mozilla-certs
 suffix      = tar.xz
 
-tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-sha1s       = $(addsuffix .sha1sum, $(tarballs))
+tarball     = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(version)))
+sha1s       = $(addsuffix .sha1sum, $(tarball))
 
 
-all: $(tarballs) $(sha1s)
+all: $(tarball) $(sha1s)
 
 .PHONY: downloads_clean
 
-$(tarballs):
+$(tarball):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	   version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9]*[.0-9]*\)\([\.].*\)/\2/'` ; \
-	   wget -N $(url)/$$version/source/firefox-$$version.source.$(suffix)  ; \
-	   tar -xJvf firefox-$$version.source.$(suffix) \
-	     firefox-$$version/security/nss/lib/ckfw/builtins/certdata.txt  \
-	     firefox-$$version/security/nss/lib/ckfw/builtins/nssckbi.h   ; \
-	   rm -f firefox-$$version.source.$(suffix)                       ; \
-	   ( cd firefox-$$version/security/nss/lib/ckfw/builtins ; \
-	     mv certdata.txt nssckbi.h ../../../../..            ; \
-	     cd ../../../../..                                   ; \
-	     rm -rf security                                     ; \
-	   ) ; \
-	   mv firefox-$$version $(pkgname)-$$version ; \
-	   tar cJvf $$tarball $(pkgname)-$$version ; \
-	   rm -rf $(pkgname)-$$version ; \
-	 done
+	@wget -N $(url)/certdata.txt
+	@wget -N $(url)/nssckbi.h
+	@tar cJvf $(tarball) certdata.txt nssckbi.h
+	@rm -f certdata.txt nssckbi.h
 
-$(sha1s): %.$(suffix).sha1sum : %.$(suffix)
-	@for tarball in $< ; do \
-	   echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
-	   sha1sum --binary $$tarball > $$tarball.sha1sum ; \
-	 done
+$(sha1s): $(tarball)
+	@echo -e "\n======= Calculation the '$(tarball)' sha1sum =======\n"
+	@sha1sum --binary $(tarball) > $(tarball).sha1sum ; \
 
 downloads_clean:
-	@rm -rf $(tarballs) $(sha1s)
+	@rm -rf $(pkgname)-*$(suffix) $(pkgname)-*$(suffix).sha1sum

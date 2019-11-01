@@ -8,7 +8,7 @@ cacert_asc      = cacert.asc
 ID              = 65D0FD58
 signatures      = sign/cacert-fingerprint.txt sign/cacert-gpg-fingerprint.txt
 
-tarball         = cacert.tar.xz
+tarball         = cacert.tar.bz2
 suffix          = $(shell echo $(tarball) | cut -f 2,3 -d '.')
 sha1s           = $(addsuffix .sha1sum, $(tarball))
 
@@ -26,12 +26,27 @@ $(files):
 	   wget -N $(cacert_url)/$$file ; \
 	 done
 
-$(tarball): $(files)
+verify: $(files)
+	@gpg --recv-key $(ID)
+	@gpg --export $(ID) > $(CURDIR)/keyring-$(ID).gpg
+	@gpg --batch --yes --delete-key $(ID)
+	@for signature in $(signatures) ; do \
+	   LANG=C gpg --verify --keyring $(CURDIR)/keyring-$(ID).gpg $$signature ; ret="$$?" ; \
+	   if [ "$$ret" != "0" ]; then \
+	     echo -e "\n======= ERROR: Bad '$$signature' Signature =======\n" ; \
+	     exit 1 ; \
+	   else \
+	     echo -e "\n======= '$$signature' is verified successful =======\n" ; \
+	   fi ; \
+	 done
+	@rm -f $(CURDIR)/keyring-$(ID).gpg
+
+$(tarball): verify
 	@( directory=`echo $(tarball) | cut -f 1 -d '.'`    ; \
 	   mkdir -p $$directory                             ; \
 	   cp -a sign $$directory                           ; \
 	   cp -a README *.crt *.der *.txt *.asc $$directory ; \
-	   tar cJvf $(tarball) $$directory                  ; \
+	   tar cjvf $(tarball) $$directory                  ; \
 	   rm -rf $$directory                               ; \
 	   rm -f *.crt *.der *.txt *.asc                    ; \
 	 )

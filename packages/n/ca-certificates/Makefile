@@ -5,6 +5,7 @@
 #
 
 SUBDIRS := cacert.org   \
+           debian       \
            mozilla      \
            spi-inc.org
 

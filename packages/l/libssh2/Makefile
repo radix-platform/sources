@@ -10,7 +10,7 @@
 
 url         = https://www.libssh2.org/download
 
-versions    = 1.7.0 1.8.0
+versions    = 1.7.0 1.8.0 1.9.0
 pkgname     = libssh2
 suffix      = tar.gz
 

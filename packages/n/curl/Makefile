@@ -12,8 +12,8 @@
 # http://curl.haxx.se/docs/caextract.html
 #
 
-url         = http://curl.haxx.se/download
-cacert_url  = http://curl.haxx.se/ca
+url         = https://curl.haxx.se/download
+cacert_url  = https://curl.haxx.se/ca
 
 versions    = 7.66.0
 pkgname     = curl

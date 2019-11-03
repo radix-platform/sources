@@ -6,11 +6,12 @@
 # Downloads:
 # =========
 # http://patches.freeiz.com/alpine/release
+# http://alpine.x10host.com/alpine/release/src
 #
 
-url         = http://patches.freeiz.com/alpine/release/src
+url         = http://alpine.x10host.com/alpine/release/src
 
-versions    = 2.11 2.20
+versions    = 2.11 2.20 2.21
 pkgname     = alpine
 suffix      = tar.xz
 

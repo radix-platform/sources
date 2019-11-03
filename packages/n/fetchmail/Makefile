@@ -9,9 +9,9 @@
 # http://downloads.sourceforge.net/fetchmail
 #
 
-url         = http://downloads.sourceforge.net/fetchmail/branch_6.3
+url         = http://downloads.sourceforge.net/fetchmail/branch_6.4
 
-versions    = 6.3.26
+versions    = 6.4.1
 pkgname     = fetchmail
 suffix      = tar.xz
 

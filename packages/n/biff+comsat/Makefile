@@ -6,9 +6,10 @@
 # Downloads:
 # =========
 # ftp://metalab.unc.edu/pub/Linux/system/mail/biffs
+# http://www.ibiblio.org/pub/linux/system/mail/biffs
 #
 
-url         = ftp://metalab.unc.edu/pub/Linux/system/mail/biffs
+url         = http://www.ibiblio.org/pub/linux/system/mail/biffs
 
 versions    = 0.17
 pkgname     = biff+comsat

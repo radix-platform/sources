@@ -12,9 +12,9 @@
 
 url         = ftp://ftp.ncftp.com/ncftp
 
-versions    = 3.2.5
+versions    = 3.2.6
 pkg_name    = ncftp
-suffix      = tar.bz2
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
@@ -28,8 +28,8 @@ $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for version in $(versions) ; do \
 	  wget -N $(url)/$(pkg_name)-$$version-src.$(suffix) ; \
-	  tar xjf $(pkg_name)-$$version-src.$(suffix) ; \
-	  tar cjf $(pkg_name)-$$version.$(suffix) $(pkg_name)-$$version ; \
+	  tar xJf $(pkg_name)-$$version-src.$(suffix) ; \
+	  tar cJf $(pkg_name)-$$version.$(suffix) $(pkg_name)-$$version ; \
 	  rm -rf $(pkg_name)-$$version $(pkg_name)-$$version-src.$(suffix) ; \
 	done
 

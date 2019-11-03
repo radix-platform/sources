@@ -6,15 +6,15 @@
 #
 # Downloads:
 # =========
-# http://roy.marples.name/downloads/dhcpcd
+# https://roy.marples.name/downloads/dhcpcd
 #
 
-url          = http://roy.marples.name/downloads/dhcpcd
+url          = https://roy.marples.name/downloads/dhcpcd
 
 old_versions = 6.0.5 6.4.2
 old_suffix   = tar.bz2
 
-new_versions = 6.10.1
+new_versions = 6.10.1 8.1.1
 new_suffix   = tar.xz
 
 pkgname      = dhcpcd

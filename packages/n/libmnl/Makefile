@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.netfilter.org/pub/libmnl
 
-versions    = 1.0.2 1.0.3
+versions    = 1.0.2 1.0.3 1.0.4
 pkgname     = libmnl
 suffix      = tar.bz2
 

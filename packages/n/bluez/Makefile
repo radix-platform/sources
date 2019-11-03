@@ -6,12 +6,13 @@
 # Downloads:
 # =========
 # ftp://ftp.kernel.org/pub/linux/bluetooth
+# https://mirrors.edge.kernel.org/pub/linux/bluetooth
 #
 
 
-url       = ftp://ftp.kernel.org/pub/linux/bluetooth
+url       = https://www.kernel.org/pub/linux/bluetooth
 
-versions  = 4.99 5.24 5.37 5.42
+versions  = 4.99 5.24 5.37 5.42 5.52
 pkg_name  = bluez
 arch_type = tar.xz
 suffixes  = $(arch_type) tar.sign

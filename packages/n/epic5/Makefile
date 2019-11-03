@@ -19,7 +19,7 @@ old_suffix      = tar.bz2
 old_tarballs    = $(addsuffix .$(old_suffix), $(addprefix $(pkgname)-, $(old_versions)))
 old_sha1s       = $(addsuffix .sha1sum, $(old_tarballs))
 
-new_versions    = 1.4 1.6 1.8
+new_versions    = 1.4 1.6 1.8 2.1.1
 new_suffix      = tar.xz
 
 new_tarballs    = $(addsuffix .$(new_suffix), $(addprefix $(pkgname)-, $(new_versions)))

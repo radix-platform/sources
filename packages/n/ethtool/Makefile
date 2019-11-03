@@ -5,12 +5,12 @@
 #
 # Downloads:
 # =========
-# ftp://ftp.kernel.org/pub/software/network/tftp/tftp-hpa
+# https://mirrors.edge.kernel.org/pub/software/network/ethtool
 #
 
-url         = ftp://ftp.kernel.org/pub/software/network/ethtool
+url         = https://www.kernel.org/pub/software/network/ethtool
 
-versions    = 2.6.36 3.0 3.4 3.5 3.8 3.9 3.10 3.11 3.12 3.18 4.5
+versions    = 2.6.36 3.0 3.4 3.5 3.8 3.9 3.10 3.11 3.12 3.18 4.5 5.3
 pkgname     = ethtool
 suffix      = tar.xz
 

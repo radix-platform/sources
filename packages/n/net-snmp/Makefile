@@ -10,7 +10,7 @@
 
 url         = http://sourceforge.net/projects/net-snmp/files/net-snmp
 
-versions    = 5.7.2 5.7.2.1 5.7.3
+versions    = 5.7.2 5.7.2.1 5.7.3 5.8
 pkgname     = net-snmp
 suffix      = tar.gz
 

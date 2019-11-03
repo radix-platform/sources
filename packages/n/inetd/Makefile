@@ -5,10 +5,10 @@
 #
 # Downloads:
 # =========
-# http://mirrors.slackware.com/slackware/slackware-14.1/source/n/inetd
+# http://mirrors.slackware.com/slackware/slackware-14.2/source/n/inetd
 #
 
-url         = http://mirrors.slackware.com/slackware/slackware-14.1/source/n/inetd
+url         = http://mirrors.slackware.com/slackware/slackware-14.2/source/n/inetd
 
 version     = 1.79
 pkgname     = inetd-OpenBSD

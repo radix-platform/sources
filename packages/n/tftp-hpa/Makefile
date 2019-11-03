@@ -6,9 +6,10 @@
 # Downloads:
 # =========
 # ftp://ftp.kernel.org/pub/software/network/tftp/tftp-hpa
+# https://www.kernel.org/pub/software/network/tftp/tftp-hpa
 #
 
-url         = ftp://ftp.kernel.org/pub/software/network/tftp/tftp-hpa
+url         = https://www.kernel.org/pub/software/network/tftp/tftp-hpa
 
 versions    = 5.1 5.2
 pkgname     = tftp-hpa

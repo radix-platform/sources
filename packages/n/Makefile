@@ -113,6 +113,7 @@ SUBDIRS := ModemManager           \
            newspost               \
            nfacct                 \
            nfs-utils              \
+           nftables               \
            nmap                   \
            nn                     \
            npth                   \

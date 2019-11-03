@@ -7,11 +7,12 @@
 # =========
 # https://www.kernel.org/pub/software/network/iw
 # ftp://ftp.kernel.org/pub/software/network/iw
+# https://mirrors.edge.kernel.org/pub/software/network/iw
 #
 
-url         = ftp://ftp.kernel.org/pub/software/network/iw
+url         = https://www.kernel.org/pub/software/network/iw
 
-versions    = 3.5 3.17 4.3
+versions    = 3.5 3.17 4.3 5.3
 pkgname     = iw
 suffix      = tar.xz
 

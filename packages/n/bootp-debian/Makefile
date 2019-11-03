@@ -7,9 +7,10 @@
 # Downloads:
 # =========
 # ftp://ftp.debian.org/debian/pool/main/b/bootp
+# http://deb.debian.org/debian/pool/main/b/bootp
 #
 
-url         = ftp://ftp.debian.org/debian/pool/main/b/bootp
+url         = http://deb.debian.org/debian/pool/main/b/bootp
 
 version     = 2.4.3
 pkgname     = bootp

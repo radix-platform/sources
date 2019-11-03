@@ -5,10 +5,10 @@
 #
 # Downloads:
 # =========
-# ftp://ftp.funet.fi/pub/unix/mail/metamail
+# http://ftp.funet.fi/pub/unix/mail/metamail
 #
 
-url         = ftp://ftp.funet.fi/pub/unix/mail/metamail
+url         = http://ftp.funet.fi/pub/unix/mail/metamail
 
 versions    = 2.7
 pkgname     = metamail

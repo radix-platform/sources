@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.netfilter.org/pub/libnftnl
 
-versions    = 1.0.5
+versions    = 1.0.5 1.1.4
 pkgname     = libnftnl
 suffix      = tar.bz2
 

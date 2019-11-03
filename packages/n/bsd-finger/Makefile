@@ -6,9 +6,10 @@
 # Downloads:
 # =========
 # ftp://metalab.unc.edu/pub/Linux/system/network/finger
+# http://www.ibiblio.org/pub/linux/system/network/finger
 #
 
-url         = ftp://metalab.unc.edu/pub/Linux/system/network/finger
+url         = http://www.ibiblio.org/pub/linux/system/network/finger
 
 versions    = 0.17
 pkgname     = bsd-finger

@@ -6,10 +6,11 @@
 # Downloads:
 # =========
 # ftp://ftp.kernel.org/pub/linux/bluetooth
+# https://mirrors.edge.kernel.org/pub/linux/bluetooth
 #
 
 
-url       = ftp://ftp.kernel.org/pub/linux/bluetooth
+url       = https://www.kernel.org/pub/linux/bluetooth
 
 versions  = 2.4 2.5
 pkg_name  = bluez-hcidump

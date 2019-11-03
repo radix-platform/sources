@@ -11,7 +11,7 @@
 
 url         = http://links.twibright.com/download
 
-versions    = 2.7 2.8 2.12
+versions    = 2.7 2.8 2.12 2.20.2
 pkgname     = links
 suffix      = tar.bz2
 

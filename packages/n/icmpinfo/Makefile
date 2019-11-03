@@ -6,9 +6,10 @@
 # Downloads:
 # =========
 # ftp://metalab.unc.edu/pub/Linux/system/network/admin
+# http://www.ibiblio.org/pub/linux/system/network/admin
 #
 
-url         = ftp://metalab.unc.edu/pub/Linux/system/network/admin
+url         = http://www.ibiblio.org/pub/linux/system/network/admin
 
 versions    = 1.11
 pkgname     = icmpinfo

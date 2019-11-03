@@ -11,7 +11,7 @@
 
 url         = http://archive.apache.org/dist/httpd
 
-versions    = 2.4.6 2.4.10 2.4.18
+versions    = 2.4.6 2.4.10 2.4.18 2.4.41
 pkgname     = httpd
 suffix      = tar.bz2
 

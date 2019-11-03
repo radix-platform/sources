@@ -6,9 +6,10 @@
 # Downloads:
 # =========
 # ftp://metalab.unc.edu/pub/Linux/system/network/netkit
+# http://www.ibiblio.org/pub/linux/system/network/netkit
 #
 
-url         = ftp://metalab.unc.edu/pub/Linux/system/network/netkit
+url         = http://www.ibiblio.org/pub/linux/system/network/netkit
 
 versions    = 0.17
 pkgname     = netkit-rsh

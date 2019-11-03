@@ -10,7 +10,7 @@
 
 url         = http://www.tcpdump.org/release
 
-versions    = 1.4.0 1.5.3 1.6.2 1.7.4
+versions    = 1.4.0 1.5.3 1.6.2 1.7.4 1.9.1
 pkgname     = libpcap
 suffix      = tar.gz
 

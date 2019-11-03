@@ -40,6 +40,7 @@ revisions += 2c9a94fefea664f8a84442fc959b37db119e2e25-NSPR_4_10_9_RTM
 revisions += 21a7c4a68ca663ae2ba8ff05e12b9379f5108c5d-NSPR_4_10_10_RTM
 revisions += ebae38973a1a7241482448091e96e4e4fe5dbc27-NSPR_4_11_RTM
 revisions += 88265db540d75d59e12ea8dbc34031160fce9ccc-NSPR_4_12_RTM
+revisions += bf4cbb1cb5f2c08691773575a79e4240ea7300fc-NSPR_4_23_RTM
 
 
 hg_repo    = .hg_clone

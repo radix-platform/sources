@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.netfilter.org/pub/libnetfilter_acct
 
-versions    = 1.0.1 1.0.2
+versions    = 1.0.1 1.0.2 1.0.3
 pkgname     = libnetfilter_acct
 suffix      = tar.bz2
 

@@ -5,12 +5,12 @@
 #
 # Downloads:
 # =========
-# ftp://ftp.isc.org/isc/dhcp/$(VERSION)
+# http://ftp.isc.org/isc/dhcp/$(VERSION)
 #
 
-url         = ftp://ftp.isc.org/isc/dhcp
+url         = http://ftp.isc.org/isc/dhcp
 
-versions    = 4.2.5-P1 4.3.1 4.3.3 4.3.4
+versions    = 4.2.5-P1 4.3.1 4.3.3 4.3.4 4.4.1
 pkgname     = dhcp
 suffix      = tar.gz
 

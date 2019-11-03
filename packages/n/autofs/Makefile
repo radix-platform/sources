@@ -6,12 +6,13 @@
 # Downloads:
 # =========
 # ftp://ftp.kernel.org/pub/linux/daemons/autofs/v5
+# https://mirrors.edge.kernel.org/pub/linux/daemons/autofs/v5
 #
 
 
-url       = ftp://ftp.kernel.org/pub/linux/daemons
+url       = https://www.kernel.org/pub/linux/daemons
 
-versions  = 5.0.7 5.1.0 5.1.1
+versions  = 5.0.7 5.1.0 5.1.1 5.1.6
 pkg_name  = autofs
 arch_type = tar.xz
 suffixes  = $(arch_type) tar.sign

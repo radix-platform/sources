@@ -6,9 +6,10 @@
 # Downloads:
 # =========
 # ftp://metalab.unc.edu/pub/Linux/system/network
+# http://www.ibiblio.org/pub/linux/system/network
 #
 
-url         = ftp://metalab.unc.edu/pub/Linux/system/network
+url         = http://www.ibiblio.org/pub/linux/system/network
 
 versions    = 0.17
 pkgname     = netwrite

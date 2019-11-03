@@ -22,6 +22,7 @@ repo_name  = iperf
 #                                               hash | tag
 #            ----------------------------------------+-----
 revisions  = 274eaed5b17f664e4ac6c79f1ba854b55f15a3a3:3.1.3
+revisions += dfcea9f6a09ead01089a3c9d20c7032f2c0af2c1:3.7
 
 git_repo   = .git_clone
 

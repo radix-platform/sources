@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.netfilter.org/pub/nfacct
 
-versions    = 1.0.1
+versions    = 1.0.1 1.0.2
 pkgname     = nfacct
 suffix      = tar.bz2
 

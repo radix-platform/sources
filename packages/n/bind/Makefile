@@ -6,11 +6,12 @@
 # Downloads:
 # =========
 # ftp://ftp.isc.org/isc/bind9/$(VERSION)
+# http://ftp.isc.org/isc/bind9/$(VERSION)
 #
 
-url         = ftp://ftp.isc.org/isc/bind9
+url         = http://ftp.isc.org/isc/bind9
 
-versions    = 9.9.5-P1 9.10.1 9.10.3 9.10.4 9.13.6
+versions    = 9.9.5-P1 9.10.1 9.10.3 9.10.4 9.13.6 9.14.7 9.15.5
 pkgname     = bind
 suffix      = tar.gz
 

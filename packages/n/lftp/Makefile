@@ -20,7 +20,7 @@
 
 url         = http://lftp.yar.ru/ftp
 
-versions    = 4.4.9 4.4.14 4.4.15 4.5.6 4.6.0 4.6.5
+versions    = 4.6.5 4.8.4
 pkgname     = lftp
 suffix      = tar.xz
 

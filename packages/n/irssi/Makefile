@@ -3,45 +3,66 @@
 # ============
 # http://irssi.org
 #
-# Downloads:
-# =========
-# http://irssi.org/download#sources
-# http://irssi.org/files
+# GitHub:
+# ======
+# https://github.com/irssi/irssi
+# git clone https://github.com/irssi/irssi.git
 #
 
-url         = http://irssi.org/files
+url        = https://github.com/irssi
 
-versions    = 0.8.15 0.8.17
-pkgname     = irssi
-suffix      = tar.bz2
+repo_name  = irssi
 
-tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-signatures  = $(addsuffix .sig, $(tarballs))
-sha1s       = $(addsuffix .sha1sum, $(tarballs))
+#
+# List of tags to be extracted:
+# ============================
+#                                               hash | tag
+#            ----------------------------------------+-----
+revisions  = 42110b92e92cb40e82fd736d88b099d096483939:1.2.2
 
+git_repo   = .git_clone
 
-all: $(tarballs) $(signatures) $(sha1s)
+suffix     = tar.xz
 
-.PHONY: downloads_clean
+versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d ':'))
 
-$(tarballs):
-	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
-	done
+tarballs   = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
+sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
-$(signatures): %.$(suffix).sig : %.$(suffix)
-	@for signature in $@ ; do \
-	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
-	  wget -N $(url)/$$signature ; \
-	  touch $$signature ; \
+TARGETS = repository_clean
+
+all: $(TARGETS)
+
+.PHONY: downloads_clean repository_clean
+
+$(git_repo):
+	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
+	@rm -rf $(repo_name)
+	@git clone $(url)/$(repo_name).git $(repo_name)
+	@touch $@
+
+$(tarballs): $(git_repo)
+	@for revision in $(revisions) ; do \
+	  hash=`echo $$revision    | cut -f 1 -d ':'` ; \
+	  version=`echo $$revision | cut -f 2 -d ':'` ; \
+	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
+	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
+	    ( cd $(repo_name) && \
+	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$hash | \
+	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
+	  fi ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
+repository_clean: $(sha1s)
+	@echo -e "\n======= Remove cloned $(repo_name).git repository =======\n"
+	@rm -rf $(git_repo) $(repo_name)
+
 downloads_clean:
-	@rm -rf $(tarballs) $(signatures) $(sha1s)
+	@rm -rf $(tarballs) $(sha1s)
+	@rm -rf $(git_repo) $(repo_name)

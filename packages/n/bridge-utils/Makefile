@@ -6,14 +6,14 @@
 #
 # Downloads:
 # =========
-# http://downloads.sourceforge.net/bridge
+# https://mirrors.edge.kernel.org/pub/linux/utils/net/bridge-utils
 #
 
-url         = http://downloads.sourceforge.net/bridge
+url         = https://mirrors.edge.kernel.org/pub/linux/utils/net/bridge-utils
 
-versions    = 1.2 1.4 1.5
+versions    = 1.6
 pkgname     = bridge-utils
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

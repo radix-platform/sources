@@ -2,9 +2,10 @@
 # Downloads:
 # =========
 # ftp://ftp.netbsd.org/pub/pkgsrc/distfiles
+# http://ftp.netbsd.org/pub/pkgsrc/distfiles
 #
 
-url          = ftp://ftp.netbsd.org/pub/pkgsrc/distfiles
+url          = http://ftp.netbsd.org/pub/pkgsrc/distfiles
 
 versions     = 2.5.8
 pkgname      = elm

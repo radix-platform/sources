@@ -5,10 +5,10 @@
 #
 # Downloads:
 # =========
-# ftp://ftp.gnupg.org/gcrypt/egd
+# https://gnupg.org/ftp/gcrypt/egd
 #
 
-url         = ftp://ftp.gnupg.org/gcrypt/egd
+url         = https://gnupg.org/ftp/gcrypt/egd
 
 versions    = 0.8
 pkgname     = egd

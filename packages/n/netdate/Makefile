@@ -5,10 +5,10 @@
 #
 # Downloads:
 # =========
-# http://mirrors.slackware.com/slackware/slackware-14.1/source/n/netdate
+# http://mirrors.slackware.com/slackware/slackware-14.2/source/n/netdate
 #
 
-url         = http://mirrors.slackware.com/slackware/slackware-14.1/source/n/netdate
+url         = http://mirrors.slackware.com/slackware/slackware-14.2/source/n/netdate
 
 pkgname     = netdate
 suffix      = tar.gz

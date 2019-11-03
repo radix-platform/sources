@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.bitwizard.nl/mtr
 
-versions    = 0.84 0.85 0.86
+versions    = 0.84 0.85 0.86 0.93
 pkg_name    = mtr
 suffix      = tar.gz
 

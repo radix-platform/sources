@@ -10,7 +10,7 @@
 
 url         = https://github.com/thom311/libnl/releases/download
 
-versions    = 3.2.25 3.2.27
+versions    = 3.2.25 3.2.27 3.5.0
 pkgname     = libnl
 suffix      = tar.gz
 

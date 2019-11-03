@@ -10,9 +10,9 @@
 
 url         = http://www.thekelleys.org.uk/dnsmasq
 
-versions    = 2.57 2.72 2.75
+versions    = 2.80
 pkgname     = dnsmasq
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

@@ -6,12 +6,12 @@
 # Downloads:
 # =========
 # http://openvpn.net/index.php/open-source/downloads.html
-# http://swupdate.openvpn.org/community/releases
+# https://swupdate.openvpn.org/community/releases
 #
 
-url          = http://swupdate.openvpn.org/community/releases
+url          = https://swupdate.openvpn.org/community/releases
 
-versions     = 2.3.5 2.3.9
+versions     = 2.3.5 2.3.9 2.4.8
 pkgname      = openvpn
 suffix       = tar.xz
 

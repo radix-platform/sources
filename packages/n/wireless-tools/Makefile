@@ -1,17 +1,20 @@
 #
 # Project Home:
 # ============
-# http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux
-# http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html
+# https://hewlettpackard.github.io/wireless-tools/Tools.html
 #
-# Downloads:
-# =========
-# http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux
+# GitHub:
+# ======
+# https://github.com/HewlettPackard/wireless-tools
+#
+# Download:
+# ========
+# https://hewlettpackard.github.io/wireless-tools
 #
 
-url         = http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux
+url         = https://hewlettpackard.github.io/wireless-tools
 
-versions    = 28 29
+versions    = 28 29 30
 pkgname     = wireless-tools
 suffix      = tar.gz
 
@@ -26,8 +29,17 @@ all: $(tarballs) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for version in $(versions) ; do \
-	  wget -N $(url)/wireless_tools.$$version.tar.gz ; \
-	  tar xzf wireless_tools.$$version.tar.gz ; \
+	  if [ "$$version" -eq "30" ] ; then \
+	    wget -N $(url)/wireless_tools.$$version.pre9.tar.gz ; \
+	  else \
+	    wget -N $(url)/wireless_tools.$$version.tar.gz ; \
+	  fi ; \
+	  if [ "$$version" -eq "30" ] ; then \
+	    tar xzf wireless_tools.$$version.pre9.tar.gz ; \
+	    rm -f wireless_tools.$$version.pre9.tar.gz ; \
+	  else \
+	    tar xzf wireless_tools.$$version.tar.gz ; \
+	  fi ; \
 	  mv wireless_tools.$$version $(pkgname)-$$version ; \
 	  tar czf $(pkgname)-$$version.$(suffix) $(pkgname)-$$version ; \
 	  rm -rf $(pkgname)-$$version wireless_tools.$$version.tar.gz ; \

@@ -6,21 +6,20 @@
 # Downloads:
 # =========
 # ftp://ftp.samba.org/pub/ppp
+# https://download.samba.org/pub/ppp
 #
 
-url         = ftp://ftp.samba.org/pub/ppp
+url         = https://download.samba.org/pub/ppp
 
 versions    = 2.4.5 2.4.7
 pkgname     = ppp
 suffix      = tar.gz
-sign_suffix = asc
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-signatures  = $(addsuffix .$(sign_suffix), $(tarballs))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 
-all: $(tarballs) $(signatures) $(sha1s)
+all: $(tarballs) $(sha1s)
 
 .PHONY: downloads_clean
 
@@ -30,13 +29,6 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(signatures): %.$(suffix).$(sign_suffix) : %.$(suffix)
-	@for signature in $@ ; do \
-	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
-	  wget -N $(url)/$$signature ; \
-	  touch $$signature ; \
-	done
-
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
@@ -44,4 +36,4 @@ $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	done
 
 downloads_clean:
-	@rm -rf $(tarballs) $(signatures) $(sha1s)
+	@rm -rf $(tarballs) $(sha1s)

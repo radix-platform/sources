@@ -8,11 +8,11 @@
 # http://mirrors.slackware.com/slackware/slackware-14.1/source/n/ppp
 #
 
-url         = http://mirrors.slackware.com/slackware/slackware-14.1/source/n/ppp
+url         = http://mirrors.slackware.com/slackware/slackware-14.2/source/n/ppp
 
 pkgname     = pppsetup
 version     = 1.98
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarball     = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(version)))
 sha1s       = $(addsuffix .sha1sum, $(tarball))

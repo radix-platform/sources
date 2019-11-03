@@ -10,7 +10,7 @@
 
 url         = http://w1.fi/releases
 
-versions    = 2.0 2.3 2.5
+versions    = 2.0 2.3 2.5 2.9
 pkgname     = wpa_supplicant
 suffix      = tar.gz
 

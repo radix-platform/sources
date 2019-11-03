@@ -1,26 +1,27 @@
 #
 # Project Home:
 # ============
-# https://github.com/rfc1036/whois
+# http://dev.zuckschwerdt.org/openobex
 #
 # GitHub:
 # ======
-# https://github.com/rfc1036/whois
-# clone git://github.com/rfc1036/whois.git
+# https://github.com/zuckschwerdt/openobex
+# clone https://github.com/zuckschwerdt/openobex.git
 #
-# Old Download Link:
-# =================
-# ftp://ftp.debian.org/debian/pool/main/w/whois/whois_5.2.1.tar.xz
+# Downloads:
+# =========
+# http://dev.zuckschwerdt.org/openobex/wiki/ObexDownloads
 #
 
-url          = git://github.com/rfc1036/whois.git
+url          = https://github.com/zuckschwerdt/openobex.git
 
-repo_name    = whois
+repo_name    = openobex
 
-versions     = 5.0.25 5.2.1 5.2.11 5.2.12 5.5.2
-pkgname      = whois
-suffix       = tar.xz
+versions     = 1.4 1.5
+pkgname      = openobex
+suffix       = tar.bz2
 
+TAGS         = $(versions)
 git_repo     = .git_clone
 tarballs     = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s        = $(addsuffix .sha1sum, $(tarballs))
@@ -44,13 +45,17 @@ $(git_repo):
 
 $(tarballs): $(git_repo)
 	@for version in $(versions) ; do \
-	  tag=`echo v$$version` ; \
+	  tag=`echo $$version` ; \
 	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
 	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
 	    ( cd $(repo_name) && \
 	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$tag | \
-	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
+	      bzip2 >../$(repo_name)-$$version.$(suffix) ) ; \
 	  fi ; \
+	  tar xjf $(repo_name)-$$version.$(suffix) ; \
+	  ( cd $(repo_name)-$$version ; ./bootstrap ; rm -rf autom4te.cache ) ; \
+	  tar cjf $(repo_name)-$$version.$(suffix) $(repo_name)-$$version ; \
+	  rm -rf $(repo_name)-$$version ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

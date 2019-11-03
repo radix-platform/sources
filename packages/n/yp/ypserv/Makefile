@@ -2,15 +2,16 @@
 # Project Home:
 # ============
 # http://www.linux-nis.org/nis
+# https://www.thkukuk.de/nis
 #
 # Downloads:
 # =========
-# http://www.linux-nis.org/download/ypserv
+# https://www.thkukuk.de/nis/download
 #
 
-url         = http://www.linux-nis.org/download/ypserv
+url         = https://www.thkukuk.de/nis/download/ypserv
 
-versions    = 2.31 2.32 2.32.1 3.0 3.7
+versions    = 2.31 2.32 2.32.1 3.0 3.7 4.0
 pkgname     = ypserv
 suffix      = tar.bz2
 

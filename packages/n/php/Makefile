@@ -6,14 +6,15 @@
 # Downloads:
 # =========
 # http://php.net/downloads.php
+# https://www.php.net/downloads.php
 #
 # whet -O php-5.6.2.tar.bz2 http://ru2.php.net/get/php-5.6.2.tar.bz2/from/this/mirror
 #
 
 url         = http://ru2.php.net/get
 
-versions    = 5.4.34 5.5.18 5.6.2 5.6.17
-versions   += 7.0.2
+versions    = 5.6.2 5.6.17
+versions   += 7.0.2 7.3.11
 pkgname     = php
 suffix      = tar.xz
 

@@ -6,14 +6,14 @@
 #
 # Downloads:
 # =========
-# http://downloads.sourceforge.net/sourceforge/slrn
+# http://jedsoft.org/releases/slrn
 #
 
-url         = http://downloads.sourceforge.net/sourceforge/slrn
+url         = http://jedsoft.org/releases/slrn
 
-versions    = 1.0.0 1.0.1
+versions    = 1.0.3a
 pkg_name    = slrn
-suffix      = tar.gz
+suffix      = tar.bz2
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

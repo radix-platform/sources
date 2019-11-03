@@ -9,9 +9,9 @@
 # https://download.samba.org/pub/rsync
 #
 
-url         = https://download.samba.org/pub/rsync
+url         = https://download.samba.org/pub/rsync/src
 
-versions    = 3.1.2
+versions    = 3.1.2 3.1.3
 pkgname     = rsync
 suffix      = tar.gz
 sign_suffix = asc

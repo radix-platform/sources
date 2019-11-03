@@ -1,19 +1,18 @@
 #
 # Project Home:
 # ============
-# http://www.linux-nis.org/nis
-# https://www.thkukuk.de/nis
+# http://www.postfix.org
 #
 # Downloads:
 # =========
-# https://www.thkukuk.de/nis/download
+# http://cdn.postfix.johnriley.me/mirrors/postfix-release/index.html
 #
 
-url         = https://www.thkukuk.de/nis/download/ypbind-mt
+url         = http://cdn.postfix.johnriley.me/mirrors/postfix-release/official
 
-versions    = 1.37.1 1.37.2 1.38 2.0 2.2 2.4
-pkgname     = ypbind-mt
-suffix      = tar.bz2
+versions    = 3.4.7
+pkgname     = postfix
+suffix      = tar.gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
@@ -25,8 +24,8 @@ all: $(tarballs) $(sha1s)
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	@for version in $(versions) ; do \
+	  wget -N $(url)/$(pkgname)-$$version.$(suffix) ;  \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

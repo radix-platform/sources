@@ -12,8 +12,8 @@
 
 url         = ftp://ftp.ntua.gr/pub/net/radius/freeradius
 
-versions    = 2.2.9
-versions   += 3.0.11
+versions    = 2.2.10
+versions   += 3.0.19
 pkgname     = freeradius-server
 suffix      = tar.gz
 sign_suffix = sig

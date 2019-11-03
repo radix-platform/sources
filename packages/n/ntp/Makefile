@@ -10,7 +10,7 @@
 
 url         = http://archive.ntp.org/ntp4/ntp-4.2
 
-versions    = 4.2.6p5 4.2.8p6 4.2.8p8
+versions    = 4.2.6p5 4.2.8p6 4.2.8p8 4.2.8p13
 pkgname     = ntp
 suffix      = tar.gz
 

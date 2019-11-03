@@ -1,18 +1,18 @@
 #
 # Project Home:
 # ============
-# http://nmap.org
+# 
 #
 # Downloads:
 # =========
-# http://nmap.org/download.html
-# http://nmap.org/dist
+# http://dev.zuckschwerdt.org/openobex/wiki/ObexDownloads
+# http://triq.net/obexftp
 #
 
-url          = http://nmap.org/dist
+url          = http://triq.net/obexftp
 
-versions     = 6.40 6.47 7.01 7.80
-pkgname      = nmap
+versions     = 0.22 0.23
+pkgname      = obexftp
 suffix       = tar.bz2
 
 tarballs     = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

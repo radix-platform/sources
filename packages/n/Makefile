@@ -134,6 +134,7 @@ SUBDIRS := ModemManager           \
            pinepgp                \
            popa3d                 \
            portmap                \
+           postfix                \
            ppp                    \
            pppsetup               \
            procmail               \

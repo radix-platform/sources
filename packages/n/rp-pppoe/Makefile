@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# http://www.roaringpenguin.com/products/pppoe
+# https://dianne.skoll.ca/projects/rp-pppoe
 #
 # Downloads:
 # =========
-# http://www.roaringpenguin.com/files/download
+# https://dianne.skoll.ca/projects/rp-pppoe/download
 #
 
-url         = http://www.roaringpenguin.com/files/download
+url         = https://dianne.skoll.ca/projects/rp-pppoe/download
 
-versions    = 3.10 3.11 3.12
+versions    = 3.12 3.13
 pkgname     = rp-pppoe
 suffix      = tar.gz
 sign_suffix = sig

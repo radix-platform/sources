@@ -1,73 +1,47 @@
 #
 # Project Home:
 # ============
-# http://dev.zuckschwerdt.org/openobex
-#
-# GitHub:
-# ======
-# https://github.com/zuckschwerdt/openobex
-# clone https://github.com/zuckschwerdt/openobex.git
+# http://openobex.sourceforge.net/about.html
 #
 # Downloads:
 # =========
-# http://dev.zuckschwerdt.org/openobex/wiki/ObexDownloads
+# http://openobex.sourceforge.net/downloads.html
+#
+# Files:
+# =====
+# http://downloads.sourceforge.net/project/openobex/files/openobex/${VERSION}
 #
 
-url          = https://github.com/zuckschwerdt/openobex.git
+url         = http://downloads.sourceforge.net/project/openobex/openobex
 
-repo_name    = openobex
+versions    = 1.7.2
+pkgname     = openobex
+suffix      = tar.gz
 
-versions     = 1.4 1.5
-pkgname      = openobex
-suffix       = tar.bz2
-
-TAGS         = $(versions)
-git_repo     = .git_clone
-tarballs     = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-sha1s        = $(addsuffix .sha1sum, $(tarballs))
-
-TARGETS = repository_clean
+tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
+sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 
-all: $(TARGETS)
+all: $(tarballs) $(sha1s)
 
-.PHONY: downloads_clean repository_clean
+.PHONY: downloads_clean
 
-$(git_repo):
-	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
-	@rm -rf $(repo_name)
-	@if [ "$(url)" = 'git://radix.pro' ]; then \
-	   git clone $(url)/$(repo_name).git $(repo_name) ; \
-	 else \
-	   git clone $(url) $(repo_name) ; \
-	 fi
-	@touch $@
-
-$(tarballs): $(git_repo)
+$(tarballs):
+	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for version in $(versions) ; do \
-	  tag=`echo $$version` ; \
-	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
-	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
-	    ( cd $(repo_name) && \
-	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$tag | \
-	      bzip2 >../$(repo_name)-$$version.$(suffix) ) ; \
-	  fi ; \
-	  tar xjf $(repo_name)-$$version.$(suffix) ; \
-	  ( cd $(repo_name)-$$version ; ./bootstrap ; rm -rf autom4te.cache ) ; \
-	  tar cjf $(repo_name)-$$version.$(suffix) $(repo_name)-$$version ; \
-	  rm -rf $(repo_name)-$$version ; \
+	  wget -N $(url)/$$version/$(pkgname)-$${version}-Source.$(suffix) ; \
+	  tar xzf $(pkgname)-$${version}-Source.$(suffix) ; \
+	  rm -f $(pkgname)-$${version}-Source.$(suffix) ; \
+	  mv $(pkgname)-$${version}-Source $(pkgname)-$$version ; \
+	  tar cjf $(pkgname)-$$version.$(suffix) $(pkgname)-$$version ; \
+	  rm -rf $(pkgname)-$$version ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======" ; \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
-repository_clean: $(sha1s)
-	@echo -e "\n======= Remove cloned $(repo_name).git repository =======\n"
-	@rm -rf $(git_repo) $(repo_name)
-
 downloads_clean:
 	@rm -rf $(tarballs) $(sha1s)
-	@rm -rf $(git_repo) $(repo_name)

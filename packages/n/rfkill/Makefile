@@ -10,7 +10,7 @@
 #
 
 
-url       = ftp://ftp.kernel.org/pub/software/network
+url       = https://mirrors.edge.kernel.org/pub/software/network
 
 versions  = 0.5
 pkg_name  = rfkill

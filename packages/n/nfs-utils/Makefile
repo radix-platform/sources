@@ -1,18 +1,18 @@
 #
 # Project Home:
 # ============
-# http://nfs.sourceforge.net
+# https://www.kernel.org
 #
 # Downloads:
 # =========
-# http://downloads.sourceforge.net/project/nfs/nfs-utils/${VERSION}
+# https://mirrors.edge.kernel.org/pub/linux/utils/nfs-utils/${VERSION}
 #
 
-url         = http://downloads.sourceforge.net/project/nfs/nfs-utils
+url         = https://www.kernel.org/pub/linux/utils/nfs-utils
 
-versions    = 1.2.8 1.3.1 1.3.3
+versions    = 1.2.8 1.3.1 1.3.3 2.4.1
 pkg_name    = nfs-utils
-arch_type   = tar.bz2
+arch_type   = tar.xz
 suffixes    = $(arch_type) tar.sign
 
 files       = $(foreach suffix, $(suffixes), $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions))))

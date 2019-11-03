@@ -1,21 +1,21 @@
 #
 # Project Home:
 # ============
-# http://www.linux-nis.org/nis
-# https://www.thkukuk.de/nis
+# http://openports.se/news/slrn
+# http://pkgsrc.se/news/slrn
 #
 # Downloads:
 # =========
-# https://www.thkukuk.de/nis/download
+# http://downloads.sourceforge.net/sourceforge/slrn
 #
 
-url         = https://www.thkukuk.de/nis/download/ypbind-mt
+url         = http://downloads.sourceforge.net/sourceforge/slrn
 
-versions    = 1.37.1 1.37.2 1.38 2.0 2.2 2.4
-pkgname     = ypbind-mt
-suffix      = tar.bz2
+versions    = 1.0.0 1.0.1
+pkg_name    = slrn
+suffix      = tar.gz
 
-tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
+tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 
@@ -25,8 +25,8 @@ all: $(tarballs) $(sha1s)
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	@for version in $(versions) ; do \
+	  wget -N $(url)/$(pkg_name)-$$version.$(suffix) ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

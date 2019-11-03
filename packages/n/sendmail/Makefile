@@ -8,7 +8,7 @@
 # ftp://ftp.sendmail.org/pub/sendmail
 #
 
-url         = ftp://ftp.sendmail.org/pub/sendmail
+url         = http://ftp.sendmail.org
 
 versions    = 8.14.7 8.14.8 8.14.9 8.15.2
 pkg_name    = sendmail

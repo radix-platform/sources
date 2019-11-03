@@ -1,32 +1,35 @@
 #
 # Project Home:
 # ============
-# 
+# http://openobex.sourceforge.net/about.html
 #
 # Downloads:
 # =========
-# http://dev.zuckschwerdt.org/openobex/wiki/ObexDownloads
-# http://triq.net/obexftp
+# http://openobex.sourceforge.net/downloads.html
+#
+# Files:
+# =====
+# http://downloads.sourceforge.net/project/openobex/files/obexfs/${VERSION}
 #
 
-url          = http://triq.net/obexftp
+url         = http://downloads.sourceforge.net/project/openobex/obexfs
 
-versions     = 0.11 0.12
-pkgname      = obexfs
-suffix       = tar.gz
+versions    = 0.12
+pkgname     = obexfs
+suffix      = tar.gz
 
-tarballs     = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-sha1s        = $(addsuffix .sha1sum, $(tarballs))
+tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
+sha1s       = $(addsuffix .sha1sum, $(tarballs))
+
 
 all: $(tarballs) $(sha1s)
 
 .PHONY: downloads_clean
 
-
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	@for version in $(versions) ; do \
+	  wget -N $(url)/$$version/$(pkgname)-$${version}.$(suffix) ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

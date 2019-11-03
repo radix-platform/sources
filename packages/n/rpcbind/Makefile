@@ -14,7 +14,7 @@
 
 url         = http://downloads.sourceforge.net/sourceforge/rpcbind
 
-versions    = 0.2.0 0.2.1 0.2.3
+versions    = 0.2.0 0.2.1 0.2.3 1.2.5
 pkg_name    = rpcbind
 suffix      = tar.bz2
 

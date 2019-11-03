@@ -2,15 +2,16 @@
 # Project Home:
 # ============
 # http://www.linux-nis.org/nis
+# https://www.thkukuk.de/nis
 #
 # Downloads:
 # =========
-# http://www.linux-nis.org/download/yp-tools
+# https://www.thkukuk.de/nis/download
 #
 
-url         = http://www.linux-nis.org/download/yp-tools
+url         = https://www.thkukuk.de/nis/download/yp-tools
 
-versions    = 2.14 3.0.1 3.3
+versions    = 2.14 3.0.1 3.3 4.2
 pkgname     = yp-tools
 suffix      = tar.bz2
 

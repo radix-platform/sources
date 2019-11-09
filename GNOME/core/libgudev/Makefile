@@ -13,7 +13,7 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 230
+versions  = 230 233
 pkg_name  = libgudev
 arch_type = tar.xz
 suffixes  = $(arch_type)

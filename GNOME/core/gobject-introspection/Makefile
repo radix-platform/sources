@@ -13,7 +13,7 @@
 
 url       = ftp://ftp.gnome.org/pub/GNOME/sources
 
-versions  = 1.39.3 1.40.0 1.41.3 1.42.0 1.48.0
+versions  = 1.39.3 1.40.0 1.41.3 1.42.0 1.48.0 1.62.0
 pkg_name  = gobject-introspection
 arch_type = tar.xz
 suffixes  = $(arch_type)

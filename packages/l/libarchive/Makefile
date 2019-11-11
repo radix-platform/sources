@@ -10,7 +10,7 @@
 
 url         = http://libarchive.org/downloads
 
-versions    = 3.1.2
+versions    = 3.1.2 3.4.0
 pkgname     = libarchive
 suffix      = tar.gz
 

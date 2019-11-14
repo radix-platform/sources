@@ -16,7 +16,7 @@ url         = https://github.com/pypa/setuptools.git
 
 repo_name   = setuptools
 
-versions    = 20.10.1 38.2.4 41.2.0
+versions    = 20.10.1 38.2.4 41.2.0 41.6.0
 suffix      = tar.gz
 
 TAGS        = $(versions)

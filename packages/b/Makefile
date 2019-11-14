@@ -4,9 +4,10 @@
 # $ tree -fid .
 #
 
-SUBDIRS := mariadb    \
-           postgresql \
-           sqlite
+SUBDIRS := mariadb      \
+           postgresql   \
+           sqlite       \
+           tokyocabinet
 
 
 all-recursive downloads_clean-recursive:

@@ -5,13 +5,13 @@
 #
 # Downloads:
 # =========
-# http://llvm.org/releases/download.html
-# http://llvm.org/releases/${VERSION}
+# http://releases.llvm.org/download.html
+# http://releases.llvm.org/${VERSION}
 #
 
-url         = http://llvm.org/releases
+url         = http://releases.llvm.org
 
-versions    = 3.5.0 3.7.1 3.8.0
+versions    = 3.5.0 3.7.1 3.8.0 9.0.0
 pkgname     = llvm
 suffix      = src.tar.xz
 

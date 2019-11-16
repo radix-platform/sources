@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# http://sourceforge.net/projects/cracklib
+# https://github.com/cracklib/cracklib
 #
 # Downloads:
 # =========
-# http://sourceforge.net/projects/cracklib/files/cracklib
+# https://github.com/cracklib/cracklib/releases/download/v${VERSION}/cracklib-${VERSION}.tar.gz
 #
 
-url         = http://sourceforge.net/projects/cracklib/files/cracklib
+url         = https://github.com/cracklib/cracklib/releases/download
 
-versions    = 2.8.22 2.9.0 2.9.1 2.9.5
+versions    = 2.9.7
 pkgname     = cracklib
 suffix      = tar.gz
 
@@ -26,7 +26,7 @@ $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
 	  version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9][.0-9][.0-9]*\)\([\.].*\)/\2/'` ; \
-	  wget -N $(url)/$$version/$$tarball ; \
+	  wget -N $(url)/v$$version/$$tarball ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

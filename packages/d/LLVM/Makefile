@@ -4,10 +4,16 @@
 # $ tree -fid .
 #
 
-SUBDIRS := cfe          \
-           compiler-rt  \
-           extra-tools  \
-           llvm
+SUBDIRS := cfe         \
+           compiler-rt \
+           extra-tools \
+           libcxx      \
+           libcxxabi   \
+           lld         \
+           lldb        \
+           llvm        \
+           openmp      \
+           polly
 
 
 all-recursive downloads_clean-recursive:

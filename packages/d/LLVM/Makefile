@@ -9,6 +9,7 @@ SUBDIRS := cfe         \
            extra-tools \
            libcxx      \
            libcxxabi   \
+           libunwind   \
            lld         \
            lldb        \
            llvm        \

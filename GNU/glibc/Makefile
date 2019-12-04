@@ -9,7 +9,7 @@
 
 url         = http://ftpmirror.gnu.org/glibc
 
-versions    = 2.21 2.22 2.23 2.24 2.25 2.26 2.27 2.28
+versions    = 2.21 2.22 2.23 2.24 2.25 2.26 2.27 2.28 2.30
 
 pkgname     = glibc
 suffix      = tar.xz

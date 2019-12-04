@@ -4,15 +4,14 @@
 # You can use the generic url http://ftpmirror.gnu.org 
 # to automatically choose a nearby and up-to-date mirror.
 #
-# original url: http://ftp.gnu.org/gnu/binutils
+# original url: http://ftp.gnu.org/gnu/gcc/gcc-$(version)
 #
 
-url         = http://ftpmirror.gnu.org/binutils
+url         = http://ftpmirror.gnu.org/gcc
 
-versions    = 2.28.1 2.29 2.29.1
-versions   += 2.30 2.31 2.31.1 2.32 2.33.1
+versions    = 7.5.0
 
-pkgname     = binutils
+pkgname     = gcc
 suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
@@ -24,13 +23,13 @@ all: $(tarballs) $(sha1s)
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	@for version in $(versions) ; do \
+	  wget -N $(url)/gcc-$$version/gcc-$$version.$(suffix) ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculation '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 

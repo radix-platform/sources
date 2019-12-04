@@ -22,7 +22,8 @@ SUBDIRS := Allwinner         \
            sunxi             \
            v2.6              \
            v3.x              \
-           v4.x
+           v4.x              \
+           v5.x
 
 all-recursive downloads_clean-recursive:
 	@set fnord $(MAKEFLAGS); amf=$$2; \

@@ -8,7 +8,7 @@
 
 url         = http://www.kernel.org/pub/linux/kernel/v5.x
 
-versions    = 5.4.1
+versions    = 5.4.1 5.4.8 5.4.12
 
 pkgname     = linux
 suffix      = tar.xz

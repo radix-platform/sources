@@ -22,6 +22,7 @@ repo_name  = uClibc
 #                                               hash | tag
 #            ----------------------------------------+-----
 revisions  = 1a50fd884758ec5b5d8a163a704819fbf1760f99:arc-2016.09.17
+revisions += 955c69353480923792ad03023ebf34b574591be9:arc-2018.03.18
 
 git_repo   = .git_clone
 

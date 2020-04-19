@@ -23,6 +23,7 @@ repo_name  = binutils-gdb
 #            ----------------------------------------+-----
 revisions  = 7e4facb46b6ed1e87fdc9e50c7aa76e8e544e15d:arc-2016.09.17
 revisions += afcc795bc21f5d2972e9bd9d5c52eb91834bf0d0:arc-2018.09.12
+revisions += 64e06e5b062a911d87987a7763669a076259a861:arc-2020.03.18
 
 git_repo   = .git_clone
 

@@ -22,6 +22,7 @@ repo_name  = toolchain
 #                                               hash | tag
 #            ----------------------------------------+-----
 revisions  = 7f61900ffc2af92a4116cb324649447185837672:arc-2016.09.17
+revisions += bd56e4bbf7a7ea4a9ee3dd1317b6c361c71a7da5:arc-2020.03.18
 
 git_repo   = .git_clone
 

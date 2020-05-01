@@ -15,7 +15,7 @@
 
 url         = ftp://radix.pro/3pp/perl-modules/CPAN/XML-Simple
 
-versions    = 2.20
+versions    = 2.20 2.25
 pkgname     = XML-Simple
 suffix      = tar.gz
 

@@ -15,7 +15,7 @@
 
 url         = ftp://radix.pro/3pp/perl-modules/CPAN/XML-NamespaceSupport
 
-versions    = 1.11
+versions    = 1.11 1.12
 pkgname     = XML-NamespaceSupport
 suffix      = tar.gz
 

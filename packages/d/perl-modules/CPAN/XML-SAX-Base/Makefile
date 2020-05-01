@@ -15,7 +15,7 @@
 
 url         = ftp://radix.pro/3pp/perl-modules/CPAN/XML-SAX-Base
 
-versions    = 1.08
+versions    = 1.08 1.09
 pkgname     = XML-SAX-Base
 suffix      = tar.gz
 

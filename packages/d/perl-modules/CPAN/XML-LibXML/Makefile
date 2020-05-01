@@ -15,7 +15,7 @@
 
 url         = ftp://radix.pro/3pp/perl-modules/CPAN/XML-LibXML
 
-versions    = 2.0122
+versions    = 2.0122 2.0204
 pkgname     = XML-LibXML
 suffix      = tar.gz
 

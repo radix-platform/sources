@@ -15,7 +15,7 @@
 
 url         = ftp://radix.pro/3pp/perl-modules/CPAN/XML-Parser
 
-versions    = 2.44
+versions    = 2.44 2.46
 pkgname     = XML-Parser
 suffix      = tar.gz
 

@@ -15,7 +15,7 @@
 
 url         = ftp://radix.pro/3pp/perl-modules/CPAN/URI
 
-versions    = 1.69
+versions    = 1.69 1.76
 pkgname     = URI
 suffix      = tar.gz
 

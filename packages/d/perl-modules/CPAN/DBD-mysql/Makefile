@@ -15,7 +15,7 @@
 
 url         = ftp://radix.pro/3pp/perl-modules/CPAN/DBD-mysql
 
-versions    = 4.032
+versions    = 4.032 4.050
 pkgname     = DBD-mysql
 suffix      = tar.gz
 

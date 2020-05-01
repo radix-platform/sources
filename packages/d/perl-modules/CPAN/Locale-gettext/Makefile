@@ -15,7 +15,7 @@
 
 url         = ftp://radix.pro/3pp/perl-modules/CPAN/Locale-gettext
 
-versions    = 1.06
+versions    = 1.06 1.07
 pkgname     = gettext
 suffix      = tar.gz
 

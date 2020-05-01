@@ -15,7 +15,7 @@
 
 url         = ftp://radix.pro/3pp/perl-modules/CPAN/Clone
 
-versions    = 0.38
+versions    = 0.38 0.45
 pkgname     = Clone
 suffix      = tar.gz
 

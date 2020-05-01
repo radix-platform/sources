@@ -15,7 +15,7 @@
 
 url         = ftp://radix.pro/3pp/perl-modules/CPAN/DBI
 
-versions    = 1.634
+versions    = 1.634 1.643
 pkgname     = DBI
 suffix      = tar.gz
 

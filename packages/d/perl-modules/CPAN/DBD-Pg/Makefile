@@ -15,7 +15,7 @@
 
 url         = ftp://radix.pro/3pp/perl-modules/CPAN/DBD-Pg
 
-versions    = 3.7.4
+versions    = 3.7.4 3.11.0
 pkgname     = DBD-Pg
 suffix      = tar.gz
 

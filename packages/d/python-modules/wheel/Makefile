@@ -17,7 +17,7 @@ url         = https://github.com/pypa/wheel.git
 
 repo_name   = wheel
 
-versions    = 0.29.0 0.30.0 0.33.6
+versions    = 0.29.0 0.30.0 0.33.6 0.34.2
 suffix      = tar.xz
 
 TAGS        = $(versions)

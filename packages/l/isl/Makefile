@@ -11,7 +11,7 @@
 
 url         = http://isl.gforge.inria.fr
 
-versions    = 0.15 0.16 0.16.1 0.17 0.17.1 0.18 0.19 0.20 0.22 0.22.1
+versions    = 0.15 0.16 0.16.1 0.17 0.17.1 0.18 0.19 0.20 0.22 0.22.1 0.23
 
 tarballs    = $(addsuffix .tar.xz, $(addprefix isl-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

@@ -10,10 +10,9 @@
 #url         = http://ftpmirror.gnu.org/mpfr
 url         = http://ftp.gnu.org/gnu/mpfr
 
-versions    = 2.4.2 3.1.1 3.1.2 3.1.3 3.1.4 3.1.5 4.0.1 4.0.2
+versions    = 2.4.2 3.1.1 3.1.2 3.1.3 3.1.4 3.1.5 4.0.1 4.0.2 4.1.0
 
 tarballs    = $(addsuffix .tar.xz, $(addprefix mpfr-, $(versions)))
-tarballs   += $(addsuffix .tar.bz2, $(addprefix mpfr-, $(versions)))
 
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 

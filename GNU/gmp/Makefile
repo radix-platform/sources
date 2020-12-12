@@ -10,10 +10,9 @@
 #url         = http://ftpmirror.gnu.org/gmp
 url         = http://ftp.gnu.org/gnu/gmp
 
-versions    = 5.0.5 5.1.3 6.0.0a 6.1.0 6.1.1 6.1.2 6.2.0
+versions    = 6.1.0 6.1.1 6.1.2 6.2.0 6.2.1
 
 tarballs    = $(addsuffix .tar.xz, $(addprefix gmp-, $(versions)))
-tarballs   += $(addsuffix .tar.bz2, $(addprefix gmp-, 4.3.1 $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 all: $(tarballs) $(sha1s)

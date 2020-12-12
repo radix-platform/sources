@@ -10,7 +10,7 @@
 #url         = http://ftpmirror.gnu.org/mpc
 url         = http://ftp.gnu.org/gnu/mpc
 
-versions    = 1.0.1 1.0.2 1.0.3 1.1.0
+versions    = 1.0.1 1.0.2 1.0.3 1.1.0 1.2.0 1.2.1
 
 tarballs    = $(addsuffix .tar.gz, $(addprefix mpc-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

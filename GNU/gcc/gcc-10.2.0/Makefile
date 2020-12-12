@@ -1,17 +1,17 @@
 #
-# url = http://www.kernel.org/pub/linux/kernel/v[2.6|3.x|4.x|5.x]
+# Download: http://www.gnu.org/prep/ftp.html
 #
-# mirrors:
+# You can use the generic url http://ftpmirror.gnu.org 
+# to automatically choose a nearby and up-to-date mirror.
 #
-# url = http://www.se.kernel.org/pub/linux/kernel/v[2.6|3.x|4.x|5.x]
+# original url: http://ftp.gnu.org/gnu/gcc/gcc-$(version)
 #
 
-url         = http://www.kernel.org/pub/linux/kernel/v5.x
+url         = http://ftpmirror.gnu.org/gcc
 
-versions    = 5.4.1 5.4.8 5.4.12 5.4.14 5.4.15 5.4.19 5.4.29 5.4.33 5.4.83
-versions   += 5.9.14
+versions    = 10.2.0
 
-pkgname     = linux
+pkgname     = gcc
 suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
@@ -23,13 +23,13 @@ all: $(tarballs) $(sha1s)
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	@for version in $(versions) ; do \
+	  wget -N $(url)/gcc-$$version/gcc-$$version.$(suffix) ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculation '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 

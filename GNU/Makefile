@@ -52,6 +52,7 @@ SUBDIRS := EGLIBC/2.12.1       \
            gcc/gcc-7.5.0       \
            gcc/gcc-8.2.0       \
            gcc/gcc-8.3.0       \
+           gcc/gcc-8.4.0       \
            gcc/gcc-9.2.0       \
            gcc/gcc-9.3.0       \
            gcc/gcc-10.2.0      \

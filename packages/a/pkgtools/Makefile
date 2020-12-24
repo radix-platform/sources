@@ -3,47 +3,39 @@
 # ============
 # https://radix.pro/build-system/pkgtool
 #
-# GitLab:
-# ======
-# https://gitlab.radix.pro/radix/pkgtools
+# Subversion:
+# ==========
+# https://csvn.radix.pro/pkgtools
 #
 # Downloads:
 # =========
-# https://gitlab.radix.pro/radix/pkgtools
+# https://ftp.radix.pro/pub/pkgtools
 #
 
-url        = https://gitlab.radix.pro/radix/pkgtools.git
+url        = svn://radix.pro/pkgtools/tags
 
-repo_name  = pkgtools
+pkg_name   = pkgtools
 
-versions   = 0.0.9 0.1.0 0.1.1 0.1.2 0.1.3 0.1.4 0.1.5
+versions   = 0.1.5 0.1.6
 
-git_repo   = .git_clone
-tarballs   = $(addsuffix .tar.xz, $(addprefix $(repo_name)-, $(versions)))
+svn_repo   = .svn_clone
+tarballs   = $(addsuffix .tar.xz, $(addprefix $(pkg_name)-, $(versions)))
 sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
-TARGETS = repository_clean
-
+TARGETS = $(sha1s)
 
 all: $(TARGETS)
 
-.PHONY: downloads_clean repository_clean
+.PHONY: downloads_clean
 
-$(git_repo):
-	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
-	@rm -rf $(repo_name)
-	@git clone $(url) $(repo_name)
-	@touch $@
-
-$(tarballs): $(git_repo)
+$(tarballs):
 	@for version in $(versions) ; do \
-	  tag=`echo $$version` ; \
-	  if [ ! -f $(repo_name)-$$version.tar.xz ]; then \
-	    echo -e "\n======= Creating '$(repo_name)-$$version.tar.xz' snapshot =======" ; \
-	    ( cd $(repo_name) && \
-	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$tag | \
-	      xz >../$(repo_name)-$$version.tar.xz ) ; \
-	  fi ; \
+	  tag=$(pkg_name)-`echo $$version` ; \
+	  rm -rf ./$${tag} ; \
+	  svn checkout $(url)/$${tag} ; \
+	  rm -rf $${tag}/.svn ; \
+	  tar cJvf $${tag}.tar.xz $${tag} ; \
+	  rm -rf $${tag} ; \
 	done
 
 $(sha1s): %.tar.xz.sha1sum : %.tar.xz
@@ -52,10 +44,5 @@ $(sha1s): %.tar.xz.sha1sum : %.tar.xz
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
-repository_clean: $(sha1s)
-	@echo -e "\n======= Remove cloned $(repo_name).git repository =======\n"
-	@rm -rf $(git_repo) $(repo_name)
-
 downloads_clean:
 	@rm -rf $(tarballs) $(sha1s)
-	@rm -rf $(git_repo) $(repo_name)

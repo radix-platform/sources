@@ -16,7 +16,7 @@
 
 url         = http://www.sqlite.org/2020
 
-versions    = 3.31.1.0
+versions    = 3.31.1.0 3.34.0.0
 pkgname     = sqlite
 product     = autoconf
 suffix      = tar.gz

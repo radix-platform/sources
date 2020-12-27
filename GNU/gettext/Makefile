@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnu.org/pub/gnu/gettext
 
-versions    = 0.19.6 0.19.7 0.20.1
+versions    = 0.19.6 0.19.7 0.20.1 0.21
 pkgname     = gettext
 suffix      = tar.xz
 

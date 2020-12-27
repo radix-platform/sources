@@ -10,7 +10,7 @@
 
 url         = http://zlib.net
 
-versions    = 1.2.8
+versions    = 1.2.11
 pkgname     = zlib
 suffix      = tar.gz
 

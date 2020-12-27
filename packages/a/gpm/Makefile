@@ -1,14 +1,14 @@
 #
 # Project Home:
 # ============
-# http://www.nico.schottelius.org/software/gpm/
+# https://www.nico.schottelius.org/software/gpm/
 #
 # Downloads:
 # =========
-# http://www.nico.schottelius.org/software/gpm/archives/
+# https://www.nico.schottelius.org/software/gpm/archives/
 #
 
-url         = http://www.nico.schottelius.org/software/gpm/archives
+url         = https://www.nico.schottelius.org/software/gpm/archives
 
 versions    = 1.20.7
 pkg_name    = gpm

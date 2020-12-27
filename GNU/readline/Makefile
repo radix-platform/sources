@@ -12,7 +12,7 @@ url         = https://ftp.gnu.org/gnu/readline
 
 cutdirs     = 4
 
-versions    = 6.2 6.3 8.0
+versions    = 6.2 6.3 8.0 8.1
 pkgname     = readline
 suffix      = tar.gz
 

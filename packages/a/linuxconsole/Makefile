@@ -10,7 +10,7 @@
 
 url         = http://downloads.sourceforge.net/linuxconsole/files
 
-versions    = 1.4.6 1.4.7 1.4.8 1.4.9
+versions    = 1.4.6 1.4.7 1.4.8 1.4.9 1.7.0
 pkg_name    = linuxconsoletools
 suffix      = tar.bz2
 

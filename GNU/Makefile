@@ -83,6 +83,9 @@ SUBDIRS := EGLIBC/2.12.1       \
            mpfr                \
            mtools              \
            ncurses/5.9         \
+           ncurses/6.0         \
+           ncurses/6.1         \
+           ncurses/6.2         \
            patch               \
            pth                 \
            readline            \

@@ -6,14 +6,14 @@
 # Downloads:
 # =========
 # ftp://ftp.cs.unipr.it/pub/ppl/releases/
+# https://www.bugseng.com/products/ppl/download/ftp/releases/
 #
 
-url         = ftp://ftp.cs.unipr.it/pub/ppl/releases
+url         = https://www.bugseng.com/products/ppl/download/ftp/releases
 
 versions    = 1.0 1.1 1.2
 
 tarballs    = $(addsuffix .tar.xz, $(addprefix ppl-, $(versions)))
-tarballs   += $(addsuffix .tar.bz2, $(addprefix ppl-, $(versions)))
 
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
@@ -30,12 +30,6 @@ $(tarballs):
 	done
 
 $(filter %.tar.xz.sha1sum,$(sha1s)): %.tar.xz.sha1sum : %.tar.xz
-	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
-	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
-	done
-
-$(filter %.tar.bz2.sha1sum,$(sha1s)): %.tar.bz2.sha1sum : %.tar.bz2
 	@for tarball in $< ; do \
 	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \

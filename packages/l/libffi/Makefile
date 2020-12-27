@@ -10,7 +10,7 @@
 
 url         = ftp://sourceware.org/pub/libffi
 
-versions    = 3.0.12 3.0.13 3.2.1
+versions    = 3.0.12 3.0.13 3.2.1 3.3
 pkgname     = libffi
 suffix      = tar.gz
 

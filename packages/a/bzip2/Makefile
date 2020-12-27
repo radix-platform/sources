@@ -5,13 +5,12 @@
 #
 # Downloads:
 # =========
-# http://www.bzip.org/1.0.5/bzip2-1.0.5.tar.gz
-# http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
+# https://sourceware.org/pub/bzip2/
 #
 
-url         = http://www.bzip.org
+url         = https://sourceware.org/pub/bzip2
 
-versions    = 1.0.5 1.0.6
+versions    = 1.0.5 1.0.6 1.0.8
 pkgname     = bzip2
 suffix      = tar.gz
 
@@ -27,7 +26,7 @@ $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
 	  version=`echo $$tarball | sed 's/\(^[a-zA-Z0-9-]*\)\([0-9][.0-9]*[.0-9]*\)\(\..*\)/\2/'` ; \
-	  wget -N $(url)/$$version/$$tarball ; \
+	  wget -N $(url)/$$tarball ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

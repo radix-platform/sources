@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnu.org/gnu/autoconf
 
-versions    = 2.69
+versions    = 2.69 2.70
 pkgname     = autoconf
 suffix      = tar.xz
 

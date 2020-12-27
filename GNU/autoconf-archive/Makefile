@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnu.org/gnu/autoconf-archive
 
-versions    = 2014.02.28
+versions    = 2014.02.28 2019.01.06
 pkgname     = autoconf-archive
 suffix      = tar.xz
 

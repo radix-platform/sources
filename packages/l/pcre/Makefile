@@ -11,7 +11,7 @@
 
 url         = https://ftp.pcre.org/pub/pcre
 
-versions    = 8.33 8.34 8.38 8.43
+versions    = 8.33 8.34 8.38 8.43 8.44
 pkgname     = pcre
 suffix      = tar.bz2
 

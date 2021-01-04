@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnu.org/gnu/screen
 
-versions    = 4.7.0
+versions    = 4.7.0 4.8.0
 pkgname     = screen
 suffix      = tar.gz
 

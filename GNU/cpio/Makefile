@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/cpio
 
-versions    = 2.11 2.12
+versions    = 2.11 2.12 2.13
 pkgname     = cpio
 suffix      = tar.bz2
 

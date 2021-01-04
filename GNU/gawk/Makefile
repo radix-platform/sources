@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/gawk
 
-versions    = 4.1.0 4.1.1 5.0.1
+versions    = 4.1.0 4.1.1 5.0.1 5.1.0
 pkgname     = gawk
 suffix      = tar.xz
 

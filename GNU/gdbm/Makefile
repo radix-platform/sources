@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnu.org/gnu/gdbm
 
-versions    = 1.11 1.18 1.18.1
+versions    = 1.11 1.18 1.18.1 1.19
 pkgname     = gdbm
 suffix      = tar.gz
 

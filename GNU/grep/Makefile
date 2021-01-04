@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/grep
 
-versions    = 2.14 2.17 2.18 3.3
+versions    = 2.14 2.17 2.18 3.3 3.6
 pkgname     = grep
 suffix      = tar.xz
 

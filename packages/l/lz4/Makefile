@@ -13,7 +13,7 @@ url         = https://github.com/lz4/lz4.git
 
 repo_name   = lz4
 
-versions    = 1.9.2
+versions    = 1.9.2 1.9.3
 suffix      = tar.xz
 
 TAGS        = $(versions)

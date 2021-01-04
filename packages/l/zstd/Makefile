@@ -13,7 +13,7 @@ url         = https://github.com/facebook/zstd.git
 
 repo_name   = zstd
 
-versions    = 1.4.3
+versions    = 1.4.3 1.4.8
 suffix      = tar.xz
 
 TAGS        = $(versions)

@@ -11,7 +11,7 @@
 url         = http://people.redhat.com/~dhowells/keyutils
 
 
-versions    = 1.5.5 1.5.9
+versions    = 1.5.5 1.5.9 1.5.11 1.6.1
 pkgname     = keyutils
 suffix      = tar.bz2
 

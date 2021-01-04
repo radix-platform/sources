@@ -12,7 +12,7 @@
 
 url         = ftp://ftp.gnu.org/pub/gnu/bash
 
-versions    = 4.2 4.3 4.4 5.0
+versions    = 4.2 4.3 4.4 5.0 5.1
 pkgname     = bash
 suffix      = tar.gz
 

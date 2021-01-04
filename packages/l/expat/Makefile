@@ -1,22 +1,25 @@
 #
 # Project Home:
 # ============
-# http://expat.sourceforge.net/
+# https://libexpat.github.io
+#
+# GitHub:
+# ======
+# https://github.com/libexpat/libexpat.git
 #
 # Downloads:
 # =========
-# http://downloads.sourceforge.net/expat/files
+# https://github.com/libexpat/libexpat/releases/download/R_2_2_10/expat-2.2.10.tar.xz
 #
 
-url         = http://downloads.sourceforge.net/project/expat/expat
+url         = https://github.com/libexpat/libexpat/releases/download
 
-versions    = 2.2.9
+versions    = 2.2.9 2.2.10
 pkgname     = expat
 suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
-
 
 all: $(tarballs) $(sha1s)
 
@@ -25,7 +28,7 @@ all: $(tarballs) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for tarball in $(tarballs) ; do \
-	  version=`echo $$tarball | sed 's/\([a-zA-Z0-9-]*\)\([0-9][.0-9][.0-9]*\)\(\..*\)/\2/'` ; \
+	  version=R_`echo $$tarball | sed 's/\([a-zA-Z0-9-]*\)\([0-9][.0-9][.0-9]*\)\(\..*\)/\2/' | sed 's,\.,_,g'` ; \
 	  wget -N $(url)/$$version/$$tarball ; \
 	done
 

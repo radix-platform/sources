@@ -12,7 +12,7 @@ url         = https://ftp.gnu.org/gnu/libidn
 
 lib_name    = libidn
 
-versions    = 1.25 1.27 1.28 1.35
+versions    = 1.25 1.27 1.28 1.35 1.36
 pkgname     = libidn
 suffix      = tar.gz
 

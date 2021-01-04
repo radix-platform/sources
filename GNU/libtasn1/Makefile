@@ -12,7 +12,7 @@ url         = ftp://ftp.gnu.org/gnu/libtasn1
 
 lib_name    = libtasn1
 
-versions    = 3.3 3.4 4.3 4.7 4.14
+versions    = 3.3 3.4 4.3 4.7 4.14 4.16
 pkgname     = libtasn1
 suffix      = tar.gz
 

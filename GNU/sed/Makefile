@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/sed
 
-versions    = 4.7
+versions    = 4.7 4.8
 pkgname     = sed
 suffix      = tar.xz
 

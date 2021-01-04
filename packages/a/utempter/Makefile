@@ -19,9 +19,9 @@
 
 url         = ftp://ftp.altlinux.org/pub/people/ldv/utempter
 
-versions    = 1.1.5 1.1.6
+versions    = 1.2.1
 pkg_name    = libutempter
-suffix      = tar.bz2
+suffix      = tar.gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

@@ -7,7 +7,7 @@
 url         = https://thrysoee.dk/editline
 
 
-versions    = 20191025-3.1
+versions    = 20191025-3.1 20191231-3.1
 pkgname     = libedit
 suffix      = tar.gz
 

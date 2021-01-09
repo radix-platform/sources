@@ -61,7 +61,7 @@ $(tarballs): $(git_repo)
 	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
 	  fi ; \
 	  tar xJf $(repo_name)-$$version.$(suffix) ; \
-	  ( cd $(repo_name)-$$version ; ./autogen.sh ; rm -rf autom4te.cache .gitignore ) ; \
+	  ( cd $(repo_name)-$$version ; ./autogen.sh ; ./configure ; make ; make distclean ; rm -rf autom4te.cache .gitignore ) ; \
 	  tar cJf $(repo_name)-$$version.$(suffix) $(repo_name)-$$version ; \
 	  rm -rf $(repo_name)-$$version ; \
 	done

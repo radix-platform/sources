@@ -10,7 +10,7 @@
 
 url         = http://www.lua.org/ftp
 
-versions    = 5.2.2 5.2.3 5.3.1 5.3.2 5.3.5
+versions    = 5.2.2 5.2.3 5.3.1 5.3.2 5.3.5 5.3.6 5.4.2
 pkgname     = lua
 suffix      = tar.gz
 

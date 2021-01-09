@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# http://ncompress.sourceforge.net
+# https://github.com/vapier/ncompress
 #
 # Downloads:
 # =========
-# http://downloads.sourceforge.net/ncompress/files
+# https://github.com/vapier/ncompress/releases
 #
 
-url         = http://downloads.sourceforge.net/ncompress/files
+url         = https://github.com/vapier/ncompress/archive
 
-versions    = 4.2.4.4
+versions    = 4.2.4.6
 pkg_name    = ncompress
 suffix      = tar.gz
 
@@ -24,8 +24,9 @@ all: $(tarballs) $(sha1s)
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	@for version in $(versions) ; do \
+	  wget -N $(url)/v$$version.$(suffix) ; \
+	  mv v$$version.$(suffix) $(pkg_name)-$$version.$(suffix) ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

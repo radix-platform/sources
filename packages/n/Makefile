@@ -126,6 +126,7 @@ SUBDIRS := ModemManager           \
            openobex               \
            openssh                \
            openssl                \
+           openssl10              \
            openvpn                \
            p11-kit                \
            php                    \

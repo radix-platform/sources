@@ -10,7 +10,7 @@
 
 url         = https://kernel.org/pub/linux/utils/util-linux
 
-versions    = 2.21.2 2.23 2.24 2.24.1 2.27 2.27.1 2.29.2 2.33.2 2.34 2.36
+versions    = 2.21.2 2.23 2.24 2.24.1 2.27 2.27.1 2.29.2 2.33.2 2.34 2.36 2.36.1
 pkgname     = util-linux
 suffix      = tar.xz
 

@@ -23,7 +23,7 @@
 #
 url         = http://download.oracle.com/berkeley-db
 
-versions    = 5.3.28 6.1.19 6.1.26
+versions    = 5.3.28 6.1.19 6.1.26 18.1.40
 pkgname     = db
 suffix      = tar.gz
 

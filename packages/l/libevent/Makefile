@@ -11,7 +11,7 @@
 
 url         = https://github.com/libevent/libevent/releases/download
 
-versions    = 2.0.22-stable 2.1.11-stable
+versions    = 2.0.22-stable 2.1.11-stable 2.1.12-stable
 pkgname     = libevent
 suffix      = tar.gz
 

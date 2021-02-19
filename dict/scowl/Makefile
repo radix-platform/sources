@@ -11,7 +11,7 @@
 
 url         = http://downloads.sourceforge.net/project/wordlist/SCOWL
 
-versions    = 2019.10.06
+versions    = 2019.10.06 2020.12.07
 pkgname     = scowl
 suffix      = tar.gz
 

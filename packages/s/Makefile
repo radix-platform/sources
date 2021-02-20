@@ -4,8 +4,9 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Linux-PAM \
-           pam_unix2 \
+SUBDIRS := Linux-PAM  \
+           pam-redhat \
+           pam_unix2  \
            shadow
 
 

@@ -6,11 +6,11 @@
 # Downloads:
 # =========
 # http://rpm5.org/files/popt
-# ftp://ftp.rpm.org/pub/rpm/popt/releases
 
 
-url         = ftp://ftp.rpm.org/pub/rpm/popt/releases/popt-1.x
-versions    = 1.18
+url         = http://rpm5.org/files/popt
+
+versions    = 1.15 1.16
 pkgname     = popt
 suffix      = tar.gz
 

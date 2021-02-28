@@ -22,6 +22,7 @@ repo_name  = libcap-ng
 #                                               hash | tag
 #            ----------------------------------------+-----
 revisions  = daaf0ad855e80b2ecf806ea4946817bfe6df2be4:0.7.10
+revisions += d567fd5099ef7c157f8a1864bf77a3ae9a259232:0.8.2
 
 git_repo   = .git_clone
 

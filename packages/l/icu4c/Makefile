@@ -22,6 +22,7 @@ repo_name  = icu
 #                                               hash | tag
 #            ----------------------------------------+-----
 revisions  = fd123bf023882f07bfacf51c39111be2f946d8f8:65.1
+revisions += 84e1f26ea77152936e70d53178a816dbfbf69989:68.2
 
 git_repo   = .git_clone
 

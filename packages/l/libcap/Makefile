@@ -10,7 +10,7 @@
 
 url         = https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2
 
-versions    = 2.22 2.24 2.25 2.27
+versions    = 2.22 2.24 2.25 2.27 2.48
 pkgname     = libcap
 suffix      = tar.xz
 

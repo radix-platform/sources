@@ -1,47 +1,72 @@
 #
 # Project Home:
 # ============
-# https://packages.debian.org/source/stable/shadow
+# https://github.com/shadow-maint/shadow
 #
 # Downloads:
 # =========
-# http://ftp.de.debian.org/debian/pool/main/s/shadow
-# http://cdn.debian.net/debian/pool/main/s/shadow
+# https://github.com/shadow-maint/shadow/releases
 #
 
-url         = http://ftp.de.debian.org/debian/pool/main/s/shadow
 
-version     = 4.1.5.1
-pkgname     = shadow
-suffix      = orig.tar.gz
+url        = https://github.com/shadow-maint
 
-tarball     = $(addsuffix .$(suffix), $(addprefix $(pkgname)_, $(version)))
-sha1s       = $(addsuffix .sha1sum, $(tarball))
-patch       = $(addsuffix -1.diff.gz, $(addprefix $(pkgname)_, $(version)))
-description = $(addsuffix -1.dsc, $(addprefix $(pkgname)_, $(version)))
+repo_name  = shadow
 
-files       = $(patch) $(description)
+#
+# List of upstream versions to be extracted:
+# =========================================
+#                                               hash | tag
+#            ----------------------------------------+-----
+revisions  = 2cc7da6058152ec0cd338d4e15d29bd7124ae3d7:4.8.1
 
-all: $(tarball) $(files) $(sha1s)
+git_repo   = .git_clone
 
-.PHONY: downloads_clean
+suffix     = tar.xz
 
+versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d ':'))
 
-$(tarball):
-	@echo -e "\n======= Downloading source tarball =======\n"
-	wget -N $(url)/$(tarball)
+tarballs   = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
+sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
-$(files): $(tarball)
-	@echo -e "\n======= Downloading patch and description =======\n"
-	@for file in $(files) ; do \
-	  wget -N $(url)/$$file ; \
+TARGETS = repository_clean
+
+all: $(TARGETS)
+
+.PHONY: downloads_clean repository_clean
+
+$(git_repo):
+	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
+	@rm -rf $(repo_name)
+	@git clone $(url)/$(repo_name).git $(repo_name)
+	@touch $@
+
+$(tarballs): $(git_repo)
+	@for revision in $(revisions) ; do \
+	  hash=`echo $$revision    | cut -f 1 -d ':'` ; \
+	  version=`echo $$revision | cut -f 2 -d ':'` ; \
+	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
+	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
+	    ( cd $(repo_name) && \
+	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$hash | \
+	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
+	    tar xJf $(repo_name)-$$version.$(suffix) ; \
+	    ( cd $(repo_name)-$$version ; autoreconf -v -f --install ; rm -rf autom4te.cache .gitignore .travis.yml ) ; \
+	    tar cJf $(repo_name)-$$version.$(suffix) $(repo_name)-$$version ; \
+	    rm -rf $(repo_name)-$$version ; \
+	  fi ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
+repository_clean: $(sha1s)
+	@echo -e "\n======= Remove cloned $(repo_name).git repository =======\n"
+	@rm -rf $(git_repo) $(repo_name)
+
 downloads_clean:
-	@rm -rf $(tarball) $(files) $(sha1s)
+	@rm -rf $(tarballs) $(sha1s)
+	@rm -rf $(git_repo) $(repo_name)

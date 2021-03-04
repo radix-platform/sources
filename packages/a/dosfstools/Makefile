@@ -12,7 +12,7 @@ url        = https://github.com/dosfstools/dosfstools.git
 
 repo_name  = dosfstools
 
-versions   = 4.1
+versions   = 4.1 4.2
 suffix     = tar.xz
 
 TAGS       = $(addprefix v, $(versions))

@@ -69,6 +69,7 @@ SUBDIRS := CLooG                 \
            htop                  \
            i2c-tools             \
            infozip               \
+           inih                  \
            initscripts           \
            inotify-tools         \
            isapnptools           \

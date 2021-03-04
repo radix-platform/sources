@@ -14,7 +14,7 @@ repo_name  = xfsdump-dev
 pkg_name   = xfsdump
 suffix     = tar.xz
 
-versions   = 3.1.7 3.1.8
+versions   = 3.1.7 3.1.8 3.1.9
 
 # List of tags to be extracted:
 TAGS       = $(addprefix v, $(versions))

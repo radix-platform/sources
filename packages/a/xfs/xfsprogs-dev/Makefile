@@ -17,7 +17,7 @@ repo_name  = xfsprogs-dev
 pkg_name   = xfsprogs
 suffix     = tar.xz
 
-versions   = 5.2.1
+versions   = 5.2.1 5.10.0
 
 TAGS       = $(addprefix v, $(versions))
 

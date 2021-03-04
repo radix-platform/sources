@@ -11,7 +11,7 @@
 
 url         = http://downloads.sourceforge.net/psmisc/files
 
-versions    = 23.2
+versions    = 23.2 23.3 23.4
 pkgname     = psmisc
 suffix      = tar.xz
 

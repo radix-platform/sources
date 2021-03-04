@@ -10,7 +10,7 @@
 
 url         = https://www.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs
 
-versions    = 1.42.8 1.42.9 1.45.4
+versions    = 1.42.8 1.42.9 1.45.4 1.46.2
 pkgname     = e2fsprogs
 suffix      = tar.xz
 

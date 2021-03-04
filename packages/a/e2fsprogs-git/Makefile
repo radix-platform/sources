@@ -18,7 +18,7 @@ url        = git://git.kernel.org/pub/scm/fs/ext2/e2fsprogs.git
 
 repo_name  = e2fsprogs
 
-versions   = 1.42.8 1.42.9 1.42.12 1.42.13 1.45.4
+versions   = 1.42.8 1.42.9 1.42.12 1.42.13 1.45.4 1.46.2
 
 suffix     = tar.xz
 

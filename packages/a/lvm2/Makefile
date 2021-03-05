@@ -14,7 +14,7 @@
 
 url         = http://ftp.gwdg.de/pub/linux/sources.redhat.com/lvm2
 
-versions    = 2.02.186 2.03.06
+versions    = 2.02.186 2.03.06 2.03.11
 pkg_name    = LVM2
 suffix      = tar.xz
 

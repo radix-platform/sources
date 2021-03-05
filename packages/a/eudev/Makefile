@@ -24,6 +24,8 @@ repo_name  = eudev
 #            ----------------------------------------+--------
 revisions  = 71ff5b6886946dacca8ae685ac85cdc174cfdece:3.1.5
 revisions += d69f3f28348123ab7fa0ebac63ec2fd16800c5e0:3.2.8
+revisions += 2ab887ec67afd15eb9b0849467f1f9c036a2b6c8:3.2.9
+revisions += be7068512c7512fa67c64fbff3472ab140c277c8:3.2.10
 
 git_repo   = .git_clone
 

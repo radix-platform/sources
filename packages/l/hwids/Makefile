@@ -38,7 +38,7 @@ DATA_FILES-$(MANID) += manid.txt
 DATA_FILES-$(OPID)  += opid.txt
 DATA_FILES-$(SDIO)  += sdio.ids
 
-SYSTEMD_SOURCE = https://github.com/systemd/systemd/raw/master/hwdb.d
+SYSTEMD_SOURCE = https://github.com/systemd/systemd/raw/main/hwdb.d
 
 
 version     = $(shell echo `date +%Y%m%d`)

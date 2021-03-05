@@ -11,7 +11,7 @@
 
 url         = https://www.kernel.org/pub/linux/utils/usb/usbutils
 
-versions    = 006 007 008 012
+versions    = 006 007 008 012 013
 pkgname     = usbutils
 suffix      = tar.xz
 

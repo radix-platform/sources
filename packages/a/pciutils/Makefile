@@ -13,7 +13,7 @@
 
 url         = https://www.kernel.org/pub/software/utils/pciutils
 
-versions    = 3.2.0 3.2.1 3.3.1 3.4.1 3.6.2
+versions    = 3.2.0 3.2.1 3.3.1 3.4.1 3.6.2 3.7.0
 pkgname     = pciutils
 suffix      = tar.xz
 

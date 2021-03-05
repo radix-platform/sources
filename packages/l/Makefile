@@ -13,6 +13,7 @@ SUBDIRS := aalib                \
            cracklib-words       \
            dbus-glib            \
            dbus-python          \
+           editline             \
            elfutils             \
            expat                \
            fftw                 \

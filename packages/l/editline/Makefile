@@ -1,28 +1,28 @@
 #
 # Project Home:
 # ============
-# https://libusb.info
+# https://github.com/troglobit/editline
 #
 # GitHub:
 # ======
-# https://github.com/libusb/libusb
+# https://github.com/troglobit/editline
 #
 # Clone:
 # =====
-# https://github.com/libusb/libusb.git
+# https://github.com/troglobit/editline.git
 #
 
-url        = https://github.com/libusb
+url        = https://github.com/troglobit
 
-repo_name  = libusb
+repo_name  = editline
 
 #
 # List of tags to be extracted:
 # ============================
 #                                               hash | tag
 #            ----------------------------------------+-----
-revisions  = e782eeb2514266f6738e242cdcb18e3ae1ed06fa:1.0.23
-revisions += c6a35c56016ea2ab2f19115d2ea1e85e0edae155:1.0.24
+revisions  = 02cccd1e87b818cc0ac2ffab7b4bcc3e6cd9ba5a:1.17.0
+revisions += ecabef273ebf4193c5d6aff196de1c204169bc52:1.17.1
 
 git_repo   = .git_clone
 
@@ -56,12 +56,15 @@ $(tarballs): $(git_repo)
 	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
 	  fi ; \
 	  tar xJf $(repo_name)-$$version.$(suffix) ; \
-	  ( cd $(repo_name)-$$version ; ./autogen.sh ; \
-	    rm -rf autom4te.cache .private .travis.yml ; \
-	    make distclean ) ; \
+	  ( cd $(repo_name)-$$version ; \
+	    autoreconf --warnings=portability -vifm ; \
+	    find . -type f -name .gitignore -print -exec rm -f {} \; ; \
+	    rm -rf autom4te.cache debian docs autogen.sh Make.os9 src/os9.? src/sysos9.c .travis.yml ; \
+	  ) ; \
 	  tar cJf $(repo_name)-$$version.$(suffix) $(repo_name)-$$version ; \
 	  rm -rf $(repo_name)-$$version ; \
 	done
+
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \

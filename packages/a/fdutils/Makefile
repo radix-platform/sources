@@ -8,29 +8,32 @@
 # https://fdutils.linux.lu/download.html
 #
 
-url         = https://fdutils.linux.lu
+url          = https://fdutils.linux.lu
 
-version     = 5.5
-pkgname     = fdutils
-suffix      = tar.gz
+versions     = 5.5 5.6
+pkgname      = fdutils
+suffix       = tar.gz
 
-tarball     = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(version)))
-sha1s       = $(addsuffix .sha1sum, $(tarball))
-patch       = $(addsuffix -20081027.diff.gz, $(addprefix $(pkgname)-, $(version)))
-description = $(addsuffix .lsm, $(addprefix $(pkgname)-, $(version)))
+tarballs     = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
+sha1s        = $(addsuffix .sha1sum, $(tarballs))
+descriptions = $(addsuffix .lsm, $(addprefix $(pkgname)-, $(versions)))
 
-files       = $(patch) $(description)
+patch        = $(addsuffix -20081027.diff.gz, $(addprefix $(pkgname)-, 5.5))
 
-all: $(tarball) $(files) $(sha1s)
+files       = $(patch) $(descriptions)
+
+all: $(tarballs) $(files) $(sha1s)
 
 .PHONY: downloads_clean
 
 
-$(tarball):
-	@echo -e "\n======= Downloading source tarball =======\n"
-	wget -N $(url)/$(tarball)
+$(tarballs):
+	@echo -e "\n======= Downloading source tarballs =======\n"
+	@for tarball in $(tarballs) ; do \
+	  wget -N $(url)/$$tarball ; \
+	done
 
-$(files): $(tarball)
+$(files): $(tarballs)
 	@echo -e "\n======= Downloading patch and description =======\n"
 	@for file in $(files) ; do \
 	  wget -N $(url)/$$file ; \
@@ -43,4 +46,4 @@ $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	done
 
 downloads_clean:
-	@rm -rf $(tarball) $(files) $(sha1s)
+	@rm -rf $(tarballs) $(files) $(sha1s)

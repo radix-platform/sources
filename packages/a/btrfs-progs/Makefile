@@ -15,7 +15,7 @@ url        = https://git.kernel.org/pub/scm/linux/kernel/git/kdave/btrfs-progs.g
 
 repo_name  = btrfs-progs
 
-versions   = 3.16 4.4 5.3 5.10.1
+versions   = 3.16 4.4 5.3 5.10.1 5.11
 suffix     = tar.xz
 
 # List of tags to be extracted:

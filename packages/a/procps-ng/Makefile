@@ -11,7 +11,7 @@
 
 url         = https://sourceforge.net/projects/procps-ng/files/Production
 
-versions    = 3.3.15
+versions    = 3.3.15 3.3.16 3.3.17
 pkgname     = procps-ng
 suffix      = tar.xz
 

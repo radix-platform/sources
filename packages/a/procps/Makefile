@@ -1,38 +1,71 @@
 #
 # Project Home:
 # ============
-# http://procps.sourceforge.net/index.html
+# https://gitlab.com/procps-ng/procps
 #
-# Downloads:
-# =========
-# http://procps.sourceforge.net/procps-3.2.8.tar.gz
+# GitLab:
+# ======
+# git clone https://gitlab.com/procps-ng/procps.git
 #
 
-url         = http://procps.sourceforge.net
+url        = https://gitlab.com/procps-ng/procps.git
 
-versions    = 3.2.8
-pkgname     = procps
-suffix      = tar.gz
+repo_name  = procps
 
-tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-sha1s       = $(addsuffix .sha1sum, $(tarballs))
+versions   = 3.3.15 3.3.16 3.3.17
+
+suffix     = tar.xz
+
+# List of tags to be extracted:
+TAGS       = $(addprefix v, $(versions))
+
+git_repo   = .git_clone
+tarballs   = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
+sha1s      = $(addsuffix .sha1sum, $(tarballs))
+
+TARGETS = repository_clean
 
 
-all: $(tarballs) $(sha1s)
+all: $(TARGETS)
 
-.PHONY: downloads_clean
+.PHONY: downloads_clean repository_clean
 
-$(tarballs):
-	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+$(git_repo):
+	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
+	@rm -rf $(repo_name)
+	@git clone $(url) $(repo_name)
+	@touch $@
+
+$(tarballs): $(git_repo)
+	@for version in $(versions) ; do \
+	  tag=v`echo $$version` ; \
+	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
+	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
+	    ( cd $(repo_name) && \
+	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$tag | \
+	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
+	  fi ; \
+	  tar xJf $(repo_name)-$$version.$(suffix) ; \
+	  ( cd $(repo_name)-$$version ; \
+	    LT_OPTS='--copy' AM_OPTS='--copy --force' ./autogen.sh ; \
+	    rm -rf autom4te.cache .gitignore .gitlab-ci.yml ; \
+	    echo $$version > .tarball-version ; \
+	  ) ; \
+	  tar cJf $(repo_name)-$$version.$(suffix) $(repo_name)-$$version ; \
+	  rm -rf $(repo_name)-$$version ; \
 	done
+
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
+repository_clean: $(sha1s)
+	@echo -e "\n======= Remove cloned $(repo_name).git repository =======\n"
+	@rm -rf $(git_repo) $(repo_name)
+
 downloads_clean:
 	@rm -rf $(tarballs) $(sha1s)
+	@rm -rf $(git_repo) $(repo_name)

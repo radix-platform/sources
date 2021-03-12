@@ -8,12 +8,13 @@
 # Downloads:
 # =========
 # ftp://ftp.gnome.org/pub/GNOME/sources
+# https://download.gnome.org/sources
 #
 
 
-url       = ftp://ftp.gnome.org/pub/GNOME/sources
+url       = https://download.gnome.org/sources
 
-versions  = 2.42.0 2.42.1 2.43.1
+versions  = 2.42.0 2.42.1 2.43.1 2.66.0
 pkg_name  = glib-networking
 arch_type = tar.xz
 suffixes  = $(arch_type)

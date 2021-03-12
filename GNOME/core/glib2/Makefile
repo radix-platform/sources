@@ -13,13 +13,14 @@
 # Downloads:
 # =========
 # ftp://ftp.gnome.org/pub/GNOME/sources
+# https://download.gnome.org/sources
 #
 
 
-url        = ftp://ftp.gnome.org/pub/GNOME/sources
+url        = https://download.gnome.org/sources
 
 versions   = 2.39.3 2.39.4 2.40.0 2.43.0 2.48.0 2.59.0
-versions  += 2.63.0
+versions  += 2.63.0 2.66.7 2.67.6
 pkg_name   = glib
 arch_type  = tar.xz
 suffixes   = $(arch_type)

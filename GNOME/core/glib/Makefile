@@ -13,10 +13,11 @@
 # Downloads:
 # =========
 # ftp://ftp.gnome.org/pub/GNOME/sources
+# https://download.gnome.org/sources
 #
 
 
-url       = ftp://ftp.gnome.org/pub/GNOME/sources
+url       = https://download.gnome.org/sources
 
 versions  = 1.2.10
 pkg_name  = glib

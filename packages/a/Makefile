@@ -98,6 +98,7 @@ SUBDIRS := CLooG                 \
            lsscsi                \
            lua                   \
            lvm2                  \
+           lvm2-git              \
            lxc                   \
            lzip                  \
            man                   \

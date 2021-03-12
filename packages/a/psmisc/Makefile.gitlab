@@ -12,7 +12,7 @@ url        = https://gitlab.com/psmisc/psmisc.git
 
 repo_name  = psmisc
 
-versions   = 22.20 22.21 23.2
+versions   = 22.20 22.21 23.2 23.3 23.4
 suffix     = tar.xz
 
 TAGS       = $(addprefix v, $(versions))

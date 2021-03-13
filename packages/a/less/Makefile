@@ -10,7 +10,7 @@
 
 url         = http://www.greenwoodsoftware.com/less
 
-versions    = 530 551
+versions    = 530 551 580
 pkgname     = less
 suffix      = tar.gz
 

@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/tar
 
-versions    = 1.26 1.27.1 1.32
+versions    = 1.26 1.27.1 1.32 1.34
 pkgname     = tar
 suffix      = tar.xz
 

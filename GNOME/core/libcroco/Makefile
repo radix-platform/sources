@@ -8,6 +8,7 @@
 # Downloads:
 # =========
 # ftp://ftp.gnome.org/pub/GNOME/sources
+# https://download.gnome.org/sources
 #
 
 

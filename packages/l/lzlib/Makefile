@@ -5,13 +5,13 @@
 #
 # Downloads:
 # =========
-# http://download.savannah.gnu.org/releases/lzip
+# http://download.savannah.gnu.org/releases/lzip/lzlib
 #
 
-url         = http://download.savannah.gnu.org/releases/lzip
+url         = http://download.savannah.gnu.org/releases/lzip/lzlib
 
-versions    = 1.15 1.16 1.17 1.22
-pkgname     = lzip
+versions    = 1.12
+pkgname     = lzlib
 suffix      = tar.gz
 sign_suffix = sig
 

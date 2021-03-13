@@ -73,6 +73,7 @@ SUBDIRS := aalib                \
            libxslt              \
            log4cplus            \
            lz4                  \
+           lzlib                \
            lzo                  \
            mozilla-nspr         \
            mozilla-nss          \

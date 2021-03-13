@@ -23,6 +23,7 @@ repo_name  = logrotate
 #                                               hash | tag
 #            ----------------------------------------+--------
 revisions  = 35f99041bd8b68a89fc314d9dedaf18aa9c5743a:3.15.1
+revisions += 0a900b9435522b1314a39ead26ee7cccc91f5674:3.18.0
 
 git_repo   = .git_clone
 

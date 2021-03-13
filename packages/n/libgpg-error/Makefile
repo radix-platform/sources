@@ -11,7 +11,7 @@
 
 url         = https://gnupg.org/ftp/gcrypt/libgpg-error
 
-versions    = 1.11 1.12 1.16 1.21 1.36
+versions    = 1.11 1.12 1.16 1.21 1.36 1.41
 pkgname     = libgpg-error
 suffix      = tar.bz2
 

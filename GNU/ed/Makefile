@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/ed
 
-versions    = 1.15 1.16
+versions    = 1.15 1.16 1.17
 pkgname     = ed
 suffix      = tar.xz
 

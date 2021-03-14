@@ -10,7 +10,7 @@
 
 url        = ftp://ftp.de.debian.org/debian/pool/main/d/debianutils
 
-versions   = 4.9
+versions   = 4.11.2
 
 pkgname    = debianutils
 tarballs   = $(addsuffix .tar.xz, $(addprefix $(pkgname)_, $(versions)))

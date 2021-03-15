@@ -9,9 +9,9 @@
 # http://mama.indstate.edu/users/ice/tree/src
 #
 
-url         = http://mama.indstate.edu/users/ice/tree/src
+url         = ftp://mama.indstate.edu/linux/tree
 
-versions    = 1.6.0 1.7.0
+versions    = 1.6.0 1.7.0 1.8.0
 pkg_name    = tree
 suffix      = tar.xz
 

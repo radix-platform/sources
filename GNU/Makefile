@@ -78,6 +78,7 @@ SUBDIRS := EGLIBC/2.12.1       \
            libunistring        \
            m4                  \
            make                \
+           make-savannah       \
            mpc                 \
            multiprecision      \
            mpfr                \

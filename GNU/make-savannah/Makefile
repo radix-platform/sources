@@ -20,9 +20,9 @@ pkg_name   = make
 #
 # List of upstream versions to be extracted:
 # =========================================
-#                                               hash | tag
-#            ----------------------------------------+-----
-revisions  = c5319e75f5b64c972a38967a6eb5747838e914fd:4.3.1
+#                                               hash | tag | gnulib revision
+#            ----------------------------------------+-----+----------------------------------------
+revisions  = c5319e75f5b64c972a38967a6eb5747838e914fd:4.3.1:363497c93a59235478cd80d536a17023e595cc79
 
 git_repo   = .git_clone
 
@@ -49,6 +49,7 @@ $(tarballs): $(git_repo)
 	@for revision in $(revisions) ; do \
 	  hash=`echo $$revision    | cut -f 1 -d ':'` ; \
 	  version=`echo $$revision | cut -f 2 -d ':'` ; \
+	  gnulib=`echo $$revision  | cut -f 3 -d ':'` ; \
 	  if [ ! -f $(pkg_name)-$$version.$(suffix) ]; then \
 	    echo -e "\n======= Creating '$(pkg_name)-$$version.$(suffix)' snapshot =======" ; \
 	    ( cd $(repo_name) && \
@@ -57,7 +58,7 @@ $(tarballs): $(git_repo)
 	  fi ; \
 	  tar xJf $(pkg_name)-$$version.$(suffix) ; \
 	  ( cd $(pkg_name)-$$version ; \
-	    ./bootstrap --force --copy ; \
+	    GNULIB_REVISION=$$gnulib ./bootstrap --force --copy ; \
 	    rm -rf autom4te.cache gl gnulib scripts .ccls .dir-locals.el ; \
 	    find . -type f -name *~ -exec rm -f {} \; ; \
 	    find . -type f -name '.gitignore' -exec rm -f {} \; ; \

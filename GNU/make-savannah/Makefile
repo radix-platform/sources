@@ -58,6 +58,7 @@ $(tarballs): $(git_repo)
 	  fi ; \
 	  tar xJf $(pkg_name)-$$version.$(suffix) ; \
 	  ( cd $(pkg_name)-$$version ; \
+	    sed -i "s,\[[0-9]\.[0-9]\.[0-9]*\],\[$$version\]," configure.ac ; \
 	    GNULIB_REVISION=$$gnulib ./bootstrap --force --copy ; \
 	    rm -rf autom4te.cache gl gnulib scripts .ccls .dir-locals.el ; \
 	    find . -type f -name *~ -exec rm -f {} \; ; \

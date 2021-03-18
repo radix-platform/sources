@@ -11,9 +11,10 @@
 
 url         = http://downloads.sourceforge.net/project/gimp-print
 
-versions    = 5.2.9 5.2.10 5.2.11
+versions    = 5.3.3 5.3.4
+
 pkgname     = gutenprint
-suffix      = tar.bz2
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

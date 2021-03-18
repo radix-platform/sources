@@ -13,7 +13,7 @@
 # http://www.the-little-red-haired-girl.org/pub/elvis
 #
 
-url         = ftp://ftp.cs.pdx.edu/pub/elvis
+url         = http://www.the-little-red-haired-girl.org/pub/elvis/old
 
 versions    = 2.2_0
 pkgname     = elvis

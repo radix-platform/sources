@@ -11,9 +11,11 @@
 # http://downloads.sourceforge.net/project/hplip/hplip/${VERSION}
 #
 
-url         = http://downloads.sourceforge.net/project/hplip/hplip
+url         = https://downloads.sourceforge.net/project/hplip/hplip
 
 versions    = 3.13.10 3.14.10 3.15.9 3.15.11 3.16.5
+versions   += 3.16.7 3.21.2
+
 pkgname     = hplip
 suffix      = tar.gz
 sign_suffix = asc

@@ -7,14 +7,13 @@
 # Downloads:
 # =========
 # https://github.com/ArtifexSoftware/ghostpdl-downloads
-# https://github.com/ArtifexSoftware/ghostpdl-downloads/archive/gs919.tar.gz
 #
 
 url         = https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download
 
-versions    = 9.19
+versions    = 9.53.2 9.53.3
 pkgname     = ghostscript
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-,$(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
@@ -28,7 +27,7 @@ all: $(tarballs) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarball =======\n"
 	@for tarball in $(tarballs) ; do \
-	   version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9][.][0-9]*\)\(\..*\)/\2/'` ; \
+	   version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9][.][0-9]*[.][0-9]*\)\(\..*\)/\2/'` ; \
 	   short=`echo $$version | sed 's/\.//g'` ; \
 	   wget -N $(url)/gs$$short/$$tarball ; \
 	 done

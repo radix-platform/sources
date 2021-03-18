@@ -11,7 +11,7 @@
 
 url         = https://dbus.freedesktop.org/releases/dbus
 
-versions    = 1.13.12
+versions    = 1.13.12 1.13.18
 pkgname     = dbus
 suffix      = tar.xz
 sign_suffix = asc

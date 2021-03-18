@@ -10,9 +10,9 @@
 # http://invisible-island.net/datafiles/release
 #
 
-url         = ftp://invisible-island.net/diffstat
+url         = ftp://ftp.invisible-island.net/diffstat
 
-versions    = 1.53 1.59 1.61
+versions    = 1.53 1.59 1.61 1.64
 pkgname     = diffstat
 suffix      = tar.gz
 

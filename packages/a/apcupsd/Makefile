@@ -11,7 +11,7 @@
 
 url         = http://downloads.sourceforge.net/project/apcupsd/apcupsd%20-%20Stable
 
-versions    = 3.14.12 3.14.13
+versions    = 3.14.12 3.14.13 3.14.14
 pkg_name    = apcupsd
 arch_type   = tar.gz
 suffixes    = $(arch_type) $(arch_type).sig

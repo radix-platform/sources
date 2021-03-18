@@ -12,7 +12,7 @@
 
 url         = http://ftp.igh.cnrs.fr/pub/nongnu/dmidecode
 
-versions    = 3.0
+versions    = 3.0 3.3
 pkgname     = dmidecode
 suffix      = tar.xz
 

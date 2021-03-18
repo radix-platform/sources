@@ -11,7 +11,7 @@
 
 url         = http://downloads.sourceforge.net/project/gptfdisk/gptfdisk
 
-versions    = 0.8.7 0.8.10 1.0.0 1.0.1
+versions    = 0.8.7 0.8.10 1.0.0 1.0.1 1.0.7
 pkgname     = gptfdisk
 suffix      = tar.gz
 

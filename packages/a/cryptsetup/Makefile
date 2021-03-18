@@ -10,9 +10,9 @@
 #
 
 
-url       = ftp://ftp.kernel.org/pub/linux/utils
+url       = https://www.kernel.org/pub/linux/utils
 
-versions  = 1.4.3 1.6.6 1.7.0
+versions  = 1.4.3 1.6.6 1.7.0 2.3.5
 pkg_name  = cryptsetup
 arch_type = tar.xz
 suffixes  = $(arch_type) tar.sign

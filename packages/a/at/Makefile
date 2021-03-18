@@ -15,7 +15,7 @@
 
 url         = http://cdn.debian.net/debian/pool/main/a/at
 
-versions    = 3.1.12 3.1.13 3.1.16 3.1.18
+versions    = 3.1.12 3.1.13 3.1.16 3.1.18 3.1.23
 pkgname     = at
 suffix      = tar.gz
 

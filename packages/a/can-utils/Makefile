@@ -18,13 +18,14 @@ repo_name  = can-utils
 #
 #                                               hash | version
 #            ----------------------------------------+--------
-revisions  = 791890542ac1ce99131f36435e72af5635afc2fa-0.0.1
+revisions  = 791890542ac1ce99131f36435e72af5635afc2fa:0.0.1
+revisions += eb66451df280f95a9a12e78b151b8d867e1b78ed:2020.12.0
 
 
 git_repo   = .git_clone
 suffix     = tar.xz
 
-versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d '-'))
+versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d ':'))
 tarballs   = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
 sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
@@ -42,8 +43,8 @@ $(git_repo):
 
 $(tarballs): $(git_repo)
 	@for revision in $(revisions) ; do \
-	  version=`echo $$revision | cut -f 2 -d '-'` ; \
-	  hash=`echo $$revision | cut -f 1 -d '-'`    ; \
+	  version=`echo $$revision | cut -f 2 -d ':'` ; \
+	  hash=`echo $$revision | cut -f 1 -d ':'`    ; \
 	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
 	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
 	    ( cd $(repo_name) && \

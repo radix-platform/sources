@@ -11,7 +11,7 @@
 
 url         = http://hisham.hm/htop/releases
 
-versions    = 1.0.2 1.0.3
+versions    = 1.0.2 1.0.3 2.2.0
 pkgname     = htop
 suffix      = tar.gz
 

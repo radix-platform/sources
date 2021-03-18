@@ -1,39 +1,71 @@
 #
 # Project Home:
 # ============
-# http://inotify-tools.sourceforge.net
-# https://github.com/rvoicilas/inotify-tools/wiki
+# https://github.com/inotify-tools/inotify-tools
+#
+# GitHub:
+# ======
+# git clone https://github.com/inotify-tools/inotify-tools.git
 #
 # Downloads:
 # =========
-# http://github.com/downloads/rvoicilas/inotify-tools/inotify-tools-3.14.tar.gz
+# https://github.com/inotify-tools/inotify-tools/releases
 #
 
-url         = http://github.com/downloads/rvoicilas/inotify-tools
+url        = https://github.com/inotify-tools
 
-versions    = 3.14
-pkg_name    = inotify-tools
-suffix      = tar.gz
+repo_name  = inotify-tools
+pkg_name   = inotify-tools
+suffix     = tar.xz
 
-tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions)))
-sha1s       = $(addsuffix .sha1sum, $(tarballs))
+versions   = 3.20.2.2 3.20.11.0
+
+git_repo   = .git_clone
+tarballs   = $(addsuffix .tar.xz, $(addprefix $(pkg_name)-, $(versions)))
+sha1s      = $(addsuffix .sha1sum, $(tarballs))
+
+TARGETS = repository_clean
 
 
-all: $(tarballs) $(sha1s)
+all: $(TARGETS)
 
-.PHONY: downloads_clean
+.PHONY: downloads_clean repository_clean
 
-$(tarballs):
-	@echo -e "\n======= Downloading source tarballs =======\n"
+$(git_repo):
+	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
+	@rm -rf $(repo_name)
+	@git clone $(url)/$(repo_name).git $(repo_name)
+	@touch $@
+
+$(tarballs): $(git_repo)
 	@for version in $(versions) ; do \
-	  wget -N $(url)/$(pkg_name)-$$version.$(suffix) ;  \
+	  tag=`echo $$version` ; \
+	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
+	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
+	    ( cd $(repo_name) && \
+	      git archive --format=tar --prefix=$(pkg_name)-$$version/ $$tag | \
+	      xz >../$(pkg_name)-$$version.$(suffix) ) ; \
+	  fi ; \
+	  tar xJf $(pkg_name)-$$version.$(suffix) ; \
+	  ( cd $(pkg_name)-$$version ; \
+	    ./autogen.sh ; \
+	    rm -rf autom4te.cache .github .cirrus.yml .clang-format .travis.yml ; \
+	    find . -type f -name '.gitignore' -exec rm -f {} \; ; \
+	  ) ; \
+	  tar cJf $(pkg_name)-$$version.$(suffix) $(pkg_name)-$$version ; \
+	  rm -rf $(pkg_name)-$$version ; \
 	done
 
-$(sha1s): %.$(suffix).sha1sum : %.$(suffix)
+$(sha1s): %.tar.xz.sha1sum : %.tar.xz
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
+repository_clean: $(sha1s)
+	@echo -e "\n======= Remove cloned $(repo_name).git repository =======\n"
+	@rm -rf $(git_repo) $(repo_name)
+
 downloads_clean:
 	@rm -rf $(tarballs) $(sha1s)
+	@rm -rf $(git_repo) $(repo_name)

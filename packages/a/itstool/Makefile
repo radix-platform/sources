@@ -11,7 +11,7 @@
 
 url         = http://files.itstool.org/itstool
 
-versions    = 1.2.0 2.0.2
+versions    = 1.2.0 2.0.2 2.0.6
 pkgname     = itstool
 suffix      = tar.bz2
 sign_suffix = sha256sum

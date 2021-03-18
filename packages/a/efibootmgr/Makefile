@@ -1,49 +1,73 @@
 #
 # Project Home:
 # ============
-# http://linux.dell.com/efibootmgr
+# https://github.com/rhboot/efibootmgr
+#
+# GitHub:
+# ======
+# git clone https://github.com/rhboot/efibootmgr.git
 #
 # Downloads:
 # =========
-# http://linux.dell.com/efibootmgr/efibootmgr-${VERSION}
+# https://github.com/rhboot/efibootmgr/releases
 #
 
-url         = http://linux.dell.com/efibootmgr
+url        = https://github.com/rhboot
 
-versions    = 0.5.4 0.6.0
-pkgname     = efibootmgr
-suffix      = tar.gz
-sign_suffix = sign
+repo_name  = efibootmgr
 
-tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-signatures  = $(addsuffix .$(sign_suffix), $(tarballs))
-sha1s       = $(addsuffix .sha1sum, $(tarballs))
+#
+# List of revisions to be extracted:
+# =================================
+#
+#                                               hash | version
+#            ----------------------------------------+--------
+revisions  = a5103251a11663adddc85c86e0b8d3d3b73cbb4a:16
+revisions += e067160ecef8208e1944002e5d50b275733211fb:17
 
+git_repo   = .git_clone
 
-all: $(tarballs) $(signatures) $(sha1s)
+suffix     = tar.xz
 
-.PHONY: downloads_clean
+versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d ':'))
 
-$(tarballs):
-	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9][.0-9]*[.0-9]*\)\(\..*\)/\2/'` ; \
-	  wget -N $(url)/$(pkgname)-$$version/$$tarball ; \
-	done
+tarballs   = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
+sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
-$(signatures): %.$(suffix).$(sign_suffix) : %.$(suffix)
-	@for signature in $@ ; do \
-	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
-	  version=`echo $$signature | sed 's/\([a-zA-Z-]*\)\([0-9][.0-9]*[.0-9]*\)\(\..*\)/\2/'` ; \
-	  wget -N $(url)/$(pkgname)-$$version/$$signature ; \
-	  touch $$signature ; \
+TARGETS = repository_clean
+
+all: $(TARGETS)
+
+.PHONY: downloads_clean repository_clean
+
+$(git_repo):
+	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
+	@rm -rf $(repo_name)
+	@git clone $(url)/$(repo_name).git $(repo_name)
+	@touch $@
+
+$(tarballs): $(git_repo)
+	@for revision in $(revisions) ; do \
+	  hash=`echo $$revision | cut -f 1 -d ':'` ; \
+	  version=`echo $$revision | cut -f 2 -d ':'` ; \
+	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
+	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
+	    ( cd $(repo_name) && \
+	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$hash | \
+	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
+	  fi ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
+repository_clean: $(sha1s)
+	@echo -e "\n======= Remove cloned $(repo_name).git repository =======\n"
+	@rm -rf $(git_repo) $(repo_name)
+
 downloads_clean:
-	@rm -rf $(tarballs) $(signatures) $(sha1s)
+	@rm -rf $(tarballs) $(sha1s)
+	@rm -rf $(git_repo) $(repo_name)

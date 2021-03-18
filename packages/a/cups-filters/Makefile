@@ -10,7 +10,7 @@
 
 url         = http://www.openprinting.org/download/cups-filters
 
-versions    = 1.0.61 1.0.76 1.7.0 1.8.1 1.8.3 1.9.0
+versions    = 1.0.61 1.0.76 1.7.0 1.8.1 1.8.3 1.9.0 1.28.7
 pkgname     = cups-filters
 suffix      = tar.xz
 

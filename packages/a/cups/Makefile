@@ -5,45 +5,55 @@
 #
 # Downloads:
 # =========
-# https://www.cups.org/software.php
+# https://github.com/apple/cups/releases
 #
 
-url         = https://www.cups.org/software
+url        = https://github.com/apple
 
-versions    = 1.5.4 2.0.0 2.0.1 2.1.2 2.1.3
-pkgname     = cups
-suffix      = tar.bz2
-sign_suffix = sig
+repo_name  = cups
+pkg_name   = cups
+suffix     = tar.xz
 
-tarballs    = $(addsuffix -source.$(suffix), $(addprefix $(pkgname)-, $(versions)))
-signatures  = $(addsuffix .$(sign_suffix), $(tarballs))
-sha1s       = $(addsuffix .sha1sum, $(tarballs))
+versions   = 2.3.1 2.3.3
+
+git_repo   = .git_clone
+tarballs   = $(addsuffix .tar.xz, $(addprefix $(pkg_name)-, $(versions)))
+sha1s      = $(addsuffix .sha1sum, $(tarballs))
+
+TARGETS = repository_clean
 
 
-all: $(tarballs) $(signatures) $(sha1s)
+all: $(TARGETS)
 
-.PHONY: downloads_clean
+.PHONY: downloads_clean repository_clean
 
-$(tarballs):
-	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9][.0-9]*[.0-9]*\)\([.-].*\)/\2/'` ; \
-	  wget -N $(url)/$$version/$$tarball ; \
+$(git_repo):
+	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
+	@rm -rf $(repo_name)
+	@git clone $(url)/$(repo_name).git $(repo_name)
+	@touch $@
+
+$(tarballs): $(git_repo)
+	@for version in $(versions) ; do \
+	  tag=v`echo $$version` ; \
+	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
+	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
+	    ( cd $(repo_name) && \
+	      git archive --format=tar --prefix=$(pkg_name)-$$version/ $$tag | \
+	      xz >../$(pkg_name)-$$version.$(suffix) ) ; \
+	  fi ; \
 	done
 
-$(signatures): %.$(suffix).$(sign_suffix) : %.$(suffix)
-	@for signature in $@ ; do \
-	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
-	  version=`echo $$signature | sed 's/\([a-zA-Z-]*\)\([0-9][.0-9]*[.0-9]*\)\([.-].*\)/\2/'` ; \
-	  wget -N $(url)/$$version/$$signature ; \
-	  touch $$signature ; \
-	done
-
-$(sha1s): %.$(suffix).sha1sum : %.$(suffix)
+$(sha1s): %.tar.xz.sha1sum : %.tar.xz
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
+repository_clean: $(sha1s)
+	@echo -e "\n======= Remove cloned $(repo_name).git repository =======\n"
+	@rm -rf $(git_repo) $(repo_name)
+
 downloads_clean:
-	@rm -rf $(tarballs) $(signatures) $(sha1s)
+	@rm -rf $(tarballs) $(sha1s)
+	@rm -rf $(git_repo) $(repo_name)

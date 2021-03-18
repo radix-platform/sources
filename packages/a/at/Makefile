@@ -1,21 +1,16 @@
 #
 # Project Home:
 # ============
-# https://tracker.debian.org/pkg/at
-#
-# Git:
-# ===
-# git clone https://anonscm.debian.org/git/collab-maint/at.git
-# git clone git://anonscm.debian.org/collab-maint/at.git
+# -
 #
 # Downloads:
 # =========
-# http://cdn.debian.net/debian/pool/main/a/at
+# http://software.calhariz.com/at
 #
 
-url         = http://cdn.debian.net/debian/pool/main/a/at
+url         = http://software.calhariz.com/at
 
-versions    = 3.1.12 3.1.13 3.1.16 3.1.18 3.1.23
+versions    = 3.1.16 3.1.20 3.1.23 3.2.1
 pkgname     = at
 suffix      = tar.gz
 

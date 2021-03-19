@@ -10,7 +10,7 @@
 
 url         = https://www.kernel.org/pub/linux/utils/kernel/kmod
 
-versions    = 16 22 23 24 25 26 27
+versions    = 16 22 23 24 25 26 27 28
 pkg_name    = kmod
 suffix      = tar.xz
 

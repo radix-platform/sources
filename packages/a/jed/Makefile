@@ -9,7 +9,7 @@
 # ftp://space.mit.edu/pub/davis/jed/v0.99
 #
 
-url         = ftp://space.mit.edu/pub/davis/jed/v0.99
+url         = https://www.jedsoft.org/releases/jed
 
 versions    = 0.99-19
 pkgname     = jed

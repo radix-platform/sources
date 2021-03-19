@@ -8,9 +8,9 @@
 # http://downloads.sourceforge.net/project/joe-editor/JOE sources/joe-${VERSION}
 #
 
-url         = http://downloads.sourceforge.net/project/joe-editor/JOE%20sources
+url         = https://downloads.sourceforge.net/project/joe-editor/JOE%20sources
 
-versions    = 3.6 3.7 4.1
+versions    = 3.6 3.7 4.1 4.6
 pkgname     = joe
 suffix      = tar.gz
 

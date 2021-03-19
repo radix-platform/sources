@@ -8,7 +8,7 @@
 # ftp://ftp.radix.pro/radix/tools/jsmin
 #
 
-url          = ftp://ftp.radix.pro/radix/tools/jsmin
+url          = https://ftp.radix.pro/radix/tools/jsmin
 
 versions     = 0.0.1
 pkgname      = jsmin

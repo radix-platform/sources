@@ -1,14 +1,14 @@
 #
 # Project Home:
 # ============
-# http://www.netfilter.org/projects/libmnl
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# ftp://ftp.netfilter.org/pub/libmnl
+# https://www.netfilter.org/pub/libmnl
 #
 
-url         = ftp://ftp.netfilter.org/pub/libmnl
+url         = https://www.netfilter.org/pub/libmnl
 
 versions    = 1.0.2 1.0.3 1.0.4
 pkgname     = libmnl

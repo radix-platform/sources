@@ -1,14 +1,14 @@
 #
 # Project Home:
 # ============
-# http://www.netfilter.org/projects/libnetfilter_log
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# ftp://ftp.netfilter.org/pub/libnetfilter_log
+# https://www.netfilter.org/pub/libnetfilter_log
 #
 
-url         = ftp://ftp.netfilter.org/pub/libnetfilter_log
+url         = https://www.netfilter.org/pub/libnetfilter_log
 
 versions    = 1.0.1
 pkgname     = libnetfilter_log

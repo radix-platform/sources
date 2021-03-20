@@ -12,7 +12,7 @@
 
 url       = https://www.kernel.org/pub/linux/bluetooth
 
-versions  = 4.99 5.24 5.37 5.42 5.52
+versions  = 4.99 5.24 5.37 5.42 5.52 5.56
 pkg_name  = bluez
 arch_type = tar.xz
 suffixes  = $(arch_type) tar.sign

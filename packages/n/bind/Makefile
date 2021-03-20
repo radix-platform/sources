@@ -11,9 +11,9 @@
 
 url         = http://ftp.isc.org/isc/bind9
 
-versions    = 9.9.5-P1 9.10.1 9.10.3 9.10.4 9.13.6 9.14.7 9.15.5
+versions    = 9.16.11 9.17.11
 pkgname     = bind
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

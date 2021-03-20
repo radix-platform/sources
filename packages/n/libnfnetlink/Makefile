@@ -1,14 +1,14 @@
 #
 # Project Home:
 # ============
-# http://www.netfilter.org/projects/libnfnetlink
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# ftp://ftp.netfilter.org/pub/libnfnetlink
+# https://www.netfilter.org/pub/libnfnetlink
 #
 
-url         = ftp://ftp.netfilter.org/pub/libnfnetlink
+url         = https://www.netfilter.org/pub/libnfnetlink
 
 versions    = 1.0.1
 pkgname     = libnfnetlink

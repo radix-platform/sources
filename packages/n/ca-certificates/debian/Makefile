@@ -6,30 +6,33 @@
 # Downloads:
 # =========
 # http://deb.debian.org/debian/pool/main/c/ca-certificates
+# http://ftp.debian.org/debian/pool/main/c/ca-certificates/
 #
 
-url         = http://deb.debian.org/debian/pool/main/c/ca-certificates
+url          = http://ftp.debian.org/debian/pool/main/c/ca-certificates
 
-version     = 20190110
-pkgname     = ca-certificates
-suffix      = tar.xz
+versions     = 20190110 20210119
+pkgname      = ca-certificates
+suffix       = tar.xz
 
-tarball     = $(addsuffix .$(suffix), $(addprefix $(pkgname)_, $(version)))
-sha1s       = $(addsuffix .sha1sum, $(tarball))
-description = $(addsuffix .dsc, $(addprefix $(pkgname)_, $(version)))
+tarballs     = $(addsuffix .$(suffix), $(addprefix $(pkgname)_, $(versions)))
+sha1s        = $(addsuffix .sha1sum, $(tarballs))
+descriptions = $(addsuffix .dsc, $(addprefix $(pkgname)_, $(versions)))
 
-files       = $(description)
+files       = $(descriptions)
 
-all: $(tarball) $(files) $(sha1s)
+all: $(tarballs) $(files) $(sha1s)
 
 .PHONY: downloads_clean
 
 
-$(tarball):
+$(tarballs):
 	@echo -e "\n======= Downloading source tarball =======\n"
-	wget -N $(url)/$(tarball)
+	@for tarball in $(tarballs) ; do \
+	   wget -N $(url)/$$tarball ; \
+	 done
 
-$(files): $(tarball)
+$(files): $(tarballs)
 	@echo -e "\n======= Downloading patch and description =======\n"
 	@for file in $(files) ; do \
 	  wget -N $(url)/$$file ; \
@@ -42,4 +45,4 @@ $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	done
 
 downloads_clean:
-	@rm -rf $(tarball) $(files) $(sha1s)
+	@rm -rf $(tarballs) $(files) $(sha1s)

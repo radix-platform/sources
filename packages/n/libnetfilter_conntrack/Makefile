@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# http://www.netfilter.org/projects/libnetfilter_conntrack
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# ftp://ftp.netfilter.org/pub/libnetfilter_conntrack
+# https://www.netfilter.org/pub/libnetfilter_conntrack
 #
 
-url         = ftp://ftp.netfilter.org/pub/libnetfilter_conntrack
+url         = https://www.netfilter.org/pub/libnetfilter_conntrack
 
-versions    = 1.0.4 1.0.5 1.0.6 1.0.7
+versions    = 1.0.4 1.0.5 1.0.6 1.0.7 1.0.8
 pkgname     = libnetfilter_conntrack
 suffix      = tar.bz2
 

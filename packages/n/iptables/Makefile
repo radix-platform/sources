@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# http://www.netfilter.org/projects/iptables
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# ftp://ftp.netfilter.org/pub/iptables
+# https://www.netfilter.org/pub/iptables
 #
 
-url         = ftp://ftp.netfilter.org/pub/iptables
+url         = https://www.netfilter.org/pub/iptables
 
-versions    = 1.4.20 1.4.21 1.6.0 1.8.3
+versions    = 1.4.20 1.4.21 1.6.0 1.8.3 1.8.7
 pkgname     = iptables
 suffix      = tar.bz2
 

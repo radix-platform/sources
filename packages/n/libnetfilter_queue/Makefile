@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# http://www.netfilter.org/projects/libnetfilter_queue
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# ftp://ftp.netfilter.org/pub/libnetfilter_queue
+# https://www.netfilter.org/pub/libnetfilter_queue
 #
 
-url         = ftp://ftp.netfilter.org/pub/libnetfilter_queue
+url         = https://www.netfilter.org/pub/libnetfilter_queue
 
-versions    = 1.0.1 1.0.2 1.0.3
+versions    = 1.0.1 1.0.2 1.0.3 1.0.5
 pkgname     = libnetfilter_queue
 suffix      = tar.bz2
 

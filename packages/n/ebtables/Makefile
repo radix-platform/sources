@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# http://ebtables.netfilter.org
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# http://ebtables.netfilter.org/downloads/latest.html
+# https://www.netfilter.org/pub/ebtables/
 #
 
-url         = ftp://ftp.netfilter.org/pub/ebtables
+url         = https://www.netfilter.org/pub/ebtables
 
-versions    = 2.0.10-4
+versions    = 2.0.11
 pkgname     = ebtables
 suffix      = tar.gz
 
@@ -25,11 +25,7 @@ all: $(tarballs) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for version in $(versions) ; do \
-	  wget -N $(url)/$(pkgname)-v$$version.$(suffix) ; \
-	  tar xzf $(pkgname)-v$$version.$(suffix) ; \
-	  mv $(pkgname)-v$$version $(pkgname)-$$version ; \
-	  tar czf $(pkgname)-$$version.$(suffix) $(pkgname)-$$version ; \
-	  rm -rf $(pkgname)-$$version $(pkgname)-v$$version.$(suffix) ; \
+	  wget -N $(url)/$(pkgname)-$$version.$(suffix) ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

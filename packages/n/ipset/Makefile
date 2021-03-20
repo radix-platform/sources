@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# http://www.netfilter.org/projects/ipset
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# ftp://ftp.netfilter.org/pub/ipset
+# https://www.netfilter.org/pub/ipset
 #
 
-url         = ftp://ftp.netfilter.org/pub/ipset
+url         = https://www.netfilter.org/pub/ipset
 
-versions    = 6.20 6.21 6.27 6.29 6.38 7.4
+versions    = 6.20 6.21 6.27 6.29 6.38 7.4 7.9 7.11
 pkgname     = ipset
 suffix      = tar.bz2
 

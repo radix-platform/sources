@@ -1,14 +1,14 @@
 #
 # Project Home:
 # ============
-# http://www.netfilter.org/projects/nfacct
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# ftp://ftp.netfilter.org/pub/nfacct
+# https://www.netfilter.org/pub/nfacct
 #
 
-url         = ftp://ftp.netfilter.org/pub/nfacct
+url         = https://www.netfilter.org/pub/nfacct
 
 versions    = 1.0.1 1.0.2
 pkgname     = nfacct

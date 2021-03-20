@@ -5,12 +5,12 @@
 #
 # Downloads:
 # =========
-# ftp://ftp.netfilter.org/pub/conntrack-tools
+# https://www.netfilter.org/pub/conntrack-tools/
 #
 
-url         = ftp://ftp.netfilter.org/pub/conntrack-tools
+url         = https://www.netfilter.org/pub/conntrack-tools/
 
-versions    = 1.4.2 1.4.3 1.4.5
+versions    = 1.4.2 1.4.3 1.4.5 1.4.6
 pkgname     = conntrack-tools
 suffix      = tar.bz2
 

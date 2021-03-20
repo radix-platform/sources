@@ -1,14 +1,14 @@
 #
 # Project Home:
 # ============
-# http://www.netfilter.org/projects/libnetfilter_cttimeout
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# ftp://ftp.netfilter.org/pub/libnetfilter_cttimeout
+# https://www.netfilter.org/pub/libnetfilter_cttimeout
 #
 
-url         = ftp://ftp.netfilter.org/pub/libnetfilter_cttimeout
+url         = https://www.netfilter.org/pub/libnetfilter_cttimeout
 
 versions    = 1.0.0
 pkgname     = libnetfilter_cttimeout

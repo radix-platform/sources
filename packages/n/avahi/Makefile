@@ -10,7 +10,7 @@
 
 url         = http://avahi.org/download
 
-versions    = 0.6.31 0.6.32 0.7
+versions    = 0.6.31 0.6.32 0.7 0.8
 pkgname     = avahi
 suffix      = tar.gz
 

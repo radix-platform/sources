@@ -1,14 +1,14 @@
 #
 # Project Home:
 # ============
-# http://www.netfilter.org/projects/libnetfilter_acct
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# ftp://ftp.netfilter.org/pub/libnetfilter_acct
+# https://www.netfilter.org/pub/libnetfilter_acct
 #
 
-url         = ftp://ftp.netfilter.org/pub/libnetfilter_acct
+url         = https://www.netfilter.org/pub/libnetfilter_acct
 
 versions    = 1.0.1 1.0.2 1.0.3
 pkgname     = libnetfilter_acct

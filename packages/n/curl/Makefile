@@ -15,7 +15,7 @@
 url         = https://curl.haxx.se/download
 cacert_url  = https://curl.haxx.se/ca
 
-versions    = 7.66.0
+versions    = 7.66.0 7.75.0
 pkgname     = curl
 suffix      = tar.xz
 

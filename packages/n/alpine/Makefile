@@ -3,6 +3,10 @@
 # ============
 # http://patches.freeiz.com/alpine
 #
+# Git:
+# ===
+# https://repo.or.cz/alpine.git
+#
 # Downloads:
 # =========
 # http://patches.freeiz.com/alpine/release
@@ -11,7 +15,7 @@
 
 url         = http://alpine.x10host.com/alpine/release/src
 
-versions    = 2.11 2.20 2.21
+versions    = 2.11 2.20 2.21 2.24
 pkgname     = alpine
 suffix      = tar.xz
 

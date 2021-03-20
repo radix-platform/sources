@@ -5,17 +5,17 @@
 #
 # Github:
 # ======
-# git clone https://github.com/cyrusimap/cyrus-sasl.git
+# git clone https://github.com/cyrusimap/cyrus-imapd.git
 #
 # Downloads:
 # =========
-# https://github.com/cyrusimap/cyrus-sasl/releases
+# https://github.com/cyrusimap/cyrus-imapd/releases
 #
 
 url        = https://github.com/cyrusimap
 
-repo_name  = cyrus-sasl
-pkg_name   = cyrus-sasl
+repo_name  = cyrus-imapd
+pkg_name   = cyrus-imapd
 suffix     = tar.xz
 
 #
@@ -24,7 +24,8 @@ suffix     = tar.xz
 #
 #                                               hash | version
 #            ----------------------------------------+--------
-revisions  = 0189425cc210555c36383293c468df5da73acc48:2.1.27
+revisions  = d3d8d4d5decf9a8591550a53928060aebf4928bc:3.0.15
+revisions += 287a094146439f5dbd2d375e4ef26332a9d5e581:3.2.6
 
 git_repo   = .git_clone
 
@@ -57,10 +58,8 @@ $(tarballs): $(git_repo)
 	  fi ; \
 	  tar xJf $(pkg_name)-$$version.$(suffix) ; \
 	  ( cd $(pkg_name)-$$version ; \
-	    NOCONFIGURE=yes ./autogen.sh ; \
-	    rm -rf autom4te.cache .gitignore .travis.yml ; \
-	    find . -type f -name '.gitignore' -exec rm -f {} \; ; \
-	    find . -type f -name '.cvsignore' -exec rm -f {} \; ) ; \
+	    autoreconf --verbose --force --install --warnings=no-portability ; \
+	    rm -rf autom4te.cache .gitattributes .gitignore .travis.yml ; ) ; \
 	  tar cJf $(pkg_name)-$$version.$(suffix) $(pkg_name)-$$version ; \
 	  rm -rf $(pkg_name)-$$version ; \
 	done

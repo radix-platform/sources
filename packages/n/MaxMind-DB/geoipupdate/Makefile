@@ -24,6 +24,7 @@ repo_name   = geoipupdate
 #                                                hash | version
 #             ----------------------------------------+---------
 revisions   = 444ffff879fa8304bb4450ce39a52635c500793b:4.1.5
+revisions  += 7b5009fa4cd889997783005cea56180b4b85974e:4.6.0
 
 git_repo    = .git_clone
 

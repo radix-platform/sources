@@ -12,7 +12,7 @@
 
 url       = https://www.kernel.org/pub/linux/daemons
 
-versions  = 5.0.7 5.1.0 5.1.1 5.1.6
+versions  = 5.0.7 5.1.0 5.1.1 5.1.6 5.1.7
 pkg_name  = autofs
 arch_type = tar.xz
 suffixes  = $(arch_type) tar.sign

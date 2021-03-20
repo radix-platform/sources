@@ -24,6 +24,7 @@ repo_name   = libmaxminddb
 #                                                hash | version
 #             ----------------------------------------+---------
 revisions   = fc183662e85cb1b252c2f0272dc41f79e52e50fa:1.4.2
+revisions  += d9a1a7f66918f7a8d518cfd1c120b9f73f489fc1:1.5.2
 
 git_repo    = .git_clone
 

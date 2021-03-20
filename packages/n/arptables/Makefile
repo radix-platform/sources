@@ -1,30 +1,25 @@
 #
 # Project Home:
 # ============
-# http://curl.haxx.se
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# http://curl.haxx.se/download.html
-#
-# cacert download:
-# ===============
-# http://curl.haxx.se/docs/caextract.html
+# https://www.netfilter.org/pub/arptables/
 #
 
-url         = http://curl.haxx.se/download
-cacert_url  = http://curl.haxx.se/ca
+url         = https://www.netfilter.org/pub/arptables
 
-versions    = 7.31.0 7.36.0 7.38.0 7.47.0
-pkgname     = curl
-suffix      = tar.bz2
+versions    = 0.0.5
+pkgname     = arptables
+suffix      = tar.gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-signatures  = $(addsuffix .asc, $(tarballs))
+signatures  = $(addsuffix .sig, $(tarballs))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
-cacert      = cacert.pem.bz2
 
-all: $(tarballs) $(signatures) $(sha1s) $(cacert)
+
+all: $(tarballs) $(signatures) $(sha1s)
 
 .PHONY: downloads_clean
 
@@ -34,7 +29,7 @@ $(tarballs):
 	  wget -N $(url)/$$tarball ; \
 	done
 
-$(signatures): %.$(suffix).asc : %.$(suffix)
+$(signatures): %.$(suffix).sig : %.$(suffix)
 	@for signature in $@ ; do \
 	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
 	  wget -N $(url)/$$signature ; \
@@ -47,9 +42,5 @@ $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
-$(cacert):
-	@echo -e "\n======= Downloading $(cacert) tarball =======\n"
-	@wget -N $(cacert_url)/cacert.pem ; bzip2 -9 cacert.pem ; rm -f cacert.pem
-
 downloads_clean:
-	@rm -rf $(tarballs) $(signatures) $(sha1s) $(cacert)
+	@rm -rf $(tarballs) $(signatures) $(sha1s)

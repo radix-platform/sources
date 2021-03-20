@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# http://www.netfilter.org/projects/nftables
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# ftp://ftp.netfilter.org/pub/nftables
+# https://www.netfilter.org/pub/nftables
 #
 
-url         = ftp://ftp.netfilter.org/pub/nftables
+url         = https://www.netfilter.org/pub/nftables
 
-versions    = 0.9.2
+versions    = 0.9.2 0.9.8
 pkgname     = nftables
 suffix      = tar.bz2
 

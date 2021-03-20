@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# http://www.freedesktop.org/wiki/Software/ModemManager
+# https://www.freedesktop.org/wiki/Software/ModemManager
 #
 # Downloads:
 # =========
-# http://www.freedesktop.org/software/ModemManager
+# https://www.freedesktop.org/software/ModemManager
 #
 
-url         = http://www.freedesktop.org/software/ModemManager
+url         = https://www.freedesktop.org/software/ModemManager
 
-versions    = 1.0.0 1.4.4 1.4.12 1.10.8
+versions    = 1.0.0 1.4.4 1.4.12 1.10.8 1.16.2
 pkgname     = ModemManager
 suffix      = tar.xz
 

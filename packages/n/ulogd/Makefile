@@ -1,14 +1,14 @@
 #
 # Project Home:
 # ============
-# http://www.netfilter.org/projects/ulogd
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# ftp://ftp.netfilter.org/pub/ulogd
+# https://www.netfilter.org/pub/ulogd
 #
 
-url         = ftp://ftp.netfilter.org/pub/ulogd
+url         = https://www.netfilter.org/pub/ulogd
 
 versions    = 2.0.2 2.0.3 2.0.5 2.0.7
 pkgname     = ulogd

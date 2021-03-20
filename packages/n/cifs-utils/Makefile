@@ -12,7 +12,7 @@
 
 url       = https://download.samba.org/pub/linux-cifs/cifs-utils
 
-versions  = 5.5 6.4 6.9
+versions  = 5.5 6.4 6.9 6.12
 pkg_name  = cifs-utils
 arch_type = tar.bz2
 suffixes  = $(arch_type) $(arch_type).asc

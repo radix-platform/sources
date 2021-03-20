@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# http://www.netfilter.org/projects/libnftnl
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# ftp://ftp.netfilter.org/pub/libnftnl
+# https://www.netfilter.org/pub/libnftnl
 #
 
-url         = ftp://ftp.netfilter.org/pub/libnftnl
+url         = https://www.netfilter.org/pub/libnftnl
 
-versions    = 1.0.5 1.1.4
+versions    = 1.0.5 1.1.4 1.1.9
 pkgname     = libnftnl
 suffix      = tar.bz2
 

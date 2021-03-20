@@ -1,14 +1,14 @@
 #
 # Project Home:
 # ============
-# http://www.netfilter.org/projects/libnetfilter_cthelper
+# https://www.netfilter.org
 #
 # Downloads:
 # =========
-# ftp://ftp.netfilter.org/pub/libnetfilter_cthelper
+# https://www.netfilter.org/pub/libnetfilter_cthelper
 #
 
-url         = ftp://ftp.netfilter.org/pub/libnetfilter_cthelper
+url         = https://www.netfilter.org/pub/libnetfilter_cthelper
 
 versions    = 1.0.0
 pkgname     = libnetfilter_cthelper

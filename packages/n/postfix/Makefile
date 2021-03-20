@@ -10,7 +10,7 @@
 
 url         = http://cdn.postfix.johnriley.me/mirrors/postfix-release/official
 
-versions    = 3.4.7
+versions    = 3.4.7 3.5.9
 pkgname     = postfix
 suffix      = tar.gz
 

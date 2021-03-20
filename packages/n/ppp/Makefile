@@ -11,7 +11,7 @@
 
 url         = https://download.samba.org/pub/ppp
 
-versions    = 2.4.5 2.4.7
+versions    = 2.4.5 2.4.7 2.4.9
 pkgname     = ppp
 suffix      = tar.gz
 

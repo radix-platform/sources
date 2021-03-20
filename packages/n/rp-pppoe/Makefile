@@ -10,7 +10,7 @@
 
 url         = https://dianne.skoll.ca/projects/rp-pppoe/download
 
-versions    = 3.12 3.13
+versions    = 3.14
 pkgname     = rp-pppoe
 suffix      = tar.gz
 sign_suffix = sig

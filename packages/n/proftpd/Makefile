@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.proftpd.org/distrib/source
 
-versions    = 1.3.5 1.3.5a 1.3.6b
+versions    = 1.3.5 1.3.5a 1.3.6b 1.3.6e 1.3.7 1.3.7a
 pkgname     = proftpd
 suffix      = tar.gz
 sign_suffix = asc

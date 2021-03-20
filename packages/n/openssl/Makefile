@@ -27,6 +27,7 @@ repo_name  = openssl
 #            ----------------------------------------+------
 revisions  = 894da2fb7ed5d314ee5c2fc9fd2d9b8b74111596:1.1.1d
 revisions += 90cebd1b216e0a160fcfd8e0eddca47dad47c183:1.1.1i
+revisions += 52c587d60be67c337364b830dd3fdc15404a2f04:1.1.1j
 
 git_repo   = .git_clone
 

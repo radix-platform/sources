@@ -1,18 +1,18 @@
 #
 # Project Home:
 # ============
-# http://openobex.sourceforge.net/about.html
+# https://openobex.sourceforge.net/about.html
 #
 # Downloads:
 # =========
-# http://openobex.sourceforge.net/downloads.html
+# https://openobex.sourceforge.net/downloads.html
 #
 # Files:
 # =====
-# http://downloads.sourceforge.net/project/openobex/files/obexftp/${VERSION}
+# https://downloads.sourceforge.net/project/openobex/files/obexftp/${VERSION}
 #
 
-url         = http://downloads.sourceforge.net/project/openobex/obexftp
+url         = https://downloads.sourceforge.net/project/openobex/obexftp
 
 versions    = 0.24.2
 pkgname     = obexftp

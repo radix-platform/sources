@@ -12,7 +12,7 @@
 
 url       = https://mirrors.edge.kernel.org/pub/software/network
 
-versions  = 0.5
+versions  = 0.5 1.0
 pkg_name  = rfkill
 arch_type = tar.xz
 suffixes  = $(arch_type) tar.sign

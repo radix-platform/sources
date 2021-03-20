@@ -11,7 +11,7 @@
 
 url         = https://gnupg.org/ftp/gcrypt/scute
 
-versions    = 1.6.0
+versions    = 1.6.0 1.7.0
 pkgname     = scute
 suffix      = tar.bz2
 

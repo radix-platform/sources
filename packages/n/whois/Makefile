@@ -13,11 +13,11 @@
 # ftp://ftp.debian.org/debian/pool/main/w/whois/whois_5.2.1.tar.xz
 #
 
-url          = git://github.com/rfc1036/whois.git
+url          = https://github.com/rfc1036/whois.git
 
 repo_name    = whois
 
-versions     = 5.0.25 5.2.1 5.2.11 5.2.12 5.5.2
+versions     = 5.0.25 5.2.1 5.2.11 5.2.12 5.5.2 5.5.8
 pkgname      = whois
 suffix       = tar.xz
 

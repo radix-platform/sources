@@ -11,7 +11,7 @@
 
 url         = https://mirror.one.com/pub/OpenBSD/OpenSSH/portable
 
-versions    = 6.3p1 6.4p1 6.5p1 6.6p1 6.9p1 7.1p2 7.2p1 8.0p1 8.1p1
+versions    = 6.3p1 6.4p1 6.5p1 6.6p1 6.9p1 7.1p2 7.2p1 8.0p1 8.1p1 8.4p1 8.5p1
 pkgname     = openssh
 suffix      = tar.gz
 

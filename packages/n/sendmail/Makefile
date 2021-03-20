@@ -10,7 +10,7 @@
 
 url         = http://ftp.sendmail.org
 
-versions    = 8.14.7 8.14.8 8.14.9 8.15.2
+versions    = 8.14.7 8.14.8 8.14.9 8.15.2 8.16.1
 pkg_name    = sendmail
 arch_type   = tar.gz
 suffixes    = $(arch_type) $(arch_type).sig

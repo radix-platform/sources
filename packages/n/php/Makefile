@@ -14,7 +14,9 @@
 url         = http://ru2.php.net/get
 
 versions    = 5.6.2 5.6.17
-versions   += 7.0.2 7.3.11
+versions   += 7.0.2 7.3.11 7.3.27
+versions   += 7.4.16
+versions   += 8.0.3
 pkgname     = php
 suffix      = tar.xz
 

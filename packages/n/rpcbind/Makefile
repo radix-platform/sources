@@ -1,18 +1,18 @@
 #
 # Read First:
 # ==========
-# http://nfsv4.bullopensource.org/doc/tirpc_rpcbind.php
+# https://nfsv4.bullopensource.org/doc/tirpc_rpcbind.php
 #
 # Project Home:
 # ============
-# http://rpcbind.sourceforge.net
+# https://rpcbind.sourceforge.net
 #
 # Downloads:
 # =========
-# http://downloads.sourceforge.net/sourceforge/rpcbind
+# https://downloads.sourceforge.net/sourceforge/rpcbind
 #
 
-url         = http://downloads.sourceforge.net/sourceforge/rpcbind
+url         = https://downloads.sourceforge.net/sourceforge/rpcbind
 
 versions    = 0.2.0 0.2.1 0.2.3 1.2.5
 pkg_name    = rpcbind

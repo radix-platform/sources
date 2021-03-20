@@ -11,7 +11,7 @@
 
 url         = https://gnupg.org/ftp/gcrypt/pinentry
 
-versions    = 0.8.3 0.8.4 0.9.7 1.1.0
+versions    = 0.8.3 0.8.4 0.9.7 1.1.0 1.1.1
 pkgname     = pinentry
 suffix      = tar.bz2
 

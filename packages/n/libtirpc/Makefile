@@ -12,9 +12,9 @@
 # http://downloads.sourceforge.net/sourceforge/libtirpc
 #
 
-url         = http://downloads.sourceforge.net/sourceforge/libtirpc
+url         = https://downloads.sourceforge.net/sourceforge/libtirpc
 
-versions    = 0.2.3 0.2.4 0.3.2 1.0.1 1.1.4
+versions    = 0.2.3 0.2.4 0.3.2 1.0.1 1.1.4 1.3.1
 pkg_name    = libtirpc
 suffix      = tar.bz2
 

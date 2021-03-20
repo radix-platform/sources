@@ -11,9 +11,9 @@
 #
 
 
-url       = ftp://ftp.gnome.org/pub/GNOME/sources
+url       = https://download.gnome.org/sources
 
-versions  = 0.9.10.0 1.0.0
+versions  = 0.9.10.0 1.0.0 1.31.1
 pkg_name  = NetworkManager
 arch_type = tar.xz
 suffixes  = $(arch_type)

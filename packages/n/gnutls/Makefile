@@ -11,7 +11,7 @@
 
 url         = https://gnupg.org/ftp/gcrypt/gnutls
 
-versions    = 3.1.16 3.1.22 3.4.8 3.6.10
+versions    = 3.1.16 3.1.22 3.4.8 3.6.10 3.7.1
 pkgname     = gnutls
 suffix      = tar.xz
 

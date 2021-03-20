@@ -10,7 +10,7 @@
 
 url         = https://www.kernel.org/pub/software/network/ethtool
 
-versions    = 2.6.36 3.0 3.4 3.5 3.8 3.9 3.10 3.11 3.12 3.18 4.5 5.3
+versions    = 2.6.36 3.0 3.4 3.5 3.8 3.9 3.10 3.11 3.12 3.18 4.5 5.3 5.10
 pkgname     = ethtool
 suffix      = tar.xz
 

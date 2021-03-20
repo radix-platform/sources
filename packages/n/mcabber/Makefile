@@ -10,7 +10,7 @@
 
 url         = http://www.lilotux.net/~mikael/mcabber/files
 
-versions    = 0.10.2 0.10.3 1.0.1 1.1.0
+versions    = 0.10.2 0.10.3 1.0.1 1.1.0 1.1.2
 pkgname     = mcabber
 suffix      = tar.bz2
 

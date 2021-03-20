@@ -22,6 +22,7 @@ repo_name  = iputils
 #                                               hash | tag
 #            ----------------------------------------+-----
 revisions  = 13e00847176aa23683d68fce1d17ffb523510946:s20190709
+revisions += cc16da6b574ce6637f3e6e9ab3c1a728663006ff:20210202
 
 git_repo   = .git_clone
 

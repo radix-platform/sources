@@ -11,7 +11,7 @@
 url         = http://web.mit.edu/kerberos/dist/krb5
 
 
-versions    = 1.12.5 1.13.3 1.14 1.17
+versions    = 1.12.5 1.13.3 1.14 1.17 1.19.1
 pkgname     = krb5
 suffix      = tar.gz
 

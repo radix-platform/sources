@@ -11,7 +11,7 @@
 
 url         = https://gnupg.org/ftp/gcrypt/ntbtls
 
-versions    = 0.1.2
+versions    = 0.1.2 0.2.0
 pkgname     = ntbtls
 suffix      = tar.bz2
 

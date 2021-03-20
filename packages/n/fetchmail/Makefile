@@ -9,13 +9,13 @@
 # http://downloads.sourceforge.net/fetchmail
 #
 
-url         = http://downloads.sourceforge.net/fetchmail/branch_6.4
+url         = https://downloads.sourceforge.net/fetchmail
 
-versions    = 6.4.1
-pkgname     = fetchmail
+versions    = 6.4.1 6.4.17
+pkg_name    = fetchmail
 suffix      = tar.xz
 
-tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
+tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkg_name)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
 
@@ -25,8 +25,9 @@ all: $(tarballs) $(sha1s)
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	@for version in $(versions) ; do \
+	  major_minor=`echo $$version | sed 's/\([0-9][.][0-9]*\)\([\.].*\)/\1/'` ; \
+	  wget -N $(url)/branch_$${major_minor}/$(pkg_name)-$$version.$(suffix) ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

@@ -1,18 +1,18 @@
 #
 # Project Home:
 # ============
-# http://sourceforge.net/projects/zd1211
+# https://sourceforge.net/projects/zd1211
 #
 # Info:
 # ====
-# http://wireless.kernel.org/en/users/Drivers/zd1211rw
+# https://wireless.kernel.org/en/users/Drivers/zd1211rw
 #
 # Downloads:
 # =========
-# http://downloads.sourceforge.net/project/zd1211/zd1211-firmware/${VERSION}
+# https://downloads.sourceforge.net/project/zd1211/zd1211-firmware/${VERSION}
 #
 
-url         = http://downloads.sourceforge.net/project/zd1211/zd1211-firmware
+url         = https://downloads.sourceforge.net/project/zd1211/zd1211-firmware
 
 versions    = 1.4 1.5
 pkgname     = zd1211-firmware

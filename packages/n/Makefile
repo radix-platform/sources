@@ -52,7 +52,6 @@ SUBDIRS := ModemManager           \
            iptables               \
            iptraf-ng              \
            iputils                \
-           iputils-git            \
            irssi                  \
            iw                     \
            kerberos               \

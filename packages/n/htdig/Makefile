@@ -1,15 +1,15 @@
 #
 # Project Home:
 # ============
-# http://www.htdig.org
-# http://sourceforge.net/projects/htdig
+# https://www.htdig.org
+# https://sourceforge.net/projects/htdig
 #
 # Downloads:
 # =========
-# http://sourceforge.net/projects/htdig/files/htdig/3.2.0b6
+# https://sourceforge.net/projects/htdig/files/htdig/3.2.0b6
 #
 
-url         = http://downloads.sourceforge.net/project/htdig/htdig
+url         = https://downloads.sourceforge.net/project/htdig/htdig
 
 versions    = 3.2.0b5 3.2.0b6
 pkg_name    = htdig

@@ -11,7 +11,7 @@
 
 url         = https://gnupg.org/ftp/gcrypt/libassuan
 
-versions    = 2.1.0 2.1.1 2.1.2 2.4.2 2.5.3
+versions    = 2.1.0 2.1.1 2.1.2 2.4.2 2.5.3 2.5.4
 pkgname     = libassuan
 suffix      = tar.bz2
 

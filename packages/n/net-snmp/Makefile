@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# http://www.net-snmp.org
+# https://www.net-snmp.org
 #
 # Downloads:
 # =========
-# http://sourceforge.net/projects/net-snmp/files/net-snmp
+# https://sourceforge.net/projects/net-snmp/files/net-snmp
 #
 
-url         = http://sourceforge.net/projects/net-snmp/files/net-snmp
+url         = https://sourceforge.net/projects/net-snmp/files/net-snmp
 
-versions    = 5.7.2 5.7.2.1 5.7.3 5.8
+versions    = 5.7.2 5.7.2.1 5.7.3 5.8 5.9
 pkgname     = net-snmp
 suffix      = tar.gz
 

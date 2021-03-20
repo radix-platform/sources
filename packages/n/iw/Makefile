@@ -12,7 +12,7 @@
 
 url         = https://www.kernel.org/pub/software/network/iw
 
-versions    = 3.5 3.17 4.3 5.3
+versions    = 3.5 3.17 4.3 4.14 5.3 5.9
 pkgname     = iw
 suffix      = tar.xz
 

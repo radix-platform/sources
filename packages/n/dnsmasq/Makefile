@@ -5,12 +5,12 @@
 #
 # Downloads:
 # =========
-# http://www.thekelleys.org.uk/dnsmasq
+# https://www.thekelleys.org.uk/dnsmasq
 #
 
-url         = http://www.thekelleys.org.uk/dnsmasq
+url         = https://www.thekelleys.org.uk/dnsmasq
 
-versions    = 2.80
+versions    = 2.80 2.84
 pkgname     = dnsmasq
 suffix      = tar.xz
 

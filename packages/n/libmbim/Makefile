@@ -1,16 +1,16 @@
 #
 # Project Home:
 # ============
-# http://freedesktop.org/software/libmbim
+# https://freedesktop.org/software/libmbim
 #
 # Downloads:
 # =========
-# http://freedesktop.org/software/libmbim
+# https://freedesktop.org/software/libmbim
 #
 
-url         = http://freedesktop.org/software/libmbim
+url         = https://freedesktop.org/software/libmbim
 
-versions    = 1.4.0 1.6.0 1.8.0 1.10.0 1.12.2 1.12.4 1.20.0
+versions    = 1.4.0 1.6.0 1.8.0 1.10.0 1.12.2 1.12.4 1.20.0 1.24.6
 pkgname     = libmbim
 suffix      = tar.xz
 

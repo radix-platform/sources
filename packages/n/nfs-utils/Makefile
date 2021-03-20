@@ -10,7 +10,7 @@
 
 url         = https://www.kernel.org/pub/linux/utils/nfs-utils
 
-versions    = 1.2.8 1.3.1 1.3.3 2.4.1
+versions    = 1.2.8 1.3.1 1.3.3 2.4.1 2.5.3
 pkg_name    = nfs-utils
 arch_type   = tar.xz
 suffixes    = $(arch_type) tar.sign

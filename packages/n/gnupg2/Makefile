@@ -11,7 +11,7 @@
 
 url         = https://gnupg.org/ftp/gcrypt/gnupg
 
-versions    = 2.0.21 2.0.22 2.0.26 2.0.29 2.1.11 2.1.12 2.2.17
+versions    = 2.0.21 2.0.22 2.0.26 2.0.29 2.1.11 2.1.12 2.2.17 2.2.27
 pkgname     = gnupg
 suffix      = tar.bz2
 

@@ -1,14 +1,14 @@
 #
 # Project Home:
 # ============
-# http://netatalk.sourceforge.net
+# https://netatalk.sourceforge.net
 #
 # Downloads:
 # =========
-# http://sourceforge.net/projects/netatalk/files/netatalk/${VERSION}
+# https://sourceforge.net/projects/netatalk/files/netatalk/${VERSION}
 #
 
-url         = http://downloads.sourceforge.net/project/netatalk/netatalk
+url         = https://downloads.sourceforge.net/project/netatalk/netatalk
 
 versions    = 2.2.3 3.1.6 3.1.8 3.1.12
 pkg_name    = netatalk

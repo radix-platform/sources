@@ -10,9 +10,9 @@
 
 url         = https://github.com/p11-glue/p11-kit/releases/download
 
-versions    = 0.23.18 0.23.18.1
+versions    = 0.23.22
 pkgname     = p11-kit
-suffix      = tar.gz
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

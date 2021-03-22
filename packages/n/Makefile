@@ -72,6 +72,7 @@ SUBDIRS := ModemManager           \
            libnftnl               \
            libnl                  \
            libnl3                 \
+           libnsl                 \
            libpcap                \
            libproxy               \
            libqmi                 \

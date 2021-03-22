@@ -146,6 +146,7 @@ SUBDIRS := ModemManager           \
            rfkill                 \
            rp-pppoe               \
            rpcbind                \
+           rpcsvc-proto           \
            rsync                  \
            samba                  \
            scute                  \

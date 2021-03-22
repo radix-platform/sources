@@ -52,6 +52,7 @@ $(tarballs): $(git_repo)
 	  fi ; \
 	  tar xJf $(pkg_name)-$$version.$(suffix) ; \
 	  ( cd $(pkg_name)-$$version ; \
+	    sed -i '/AM_GNU_GETTEXT_REQUIRE/d' configure.ac ; \
 	    ./autogen.sh ; \
 	    rm -rf autom4te.cache .github .gitignore ) ; \
 	  tar cJf $(pkg_name)-$$version.$(suffix) $(pkg_name)-$$version ; \

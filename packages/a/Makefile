@@ -42,6 +42,7 @@ SUBDIRS := CLooG                 \
            efibootmgr            \
            eject                 \
            elilo                 \
+           elogind               \
            elvis                 \
            eudev                 \
            eudev-github          \

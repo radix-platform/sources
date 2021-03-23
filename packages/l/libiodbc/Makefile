@@ -1,17 +1,17 @@
 #
 # Project Home:
 # ============
-# http://iodbc.org
-# http://www.iodbc.org/dataspace/iodbc/wiki/iODBC
+# https://iodbc.org
+# https://www.iodbc.org/dataspace/iodbc/wiki/iODBC
 #
 # Downloads:
 # =========
-# http://downloads.sourceforge.net/project/iodbc/iodbc/${VERSION}/libiodbc-${VERSION}.tar.gz
+# https://downloads.sourceforge.net/project/iodbc/iodbc/${VERSION}/libiodbc-${VERSION}.tar.gz
 #
 
-url         = http://downloads.sourceforge.net/project/iodbc/iodbc
+url         = https://downloads.sourceforge.net/project/iodbc/iodbc
 
-versions    = 3.52.9 3.52.10
+versions    = 3.52.9 3.52.10 3.52.14
 pkgname     = libiodbc
 suffix      = tar.gz
 

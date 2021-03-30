@@ -23,6 +23,7 @@ repo_name  = libical
 #            ----------------------------------------+-----
 revisions  = 6c4af23b0a95fd105f38e879908cbc80390f3716:2.0.0
 revisions += 0595c7d45ef5e75705f2d80e03e5310d9f78438c:3.0.6
+revisions += 56860913989f9787ba9b41df83b49fa2d68b9687:3.0.9
 
 git_repo   = .git_clone
 

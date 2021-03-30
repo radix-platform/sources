@@ -13,7 +13,7 @@
 # https://git.libssh.org/projects/libssh.git
 #
 
-url        = git://git.libssh.org/projects
+url        = https://git.libssh.org/projects
 
 repo_name  = libssh
 
@@ -23,6 +23,7 @@ repo_name  = libssh
 #                                               hash | tag
 #            ----------------------------------------+-----
 revisions  = cdf7690e038230623cbbf6b024ece62f41efa98d:0.7.3
+revisions += 0cceefd49d4d397eb21bd36e314ac87739da51ff:0.9.5
 
 git_repo   = .git_clone
 

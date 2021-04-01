@@ -29,19 +29,26 @@ all: $(tarballs) $(files) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarball =======\n"
 	@for tarball in $(tarballs) ; do \
-	   wget -N $(url)/$$tarball ; \
+	   wget -N $(url)/$${tarball} ; \
+	   version=`echo $${tarball} | sed 's,$(pkgname)_,,' | sed 's,\.$(suffix),,'` ; \
+	   if [ "$${version}" = "20210119" ] ; then \
+	     tar xJf $(pkgname)_$${version}.$(suffix) ; \
+	     mv work $(pkgname)-$${version} ; \
+	     tar cJf $(pkgname)_$${version}.$(suffix) $(pkgname)-$${version} ; \
+	     rm -rf $(pkgname)-$${version} ; \
+	   fi ; \
 	 done
 
 $(files): $(tarballs)
 	@echo -e "\n======= Downloading patch and description =======\n"
 	@for file in $(files) ; do \
-	  wget -N $(url)/$$file ; \
+	  wget -N $(url)/$${file} ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
-	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
+	  echo -e "\n======= Calculation the '$${tarball}' sha1sum =======\n" ; \
+	  sha1sum --binary $${tarball} > $${tarball}.sha1sum ; \
 	done
 
 downloads_clean:

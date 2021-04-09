@@ -16,7 +16,7 @@ url        = svn://radix.pro/pkgtools/tags
 
 pkg_name   = pkgtools
 
-versions   = 0.1.5 0.1.6 0.1.7
+versions   = 0.1.5 0.1.6 0.1.7 0.1.8
 
 svn_repo   = .svn_clone
 tarballs   = $(addsuffix .tar.xz, $(addprefix $(pkg_name)-, $(versions)))

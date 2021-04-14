@@ -23,6 +23,7 @@ pkg_name   = llvm
 #                                               hash | tag
 #            ----------------------------------------+-----
 revisions  = 1fdec59bffc11ae37eb51a1b9869f0696bfd5312:11.1.0
+revisions += d28af7c654d8db0b68c175db5ce212d74fb5e9bc:12.0.0
 
 git_repo   = .git_clone
 
@@ -50,7 +51,7 @@ $(tarballs): $(git_repo)
 	  hash=`echo $$revision    | cut -f 1 -d ':'` ; \
 	  version=`echo $$revision | cut -f 2 -d ':'` ; \
 	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
-	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
+	    echo -e "\n======= Creating '$(pkg_name)-$$version.$(suffix)' snapshot =======" ; \
 	    ( cd $(repo_name) && \
 	      git archive --format=tar --prefix=$(pkg_name)-$$version/ $$hash | \
 	      xz >../$(pkg_name)-$$version.$(suffix) ) ; \

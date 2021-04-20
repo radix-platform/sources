@@ -117,6 +117,7 @@ SUBDIRS := CLooG                 \
            nano                  \
            ncompress             \
            ntfs-3g               \
+           nvme-cli              \
            os-prober             \
            patchelf              \
            pciutils              \

@@ -18,7 +18,7 @@
 
 url       = ftp://ftp.kernel.org/pub/linux/utils/raid/mdadm
 
-versions  = 3.2.6 3.3.2 3.3.4 3.4
+versions  = 3.2.6 3.3.2 3.3.4 3.4 4.1
 pkg_name  = mdadm
 arch_type = tar.xz
 suffixes  = $(arch_type) tar.sign

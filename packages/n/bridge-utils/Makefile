@@ -11,7 +11,7 @@
 
 url         = https://mirrors.edge.kernel.org/pub/linux/utils/net/bridge-utils
 
-versions    = 1.6
+versions    = 1.6 1.7.1
 pkgname     = bridge-utils
 suffix      = tar.xz
 

@@ -65,7 +65,7 @@ all: $(TARGETS)
 $(hg_repo):
 	@echo -e "\n======= Clone $(repo_name) repository =======\n"
 	@rm -rf $(repo_name)
-	@hg clone -b default $(url)/$(repo_name) $(repo_name)
+	@hg clone $(url)/$(repo_name) $(repo_name)
 	@touch $@
 
 $(tarballs): $(hg_repo)

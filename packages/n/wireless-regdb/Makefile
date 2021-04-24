@@ -11,7 +11,7 @@
 
 url         = https://www.kernel.org/pub/software/network/wireless-regdb
 
-versions    = 2014.10.07 2014.11.07 2015.12.14 2019.06.03 2020.11.20
+versions    = 2014.10.07 2014.11.07 2015.12.14 2019.06.03 2020.11.20 2021.04.21
 pkgname     = wireless-regdb
 suffix      = tar.xz
 

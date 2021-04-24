@@ -13,9 +13,9 @@
 # https://github.com/json-c/json-c/archive
 #
 
-url         = https://github.com/json-c/json-c/archive
+url         = https://github.com/json-c/json-c/archive/refs/tags
 
-versions    = 0.11-20130402 0.12-20140410 0.13.1-20180305
+versions    = 0.11-20130402 0.12-20140410 0.13.1-20180305 0.15-20200726
 pkgname     = json-c
 suffix      = tar.gz
 

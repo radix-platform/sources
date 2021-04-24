@@ -68,6 +68,7 @@ SUBDIRS := aalib                \
            libunwind            \
            libusb               \
            libusb-compat        \
+           libuv                \
            libvisual            \
            libxml2              \
            libxslt              \

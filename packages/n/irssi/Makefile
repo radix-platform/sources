@@ -19,6 +19,7 @@ repo_name  = irssi
 #                                               hash | tag
 #            ----------------------------------------+-----
 revisions  = 42110b92e92cb40e82fd736d88b099d096483939:1.2.2
+revisions += 91dc3e4dfa1a9558c5a7fe0ea982cb9df0e2de65:1.2.3
 
 git_repo   = .git_clone
 

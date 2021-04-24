@@ -115,6 +115,7 @@ SUBDIRS := ModemManager           \
            nfs-utils              \
            nftables               \
            nmap                   \
+           nghttp2                \
            nn                     \
            npth                   \
            ntbtls                 \

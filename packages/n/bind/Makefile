@@ -11,7 +11,7 @@
 
 url         = http://ftp.isc.org/isc/bind9
 
-versions    = 9.16.11 9.17.11
+versions    = 9.16.11 9.16.13 9.17.11
 pkgname     = bind
 suffix      = tar.xz
 

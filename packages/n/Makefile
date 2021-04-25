@@ -80,6 +80,7 @@ SUBDIRS := ModemManager           \
            links                  \
            lynx                   \
            mailx                  \
+           maxmind                \
            mcabber                \
            metamail               \
            mozilla-nspr           \

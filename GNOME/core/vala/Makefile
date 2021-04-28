@@ -8,12 +8,13 @@
 # Downloads:
 # =========
 # ftp://ftp.gnome.org/pub/GNOME/sources
+# https://download.gnome.org/sources
 #
 
 
-url       = ftp://ftp.gnome.org/pub/GNOME/sources
+url       = https://download.gnome.org/sources
 
-versions  = 0.26.1 0.32.0
+versions  = 0.26.1 0.32.0 0.52.2
 pkg_name  = vala
 arch_type = tar.xz
 suffixes  = $(arch_type)

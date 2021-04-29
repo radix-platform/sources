@@ -13,9 +13,9 @@
 # http://dbus.freedesktop.org/releases/dbus-glib
 #
 
-url         = http://dbus.freedesktop.org/releases/dbus-glib
+url         = https://dbus.freedesktop.org/releases/dbus-glib
 
-versions    = 0.100.2 0.102 0.106 0.110
+versions    = 0.100.2 0.102 0.106 0.110 0.112
 pkgname     = dbus-glib
 suffix      = tar.gz
 sign_suffix = asc

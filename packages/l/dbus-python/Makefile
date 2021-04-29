@@ -8,9 +8,9 @@
 # http://dbus.freedesktop.org/releases/dbus-python
 #
 
-url         = http://dbus.freedesktop.org/releases/dbus-python
+url         = https://dbus.freedesktop.org/releases/dbus-python
 
-versions    = 1.2.0 1.2.4 1.2.12
+versions    = 1.2.0 1.2.4 1.2.12 1.2.16
 pkgname     = dbus-python
 suffix      = tar.gz
 sign_suffix = asc

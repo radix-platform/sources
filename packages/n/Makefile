@@ -119,6 +119,7 @@ SUBDIRS := ModemManager           \
            nghttp2                \
            nn                     \
            npth                   \
+           nss-pam-ldapd          \
            ntbtls                 \
            ntp                    \
            obex-data-server       \

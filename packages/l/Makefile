@@ -31,6 +31,7 @@ SUBDIRS := aalib                \
            imlib                \
            imlib2               \
            isl                  \
+           jansson              \
            jemalloc             \
            json-c               \
            keyutils             \

@@ -13,7 +13,7 @@
 
 url       = https://download.gnome.org/sources
 
-versions  = 0.9.10.0 1.0.0 1.31.1
+versions  = 0.9.10.0 1.0.0 1.31.1 1.31.3
 pkg_name  = NetworkManager
 arch_type = tar.xz
 suffixes  = $(arch_type)

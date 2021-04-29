@@ -10,7 +10,7 @@
 
 url         = https://www.freedesktop.org/software/ModemManager
 
-versions    = 1.0.0 1.4.4 1.4.12 1.10.8 1.16.2
+versions    = 1.0.0 1.4.4 1.4.12 1.10.8 1.16.2 1.16.4
 pkgname     = ModemManager
 suffix      = tar.xz
 

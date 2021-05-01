@@ -62,6 +62,7 @@ SUBDIRS := ModemManager           \
            libksba                \
            libmbim                \
            libmnl                 \
+           libndp                 \
            libnetfilter_acct      \
            libnetfilter_conntrack \
            libnetfilter_cthelper  \
@@ -132,6 +133,7 @@ SUBDIRS := ModemManager           \
            openssl10              \
            openvpn                \
            p11-kit                \
+           pam-krb5               \
            php                    \
            pidentd                \
            pinentry               \

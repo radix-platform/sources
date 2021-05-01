@@ -59,6 +59,7 @@ SUBDIRS := aalib                \
            libmng               \
            libpipeline          \
            libpng               \
+           libpsl               \
            libsodium            \
            libspectre           \
            libstrophe           \

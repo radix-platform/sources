@@ -8,6 +8,7 @@ SUBDIRS := LLVM          \
            check         \
            cmake         \
            flex          \
+           intltool      \
            llvm          \
            meson         \
            ninja         \

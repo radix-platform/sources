@@ -7,6 +7,10 @@
 # ======
 # https://github.com/rockdaboot/libpsl
 #
+# Download:
+# ========
+# https://github.com/rockdaboot/libpsl/releases/download/${VERSION}/libpsl-${VERSION}.tar.gz
+#
 # Clone:
 # =====
 # https://github.com/rockdaboot/libpsl.git
@@ -14,58 +18,30 @@
 
 url        = https://github.com/rockdaboot
 
-repo_name  = libpsl
+versions    = 0.21.1
+pkgname     = libpsl
+suffix      = tar.gz
 
-#
-# List of tags to be extracted:
-# ============================
-#                                               hash | tag
-#            ----------------------------------------+-----
-revisions  = a5e6f26cce82898c54a0caa6dda0ab924b806daf:0.21.1
+tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
+sha1s       = $(addsuffix .sha1sum, $(tarballs))
 
-git_repo   = .git_clone
 
-suffix     = tar.xz
+all: $(tarballs) $(sha1s)
 
-versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d ':'))
+.PHONY: downloads_clean
 
-tarballs   = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
-sha1s      = $(addsuffix .sha1sum, $(tarballs))
-
-TARGETS = repository_clean
-
-all: $(TARGETS)
-
-.PHONY: downloads_clean repository_clean
-
-$(git_repo):
-	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
-	@rm -rf $(repo_name)
-	@git clone $(url)/$(repo_name).git $(repo_name)
-	@touch $@
-
-$(tarballs): $(git_repo)
-	@for revision in $(revisions) ; do \
-	  hash=`echo $$revision    | cut -f 1 -d ':'` ; \
-	  version=`echo $$revision | cut -f 2 -d ':'` ; \
-	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
-	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
-	    ( cd $(repo_name) && \
-	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$hash | \
-	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
-	  fi ; \
+$(tarballs):
+	@echo -e "\n======= Downloading source tarballs =======\n"
+	@for tarball in $(tarballs) ; do \
+	  version=`echo $$tarball | sed 's/\([a-zA-Z-]*\)\([0-9][.][0-9]*[.][0-9]*\)\([\.].*\)/\2/'` ; \
+	  wget -N $(url)/$(pkgname)/releases/download/$${version}/$${tarball} ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======" ; \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
-repository_clean: $(sha1s)
-	@echo -e "\n======= Remove cloned $(repo_name).git repository =======\n"
-	@rm -rf $(git_repo) $(repo_name)
-
 downloads_clean:
 	@rm -rf $(tarballs) $(sha1s)
-	@rm -rf $(git_repo) $(repo_name)

@@ -1,18 +1,18 @@
 #
 # Project Home:
 # ============
-# http://www.libpng.org
-# http://www.libpng.org/pub/png/libpng.html
-# http://libpng.sourceforge.net/index.html
+# https://www.libpng.org
+# https://www.libpng.org/pub/png/libpng.html
+# https://libpng.sourceforge.net/index.html
 #
 # Downloads:
 # =========
-# http://sourceforge.net/projects/libpng/files/libpng15
+# https://sourceforge.net/projects/libpng/files/libpng15
 #
 
-url         = http://downloads.sourceforge.net/project/libpng
+url         = https://downloads.sourceforge.net/project/libpng
 
-versions    = 1.5.25 1.5.26
+versions    = 1.5.30
 pkgname     = libpng
 suffix      = tar.xz
 

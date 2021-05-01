@@ -1,22 +1,21 @@
 #
 # Project Home:
 # ============
-# https://www.jedsoft.org/slang
+# https://pagure.io/newt
 #
 # Downloads:
 # =========
-# https://www.jedsoft.org/releases/slang
+# https://releases.pagure.org/newt
 #
 
-url         = https://www.jedsoft.org/releases/slang
+url         = https://releases.pagure.org/newt
 
-versions    = 2.3.2
-pkgname     = slang
-suffix      = tar.bz2
+versions    = 0.52.21
+pkgname     = newt
+suffix      = tar.gz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
-
 
 all: $(tarballs) $(sha1s)
 
@@ -24,10 +23,9 @@ all: $(tarballs) $(sha1s)
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for version in $(versions) ; do \
-	  wget -N $(url)/$(pkgname)-$$version.$(suffix) ;  \
+	@for tarball in $(tarballs) ; do \
+	  wget -N $(url)/$$tarball ; \
 	done
-
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \

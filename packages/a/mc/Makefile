@@ -1,17 +1,17 @@
 #
 # Project Home:
 # ============
-# http://www.midnight-commander.org
+# https://midnight-commander.org
 #
 # Downloads:
 # =========
-# http://ftp.midnight-commander.org
+# https://ftp.midnight-commander.org
 # ftp://ftp.midnight-commander.org/pub/midnightcommander
 #
 
 url         = ftp://ftp.midnight-commander.org/pub/midnightcommander
 
-versions    = 4.8.10 4.8.12 4.8.15 4.8.16
+versions    = 4.8.10 4.8.12 4.8.15 4.8.16 4.8.26
 pkg_name    = mc
 suffix      = tar.xz
 

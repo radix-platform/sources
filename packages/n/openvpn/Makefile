@@ -1,47 +1,71 @@
 #
 # Project Home:
 # ============
-# http://openvpn.net
+# https://github.com/OpenVPN/openvpn
 #
-# Downloads:
-# =========
-# http://openvpn.net/index.php/open-source/downloads.html
-# https://swupdate.openvpn.org/community/releases
+# GitHub:
+# ======
+# https://github.com/OpenVPN/openvpn
+#
+# Clone:
+# =====
+# https://github.com/OpenVPN/openvpn.git
 #
 
-url          = https://swupdate.openvpn.org/community/releases
+url        = https://github.com/OpenVPN
 
-versions     = 2.3.5 2.3.9 2.4.8 2.5.1
-pkgname      = openvpn
-suffix       = tar.xz
+repo_name  = openvpn
 
-tarballs     = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-signatures   = $(addsuffix .asc, $(tarballs))
-sha1s        = $(addsuffix .sha1sum, $(tarballs))
+#
+# List of tags to be extracted:
+# ============================
+#                                               hash | tag
+#            ----------------------------------------+-----
+revisions  = 23ae78e657052748be68b623ca8122e4103dc7e0:2.5.2
 
-all: $(tarballs) $(signatures) $(sha1s)
+git_repo   = .git_clone
 
-.PHONY: downloads_clean
+suffix     = tar.xz
 
+versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d ':'))
 
-$(tarballs):
-	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
-	done
+tarballs   = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
+sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
-$(signatures): %.$(suffix).asc : %.$(suffix)
-	@for signature in $@ ; do \
-	  echo -e "\n======= Downloading '$$signature' signature =======\n" ; \
-	  wget -N $(url)/$$signature ; \
-	  touch $$signature ; \
+TARGETS = repository_clean
+
+all: $(TARGETS)
+
+.PHONY: downloads_clean repository_clean
+
+$(git_repo):
+	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
+	@rm -rf $(repo_name)
+	@git clone $(url)/$(repo_name).git $(repo_name)
+	@touch $@
+
+$(tarballs): $(git_repo)
+	@for revision in $(revisions) ; do \
+	  hash=`echo $$revision    | cut -f 1 -d ':'` ; \
+	  version=`echo $$revision | cut -f 2 -d ':'` ; \
+	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
+	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
+	    ( cd $(repo_name) && \
+	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$hash | \
+	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
+	  fi ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
+repository_clean: $(sha1s)
+	@echo -e "\n======= Remove cloned $(repo_name).git repository =======\n"
+	@rm -rf $(git_repo) $(repo_name)
+
 downloads_clean:
-	@rm -rf $(tarballs) $(signatures) $(sha1s)
+	@rm -rf $(tarballs) $(sha1s)
+	@rm -rf $(git_repo) $(repo_name)

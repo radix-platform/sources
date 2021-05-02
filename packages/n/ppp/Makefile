@@ -1,39 +1,71 @@
 #
 # Project Home:
 # ============
-# https://ppp.samba.org
+# https://github.com/ppp-project/ppp
 #
-# Downloads:
-# =========
-# ftp://ftp.samba.org/pub/ppp
-# https://download.samba.org/pub/ppp
+# GitHub:
+# ======
+# https://github.com/ppp-project/ppp
+#
+# Clone:
+# =====
+# https://github.com/ppp-project/ppp.git
 #
 
-url         = https://download.samba.org/pub/ppp
+url        = https://github.com/ppp-project
 
-versions    = 2.4.5 2.4.7 2.4.9
-pkgname     = ppp
-suffix      = tar.gz
+repo_name  = ppp
 
-tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
-sha1s       = $(addsuffix .sha1sum, $(tarballs))
+#
+# List of tags to be extracted:
+# ============================
+#                                               hash | tag
+#            ----------------------------------------+-----
+revisions  = 4fb319056f168bb8379865b91b4fd3e1ada73f1e:2.4.9
 
+git_repo   = .git_clone
 
-all: $(tarballs) $(sha1s)
+suffix     = tar.xz
 
-.PHONY: downloads_clean
+versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d ':'))
 
-$(tarballs):
-	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+tarballs   = $(addsuffix .$(suffix), $(addprefix $(repo_name)-, $(versions)))
+sha1s      = $(addsuffix .sha1sum, $(tarballs))
+
+TARGETS = repository_clean
+
+all: $(TARGETS)
+
+.PHONY: downloads_clean repository_clean
+
+$(git_repo):
+	@echo -e "\n======= Clone $(repo_name).git repository =======\n"
+	@rm -rf $(repo_name)
+	@git clone $(url)/$(repo_name).git $(repo_name)
+	@touch $@
+
+$(tarballs): $(git_repo)
+	@for revision in $(revisions) ; do \
+	  hash=`echo $$revision    | cut -f 1 -d ':'` ; \
+	  version=`echo $$revision | cut -f 2 -d ':'` ; \
+	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
+	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
+	    ( cd $(repo_name) && \
+	      git archive --format=tar --prefix=$(repo_name)-$$version/ $$hash | \
+	      xz >../$(repo_name)-$$version.$(suffix) ) ; \
+	  fi ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 
+repository_clean: $(sha1s)
+	@echo -e "\n======= Remove cloned $(repo_name).git repository =======\n"
+	@rm -rf $(git_repo) $(repo_name)
+
 downloads_clean:
 	@rm -rf $(tarballs) $(sha1s)
+	@rm -rf $(git_repo) $(repo_name)

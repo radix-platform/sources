@@ -34,6 +34,7 @@ SUBDIRS := ModemManager           \
            ethtool                \
            fetchmail              \
            firmware               \
+           freeradius-client      \
            getmail                \
            gnupg                  \
            gnupg2                 \

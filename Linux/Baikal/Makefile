@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := BFK
+SUBDIRS := BFK   \
+           M1000
 
 
 all-recursive downloads_clean-recursive:

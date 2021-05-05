@@ -10,9 +10,9 @@
 
 url         = https://developer.arm.com/-/media/Files/downloads/mali-drivers/kernel/mali-midgard-gpu
 
-versions    = r4p1-00rel0
+versions    = r27p0-01rel0
 
-pkgname     = TX041-SW-99002
+pkgname     = TX011-SW-99002
 suffix      = tgz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

@@ -16,7 +16,10 @@ SUBDIRS :=  r4p1 \
            r12p0 \
            r13p0 \
            r14p0 \
-           r15p0
+           r15p0 \
+           r26p0 \
+           r27p0 \
+           r28p0
 
 
 all-recursive downloads_clean-recursive:

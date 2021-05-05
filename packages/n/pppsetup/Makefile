@@ -1,14 +1,14 @@
 #
 # Project Home:
 # ============
-# http://slackware.com
+# https://slackware.com
 #
 # Downloads:
 # =========
-# http://mirrors.slackware.com/slackware/slackware-14.1/source/n/ppp
+# https://mirrors.slackware.com/slackware/slackware-14.1/source/n/ppp
 #
 
-url         = http://mirrors.slackware.com/slackware/slackware-14.2/source/n/ppp
+url         = https://mirrors.slackware.com/slackware/slackware-14.2/source/n/ppp
 
 pkgname     = pppsetup
 version     = 1.98

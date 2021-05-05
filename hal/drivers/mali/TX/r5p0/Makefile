@@ -1,14 +1,14 @@
 #
 # Project Home:
 # ============
-# http://malideveloper.arm.com/develop-for-mali/drivers/open-source-mali-t6xx-gpu-kernel-device-drivers
+# https://developer.arm.com/tools-and-software/graphics-and-gaming/mali-drivers/midgard-kernel
 #
 # Downloads:
 # =========
-# http://malideveloper.arm.com/downloads/drivers/TX041
+# https://developer.arm.com/-/media/Files/downloads/mali-drivers/kernel/mali-midgard-gpu
 #
 
-url         = http://malideveloper.arm.com/downloads/drivers/TX041
+url         = https://developer.arm.com/-/media/Files/downloads/mali-drivers/kernel/mali-midgard-gpu
 
 versions    = r5p0-06rel0
 
@@ -26,7 +26,7 @@ all: $(tarball) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for version in $(versions) ; do \
-	  wget -N $(url)/$$version/$(pkgname)-$$version.$(suffix) ; \
+	  wget -N $(url)/$(pkgname)-$$version.$(suffix) ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

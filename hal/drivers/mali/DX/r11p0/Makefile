@@ -10,9 +10,9 @@
 
 url         = https://developer.arm.com/-/media/Files/downloads/mali-drivers/kernel/mali-utgard-gpu
 
-versions    = r6p0-01rel0 r6p0-01rel1
+versions    = r11p0-01eac0
 
-pkgname     = DX910-SW-99002
+pkgname     = DX940-SW-99002
 suffix      = tgz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))

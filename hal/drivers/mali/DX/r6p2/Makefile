@@ -1,14 +1,14 @@
 #
 # Project Home:
 # ============
-# http://malideveloper.arm.com/resources/drivers/open-source-mali-utgard-gpu-linux-kernel-drivers
+# https://developer.arm.com/tools-and-software/graphics-and-gaming/mali-drivers/utgard-kernel
 #
 # Downloads:
 # =========
-# http://malideveloper.arm.com/downloads/drivers/DX910
+# https://developer.arm.com/-/media/Files/downloads/mali-drivers/kernel/mali-utgard-gpu
 #
 
-url         = http://malideveloper.arm.com/downloads/drivers/DX910
+url         = https://developer.arm.com/-/media/Files/downloads/mali-drivers/kernel/mali-utgard-gpu
 
 versions    = r6p2-01rel0
 
@@ -26,7 +26,7 @@ all: $(tarball) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for version in $(versions) ; do \
-	  wget -N $(url)/$$version/$(pkgname)-$$version.$(suffix) ; \
+	  wget -N $(url)/$(pkgname)-$$version.$(suffix) ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

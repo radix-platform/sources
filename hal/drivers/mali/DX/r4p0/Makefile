@@ -10,7 +10,7 @@
 
 url         = https://developer.arm.com/-/media/Files/downloads/mali-drivers/kernel/mali-utgard-gpu
 
-versions    = r4p0-00rel0 r4p0-00rel1
+versions    = r4p0-00rel1
 
 pkgname     = DX910-SW-99002
 suffix      = tgz

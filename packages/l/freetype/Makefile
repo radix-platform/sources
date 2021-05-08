@@ -1,19 +1,19 @@
 #
 # Project Home:
 # ============
-# http://www.freetype.org
-# http://www.freetype.org/download.html
+# https://www.freetype.org
+# https://www.freetype.org/download.html
 #
 # Downloads:
 # =========
-# http://download.savannah.gnu.org/releases/freetype
+# https://download.savannah.gnu.org/releases/freetype
 #
 
-url         = http://download.savannah.gnu.org/releases/freetype
+url         = https://download.savannah.gnu.org/releases/freetype
 
-versions    = 2.5.0.1 2.5.2 2.5.3 2.6.2 2.6.3
+versions    = 2.10.4
 pkgname     = freetype
-suffix      = tar.bz2
+suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))

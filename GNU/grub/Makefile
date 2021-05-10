@@ -26,6 +26,7 @@ pkg_name   = grub
 #            ----------------------------------------+-----
 revisions  = 2a2e10c1b39672de3d5da037a50d5c371f49b40d:2.04
 revisions += 837fe48deb89b31710904de4e9c7dda258490e1c:2.05.1
+revisions += c0e647eb0e2bd09315612446cb4d90f7f75cb44c:2.05.2
 
 git_repo   = .git_clone
 suffix     = tar.xz
@@ -65,7 +66,7 @@ $(tarballs): $(git_repo)
 	    echo -e "\n======= Remove ~rc (release candidate) micro version =======" ; \
 	    rc=`echo $${version} | cut -f3 -d'.'` ; \
 	    if [ "x$$rc" != "x" ] ; then \
-	      sed -i "s,\[[0-9]\.[0-9][0-9]~rc[1-9]*\],\[$${version}\]," configure.ac ; \
+	      sed -i "s,\[[0-9]\.[0-9][0-9]~rc[1-9a-z]*\],\[$${version}\]," configure.ac ; \
 	    fi ; \
 	    ./bootstrap ; rm -rf autom4te.cache .gitignore .travis.yml ) ; \
 	  tar cJf $(pkg_name)-$${version}.$(suffix) $(pkg_name)-$${version} ; \

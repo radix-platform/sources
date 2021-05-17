@@ -5,7 +5,8 @@
 #
 
 SUBDIRS := BFK   \
-           M1000
+           M1000 \
+           T1000
 
 
 all-recursive downloads_clean-recursive:

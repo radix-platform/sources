@@ -13,14 +13,14 @@ repo_name  = linux-firmware
 #
 #                                               hash | date
 #            ----------------------------------------+--------
-revisions  = 0e5f63771d0df6d7859f7c4100a74d737c62ac88-20141009
+revisions  = f8462923ed8fc874f770b8c6dfad49d39b381f14:20210518
 
 git_repo   = .git_clone
 
 pkgname    = kernel-firmware
-suffix     = tar.bz2
+suffix     = tar.xz
 
-versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d '-'))
+versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d ':'))
 tarballs   = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
@@ -38,13 +38,13 @@ $(git_repo):
 
 $(tarballs): $(git_repo)
 	@for revision in $(revisions) ; do \
-	  hash=`echo $$revision | cut -f 1 -d '-'` ; \
-	  date=`echo $$revision | cut -f 2 -d '-'` ; \
+	  hash=`echo $$revision | cut -f 1 -d ':'` ; \
+	  date=`echo $$revision | cut -f 2 -d ':'` ; \
 	  if [ ! -f $(pkgname)-$$date.$(suffix) ]; then \
 	    echo -e "\n======= Creating '$(pkgname)-$$date.$(suffix)' snapshot =======" ; \
 	    ( cd $(repo_name) && \
 	      git archive --format=tar --prefix=$(pkgname)-$$date/ $$hash | \
-	      bzip2 >../$(pkgname)-$$date.$(suffix) ) ; \
+	      xz >../$(pkgname)-$$date.$(suffix) ) ; \
 	  fi ; \
 	done
 

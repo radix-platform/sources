@@ -4,13 +4,14 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Mali            \
-           PowerVR         \
-           dri2            \
-           drivers         \
-           firmware        \
-           kernel-firmware \
-           omap543x        \
+SUBDIRS := Mali                 \
+           PowerVR              \
+           broadcom-bt-firmware \
+           dri2                 \
+           drivers              \
+           firmware             \
+           kernel-firmware      \
+           omap543x             \
            ump
 
 

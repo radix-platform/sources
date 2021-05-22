@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Amlogic
+SUBDIRS := Amlogic     \
+           broadcom-wl
 
 
 all-recursive downloads_clean-recursive:

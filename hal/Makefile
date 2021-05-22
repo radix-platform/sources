@@ -6,11 +6,9 @@
 
 SUBDIRS := Mali                 \
            PowerVR              \
-           broadcom-bt-firmware \
            dri2                 \
            drivers              \
            firmware             \
-           kernel-firmware      \
            omap543x             \
            ump
 

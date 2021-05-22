@@ -4,8 +4,10 @@
 # $ tree -fid .
 #
 
-SUBDIRS := ci20       \
-           omap5-uevm \
+SUBDIRS := broadcom-bt-firmware \
+           kernel-firmware      \
+           ci20                 \
+           omap5-uevm           \
            wireless
 
 

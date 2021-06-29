@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := broadcom-bt-firmware \
+SUBDIRS := armbian-firmware     \
+           broadcom-bt-firmware \
            kernel-firmware      \
            ci20                 \
            omap5-uevm           \

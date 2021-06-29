@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := Allwinner   \
+SUBDIRS := ATF         \
+           Allwinner   \
            Amlogic     \
            Baikal      \
            Boundary    \

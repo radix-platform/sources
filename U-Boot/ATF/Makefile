@@ -14,12 +14,18 @@ repo_name  = arm-trusted-firmware
 pkg_name   = arm-trusted-firmware
 suffix     = tar.xz
 
-versions   = 2.5
-
+#
 # List of tags to be extracted:
-TAGS       = $(addprefix v, $(versions))
+# ============================
+#
+#                                               hash | version
+#            ----------------------------------------+--------
+revisions  = c158878249f1bd930906ebd744b90d3f2a8265f1:2.5
+revisions += a5394205e94b70faf7ddd34841528ec631711d1a:2.5.1
+
 
 git_repo   = .git_clone
+versions   = $(foreach tag, $(revisions), $(shell echo $(tag) | cut -f 2 -d ':'))
 tarballs   = $(addsuffix .tar.xz, $(addprefix $(pkg_name)-, $(versions)))
 sha1s      = $(addsuffix .sha1sum, $(tarballs))
 
@@ -37,12 +43,13 @@ $(git_repo):
 	@touch $@
 
 $(tarballs): $(git_repo)
-	@for version in $(versions) ; do \
-	  tag=v`echo $$version` ; \
+	@for revision in $(revisions) ; do \
+	  version=`echo $$revision | cut -f 2 -d ':'` ; \
+	  hash=`echo $$revision | cut -f 1 -d ':'`    ; \
 	  if [ ! -f $(repo_name)-$$version.$(suffix) ]; then \
 	    echo -e "\n======= Creating '$(repo_name)-$$version.$(suffix)' snapshot =======" ; \
 	    ( cd $(repo_name) && \
-	      git archive --format=tar --prefix=$(pkg_name)-$$version/ $$tag | \
+	      git archive --format=tar --prefix=$(pkg_name)-$$version/ $$hash | \
 	      xz >../$(pkg_name)-$$version.$(suffix) ) ; \
 	  fi ; \
 	done

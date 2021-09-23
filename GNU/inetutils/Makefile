@@ -10,7 +10,7 @@
 
 url         = https://ftp.gnu.org/gnu/inetutils
 
-versions    = 1.9.1 1.9.2 1.9.4
+versions    = 1.9.1 1.9.2 1.9.4 2.2
 pkgname     = inetutils
 suffix      = tar.gz
 

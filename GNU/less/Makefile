@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnu.org/gnu/less
 
-versions    = 443 451 530 563
+versions    = 443 451 530 563 590
 pkgname     = less
 suffix      = tar.gz
 

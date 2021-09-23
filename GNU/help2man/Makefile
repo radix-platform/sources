@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnu.org/gnu/help2man
 
-versions    = 1.46.6 1.47.3 1.47.11 1.47.16
+versions    = 1.46.6 1.47.3 1.47.11 1.47.16 1.48.5
 pkgname     = help2man
 suffix      = tar.xz
 

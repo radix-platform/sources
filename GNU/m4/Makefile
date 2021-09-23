@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/m4
 
-versions    = 1.4.17 1.4.18
+versions    = 1.4.17 1.4.18 1.4.19
 pkgname     = m4
 suffix      = tar.xz
 

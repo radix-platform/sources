@@ -1,22 +1,21 @@
 #
-# Project Home:
-# ============
-# http://www.gnu.org/software/gzip/
+# Download: http://www.gnu.org/prep/ftp.html
 #
-# Downloads:
-# =========
-# ftp://ftp.gnu.org/pub/gnu/gzip/
+# You can use the generic url http://ftpmirror.gnu.org 
+# to automatically choose a nearby and up-to-date mirror.
+#
+# original url: http://ftp.gnu.org/gnu/gcc/gcc-$(version)
 #
 
-url         = ftp://ftp.gnu.org/pub/gnu/gzip
+url         = http://ftpmirror.gnu.org/gcc
 
-versions    = 1.5 1.6 1.10 1.11
-pkgname     = gzip
+versions    = 11.2.0
+
+pkgname     = gcc
 suffix      = tar.xz
 
 tarballs    = $(addsuffix .$(suffix), $(addprefix $(pkgname)-, $(versions)))
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
-
 
 all: $(tarballs) $(sha1s)
 
@@ -24,13 +23,13 @@ all: $(tarballs) $(sha1s)
 
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
-	@for tarball in $(tarballs) ; do \
-	  wget -N $(url)/$$tarball ; \
+	@for version in $(versions) ; do \
+	  wget -N $(url)/gcc-$$version/gcc-$$version.$(suffix) ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)
 	@for tarball in $< ; do \
-	  echo -e "\n======= Calculation the '$$tarball' sha1sum =======\n" ; \
+	  echo -e "\n======= Calculation '$$tarball' sha1sum =======\n" ; \
 	  sha1sum --binary $$tarball > $$tarball.sha1sum ; \
 	done
 

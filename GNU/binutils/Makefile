@@ -10,7 +10,7 @@
 url         = http://ftpmirror.gnu.org/binutils
 
 versions    = 2.28.1 2.29 2.29.1
-versions   += 2.30 2.31 2.31.1 2.32 2.33.1 2.34 2.35 2.35.1 2.36 2.36.1
+versions   += 2.30 2.31 2.31.1 2.32 2.33.1 2.34 2.35 2.35.1 2.36 2.36.1 2.37
 
 pkgname     = binutils
 suffix      = tar.xz

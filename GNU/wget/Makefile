@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/wget
 
-versions    = 1.20.3 1.21 1.21.1
+versions    = 1.20.3 1.21 1.21.1 1.21.2
 pkgname     = wget
 suffix      = tar.xz
 

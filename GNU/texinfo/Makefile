@@ -10,7 +10,7 @@
 
 url         = ftp://ftp.gnu.org/gnu/texinfo
 
-versions    = 5.2 6.7
+versions    = 5.2 6.7 6.8
 pkgname     = texinfo
 suffix      = tar.xz
 

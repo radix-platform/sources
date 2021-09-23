@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/guile
 
-versions    = 2.0.9 2.0.11 2.2.6 3.0.4 3.0.5
+versions    = 2.0.9 2.0.11 2.2.6 3.0.4 3.0.5 3.0.7
 pkgname     = guile
 suffix      = tar.xz
 

@@ -10,7 +10,7 @@
 #url         = http://ftpmirror.gnu.org/gdb
 url         = http://ftp.gnu.org/gnu/gdb
 
-versions    = 7.9 7.10.1 7.11 8.0 8.1.1 8.2 8.2.1 8.3 8.3.1 9.1 9.2 10.1 10.2
+versions    = 7.9 7.10.1 7.11 8.0 8.1.1 8.2 8.2.1 8.3 8.3.1 9.1 9.2 10.1 10.2 11.1
 
 pkgname     = gdb
 suffix      = tar.xz

@@ -10,7 +10,7 @@
 
 url         = http://ftp.gnu.org/gnu/diffutils
 
-versions    = 3.2 3.3 3.7
+versions    = 3.2 3.3 3.7 3.8
 pkgname     = diffutils
 suffix      = tar.xz
 

@@ -11,7 +11,7 @@
 
 url         = ftp://ftp.gnu.org/gnu/mtools
 
-versions    = 4.0.18 4.0.26
+versions    = 4.0.18 4.0.26 4.0.35
 pkgname     = mtools
 suffix      = tar.bz2
 

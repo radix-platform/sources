@@ -10,7 +10,7 @@
 
 url         = https://ftp.gnu.org/gnu/libtasn1
 
-versions    = 3.3 3.4 4.3 4.7 4.14 4.15.0 4.16.0
+versions    = 3.3 3.4 4.3 4.7 4.14 4.15.0 4.16.0 4.17.0
 pkgname     = libtasn1
 suffix      = tar.gz
 

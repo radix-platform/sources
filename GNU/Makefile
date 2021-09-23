@@ -58,6 +58,7 @@ SUBDIRS := EGLIBC/2.12.1       \
            gcc/gcc-10.2.0      \
            gcc/gcc-10.3.0      \
            gcc/gcc-11.1.0      \
+           gcc/gcc-11.2.0      \
            gdb                 \
            gdbm                \
            gettext             \

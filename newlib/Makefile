@@ -21,6 +21,7 @@ tarballs   += newlib-3.2.0.20200102.tar.gz
 tarballs   += newlib-3.2.0.tar.gz
 tarballs   += newlib-3.3.0.tar.gz
 tarballs   += newlib-4.0.0.tar.gz
+tarballs   += newlib-4.1.0.tar.gz
 
 sha1s       = $(addsuffix .sha1sum, $(tarballs))
 

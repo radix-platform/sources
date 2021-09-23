@@ -12,7 +12,7 @@ url         = https://ftp.gnu.org/gnu/libidn
 
 lib_name    = libidn
 
-versions    = 2.2.0 2.3.0
+versions    = 2.2.0 2.3.0 2.3.2
 pkgname     = libidn2
 suffix      = tar.xz
 
@@ -27,10 +27,10 @@ all: $(tarballs) $(signatures) $(sha1s)
 $(tarballs):
 	@echo -e "\n======= Downloading source tarballs =======\n"
 	@for version in $(versions) ; do \
-	  wget -N $(url)/$(pkgname)-$$version.tar.lz ; \
-	  lzip -d $(pkgname)-$$version.tar.lz ; \
+	  wget -N $(url)/$(pkgname)-$$version.tar.gz ; \
+	  gunzip $(pkgname)-$$version.tar.gz ; \
 	  xz $(pkgname)-$$version.tar ; \
-	  rm -f $(pkgname)-$$version.tar.lz ; \
+	  rm -f $(pkgname)-$$version.tar.gz ; \
 	done
 
 $(sha1s): %.$(suffix).sha1sum : %.$(suffix)

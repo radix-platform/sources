@@ -22,6 +22,7 @@ revisions  = 44b7f9583ffe0ee09c4da8bd996ef9a6a0017e1a-0.9
 revisions += 27ffe8ae871e7a186018d66020ef3f6162c12c69-0.10.1
 revisions += 978325def61e0126d13d7936eee51326cbd433d4-0.10.2
 revisions += 8d3a16e97294e3c5521c61b4c8835499c9918264-0.12
+revisions += a949ff23315bbb5863627c4655fe216ecbf341a2-0.13
 
 git_repo   = .git_clone
 

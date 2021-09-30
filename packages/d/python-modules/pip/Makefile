@@ -18,7 +18,7 @@ url         = https://github.com/pypa/pip.git
 repo_name   = pip
 
 versions    = 7.1.2 8.1.1 9.0.1 19.2.3 19.3.1 20.1 20.3
-versions   += 20.3.3
+versions   += 20.3.3 21.2.4
 suffix      = tar.gz
 
 TAGS        = $(versions)

@@ -4,7 +4,8 @@
 # $ tree -fid .
 #
 
-SUBDIRS := pip        \
+SUBDIRS := m2crypto   \
+           pip        \
            setuptools \
            wheel
 
